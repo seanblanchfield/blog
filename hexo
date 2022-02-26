@@ -1,0 +1,21 @@
+#! /bin/bash
+
+COMMON_SCRIPT_PATH="$(realpath ${BASH_SOURCE[0]})"
+COMMON_SCRIPT_DIR="$(dirname $COMMON_SCRIPT_PATH)"
+DOCKER_IMAGE_NAME=blog
+
+if [[ "$1" == "docker_build" ]]; then
+    docker build . -t $DOCKER_IMAGE_NAME
+# elif [[ "$1" == "init" ]]; then
+#     echo "Initializing blog"
+#     docker run --rm  $DOCKER_IMAGE_NAME:latest init $BLOG_NAME
+#     docker run --rm  $DOCKER_IMAGE_NAME:latest init $BLOG_NAME
+# elif [[ "$@" == "npm install" ]]; then
+#     docker run --rm  --volume $COMMON_SCRIPT_DIR:/blog --workdir="/blog/$BLOG_NAME"  --entrypoint="npm"  $DOCKER_IMAGE_NAME:latest install
+elif [[ "$1" == "shell" ]]; then
+    docker run --rm  -it --volume $COMMON_SCRIPT_DIR/source:/blog/source --volume $COMMON_SCRIPT_DIR/public:/blog/public --workdir="/blog/"  --entrypoint="bash"  $DOCKER_IMAGE_NAME:latest
+# elif [[ "$1" == "server" ]]; then
+#     docker run --rm -p 4000:4000  --volume $COMMON_SCRIPT_DIR:/blog --workdir="/blog/$BLOG_NAME"  $DOCKER_IMAGE_NAME:latest serve
+else
+    docker run --rm -p 4000:4000  --volume $COMMON_SCRIPT_DIR/source:/blog/source --volume $COMMON_SCRIPT_DIR/public:/blog/public--workdir="/blog/"  $DOCKER_IMAGE_NAME:latest $@
+fi
