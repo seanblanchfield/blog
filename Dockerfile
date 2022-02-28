@@ -1,15 +1,7 @@
-FROM node:17.6.0-buster-slim
+# # https://github.com/envygeeks/jekyll-docker/blob/master/README.md#image-types
+# FROM jekyll/jekyll:3.8
+# FROM jekyll/minimal:3.8
+FROM jekyll/builder:3.8
 
-RUN npm install hexo-cli -g
-
-RUN mkdir -p /blog/
-RUN hexo init blog
-
-VOLUME /blog/
-WORKDIR /blog/
-
-RUN npm install
-
-EXPOSE 4000
-
-ENTRYPOINT ["hexo"]
+COPY . /srv/jekyll
+RUN bundle update
