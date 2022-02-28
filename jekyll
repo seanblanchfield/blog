@@ -1,0 +1,31 @@
+#! /bin/bash
+COMMON_SCRIPT_PATH="$(realpath ${BASH_SOURCE[0]})"
+COMMON_SCRIPT_DIR="$(dirname $COMMON_SCRIPT_PATH)"
+DOCKER_IMAGE="blog"
+
+USER_ID="$(id -u)"
+GROUP_ID="$(id -g)"
+
+
+ENV_VARS="--env JEKYLL_UID=$USER_ID --env JEKYLL_GID=GROUP_ID --env JEKYLL_ENV=production"
+
+# VOLUME_MOUNTS="--volume $COMMON_SCRIPT_DIR/_config.yml:/blog/_config.yml --volume $COMMON_SCRIPT_DIR/source:/blog/source --volume $COMMON_SCRIPT_DIR/public:/blog/public "
+VOLUME_MOUNTS="--volume $COMMON_SCRIPT_DIR:/srv/jekyll"
+
+if [[ "$1" == "docker_build" ]]; then
+    docker build . -t $DOCKER_IMAGE
+elif [[ "$1" == "shell" ]]; then
+    docker run --rm  -it \
+        $VOLUME_MOUNTS  \
+        $ENV_VARS \
+        --entrypoint="bash" \
+        $DOCKER_IMAGE:latest
+else
+    docker run --rm -it \
+        $VOLUME_MOUNTS \
+        $ENV_VARS \
+        --publish [::1]:4000:4000 \
+        $DOCKER_IMAGE:latest \
+        jekyll \
+        $@
+fi

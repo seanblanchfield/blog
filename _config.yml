@@ -1,0 +1,36 @@
+source: .
+destination: ./public
+timezone: Europe/Dublin
+
+title: Sean Blanchfield's Blog
+description: >- 
+  Adventures in business, technology and tinkering.
+url: "https://seanblanchfield.com"
+twitter_username: seanblanchfield
+github_username:  seanblanchfield
+
+show_excerpts: true
+
+google_analytics: UA-4197397-3
+
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+minima:
+  date_format: "%Y-%b-%-d"
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
