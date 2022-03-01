@@ -14,7 +14,7 @@ layout: default
     <ul class="post-list">
       {% for post in paginator.posts %}
       <li>
-        <header class="{% if post.image %}featured-image{% endif %}"  {% if post.image %}style="--featuredImage: url('{{ post.image }}');"{% endif %}>
+        <header {% if post.image %}style="--featured-image: url('{{ post.image }}');"{% endif %}>
           <span class="post-meta">{{ post.date | date: site.minima.date_format }}</span>
           <h2>
             <a class="post-link" href="{{ post.url | relative_url }}">
