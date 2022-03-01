@@ -1,22 +1,24 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: false
 date: 2013-11-10 01:12:40+00:00
 layout: post
 link: https://seanblanchfield.com/5-ways-think-like-investors/
 slug: 5-ways-think-like-investors
 title: 5 Ways Employees Need to Think Like Investors
-wordpress_id: 1048
+image: /images/2013/11/roulettewheel.jpg
 tags:
 - Enterprise
 - Life
 ---
 
 Are you thinking of taking a job in a startup? If so, this post is for you. Every employee in a startup is making an investment, but rarely do they treat it as such. Here's 5 ways to make a smarter decision about whether or not to take that new startup job.
+
 <!-- more -->
+
 ## #1 Know How Much You're Investing
 
-![roulette wheel](/images/2013/11/roulettewheel.jpg)**Your maximum salary isn't available in a startup**. By definition startups are not yet profitable, so any money you get paid comes from investor's pockets. This money needs to go as far as possible. Instead of an industry salary you might be promised other forms of compensation, ranging from stock options to the thrill of the adventure. You should evaluate any deal you are offered like an investor. For example, if you are an experienced engineer you might make €100K per year in a large company, but only €60K in a startup. You are effectively **investing €40K per year** into the startup. You should make sure that you are getting something fair in return.
+**Your maximum salary isn't available in a startup**. By definition startups are not yet profitable, so any money you get paid comes from investor's pockets. This money needs to go as far as possible. Instead of an industry salary you might be promised other forms of compensation, ranging from stock options to the thrill of the adventure. You should evaluate any deal you are offered like an investor. For example, if you are an experienced engineer you might make €100K per year in a large company, but only €60K in a startup. You are effectively **investing €40K per year** into the startup. You should make sure that you are getting something fair in return.
 
 ## #2 Know What You're Investing In
 

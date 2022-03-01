@@ -1,12 +1,11 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: true
 date: 2009-02-24 20:15:32+00:00
 layout: page
 link: https://seanblanchfield.com/about/
 slug: about
 title: About Me
-wordpress_id: 30
 ---
 
 ![](/images/2018/12/Sean_square.jpg)

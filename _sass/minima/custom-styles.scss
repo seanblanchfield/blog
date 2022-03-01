@@ -1,0 +1,180 @@
+// Custom font.
+@font-face {
+    font-family: "Quattrocento Sans";
+    src: url("/assets/fonts/QuattrocentoSans-Regular.ttf");
+}
+@font-face {
+    font-family: "Quattrocento Sans";
+    src: url("/assets/fonts/QuattrocentoSans-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Quattrocento Sans";
+    src: url("/assets/fonts/QuattrocentoSans-Italic.ttf");
+    font-style: italic;
+}
+@font-face {
+    font-family: "Quattrocento Sans";
+    src: url("/assets/fonts/QuattrocentoSans-Italic.ttf");
+    font-style: oblique;
+}
+@font-face {
+    font-family: "Quattrocento Sans";
+    src: url("/assets/fonts/QuattrocentoSans-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Quattrocento Sans";
+    src: url("/assets/fonts/QuattrocentoSans-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: oblique;
+}
+
+// Pagination
+ul.pager {
+    text-align: center; 
+    list-style: none; 
+}
+ul.pager li {
+    display: inline;
+    border: 1px solid black; 
+    padding: 10px; 
+    margin: 5px;
+}
+
+// Style post excerpts
+.post-list {
+    margin-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    > li {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        background: rgba(0,0,0,0.6);
+        border-radius: 2px;
+        margin-bottom: $spacing-unit;
+        min-height: 200px;
+        width: 100%;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+        > header.featured-image {
+            background-image:   linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 1.0)),
+                            var(--featuredImage);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 1rem;
+        }
+        > header:not(.featured-image) {
+            background-image:   linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 1.0)),
+                            $default_featured_image;
+            background-color: black;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: end;
+            padding: 1rem;
+
+        }
+        a.post-link {
+            text-decoration: none;
+        }
+        > div.excerpt {
+            padding: 1rem;
+            > div.read-more {
+                text-align: right;
+                > a {
+                    text-transform:  uppercase;
+                    text-decoration: none;
+                    padding: 0.3rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    > li:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+}
+
+@media screen and (min-width: $on-large) {
+    .post-list {
+        > li {
+            width: calc(50% - 0.5 * #{$spacing-unit});
+            
+        }
+    }
+}
+// Style post headers with the featured image.
+header.featured-image {
+    background-image:   linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 1.0)),
+                        var(--featuredImage);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 1rem;
+    height: 300px;
+}
+
+// Reduce spacing above headings in posts.
+.post-content {
+    margin-bottom: $spacing-unit;
+    h1, h2, h3 { margin-top: $spacing-unit * 1.5 }
+}
+
+// Disable alternate row coloring and borders for tables created by highlight.js line numbers.
+table.hljs-ln {
+    border: none;
+    th {
+      border: none;
+    }
+    td {
+      border: none;
+    }
+    td.hljs-ln-numbers {
+        padding-right: 1rem;
+    }
+}
+
+// Styles for captioned images.
+div.captioned {
+    width: 100%; 
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.144);
+    
+    img {
+        width: 100%;
+    }
+    span {
+        font-size: $small-font-size;
+        font-weight: 600;
+        padding: 0.5rem;
+        display: block;
+    }
+}
+div.captioned.right,
+img.right {
+    width: 50%; 
+    margin-left: 1rem;
+    float: right; 
+}
+div.captioned.left,
+img.left {
+    width: 50%; 
+    margin-right: 1rem;
+    float: left; 
+}
+img.full-width {
+    width: 100%;
+}

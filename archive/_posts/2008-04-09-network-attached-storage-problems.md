@@ -1,5 +1,5 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: true
 date: 2008-04-09 21:19:14+00:00
 excerpt: My last post was all about how happy I was with my new DNS-323 NAS. Well,
@@ -9,7 +9,6 @@ layout: post
 link: https://seanblanchfield.com/network-attached-storage-problems/
 slug: network-attached-storage-problems
 title: Network Attached Storage Problems
-wordpress_id: 761
 tags:
 - Tech
 ---
@@ -17,7 +16,9 @@ tags:
 My last post was all about how happy I was with my new DNS-323 NAS. Well, it's not uncommon for the little problems to only become apparent after a few week's of usage.
 
 In this case, I might have brought some of them on myself. I've been playing around with the tricks on the associated [hack wiki](http://wiki.dns323.info/), and have got telnet started on it, as well as a Debian etch chroot (this latter was particularly useful for extracting archived files of various kinds quickly, without having to send the data back and forth over the network).
+
 <!-- more -->
+
 Anyway, there are two things that are now annoying me:
 
 1.  Apparently, RAID 1 isn't such a good idea with this thing. There's reports out there of partial and complete data loss when you have your disks set up this way. This undermines the reason that I went with RAID 1 in the first place. Now, reading more on RAID, I realise I should have known better. RAID 1 is designed for availability, and availability doesn't necessarily equate to backups. I don't want to lose my data, but I can tolerate not having access to it for a while. RAID 1 prioritises having 100% access to the data, and the safety of the data is definitely secondary. I shouldn't have used RAID 1.

@@ -2,26 +2,48 @@ source: .
 destination: ./public
 timezone: Europe/Dublin
 
+gems:
+  - jekyll-paginate-v2
+
 title: Sean Blanchfield's Blog
 description: >- 
-  Adventures in business, technology and tinkering.
+  Business, technology and tinkering.
 url: "https://seanblanchfield.com"
-twitter_username: seanblanchfield
-github_username:  seanblanchfield
+
+permalink: /:year/:month/:title
 
 show_excerpts: true
 
-google_analytics: UA-4197397-3
-
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: '/page/:num/'
+  # title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
 
 minima:
-  date_format: "%Y-%b-%-d"
+  date_format: "%-d %b %Y"
+  skin: dark
+  
+  # generate social links in footer
+  social_links:
+    twitter: seanblanchfield
+    github:  seanblanchfield
+    linkedin: seanblanchfield
+
+kramdown:
+  # Disable rouge. We are using highlight.js
+  syntax_highlighter: none
+
+ 
+google_analytics: UA-4197397-3
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

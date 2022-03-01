@@ -1,12 +1,12 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: true
 date: 2012-05-05 15:34:58+00:00
 layout: post
 link: https://seanblanchfield.com/the-lean-portfolio/
 slug: the-lean-portfolio
 title: The Lean Portfolio
-wordpress_id: 632
+image: /images/2012/05/lean-portfolios2-300x273.png
 tags:
 - enterprise
 - entrepreneurship
@@ -15,11 +15,14 @@ tags:
 - portfolio
 ---
 
-In previous posts I discussed why serial entrepreneurs should upgrade to [parallelism](https://seanblanchfield.com/2011/10/the-parallel-entrepreneur/), and how startup founders might band together to create a [startup cooperative](https://seanblanchfield.com/2011/12/the-startup-cooperative/). It is this thinking that is shaping our new company, [Scale Front](http://scalefront.com/). In addition to adopting [Lean](http://en.wikipedia.org/wiki/Lean_Startup), we want to develop many ideas in parallel. We are calling this approach “The Lean Portfolio”. Much as The Lean Startup articulates what the best startups are doing, “The Lean Portfolio” is a name for the next logical step.
-<!-- more -->
-![Lean Portfolio companies from around the world](/images/2012/05/lean-portfolios2-300x273.png "lean portfolios")
+In previous posts I discussed why serial entrepreneurs should upgrade to [parallelism]({% link archive/_posts/2011-10-23-the-parallel-entrepreneur.md %}), and how startup founders might band together to create a [startup cooperative]({% link archive/_posts/2011-12-29-the-startup-cooperative.md %}). It is this thinking that is shaping our new company, [Scale Front](http://scalefront.com/). In addition to adopting [Lean](http://en.wikipedia.org/wiki/Lean_Startup), we want to develop many ideas in parallel. We are calling this approach “The Lean Portfolio”. Much as The Lean Startup articulates what the best startups are doing, “The Lean Portfolio” is a name for the next logical step.
 
-### The Changing Face of Startups
+<!-- more -->
+
+
+## The Changing Face of Startups
+
+![Lean Portfolio companies from around the world](/images/2012/05/lean-portfolios2-300x273.png){: .captioned .right}
 
 In the last 10 years the cost of starting up dropped massively, with everything from email servers to accountancy moving to the cloud. Digital sales channels such as app stores and social media have made it possible to go global on a shoestring. Capital efficient strategies such as the Lean Startup and Agile Development have helped us focus fewer resources into more impactful products. It is not uncommon now to see founders bootstrap a company to profitability, raising funding _after_ they are breaking even.
 
@@ -33,15 +36,16 @@ While many of these are [klonfabriken](http://translate.google.com/#de%7Cen%7Ck
 
 At Scale Front, we are aiming to bootstrap 10 new projects to market in 2012, using the Lean Startup model. We intend to scale this number over time, and to retain every lesson possible so that projects get better over time. We’re calling this approach "The Lean Portfolio", and see it as the next logical step to the Lean Startup.
 
-### The “EPIC” Molecule
+## The “EPIC” Molecule
 
-![Execution - People - Ideas - Capital](/images/2012/05/TheLeanPortfolio-300x230.png "The EPIC Molecule") A bit of quick research on the companies above reveals striking similarities in their language and thought processes. Having written down our own plan before googling these guys, I was initially shocked to see my words on their websites. My second reaction was extreme validation that such talented people had reached the same conclusions.
+![Execution - People - Ideas - Capital](/images/2012/05/TheLeanPortfolio-300x230.png){: .captioned .right}
+A bit of quick research on the companies above reveals striking similarities in their language and thought processes. Having written down our own plan before googling these guys, I was initially shocked to see my words on their websites. My second reaction was extreme validation that such talented people had reached the same conclusions.
 
 The common thread running through these companies is what I’m going to cheesily refer to as the _EPIC molecule_. The four elements that combine to make this super-strong molecule are: **E**xecution, **P**eople, **I**deas and **C**apital. Rocket Internet’s CEO calls them their “[four pillars: the idea; the money; the people and the execution](http://www.businessbecause.com/news/inside-view-on-top-jobs/inside-view-rocket-internet-81331)”. Science Inc talks about “ideas, talent, resources and financing”. Team Europe lists “idea, team, product/IT, reach and finance”. IG Expansion talks about business model, team, operations and finance.
 
 All are basically referring to the same four elements. By bringing these together the Lean Portfolio optimizes both the rate at which it generates startups, and the quality of those startups. Let’s take each of these one by one.
 
-#### Element #1: Execution
+### Element #1: Execution
 
 I subscribe to [Steve Blank](http://steveblank.com/)’s definition that a startup is a [search for a profitable repeatable business model](http://steveblank.com/2010/01/25/whats-a-startup-first-principles/). Entrepreneurs usually spend a few years conducting this search before spending a few more building a company. By the time the entrepreneur moves on to a second startup the lessons learned from the first search are fading and often outdated.
 
@@ -49,7 +53,7 @@ In Scale Front we want to keep a core staff in place, retaining lessons from eve
 
 Apart from building up and concentrating intellectual capital around the startup process, the portfolio approach will allow us to establish shared resources that couldn’t be justified for any one project alone. These range from software systems (e.g., analytics and billing), to human resources (e.g., accountants, lawyers, development and design). In fact, even the entrepreneurs themselves are essentially a shared resource, moving between projects rather than doing excess work on unvalidated product features.
 
-#### Element #2: People
+### Element #2: People
 
 The portfolio is built upon the talent and skills of the entrepreneurs recruited to develop pre-traction projects and later to lead them out into the world. To attract the best, we want to provide benefits that are inaccessible to solo entrepreneurs. Our hope is that Scale Front will be a family of entrepreneurs, benefiting from each other’s support and success, while being rewarded for individual contributions.
 
@@ -62,7 +66,7 @@ Staff entrepreneurs should be:
 
 We want to attract the best talent by being able to honestly tell them that the opportunities within the portfolio are greater than those without: they will lead a successful business, and their stake in it will be more valuable than the average startup.
 
-#### Element #3: Ideas
+### Element #3: Ideas
 
 Unlike accelerators, which recruit teams that already have ideas, the Lean Portfolio recruits entrepreneurs and creates its own ideas. Some people mistake the idea for the valuable bit of a startup. In contrast, we know that ideas are plentiful. When you’re in [flow](http://en.wikipedia.org/wiki/Flow_(psychology)), they come to you constantly. If you burn through enough bad ones you’ll discover one that’s great, and the portfolio is designed to do this as fast as possible.
 
@@ -70,14 +74,12 @@ In Scale Front we have an “idea bank” (a phrase borrowed from the Stage Gate
 
 What is really exciting is the realization that the ideas will inevitably improve with time. Experienced founders know that when you have traction you continuously spot adjacent customer needs, which you rarely have the time to do anything about. Lean Portfolio entrepreneurs can send these ideas back for investigation. These ideas come with a prevalidated customer need, and with access to early customers through the spinout that originally spotted the opportunity.
 
-#### Element #4: Capital
+### Element #4: Capital
 
 Bootstrapped startups often find that when they most need growth capital, they have no time to raise it without neglecting their customers. The final element of the Lean Portfolio is to facilitate funding when spin outs need some cash. This funding may come from external sources, or from the portfolio itself if it has a sufficient warchest. Access to capital will improve over time as the portfolio builds relationships with investors. Meanwhile the close relationship between portfolio and spinout will permit much of the footwork to be performed on behalf of the entrepreneur, leaving him/her to focus on business.
 
-### Our Story So Far
+## Our Story So Far
 
 For us, the portfolio approach is the only logical way forward. It allows us to scale our own experience more effectively, making the biggest impact possible with our limited time.
 
 We are bootstrapping by balancing consultancy work with internal projects. Bootstrapping is slow, but the pace allows us to extract every possible lesson from our first few projects, establishing our own execution process as we go. We will soon launch our second product, and will temporarily double headcount with interns tasked with market testing. Looking towards the future, we may choose to raise external funding to increase the number of projects we can run. In subsequent posts I’ll discuss some of the lessons we’re learning, and reflect on the challenges and advantages that we’re discovering in the portfolio approach.
-
-I would love to hear about any other Lean Portfolios, especially if it’s your own. Please [leave a comment](https://seanblanchfield.com/2012/05/the-lean-portfolio/#comments "The Lean Portfolio") if you know of one, or if you’ve got any other insights.

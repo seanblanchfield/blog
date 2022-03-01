@@ -3,5 +3,5 @@
 # FROM jekyll/minimal:3.8
 FROM jekyll/builder:3.8
 
-COPY . /srv/jekyll
+COPY Gemfile /srv/jekyll/
 RUN bundle update

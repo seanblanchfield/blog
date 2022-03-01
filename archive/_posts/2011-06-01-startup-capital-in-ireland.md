@@ -1,12 +1,11 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: true
 date: 2011-06-01 09:43:00+00:00
 layout: post
 link: https://seanblanchfield.com/startup-capital-in-ireland/
 slug: startup-capital-in-ireland
 title: Startup Capital in Ireland
-wordpress_id: 208
 tags:
 - entrepreneurship
 - investment
@@ -15,7 +14,9 @@ tags:
 ---
 
 I've been both planning and procrastinating this article for months. With Ireland teetering on the brink of default, there's still plenty of optimism in the tech sector, with various new funds allocated to small enterprise and new incubators arriving on the scene. However, having spent the latter half of 2010 on the local fundraising circuit, I find myself a bit cynical about how capital is made available to small enterprise and the direction this is going in. I've talked with various other local startup people, and many of them share my opinion.
+
 <!-- more -->
+
 I believe that online technology companies are the way forward for Ireland. It is now clear that online technology companies can be as financially successful as more traditional businesses. However, unlike other sectors, it takes very little money to start an online tech company. Neither does your geography limit your market. All you technically need are brains, and enough money to pay other brainy people to work for you. No need for factories, or 20 years of lab research, or anything like that.
 
 Unfortunately, there are problems providing capital in the relatively small amounts these companies need to initially launch themselves (say €20K to €200,000). There aren't enough sufficiently cashed-out former technology entrepreneurs to fund at this level as angels. Instead, we rely on small investment firms doling out government money, and a couple of loose angel networks that can make small aggregate investments. At this scale, it's not viable for investors to have excellent in-house domain expertise to help understand and vet opportunities. Because of this, the dynamics are not what you might expect. You may encounter:

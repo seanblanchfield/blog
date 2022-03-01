@@ -1,20 +1,21 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: true
 date: 2011-06-20 20:51:14+00:00
 layout: post
 link: https://seanblanchfield.com/another-boxee-box-fail/
 slug: another-boxee-box-fail
 title: Another Boxee Box Fail
-wordpress_id: 246
 tags:
 - Life
 - Tech
 - boxee dlink
 ---
 
-Every software update that comes down to my Boxee box seems to be mainly about removing features, not adding them. Their last update hilariously [removed volume control](https://seanblanchfield.com/2011/05/boxee-box-fail/) from the system, in the name of a consistent user experience. When the system downloaded and forced an update this evening, we had our jokes at the ready about what was going to be removed next.
+Every software update that comes down to my Boxee box seems to be mainly about removing features, not adding them. Their last update hilariously [removed volume control]({% link archive/_posts/2011-05-13-boxee-box-fail.md %}) from the system, in the name of a consistent user experience. When the system downloaded and forced an update this evening, we had our jokes at the ready about what was going to be removed next.
+
 <!-- more -->
+
 Well, in our case, **it turned out to be support for video**. No kidding. It boots, shows a nice video, blinks once or twice, and then rejects the TV as a device it wants have an intimate relationship with. After a bit of research, it turns out that the Boxee's support for DVI TVs (via a standard converter) was an accidental oversight, and one they cheerily lopped in today's compulsory update. There are some irate threads running on their community support forums, which all consist of bewildered users vainly searching for words to communicate how it feels to have features routinely removed from your media center against your will, culminating in its actual ability to **play video**. Unbelievable.
 
 I'm not sure what was to gain by removing support for DVI TV's. I hope it was good, because this could well nail the coffin shut in terms of the public's ability to trust the Boxee team to properly curate the project. As I mentioned in my last post when they removed a feature, long gone are the days you bought a gadget for its packaged features. Connected devices like Boxee are bought based on trust in the manufacturer, to maintain the service, add the right features, and to not be evil. Whatever about punters in shops, the boxee team are losing the trust of their early adopters.

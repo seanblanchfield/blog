@@ -1,12 +1,11 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: true
 date: 2011-05-01 18:00:38+00:00
 layout: post
 link: https://seanblanchfield.com/enterprise-and-optimism/
 slug: enterprise-and-optimism
 title: Enterprise and Optimism
-wordpress_id: 128
 tags:
 - Enterprise
 - Life
@@ -15,7 +14,9 @@ tags:
 A few weeks back someone told me to watch George Lee's business show, in which our intrepid economist ventured to Silicon Valley to find out what the magic sauce is, and bring some back.
 
 For those outside the Emerald Isle, George Lee is a fairly liked celebrity journalist, economist and occasional politician. Having become the voice the populace trust on economics (thanks to an extended time as economics correspondent on the evening news of the national broadcaster, RTE), he got elected to parliament, and then resigned, and now has his very own TV show.
+
 <!-- more -->
+
 George Lee in search of silicon sauce sounded cheesy, but I actually quite enjoyed it.
 
 I don't really know what the average citizen thinks entrepreneurship is, or what they think of it. When people ask me what I do, and I tell them, it seems to make a lot of people uncomfortable, and earns me some weird looks. It's as if people want to ask if I'm having difficulty getting a real job, or if there's some other extraneous reason why I'm forced to do it. In The Social Network the girls asks Sean Parker what he does, and he says "I'm an entrepreneur", she says "You mean you're unemployed." It's a pretty typical exchange.

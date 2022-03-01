@@ -1,22 +1,20 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: true
 date: 2022-02-01 15:13:44+00:00
 layout: post
 link: https://seanblanchfield.com/automating-the-hy367-hy368-smart-radiator-actuator-in-home-assistant/
 slug: automating-the-hy367-hy368-smart-radiator-actuator-in-home-assistant
 title: Automating the HY367 / HY368 Smart Radiator Actuator in Home Assistant
-wordpress_id: 1404
+image: /images/2022/02/hy367.jpg
 tags:
 - Tech
 ---
 
 
 The HY367 and HY368 Smart Radiator Actuators are relatively cheap smart thermostatic valves that you can attach to the radiators in your house, effectively turning each room into an individually-controlled heating zone. They seem to be on sale rebadged as Hysen, Blinli, Moeshouse and Tuya (I think Tuya is probably the real manufacturer). As of February 2020, you can get these for as little as $22 each on AliExpress. Unfortunately, the instruction leaflet that they come with is pretty cryptic and omits some important information. After hours of experimentation, here are some notes that may be useful for anyone else trying to integrate these into Home Assistant.
-<!-- more -->
-![](/images/2022/02/hy367.jpg)
 
-The HY367 in "heat" mode
+<!-- more -->
 
 As background context, my goal is to maintain consistent temperature in each room by turning radiators on or off based on the state of separate temperature sensors in each room. I suspect that the accuracy of regular Thermostatic Radiator Valves (TRVs) are affected by their proximity to the radiator. I think these smart valves are mostly designed for people who want to set a target temperature and let the valve try to manage itself to reach it, but I think that this will have the same issue as regular TRVs: the temperature right next to the radiator is not necessarily the temperature experienced by people using the room. Therefore, I needed to find a way to explicitly open or close these valves from home assistant.
 
@@ -29,11 +27,11 @@ Here are my notes:
     
 *   I have turned on the "childlock" feature, which just locks out the valve buttons and dial after 10 mins of not being touched. Through experimentation, I have discovered that you can bypass the childlock by holding the "boost" button for 10 seconds. It does not appear to be possible to configure the 10 minute inactivity timeout.  
     
-*   It has HVAC modes "heat", "off" and "auto". You can set this via Home Assistant service calls _climate.turn\_on_ (sets it to "heat"), _climate.turn\_off_ (sets it to "off") or via _climate.set\_hvac\_mode_. If set to "auto", it will turn itself on or off as necessary to reach its target temperature. Annoyingly, while it is set to "heat" or "off", it will switch back to "auto" if anything is pressed on the valve itself. Therefore, to keep it working as expected with Home Assistant, I'll need to childlock all the valves so that no one can fiddle with them. I might also set HA to frequently reset the HVAC mode in case it has somehow been switched to auto.  
+*   It has HVAC modes "heat", "off" and "auto". You can set this via Home Assistant service calls `climate.turn_on` (sets it to "heat"), `climate.turn_off` (sets it to "off") or via `climate.set_hvac_mode`. If set to "auto", it will turn itself on or off as necessary to reach its target temperature. Annoyingly, while it is set to "heat" or "off", it will switch back to "auto" if anything is pressed on the valve itself. Therefore, to keep it working as expected with Home Assistant, I'll need to childlock all the valves so that no one can fiddle with them. I might also set HA to frequently reset the HVAC mode in case it has somehow been switched to auto.  
     
 *   The valve state reports 0 - 100, where 0 is closed and 100 is open.  
     
-*   If the HVAC mode is set to "auto", you can use the _climate.set\_temperature_ service to open or close the valve. The valve will open or close as necessary, regardless of the "preset mode". E.g., it will still open/close automatically if "preset mode" is set to "manual". Bluntly, as a Home Assistant user, I think it's best to place "preset mode" into "manual" and then forget that it exists.  
+*   If the HVAC mode is set to "auto", you can use the `climate.set_temperature` service to open or close the valve. The valve will open or close as necessary, regardless of the "preset mode". E.g., it will still open/close automatically if "preset mode" is set to "manual". Bluntly, as a Home Assistant user, I think it's best to place "preset mode" into "manual" and then forget that it exists.  
     
 *   If the HVAC mode is set to "heat" and "preset mode" is set to "manual", then the valve will open and stay open regardless of the current temperature or any target temperature you set.   
     

@@ -1,19 +1,20 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: false
 date: 2014-09-17 08:03:21+00:00
 layout: post
 link: https://seanblanchfield.com/employee-ownership-schemes-ireland/
 slug: employee-ownership-schemes-ireland
 title: Employee Ownership Schemes in Ireland
-wordpress_id: 1227
 tags:
 - Enterprise
 - Ireland
 ---
 
 In this third post in my series covering the budget recommendations that I coordinated at [StartupIreland](http://startupireland.ie), I'm republishing our rundown on the current problems encountered by Irish startups that want to give their employees a stake in the success of the company.
+
 <!-- more -->
+
 This is post number 3 in the series "#StartupIreland Pre-Budget Submissions 2015"
 
 The _TL;DR_ version is that in Ireland, exercising an option to buy shares is deemed to create a benefit-in-kind that is taxed at income tax (up to 54%). This means that when a startup exits, employees get taxed a lot more on their gains than investors or founders, which runs counter to the intended goal of incentivising employee performance. Elaborate alternatives can be set up, but they are expensive and discourage international venture capitalists from getting involved.
@@ -31,11 +32,11 @@ Not only can share ownership plans help startups attract the key staff that they
 
 Unfortunately, there is currently no good way for an Irish startup to offer an employee ownership scheme without triggering unfair taxes for the employee along the way. The three major approaches in current use are outlined below, along with the associated drawbacks.
 
-#### Approach A: Ordinary Shares
+### Approach A: Ordinary Shares
 
 If a startup simply grants ordinary shares to a new employee as part of an incentivisation plan, then the employee immediately faces a taxable benefit-in-kind event. As the shares are not liquid, the employee must spend her savings to pay the extra income tax. Therefore, a grant that was intended to incentivise the employee instead has the effect of costing her money.
 
-#### Approach B: Growth Shares and Flowering Shares
+### Approach B: Growth Shares and Flowering Shares
 
 Some companies are creating new share classes that offer little or no present day value to their holders, but provide the ability to benefit in future increases in share value. These shares can be granted to employees before they have a taxable value. However, when they are disposed of (e.g., when the startup is acquired), the rise in share value is taxed as a capital gain.
 
@@ -50,7 +51,7 @@ Although growth shares and flowering shares can technically achieve the goal of 
 3.  Growth-stage investors may simply require that the extra complexity of this share class be removed before they invest, which results in employee resentment.
     
 
-#### Approach C: Share Options
+### Approach C: Share Options
 
 An alternative strategy is for a company to grant share options to employees under an unapproved share option scheme. These options trigger income taxation when they are exercised. This poses several problems for the employees:
 

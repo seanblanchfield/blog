@@ -1,12 +1,11 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: true
 date: 2011-04-22 13:56:54+00:00
 layout: post
 link: https://seanblanchfield.com/cherokee-admin-tunnel-script/
 slug: cherokee-admin-tunnel-script
 title: Cherokee-admin tunnel script
-wordpress_id: 102
 tags:
 - Code
 - Python
@@ -14,7 +13,9 @@ tags:
 ---
 
 Cherokee is now my favorite web server, having all the performance of Nginx, but designed for usability. The addition of the market feature has made it possible to leave behind the headaches of re-learning the peculiarities of all of your favorite pieces of software every time you set up a server. For example, I moved this blog to EC2 a while back. I installed Cherokee automatically from the repositories, then used the Cherokee market to install both WordPress and phpmyadmin automatically. Lovely.
+
 <!-- more -->
+
 To manage the Cherokee server you use the cherokee-admin utility through a web UI. However, to fire it up you normally have to:
 
 1.  SSH to the server

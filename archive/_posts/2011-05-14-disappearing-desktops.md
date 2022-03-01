@@ -1,12 +1,11 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: true
 date: 2011-05-14 17:44:39+00:00
 layout: post
 link: https://seanblanchfield.com/disappearing-desktops/
 slug: disappearing-desktops
 title: Disappearing Desktops
-wordpress_id: 153
 tags:
 - Tech
 ---
@@ -14,7 +13,9 @@ tags:
 It occurred to me recently how terrible it must be to be Microsoft (a common thought).
 
 I realized that the Windows user experience is essentially unchanged since I got my first PC, 15 years ago. It ran Windows 95, and Windows remained my OS of choice until 2008. Except for the occasional special effect, the Windows experience remained more or less the same.
+
 <!-- more -->
+
 Of course, although Windows looks pretty much the same as ever, it has grown under the hood. I remember installing Windows 95 into about 50MB on disk, and it running fast on my 133Mhz Pentium with 16 MB memory. Windows 7 wants 8 times the speed, 64 times the memory and 250 times the disk space. While the elegant and robust OSX redefined usability expectations, and projects like Compiz blew geeks away with its 3D accelerated desktop, Windows just piled on weight.
 
 But now, Microsoft is facing a whole new kind of failure. The new lightweight operating systems of phones, tablets and netbooks are making their forebears look very fat. They demonstrate that a modern operating system as small as iOS or Android can be extremely usable and simultaneously look great (I'm actually reminded of the UI on those computers in Star Trek).

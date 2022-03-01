@@ -1,5 +1,5 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: true
 date: 2008-06-25 21:24:44+00:00
 excerpt: Unfortunately, it always seems like no one with the power to improve things
@@ -8,7 +8,6 @@ layout: post
 link: https://seanblanchfield.com/im-a-complainer/
 slug: im-a-complainer
 title: I'm a complainer
-wordpress_id: 763
 ---
 
 I get told that I like complaining. I guess this post might vindicate that. hmmm.
@@ -16,7 +15,9 @@ I get told that I like complaining. I guess this post might vindicate that. hmmm
 Anyway, I don't think I like complaining just for its own sake. I just think it's better than not complaining when something stupid is unreasonably frustrating. Better than bottling it up anyway.
 
 Here's one example (warning: complaining below).
+
 <!-- more -->
+
 I'm trying to apply for a learners driver permit. I have applied for, and done my Driver Theory Test (on [dtts.ie](http://www.dtts.ie/)). That was a positive experience, apart from having to figure out that there's a separate organisation with their own website you need to go to.
 
 Now, I'm trying to put together my application. This needs to include a bunch of things:
