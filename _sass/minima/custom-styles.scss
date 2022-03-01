@@ -43,6 +43,12 @@ ul.pager li {
     margin: 5px;
 }
 
+// Document-wide CSS variables.
+body {
+    // Overridden by document where a featured image is available on the post.
+    --featured-image: #{$default_featured_image};
+}
+
 // Style post excerpts
 .post-list {
     margin-left: 0;
@@ -63,27 +69,17 @@ ul.pager li {
         width: 100%;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-
-        > header.featured-image {
+        
+        > header {
             background-image:   linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 1.0)),
-                            var(--featuredImage);
+                            var(--featured-image);
             background-size: cover;
             background-position: center;
             display: flex;
             flex-direction: column;
-            justify-content: end;
-            padding: 1rem;
-        }
-        > header:not(.featured-image) {
-            background-image:   linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 1.0)),
-                            $default_featured_image;
-            background-color: black;
-            display: flex;
             flex: 1;
-            flex-direction: column;
             justify-content: end;
             padding: 1rem;
-
         }
         a.post-link {
             text-decoration: none;
@@ -117,7 +113,7 @@ ul.pager li {
 // Style post headers with the featured image.
 header.featured-image {
     background-image:   linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 1.0)),
-                        var(--featuredImage);
+                        var(--featured-image);
     background-size: cover;
     background-position: center;
     display: flex;
