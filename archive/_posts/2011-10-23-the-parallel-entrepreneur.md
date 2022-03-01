@@ -1,12 +1,12 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: true
 date: 2011-10-23 14:24:00+00:00
 layout: post
 link: https://seanblanchfield.com/the-parallel-entrepreneur/
 slug: the-parallel-entrepreneur
 title: The Parallel Entrepreneur
-wordpress_id: 437
+image: /images/2011/10/parallel.gif
 tags:
 - Enterprise
 - Ireland
@@ -14,10 +14,10 @@ tags:
 ---
 
 My first shot at business was early in college, making simple websites for small companies. It was the first step on a career of company creation. Many years later I’m proud of never having had a real job, and prouder of the startups that turned into real businesses. Over the last year, I’ve begun to think about “_startuping_” more scientifically, with a focus on managing risk. Under the best of conditions most startups will fail due to any number of unpredictable intrinsic or external issues. This is all in the game, as they say in [The Wire](http://www.youtube.com/watch?v=cryMVK1PwuQ), but these learning experiences can take up a lot of time. Time is money, and if you’re an entrepreneur, its your own money, not someone else’s. I started [DemonWare](http://demonware.net) 10 years ago, I hope to repeat that success many more times. I’m establishing a strategy to help me do that. In this post, I want to talk about the risk equation facing entrepreneurs, nail down a few facts that we can steer by, and propose a new way to start companies.
-<!-- more -->
-![](/images/2011/10/parallel.gif "parallel")
 
-### What’s a Startup?
+<!-- more -->
+
+## Let's define "Startup"
 
 First of all, let’s get a clear definition. A startup is not a business in the normal sense of the word. [Wikipedia defines it](http://en.wikipedia.org/wiki/Startup_company) as a company without an operating history, but this definition doesn’t contribute much. A startup may be incorporated and be a company in the legal sense, but operationally it is still very different from a regular business. [Quora has a much more useful definition](http://www.quora.com/Startups?q=start), drawn from [Four Steps to the Epiphany](http://www.amazon.com/Four-Steps-Epiphany-Steven-Blank/dp/0976470705):
 
@@ -25,7 +25,7 @@ First of all, let’s get a clear definition. A startup is not a business in the
 
 It’s a group of people searching for a profitable business model, whereas a regular business is a group that already has one. This distinction is liberating. It allows us to focus on how best to conduct that search, instead of being distracted by the many issues faced later in the business life cycle (the kind that [MBA programmes might address](http://en.wikiversity.org/wiki/School:Business/Masters_of_Business_Administration#MBA_Core_Learning_Projects)). Perhaps the most important result of the distinction is the “_Fail Fast_” doctrine. It's best to call off the search if there’s no business model there, and try a different idea instead. A failed business is a bad thing, but a failed startup is a good thing. Fail fast to succeed sooner, stigma not included.
 
-### The Unwitting Entrepreneur
+## The Unwitting Entrepreneur
 
 > The trouble with opportunity is that it always comes disguised as hard work. - Anonymous
 
@@ -37,25 +37,29 @@ The unwitting entrepreneur blunders into a career of unmeasured risk, armed only
 
 For my part, I believe that I am near the end of this object lesson. Having moved on from [DemonWare](http://demonware.net), I’ve spent 3 years on numerous new projects, but the “next big thing” remains elusive. I am ready to get rigorous and scientific about the search for the next success.
 
-### The Subsisting Entrepreneur
+## The Subsisting Entrepreneur
 
-There’s a lot to love about being an entrepreneur: being your own boss, lack of bureaucracy, working on things you’re passionate about, the challenge, excitement and constant learning. However, I’d like to focus for a moment on something _quantifiable_: the money. To compensate for the risk and unpredictability of this lifestyle you want a decent chance of significantly exceeding the income you would stand to make in industry. However, some quick work on a napkin can show that this is harder than most would acknowledge. This puts some perspective on the cost of wasting time on searches that are unlikely to be fruitful. \[caption id="attachment\_446" align="alignnone" width="600" caption="Example Entrepreneurial Earnings"\]![Example Entrepreneurial Earnings](/images/2011/10/chart_1-2.png "Example Entrepreneurial Earnings")\[/caption\]
+There’s a lot to love about being an entrepreneur: being your own boss, lack of bureaucracy, working on things you’re passionate about, the challenge, excitement and constant learning. However, I’d like to focus for a moment on something _quantifiable_: the money. To compensate for the risk and unpredictability of this lifestyle you want a decent chance of significantly exceeding the income you would stand to make in industry. However, some quick work on a napkin can show that this is harder than most would acknowledge. This puts some perspective on the cost of wasting time on searches that are unlikely to be fruitful. 
+
+![Example Entrepreneurial Earnings](/images/2011/10/chart_1-2.png){: .captioned}
 
 In this first chart, I made some assumptions based on the current Irish economy - the one I’m most familiar with. I assumed that the entrepreneur takes a basic subsistence salary that nets out at €33K post tax. I assumed that it takes 5 years to bring a startup to acquisition, that there’s a lock in period of 2 years, and that it takes 3 more years to find the next successful idea. This results in a startup cycle of 10 years. I assumed that given one business partner, an ESOP and dilution by investors, the entrepreneur holds 22.5% of the company at the point of acquisition. And I assumed that the average valuation at acquisition was €5 million - not a newsworthy amount, but nonetheless I think probably an average amount. As we can see, the entrepreneur’s total earnings accumulate steadily from the basic salary, and jump every 10 years or so thanks for a successful acquisition.
 
-Next, I assumed that our entrepreneur can make an industry salary of about €100K gross (once again, this is very dependent on the country in question, but might be in the ballpark in Ireland for an experienced technologist). I assumed that Irish tax was being paid, and that a salary raise of about 5% was awarded each year. When we plot these together, we see that the entrepreneur who quit and went to industry is coming out slightly ahead. \[caption id="attachment\_447" align="alignnone" width="600" caption="Example Entrepreneurial vs Industry Earnings"\]![Example Entrepreneurial vs Industry Earnings](/images/2011/10/chart_2-1.png "Example Entrepreneurial vs Industry Earnings")\[/caption\]
+Next, I assumed that our entrepreneur can make an industry salary of about €100K gross (once again, this is very dependent on the country in question, but might be in the ballpark in Ireland for an experienced technologist). I assumed that Irish tax was being paid, and that a salary raise of about 5% was awarded each year. When we plot these together, we see that the entrepreneur who quit and went to industry is coming out slightly ahead. 
+
+![Example Entrepreneurial vs Industry Earnings](/images/2011/10/chart_2-1.png){: .captioned}
 
 I admit, that there are many assumptions in this model, but I promise you this: I didn’t fiddle with any of them to make the charts look right. This is just what came out at first blush. You might take exception to the low exit valuation of €5 million, but please remember that you only read about the high valuations in the news. Newsworthy events are implicitly out of the ordinary, and the more usual exit valuations are likely to be more... well, _average_.
 
 One thing I think everyone should be able to agree on is that a simple back-of-envelope calculation like this shows us that we need to work hard to make the entrepreneurial lifestyle a good financial choice. We need to get the mean time between acquisitions down.
 
-### The Lean Entrepreneur
+## The Lean Entrepreneur
 
 Anyone who follows the leading startup blogs will recognise a serious shift in how startups are being run, largely stemming from the huge reduction in operating costs offered by new technology over the last 2 decades. Nonetheless, many people are still in the old mode, often encouraged by outdated investors or advisors. Before moving on, it’s necessary to debunk these traditional expectations.
 
 [Wikipedia has helpfully provided](http://en.wikipedia.org/wiki/File:Startup_financing_cycle.svg) the following graphic of the funding cycle. This kind of company starts with 6-12 months work researching and writing a business plan. Investors then successively fund the company until it reaches break-even (the “seed” phase). Bigger investors then successively hand over millions until it gets sold (or IPOs), making the investors 10 times their money back.
 
-\[caption id="attachment\_453" align="alignnone" width="500" caption="Traditional Startup Financing"\][![Traditional Startup Financing](/images/2011/10/500px-Startup_financing_cycle.svg_1.png "Traditional Startup Financing")](http://en.wikipedia.org/wiki/File:Startup_financing_cycle.svg)\[/caption\]
+![Traditional Startup Financing](/images/2011/10/500px-Startup_financing_cycle.svg_1.png){: .captioned}
 
 Whether or not this story was ever actually representative, it certainly is not anymore. Seed-level investors have realized (at least unconsciously) that times have changed, and are largely unwilling to invest in a pre-market startup. The reality is that it is now possible to get an internet idea to market on the back of personal savings. These startups are lower risk for both their founders and new investors, and their existence make the traditional ones very unattractive indeed.
 
@@ -76,7 +80,7 @@ Take a hypothetical startup that is building cutting-edge chairs and selling the
 
 The Lean Startup is incompatible with lots of fine ideas, which must be shelved. However, you will be able to test the ones that remain quickly, at low cost.
 
-### The Parallel Entrepreneur
+## The Parallel Entrepreneur
 
 So far, I’ve been talking about the serial entrepreneur, who moves from one idea to the next, focusing on each as hard as possible. The problem with serial entrepreneurialism, even the _Lean_ variety, is that it’s too slow. Even with the best the Lean movement can offer, it takes years to hit a good idea, and many more years to bring it to a saleable point. It might shave 2-3 years off the startup cycle, but it still leaves time for just a few big ideas in the average career.
 
@@ -107,12 +111,13 @@ We will need to keep the portfolio well-pruned, killing any ideas that have prov
 
 There are clearly many details to be worked out here: when to kill an idea, when to spin it out, how to split time between developing new ideas and managing existing ideas (to mention a few). These are all interesting and tractable problems that I’m sure we’ll figure out, and that I’ll have fun blogging about.
 
-### The Problematic Entrepreneur
+## The Problematic Entrepreneur
 
 Unfortunately, the parallel entrepreneur has some new problems. Working on many ideas simultaneously means that none get your full attention. Meanwhile, investors will understandably want 100% commitment. Another problem is that developing each idea part-time will make it difficult to work with different collaborators. Unequal commitment to a project will likely breed mistrust among those working on it, as well as difficulty establishing what a fair ownership split would be.
 
 I can live with having to work harder to convince investors, but losing opportunities to collaborate with others is hard to swallow. Great things come from working with great people, so I want to find a way to easily work with other entrepreneurs while maintaining a parallel approach.
 
-### In our next episode...
+## In our next episode...
 
-![join the startup cooperative](/images/2011/12/join-the-communist-party-poster.jpg "join the startup cooperative") I believe it would be possible for a cooperative organisation of entrepreneurs to manage a collective portfolio of ideas and companies. Such a co-op would not only make it possible to work on more ideas with more people, but it could make each idea easier to investigate. An umbrella organization, owned by its members, creates opportunities to greatly improve collaboration and streamline the development of ideas. This may sounds wacky, but I’ve already found supporters. Stay tuned for my next post, [The Startup Co-op](https://seanblanchfield.com/2011/12/the-startup-cooperative/).
+![join the startup cooperative](/images/2011/12/join-the-communist-party-poster.jpg "join the startup cooperative"){: .captioned .right}
+I believe it would be possible for a cooperative organisation of entrepreneurs to manage a collective portfolio of ideas and companies. Such a co-op would not only make it possible to work on more ideas with more people, but it could make each idea easier to investigate. An umbrella organization, owned by its members, creates opportunities to greatly improve collaboration and streamline the development of ideas. This may sounds wacky, but I’ve already found supporters. Stay tuned for my next post, [The Startup Co-op]({% link archive/_posts/2011-12-29-the-startup-cooperative.md %}).

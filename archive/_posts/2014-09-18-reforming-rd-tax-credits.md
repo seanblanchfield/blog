@@ -1,40 +1,41 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: false
 date: 2014-09-18 08:03:18+00:00
 layout: post
 link: https://seanblanchfield.com/reforming-rd-tax-credits/
 slug: reforming-rd-tax-credits
 title: Reforming R&D Tax Credits
-wordpress_id: 1230
 tags:
 - Enterprise
 - Ireland
 ---
 
 In this fourth (and final) post in my series covering the budget recommendations that I coordinated at [StartupIreland](http://startupireland.ie), I'm talking about our recommendations for the R&D tax credits. Startup companies are R&D wunderkind, but they are avoiding this tax break due to the cost and uncertainty of accessing it. This means that scaled up tech companies (e.g., international IDA clients) are benefiting from this tax break, whereas younger home-grown tech companies (Enterprise Ireland clients) are not. We should level this playing field.
+
 <!-- more -->
+
 This is the final and fourth post in the series "#StartupIreland Pre-Budget Submissions 2015"
 
 ## Recommendation: Single-installment R&D Tax Credits
 
-#### Background
+### Background
 
 Many high impact startup companies are innovating with new technologies and are eligible for the R&D Tax Credits. This credit is refunded in three annual installments following the accounting period in which the R&D work was performed.
 
 A typical startup struggles with cashflow while it performs the research and development associated with its initial product. By the time that the startup can begin to benefit from R&D tax refunds, its cashflow difficulties will often have either disappeared, or have put it out of business.
 
-#### Recommendation
+### Recommendation
 
 Increase the survival rate of startups by permitting them to claim refunds against R&D Tax Credits in a single installment, during the same accounting period that the R&D expenditure was incurred.
 
 ## Recommendation: Clarify R&D Guidelines for Software Development
 
-#### Background
+### Background
 
 A great many of Ireland’s high impact startups are engaged in the delivery of digital products and services. The core activity of most of these companies is software development, which is a highly experimental process. The current R&D guidelines are hard to interpret with respect to software development activities, resulting in many startups that avoid claiming the R&D tax credit when they may in fact be eligible, for fear of an expensive audit.
 
-#### Recommendation
+### Recommendation
 
 Launch a consultative process with Irish-based software startups to define clear guidelines on what software development activities constitute eligible R&D, and specify an acceptable level of supporting documentation that fits within the modern software development process.
 

@@ -1,18 +1,19 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: true
 date: 2008-09-02 21:27:46+00:00
 layout: post
 link: https://seanblanchfield.com/o2-ireland-overcharging-me-for-data-roaming/
 slug: o2-ireland-overcharging-me-for-data-roaming
 title: O2 Ireland Overcharging Me for Data Roaming
-wordpress_id: 23
 tags:
 - Life
 ---
 
 I been roaming with my iPhone in France and Italy. O2 Ireland's data roaming charges are preposterous, but I knew that. The EU has already regulated the cost of voice charges (see Regulation (EC) No 717/2007, [Wikipedia entry here](http://en.wikipedia.org/wiki/Regulation_on_roaming_charges_within_the_European_Union)). Apparently they are currently considering something similar for data and SMS charges.
+
 <!-- more -->
+
 Last month, I was still a little blown away by the total roaming charge, did a few calculations, and discovered that I was being significantly overcharged.
 
 This month, I noticed exactly the same thing, with exactly the same proportional overcharge. Last month they just credited me back the money. This month, they've lodged it as a technical issue, and told me that I'll be credited back during the next few days, when the issue is dealt with by the tech team.

@@ -1,19 +1,21 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: true
 date: 2011-05-15 17:32:33+00:00
 layout: post
 link: https://seanblanchfield.com/the-secret-history-of-eurovision/
 slug: the-secret-history-of-eurovision
 title: The secret history of Eurovision
-wordpress_id: 184
 tags:
 - Life
-- disinformation
 ---
 
 Last night the Eurovision Song Contest made its yearly onslaught on our ears, with Twitter and Facebook providing up-to-date information about the questionable tastes of friends and old acquaintances. It all starts innocently with an ironic post or two, but 20 posts later too many good people had destroyed their hard-earned credibility by providing their own blow-by-blow accounts of the action to the denizens of the social web.
+
 <!-- more -->
+
+> Author's Note, 11 years later: I'm not sure what state of mind or inebriation I was in when I wrote this, but I will leave it online because it would be dishonest to delete it, and it is kind of fun. But please refer to the [Wikipedia article](https://en.wikipedia.org/wiki/Eurovision_Song_Contest#Origins_and_history) on the Eurovision Song Contest if you want a version of these historical events that contains a little less disinformation.
+
 I was surprised that no one mentioned the Eurovision's shady origins in the smoky clubs of Cold War cabals in Switzerland and Monico. As the countries of Europe rebuilt themselves after WWII, and the rock-n-roll spectre of the sixies loomed large ahead, heralded by harbingers of pelvic gyration, there were forces working tirelessly to foster the creation of a new superstate.
 
 As would be expected at this high level of intrigue, nothing was left to chance. A two-pronged strategy was made, with parallel plans put into action. Should one fail, the other would succeed. Plan A was to bind Europe together through the commerce of heavy industry. Initially dealing in coal and steel, commie arch-villian Mr. Spaak had bigger ambitions, establishing the international "_Euratom_" group to seize control of the continent's atomic energy facilities. Operating from Val-Duchess castle in Belgium, Euratom covertly incited the Suez Crisis in 1956, ruthlessly exposing Europe's energy vulnerability, and permitting Spaak to trounce French political opposition and force the hands of all the large economies as they signed his "_Treaty of Rome_", nailing their future hopes to the mast of his supranational country-flotilla - the "EEC".

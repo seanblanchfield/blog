@@ -1,20 +1,24 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: false
 date: 2014-06-15 16:47:23+00:00
 layout: post
 link: https://seanblanchfield.com/scale-investor/
 slug: scale-investor
 title: The Scale Investor
-wordpress_id: 1163
+image: /images/2014/06/file0001353856202.jpg
 tags:
 - Enterprise
 - Tech
 ---
 
-I’ve written before about the [venture chasm](https://seanblanchfield.com/the-venture-chasm/) - the widening gulf between the founders and the funds, a gap that continues to widen as technology startups figure out how to get more done with less money. This idea occurred to me one night at one of our regular secret _Techpreneurs_ meetups in Dublin. When I asked the room of tech CEOs how many were venture funded, or expected to be, only half the hands went up. Numbered among the other half were some of the best companies in the room. _What was going on?_
+I’ve written before about the [venture chasm]({% link archive/_posts/2013-07-08-the-venture-chasm.md %}) - the widening gulf between the founders and the funds, a gap that continues to widen as technology startups figure out how to get more done with less money. This idea occurred to me one night at one of our regular secret _Techpreneurs_ meetups in Dublin. When I asked the room of tech CEOs how many were venture funded, or expected to be, only half the hands went up. Numbered among the other half were some of the best companies in the room. _What was going on?_
+
 <!-- more -->
-\[caption id="attachment\_1175" align="alignright" width="500"\]![A pile of burning dollars](/images/2014/06/file0001353856202.jpg) A typical venture investment outcome\[/caption\] I asked that question in 2012 as I was contemplating a partnership that would turn our incubator into an EU dealflow funnel for a US VC firm. Many of the companies on my list of potential investment deals had ended up outside the venture capital system. Today, I can clearly see how that happens. Our incubator has been swallowed by its first spinout, [PageFair](http://pagefair.com "PageFair"), and we’ve got unbelievable traction. Like other lucky CEOs, I’m faced with a tough choice between two full-time jobs: selling to customers or selling to investors. The former sounds like a more honest living.
+
+![A typical venture investment outcome](/images/2014/06/file0001353856202.jpg){: .captioned .right}
+
+I asked that question in 2012 as I was contemplating a partnership that would turn our incubator into an EU dealflow funnel for a US VC firm. Many of the companies on my list of potential investment deals had ended up outside the venture capital system. Today, I can clearly see how that happens. Our incubator has been swallowed by its first spinout, [PageFair](http://pagefair.com "PageFair"), and we’ve got unbelievable traction. Like other lucky CEOs, I’m faced with a tough choice between two full-time jobs: selling to customers or selling to investors. The former sounds like a more honest living.
 
 ## The Traditional Courtship Dance
 

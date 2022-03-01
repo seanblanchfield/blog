@@ -1,25 +1,26 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: true
 date: 2021-01-20 13:53:19+00:00
 layout: post
 link: https://seanblanchfield.com/the-road-to-native-es6-spas/
 slug: the-road-to-native-es6-spas
 title: The road to native ES6 SPAs
-wordpress_id: 1316
+image: /images/2021/01/road.jpg
 tags:
 - Code
 ---
 
 **TL;DR**. _In this post I go on a major rant against the Javascript/Babel/Webpack/Node development stack, and then talk about the problems I'm facing in my attempt to jettison that stack and instead make my javascript application run natively in web browsers. (Run javascript in a browser? Revolutionary, I know!)_
 <!-- more -->
+
 ## The Rant
 
 I started professional software development writing C++ for video games on strange platforms like Playstation 2. It was a world of compilers, linkers, cross-compilers, symbol stripping, tedious debugging tools, and frustrating build times. For most of the 2010s I thought this was all ancient history (these days even embedded systems benefit from high-level languages). But these arcana are no longer anachronistic to the javascript developers of 2021, who toil against the same challenges, just with new names. Instead of compilers and cross-compilers, we have transpilers (which, like a cross between a compiler and a Star Trek transporter, sometimes have catastrophic accidents). Instead of linkers we have "bundlers", which perform roughly equivalent roles. Instead of compiling with symbols, we include source maps. Instead of upgrading our workstations so we can build an exe, we are upgrading our CI hardware so we can build a Javascript bundle.
 
-In fact, the current situation is even more dire. In the old days, we would be deeply suspect of any 3rd party library that tried to bring in its own dependencies. The few indirect dependencies that ended up compiled into our products were subjected to the same scrutiny as the direct dependencies that required them. Contrast that to your current "_packages-lock.json_" file or "_node\_modules_" directory.
+In fact, the current situation is even more dire. In the old days, we would be deeply suspect of any 3rd party library that tried to bring in its own dependencies. The few indirect dependencies that ended up compiled into our products were subjected to the same scrutiny as the direct dependencies that required them. Contrast that to your current `packages-lock.json` file or `node_modules` directory.
 
-Let me tell you about _my_ "node\_modules" directory. For a vanilla Vue.js SPA project with recommended webpack/babel build pipeline, configured with Vuex and Vue Router, Vuetify, plus 16 additional dependencies that I intentionally added for UI features, running "npm install" creates 509Mb of dependencies across 1185 packages.
+Let me tell you about _my_ `node_modules` directory. For a vanilla Vue.js SPA project with recommended webpack/babel build pipeline, configured with Vuex and Vue Router, Vuetify, plus 16 additional dependencies that I intentionally added for UI features, running "npm install" creates 509Mb of dependencies across 1185 packages.
 
 What are these 1185 dependencies? I don't know. What are they doing? I can't afford the time to find out. They mostly seem to be dev dependencies, so although they could be up to all kinds of [no good](https://www.theregister.com/2018/11/26/npm_repo_bitcoin_stealer/), it's mostly me that's at risk (but by extension, any of them could probably try to inject code into the final bundle, which would be executed by end-users). I am also nervous that some of these dependencies (which I didn't put there), throw deprecation and security warnings when I do an "npm install".
 
@@ -35,7 +36,7 @@ For now, let me draw a line under the modern Node.js/webpack/babel SPA build pip
 
 There must be a better way. Why can't we build a real SPA using vanilla ES6 in the web browser? Ruby on Rails creator DHH agrees:
 
-https://twitter.com/dhh/status/1334428951180173313
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Native ES6, with module support, in browsers is the most exciting development in JavaScript since the advent of transpiling. And it’s the opposite! A return to JavaScript that doesn’t require a horrendously complex tool chain and build tools is 😍</p>&mdash; DHH (@dhh) <a href="https://twitter.com/dhh/status/1334428951180173313?ref_src=twsrc%5Etfw">December 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 The basis of this argument is that the Node.js/Webpack/Babel build pipeline for front-end javascript was initially necessary because:
 

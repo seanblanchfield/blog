@@ -1,12 +1,11 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: true
 date: 2011-04-24 12:07:09+00:00
 layout: post
 link: https://seanblanchfield.com/logging-unhandled-exceptions-in-actionscript/
 slug: logging-unhandled-exceptions-in-actionscript
 title: Logging Unhandled Exceptions in Actionscript
-wordpress_id: 108
 tags:
 - Actionscript3
 - Code
@@ -14,7 +13,9 @@ tags:
 ---
 
 When an error occurs in your flash application, and is not handled, the Flash runtime will cross its fingers, ignore it, and try to struggle on. Unfortunately, an unhandled error will probably leave your client in an unstable state, and ultimately compromise the user experience in a way that may be very difficult to diagnose.
+
 <!-- more -->
+
 What you really want to do is have a default handler that will receive any such exceptions, that then logs them along with useful info (such as a stack trace) to your server for later analysis. Unfortunately, the ability to register a default handler like this is only supported in the 10.1 runtime and later, which only about [85% of clients have as of this writing](http://www.adobe.com/products/player_census/flashplayer/version_penetration.html). Nonetheless, 85% of unhandled errors caught is better than none, so its worth doing.
 
 The main difficulty implementing this is that the relevant API ([LoaderInfo.uncaughtErrorEvents](http://help.adobe.com/en_US/FlashPlatform/beta/reference/actionscript/3/flash/events/UncaughtErrorEvent.html)) is only available when you are targeting your build at the 10.1 runtime, but you probably want to target 10.0 to benefit from its higher penetration. The trick to avoiding compiler errors is to only access `uncaughtErrorEvents` _dynamically_.
@@ -31,23 +32,23 @@ protected function recordUncaughtErrors(logger:Function):void
     {
         // Prevent the default error handling behavior for unhandled errors (e.g., ugly stack trace).
         event.preventDefault();
-        var type\_name:String = ObjectUtil.getClassInfo(event\['error'\]).name;
+        var type_name:String = ObjectUtil.getClassInfo(event['error']).name;
         // Figure out if it is an Error, ErrorEvent or randomly thrown Object.
         if(event.hasOwnProperty('error'))
         {
-            if(event\['error'\] is Error)
+            if(event['error'] is Error)
             {
-                var error:Error = event\['error'\];
+                var error:Error = event['error'];
                 logger("Uncaught Error", error.name, error.toString(), error.getStackTrace());
             }
-            else if(event\['error'\] is ErrorEvent)
+            else if(event['error'] is ErrorEvent)
             {
-                var error\_event:ErrorEvent = event\['error'\];
-                logger("Uncaught ErrorEvent", type\_name, error\_event.type);
+                var error_event:ErrorEvent = event['error'];
+                logger("Uncaught ErrorEvent", type_name, error_event.type);
             }
             else
             {
-                logger("Thrown Object", type\_name, "");
+                logger("Thrown Object", type_name, "");
             }
         }
     }
@@ -55,9 +56,9 @@ protected function recordUncaughtErrors(logger:Function):void
     if(this.contextView.root.loaderInfo.hasOwnProperty('uncaughtErrorEvents'))
     {
         // Get an instance of the uncaughtErrorEvents object. We do this in a way that will compile in runtimes < 10.1.
-        var uncaughtErrorEvents:IEventDispatcher = IEventDispatcher(this.contextView.root.loaderInfo\["uncaughtErrorEvents"\]);
+        var uncaughtErrorEvents:IEventDispatcher = IEventDispatcher(this.contextView.root.loaderInfo["uncaughtErrorEvents"]);
         // Have to register for the literal string name of the event, because we cannot import
-        // UncaughtErrorEvent to access its UNCAUGHT\_ERROR property.
+        // UncaughtErrorEvent to access its UNCAUGHT_ERROR property.
         uncaughtErrorEvents.addEventListener("uncaughtError", uncaughtErrorHandler);
     }
 }

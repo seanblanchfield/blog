@@ -1,12 +1,11 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: false
 date: 2012-11-18 14:14:23+00:00
 layout: post
 link: https://seanblanchfield.com/sunday-independent-18-november-2012/
 slug: sunday-independent-18-november-2012
 title: 4G to Empower Indigenous Digital Industry
-wordpress_id: 794
 tags:
 - Enterprise
 - Ireland
@@ -14,11 +13,14 @@ tags:
 - Tech
 ---
 
+The following article was published in the [Sunday Independent](www.independent.ie) today, 18th November 2012.
+
 Although both our economy and our people are depressed, there was a ray of light in this week’s auction of the part of the radio spectrum necessary for next-generation “4G” mobile networks. Our talented twenty and thirty year olds are joining the diaspora abroad, and the majority of my own circle of friends have fled, only to pop back up on Facebook from new locations such as Vancouver, New York, London and Japan. What’s particularly annoying are their Facebook updates, such as “ordered 100Mbps home internet last night for $30, installation finished this morning”.
+
 <!-- more -->
+
 Internet access of this scale, affordability and ease has been an Irish dream for over ten years, but for all our talk of our “digital economy”, it is one we have yet to realise. In Ireland, over 70% of us settle for broadband connections slower than 10Mbps. Although we encourage all our businesses to go online, it takes weeks to get one of these connections installed.
 
-I wrote the following article, which was published in the [Sunday Independent](www.independent.ie) today, 18th November 2012.
 
 The broader economy may be tanking, but the technology sector is hotter than ever. We all know we’re a second home to many of the world’s top software companies (Microsoft, Apple, Google, IBM, Intel, SAP, Accenture, HP etc.), making us one of the biggest software exporters in the world. What’s more exciting is the story we haven’t heard yet. We have a large crop of indigenous technology startups on the rise, some of whom may be the international giants of tomorrow. Startupwiki.ie alone lists over 300 companies, most of which did not exist five years ago. These represent just a fraction of the total, perhaps up to a thousand new tech-driven companies started by talented graduates who have chosen not to leave, but to stand their ground and build a home-grown industry. The previously vacant office space above the shops of Dublin is rapidly refilling, helped by a steady inflow of international talent and investment. With the calendar full of more entrepreneurial and technology events than it is possible to attend, it is a shame that one of the most common discussions is still “how do I get a good internet connection?”.
 

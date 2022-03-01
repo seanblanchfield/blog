@@ -1,12 +1,11 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: false
 date: 2013-11-03 20:21:03+00:00
 layout: post
 link: https://seanblanchfield.com/awkward-bedfellows-xero-aib/
 slug: awkward-bedfellows-xero-aib
 title: 'Awkward Bedfellows: Xero and AIB'
-wordpress_id: 1037
 tags:
 - Code
 - Enterprise
@@ -16,10 +15,14 @@ tags:
 ---
 
 In [PageFair](http://pagefair.com) I'm striving to automate as much admin as possible. This means figuring out for once and for all how best to handle startup accountancy in Ireland, stretching all the way from receipts and invoicing all the way up to on-demand management accounts and cashflow projections. After much searching I found [Xero](http://xero.com), a terrific cloud-based accountancy system. Getting it to play nice with AIB banking was another matter.
+
 <!-- more -->
+
 [Allied Irish Bank](http://aib.ie) is the bank we chose, and as our expectations of Irish banks go, we're largely happy. A big shout out to business centre staff, who have always worked hard to help us out.
 
-![organgrinder](/images/2013/11/organgrinder.jpg)However, AIB's "Internet Business Banking" is a typically confusing online banking system, with theatrically obtuse security features that succeed at frustrating the user instead of the fraudster. At least it more or less works, unlike [Bank of Ireland](http://boi.ie)'s corresponding system (which I've never successfully used without having to telephone a helpdesk to decipher unhelpful error codes). I've heard that Ulster Bank's online banking system is great, but they suffer from a lack of branches - handy for those inevitable occasions you actually need to see someone.
+![organgrinder](/images/2013/11/organgrinder.jpg){: .right }
+
+However, AIB's "Internet Business Banking" is a typically confusing online banking system, with theatrically obtuse security features that succeed at frustrating the user instead of the fraudster. At least it more or less works, unlike [Bank of Ireland](http://boi.ie)'s corresponding system (which I've never successfully used without having to telephone a helpdesk to decipher unhelpful error codes). I've heard that Ulster Bank's online banking system is great, but they suffer from a lack of branches - handy for those inevitable occasions you actually need to see someone.
 
 When using Xero you can configure it to read from a bank feed so that it stays automatically up to date with your account. Whatever giant software megaconsultancy built AIB's online banking systems saw fit to equip _personal banking_ with this feature, but not the business banking system. Go figure.
 

@@ -1,5 +1,5 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: true
 date: 2008-04-03 21:22:22+00:00
 excerpt: I decided that the time had come to figure out a proper solution to the growing
@@ -8,7 +8,6 @@ layout: post
 link: https://seanblanchfield.com/network-attached-storage/
 slug: network-attached-storage
 title: Network Attached Storage
-wordpress_id: 762
 tags:
 - NAS
 ---
@@ -16,7 +15,9 @@ tags:
 About a month ago, I decided that the time had come to figure out a proper solution to the growing amount of media that I want to have accessible on my network.
 
 I suppose the main driver for this is actually my XBMC media center. Previously, to watch or listen to something on the media center, I'd connect the appropriate portable USB drive to my laptop, share out the appropriate directory, and navigate to it from XBMC.
+
 <!-- more -->
+
 That was fine and all, but kind of kludgy. Things I didn't like about it were:
 
 *   Having to turn on my laptop and a portable HDD, as well as the Xbox and TV whenever I wanted to listen to some music or watch a movie.

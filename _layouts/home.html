@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="home">
+  {% if page.title and page.dir != "/" %}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {% endif %}
+
+  {{ content }}
+
+
+  {% if paginator.posts.size > 0 %}
+    <ul class="post-list">
+      {% for post in paginator.posts %}
+      <li>
+        <header class="{% if post.image %}featured-image{% endif %}"  {% if post.image %}style="--featuredImage: url('{{ post.image }}');"{% endif %}>
+          <span class="post-meta">{{ post.date | date: site.minima.date_format }}</span>
+          <h2>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h2>
+        </header>
+        <div class="excerpt">
+          {{ post.excerpt }}
+          <div class="read-more">
+            <a href="{{ post.url | relative_url }}">Read more</a>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+
+    {% if paginator.total_pages > 1 %}
+  <ul class="pager">
+      {% if paginator.previous_page %}
+        <li class="previous">
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts </a>
+        </li>
+      {% endif %}
+      {% if paginator.next_page %}
+      <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> Older Posts &rarr;</a>
+    </li>
+      {% endif %}
+  </ul>
+  {% endif %}
+
+  {% endif %}
+
+</div>

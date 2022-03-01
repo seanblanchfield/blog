@@ -1,20 +1,21 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: true
 date: 2011-07-16 15:35:28+00:00
 layout: post
 link: https://seanblanchfield.com/the-dangers-of-excessive-effectiveness/
 slug: the-dangers-of-excessive-effectiveness
 title: The Dangers of Excessive Effectiveness
-wordpress_id: 352
 tags:
 - Enterprise
 - Life
 ---
 
-My last post, on [effectiveness and efficiency via the technology of Transformers](https://seanblanchfield.com/2011/07/the-energon-methodology/ "The Energon Methodology"), was sufficiently well received that I thought I should offer up a sequel, in way of warning. The flipside of continuously striving for maximum effectiveness at work is that its hard to leave it in work and not bring it home with you.
+My last post, on [effectiveness and efficiency via the technology of Transformers]({% link archive/_posts/2011-07-13-the-energon-methodology.md %}), was sufficiently well received that I thought I should offer up a sequel, in way of warning. The flipside of continuously striving for maximum effectiveness at work is that its hard to leave it in work and not bring it home with you.
+
 <!-- more -->
-\[caption id="attachment\_354" align="alignright" width="346" caption="Got a GTD monkey on your back?"\][![Got a GTD monkey on your back?](/images/2011/07/gtd_book_spoof.jpg "gtd_book_spoof")](/images/2011/07/gtd_book_spoof.jpg)\[/caption\]
+
+![Got a GTD monkey on your back?](/images/2011/07/gtd_book_spoof.jpg){: .captioned .right}
 
 For example, I am writing this on a Saturday from an isolated retreat and health spa – the kind of place that doesn't permit cell phone use in any common areas. Hence, I am typing this from my rather luxurious room, which doesn't have a TV. What else am I to do? When I sit still, my mind roams through unfinished tasks and projects, picking out those that I can easily get done in my current environment. Suitable candidates hover before my eyes, enticing me to get up and complete one, to collect my bonus of happy accomplishment. All else being equal, I go for the ironic choice – write up that blog post on how professional effectiveness is hard to not inappropriately misapply in your personal life.
 

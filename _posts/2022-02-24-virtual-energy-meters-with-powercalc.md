@@ -1,31 +1,29 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: true
 date: 2022-02-24 13:36:07+00:00
 layout: post
 link: https://seanblanchfield.com/virtual-energy-meters-with-powercalc/
 slug: virtual-energy-meters-with-powercalc
 title: Virtual Energy Meters with PowerCalc
-wordpress_id: 1445
+image: /images/2022/02/gas-consumption-1.png
 tags:
 - Code
 - Home Automation
 ---
 
-In my last post I described how I [optimised my home heating](https://seanblanchfield.com/automating-heating-with-home-assistant/) with Home Assistant and then created virtual energy sensors to monitor my estimated gas usage from Home Assistant’s Energy Dashboard. In this post I’ll describe how I used the same strategy to monitor the real-time energy use of the majority of devices in my house without using any power meters. A big shout out to the amazing [Powercalc](https://github.com/bramstroker/homeassistant-powercalc) integration for Home Assistant, which makes this a relatively simple process, with extremely powerful results.
+In my last post I described how I [optimised my home heating]({% link _posts/2022-02-23-automating-heating-with-home-assistant.md %}) with Home Assistant and then created virtual energy sensors to monitor my estimated gas usage from Home Assistant’s Energy Dashboard. In this post I’ll describe how I used the same strategy to monitor the real-time energy use of the majority of devices in my house without using any power meters. A big shout out to the amazing [Powercalc](https://github.com/bramstroker/homeassistant-powercalc) integration for Home Assistant, which makes this a relatively simple process, with extremely powerful results.
 
 <!-- more -->
 
-### **Recap**
+## **Recap**
 
 My initial goal was to create an virtual energy sensor for my gas boiler, which could be monitored by the energy dashboard:
-
-![](/images/2022/02/gas-consumption-1.png)
 
 I first needed to create a virtual power meter:  
 
 {% raw  %}
-```
+``` yaml
 template:
  - sensor:
    - name: combi_boiler_current_power_usage
@@ -39,15 +37,15 @@ template:
 ```
 {% endraw  %}
 
-The state of the above sensor will evaluate to zero if the boiler relay switch is off, or to the value of the “_combi\_boiler\_power\_usage_” input helper if the boiler is on. Some note on the attributes defined above:
+The state of the above sensor will evaluate to zero if the boiler relay switch is off, or to the value of the `input_number.combi_boiler_power_usage` input helper if the boiler is on. Some note on the attributes defined above:
 
-*   “_unit\_of\_measurement: W_” is important. According to the docs for the [integration](https://www.home-assistant.io/integrations/integration/) platform, a sensor that measures in units of “W” will be integrated into an energy sensor in units of kWh.
-*   “_device\_class: power_” is important. From my testing, this is necessary for the integration platform to produce an output sensor that has the attribute “_device\_class: energy_”, which is necessary for it to work with the Energy Dashboard.
-*   “_state\_class: measurement_”. According to the [sensor platform docs](https://developers.home-assistant.io/docs/core/entity/sensor/#available-state-classes) this describes the sensor as measuring a current value (vs a predicted value or an aggregate of some kind), and it is necessary to opt into long-term statistics. I haven’t tested if it is strictly necessary for our purposes, but it seems like good practice.
+*   `unit_of_measurement: W` is important. According to the docs for the [integration](https://www.home-assistant.io/integrations/integration/) platform, a sensor that measures in units of “W” will be integrated into an energy sensor in units of kWh.
+*   `device_class: power` is important. From my testing, this is necessary for the integration platform to produce an output sensor that has the attribute `device_class: energy`, which is necessary for it to work with the Energy Dashboard.
+*   `state_class: measurement`. According to the [sensor platform docs](https://developers.home-assistant.io/docs/core/entity/sensor/#available-state-classes) this describes the sensor as measuring a current value (vs a predicted value or an aggregate of some kind), and it is necessary to opt into long-term statistics. I haven’t tested if it is strictly necessary for our purposes, but it seems like good practice.
 
 To turn the power sensor into a virtual energy meter,  I defined an “integration” sensor as follows:
 
-```
+``` yaml
 sensor:
  - platform: integration
    name: boiler_energy_kwh
@@ -60,13 +58,13 @@ I now had a working energy sensor:
 
 ![](/images/2022/02/energy-sensor.png)
 
-Note the attributes “_device\_class: energy_” and “_state\_class: total_”, which make this sensor compatible with the Home Assistant’s energy management dashboard. I could now add the sensor to the energy dashboard as follows:
+Note the attributes `device_class: energy` and `state_class: total`, which make this sensor compatible with the Home Assistant’s energy management dashboard. I could now add the sensor to the energy dashboard as follows:
 
 ![](/images/2022/02/Configure-gas.png)
 
 This approach can be generalized to create a virtual energy meter for anything you can estimate the current power of. The pattern is a power meter, followed by an energy meter:
 
-```
+``` yaml
 template:
 - sensor:
   - name: test_virtual_power_sensor
@@ -85,7 +83,7 @@ sensor:
 
 My next mission was to create a new virtual sensor to represent the roughly fixed amount of gas we use heating domestic hot water each day. However, I realised that I could avoid creating all these sensors by hand, and instead use the Powercalc integration to create them for me.   
 
-### **The Powercalc Integration**
+## **The Powercalc Integration**
 
 Bram Gerritsen’s [Powercalc integration](https://github.com/bramstroker/homeassistant-powercalc) automates the creation of the kind of virtual energy sensors I created above. It is especially powerful when it comes to lights, as it automatically recognises the [device and model of popular smart lights](https://github.com/bramstroker/homeassistant-powercalc/blob/master/docs/supported_models.md) and looks up its current state in a community-contributed lookup table to find a good estimate of its current power usage. In my case, it automatically detected every smart light in the house.  
 
@@ -93,10 +91,10 @@ Powercalc not only makes it easy to estimate your lights, but it allows you to p
 
 The first step was to take stock of all the electrical devices in my house. I made a spreadsheet, and gave each device a category: 
 
-*   Smart light. Powercalc would look after these automatically.
-*   HA-integrated device. Current power consumption could be predicted from the current state of these devices.
-*   Always-on. Power consumption can be predicted because it is always the same.
-*   Dumb devices. Devices that Powercalc won’t work for.
+*   *Smart lights*. Powercalc would look after these automatically.
+*   *HA-integrated devices*. Current power consumption could be predicted from the current state of these devices.
+*   *Always-on*. Power consumption can be predicted because it is always the same.
+*   *Dumb devices*. Devices that Powercalc won’t work for.
 
 I came up with 69 devices, only 9 of which Powercalc wouldn’t work for.   
 
@@ -104,13 +102,15 @@ I then worked through each of the HA-integrated devices to identify a sensor in 
 
 Here is the final spreadsheet:
 
-### **Reviewing Device Sensors**
+<iframe id="pageswitcher-content" frameborder="0" marginheight="0" marginwidth="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQcgEZkUH7OBNENvPLtQoxfKLQCeZs6tSh6sumrL9ajUL83w4Z8IIsmXHSKs2bIbin5XHVHIDdKv2Z3/pubhtml/sheet?headers=false&amp;gid=0" style="display: block; width: 100%; height: 100%;"></iframe>
+
+## **Reviewing Device Sensors**
 
 Before proceeding to create a Powercalc configuration, I reviewed the devices in the spreadsheet to make sure each of them had an appropriate Home Assistant sensor to work with. 
 
-I found a few devices that were always on,  but didn’t have any representation in Home Assistant. Powercalc allows you to deal with these using the [fixed\_daily\_energy](https://github.com/bramstroker/homeassistant-powercalc#daily-fixed-energy) directive, but this only produces an energy sensor, and does not produce a power sensor. I wanted to be able to see a real-time estimate of total current power consumption, including these devices.  To work around this, I created template sensors in Home Assistant to represent the always-on state of each of these devices. I needed to create a template sensor for each device, because each entity\_id configured in Powercalc must be unique.   
+I found a few devices that were always on,  but didn’t have any representation in Home Assistant. Powercalc allows you to deal with these using the [fixed\_daily\_energy](https://github.com/bramstroker/homeassistant-powercalc#daily-fixed-energy) directive, but this only produces an energy sensor, and does not produce a power sensor. I wanted to be able to see a real-time estimate of total current power consumption, including these devices.  To work around this, I created template sensors in Home Assistant to represent the always-on state of each of these devices. I needed to create a template sensor for each device, because each `entity_id` configured in Powercalc must be unique.   
 
-```
+``` yaml
 template:
   binary_sensor:
   - name: fridge_always_on
@@ -125,7 +125,7 @@ template:
 For convenience, I added a template sensor to do a better job of giving the current state of the robot vacuum:
 
 {% raw  %}
-```
+``` yaml
 - name: xiaomi_vacuum_charging_state
  unique_id: xiaomi_vacuum_charging_state
  icon: 'mdi: battery-charging-medium'
@@ -144,7 +144,7 @@ For convenience, I added a template sensor to do a better job of giving the curr
 
 I found that although my Synology NAS was integrated with Home Assistant, there wasn’t a binary sensor to tell if it is currently powered on or not. I fixed this with a ping sensor.
 
-```
+``` yaml
 binary_sensor:
 - platform: ping
   host: 10.0.0.35
@@ -153,13 +153,13 @@ binary_sensor:
   name: Diskstation
 ```
 
-I did the same thing for my main workstation, and used the state of the resulting binary\_sensor to represent the power usage of my computer, monitor, dock and associated equipment.  
+I did the same thing for my main workstation, and used the state of the resulting `binary_sensor` to represent the power usage of my computer, monitor, dock and associated equipment.  
 
-### **The Powercalc Config**
+## **The Powercalc Config**
 
 The next job was to translate the spreadsheet into a Powercalc config. To make this easier to manage, I split the Powercalc configuration out by adding the following into configuration.yaml:
 
-```
+``` yaml
 # Energy tracking
 # Powercalc for power/energy estimates
 powercalc:
@@ -170,7 +170,7 @@ sensor powercalc_label: !include powercalc.yaml
 Here is my final powercalc.yaml file:  
 
 {% raw  %}
-```
+``` yaml
 
 - platform: powercalc
   create_group: All Estimated Usage
@@ -507,7 +507,7 @@ Here is my final powercalc.yaml file:
         value: 7.9807
 ```
 {% endraw %}
-### **The end result**
+## **The end result**
 
 I created a new dashboard to view real-time power consumption:  
 
@@ -517,6 +517,6 @@ I also added the top-level Powercalc’s summary sensor into the energy dashboar
 
 ![](/images/2022/02/energy-dashboard.png)
 
-### **Next Steps**
+## **Next Steps**
 
 Although I now have detailed power consumption estimates for 60 out of 69 devices in my house, the remaining 9 big dumb appliances are probably the biggest energy hogs. To measure them I need to install some power meters. After some research I have selected the [Shelly EM](https://shelly.cloud/products/shelly-em-smart-home-automation-device/) with two clamps, and will be installing this in my consumer unit / fuse box / breaker box to measure power usage at the main 63A switch using a 120A CT clamp, and power usage on my 32A oven/hob circuit using a 50A CT clamp. I will be supplementing this with a handful of [Shelly Plus 1PM](https://shelly.cloud/shelly-plus-1pm/) and [Shelly 2PM Plus](https://shelly.cloud/shelly-plus-2pm/) relays to measure power at the other large appliances.

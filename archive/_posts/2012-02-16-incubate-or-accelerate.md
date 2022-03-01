@@ -1,12 +1,12 @@
 ---
-author: admin
+author: Sean Blanchfield
 comments: true
 date: 2012-02-16 17:32:06+00:00
 layout: post
 link: https://seanblanchfield.com/incubate-or-accelerate/
 slug: incubate-or-accelerate
 title: Incubate or Accelerate?
-wordpress_id: 572
+image: /images/2012/02/image00.jpg
 tags:
 - Ireland
 - accelerator
@@ -17,8 +17,8 @@ tags:
 ---
 
 I once found myself standing upon a small wooden platform at a great height above the ground, willing myself to trust the harness I was attached to, and step into the void. I was attempting  the zip line on an adventure weekend, which is an exhilarating and wholely unnatural activity involving pulleys and wires. As I stood there, cerebral cortex wrestling with limbic system and otherwise paralysed, the staff member manning the platform performed his solitary function: _he pushed me_.
+
 <!-- more -->
-![Zip LIne](/images/2012/02/image00.jpg "Zip LIne")
 
 Only one month previously I had done something far less scary - I had quit my PhD to start [DemonWare](http://demonware.net), coaxed (but not pushed) by [Dylan Collins](http://founderware.co/). My decision was an easy one, when it came time to make it: my college strategy was to hang out with smart people and do interesting things, and DemonWare was like that on steroids. With no debt or obligations, and a lifestyle suited to my salary of student stipend plus side projects, there was nothing to lose and the only way was up.
 
@@ -26,7 +26,7 @@ That’s my story, but I was lucky in various ways. In another life, starting up
 
 Many of my former college colleagues continued into business after their PhDs, getting their push in programs as diverse as [NDRC](http://www.ndrc.ie/) and [Y Combinator](http://ycombinator.com/). When we meet up for pints (which is often) I can’t help but explore what it is that I might have missed out on. Many conversations later, I’m ready to be opinionated. With so many new startup programs on the Dublin scene (I can count at least 10), I want articulate my angle.
 
-### Dump The Training Wheels
+## Dump The Training Wheels
 
 I’m afraid that the majority of programs feel they add value by providing desk space, internet connections and coffee machines (kind of like Starbucks, actually). They want to take care of the administrivia of starting a business, so that the founders can get on with what they do best - having great ideas. I believe this is subtly dangerous, because starting up is less about great ideas than being fully empowered to execute a single idea excellently.
 
@@ -36,7 +36,7 @@ Collaboration space is super cheap. It may be an empty room in a friend’s comp
 
 So, I’m clearly in favor of dumping the training wheels, and (mixing metaphors) diving into the deep end (which is actually fairly shallow).
 
-### Move Over, Incubators
+## Move Over, Incubators
 
 Even the name “incubator” is quite condescending towards startups, who by implication are premature and unable to survive without the nurturing care of the establishment. In the worst instances, these incubators have atmospheres more akin to retirement homes than maternity wards, a kind of company purgatory haunted by advisers paid by one quango or another. One should always be careful of the competency of advisors, but those that make a career out of it are by definition not practicing what they preach.
 
@@ -44,7 +44,7 @@ In the age of the Lean Startup, the role of the incubator must be re-examined. I
 
 If [this](http://www.quora.com/What-is-the-difference-between-startup-incubators-and-accelerators) Quora contributor is correct, the incubator is dead. If so, I believe we’ll be just fine, because the kind of mentoring that founders need is available for free from their peers and elders in the startup world. All it takes to get advice from the most successful entrepreneur in your space is that you buy the coffee and that you continue to impress.
 
-### Enter the Accelerator
+## Enter the Accelerator
 
 New startup programs are identifying themselves as accelerators. Every program is different, but I think the common link is the shift of emphasis away from training wheels and towards networking and mentoring. For example, [Startup Bootcamp](http://www.startupbootcamp.org/europeans-cities/dublin/) launched this week in Dublin, and will graduate its first batch of companies in 12 weeks. Meanwhile, mentors (including me) are unpaid volunteers and all active in the startup scene, which is to say that they practice what they preach. Eoghan Jennings, who runs the accelerator in Dublin, described the first two-day session between teams and mentors as “startup speed dating”, which was very accurate. By the end of day one, everyone knew each other, were talking about each other, and were excited about one another’s business ideas. The most recent [Launchpad](http://www.ndrc.ie/launchpad/) program, under Gary Leyden’s orchestration, also had a 12 week time frame and was a great success.
 
@@ -52,7 +52,7 @@ I already have a clear view of what the Bootcamp startups are going to get out o
 
 I believe that as soon as each startup is ready to make this jump, they should jump as soon as possible - even if it means paying rent for the first time. They will find full independence and control of their environment will influence their general attitude and embolden them towards business generally.
 
-### But skip both if you can
+## But skip both if you can
 
 Although I think the Startup Bootcamp model can play an important role, and I think it’s worth dedicating time to support it, I don’t think it’s right for everyone. More so than any time in the past, it is possible to start a profitable company by yourself from your bedroom. Dublin is an amazing place to do so. It is the city that connects the US and European business worlds, and the technology scene is exploding. When I walk to work I can’t swing a cat without hitting someone from Google or Facebook. There is a [tech meetup on every night](http://eventsden.com/), so many they often clash with each other. Meanwhile, prime office space in the city center is practically free.
 
