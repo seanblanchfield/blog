@@ -63,7 +63,8 @@ sensor thermostat:
      - sensor.stairs_toilet_temperature_calibrated
 ```
 
-Note: These “\_calibrated” sensors are actually template sensors that I had previously created to incorporate a temperature correction. From experimentation I have determined that my Fibaro and Aeotec sensors are highly accurate, but my Philips Hue motion sensors report temperatures 1 - 2 degrees Celsius below the true temperature.  
+{: .callout }
+> These “\_calibrated” sensors are actually template sensors that I had previously created to incorporate a temperature correction. From experimentation I have determined that my Fibaro and Aeotec sensors are highly accurate, but my Philips Hue motion sensors report temperatures 1 - 2 degrees Celsius below the true temperature.
 
 I then used the [Generic Thermostat](https://www.home-assistant.io/integrations/generic_thermostat/) platform to tell Home Assistant to use the boiler relay switch and the temperature sensor to make a new Thermostat entity.  
 

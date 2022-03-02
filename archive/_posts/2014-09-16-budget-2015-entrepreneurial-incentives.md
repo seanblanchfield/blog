@@ -15,7 +15,8 @@ In this second post in my series covering the budget recommendations that I coor
 
 <!-- more -->
 
-This is the second post in the series “#StartupIreland Pre-Budget Submissions 2015″
+{: .callout }
+> This is the second post in the series “#StartupIreland Pre-Budget Submissions 2015″
 
 First of all though, let's get one major point of confusion out of the way. In Ireland's Budget 2014, an "Entrepreneurs Relief" measure was introduced. It bears no significant similarity to its namesake, the UK's "Entrepreneurs' Relief" scheme (which we like). It also turns out to be riddled with enough problems that I'm quite sure that it has not influenced a single entrepreneur or investor in Ireland. Let's be clear: in Ireland we do not have Entrepreneurs Relief. We have a bad scheme with a good name.
 

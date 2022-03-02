@@ -17,7 +17,8 @@ Our first recommendations are that entrepreneurs should not have higher income t
 
 <!-- more -->
 
-This is the first post in the series "#StartupIreland Pre-Budget Submissions 2015"
+{: .callout }
+> This is the first post in the series "#StartupIreland Pre-Budget Submissions 2015"
 
 The two recommendations below address the fact that entrepreneurs (or more precisely  company directors with significant shareholdings) lose entitlement to the PAYE tax credit (even if they are on PAYE salaries), and are also automatically moved to a special PRSI class that eliminates their entitlement to job seekers allowance if their startup doesn't pan out.
 

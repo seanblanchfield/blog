@@ -15,7 +15,8 @@ In this third post in my series covering the budget recommendations that I coord
 
 <!-- more -->
 
-This is post number 3 in the series "#StartupIreland Pre-Budget Submissions 2015"
+{: .callout }
+> This is post number 3 in the series "#StartupIreland Pre-Budget Submissions 2015"
 
 The _TL;DR_ version is that in Ireland, exercising an option to buy shares is deemed to create a benefit-in-kind that is taxed at income tax (up to 54%). This means that when a startup exits, employees get taxed a lot more on their gains than investors or founders, which runs counter to the intended goal of incentivising employee performance. Elaborate alternatives can be set up, but they are expensive and discourage international venture capitalists from getting involved.
 

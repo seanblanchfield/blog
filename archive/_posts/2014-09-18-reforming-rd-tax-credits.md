@@ -15,7 +15,8 @@ In this fourth (and final) post in my series covering the budget recommendations
 
 <!-- more -->
 
-This is the final and fourth post in the series "#StartupIreland Pre-Budget Submissions 2015"
+{: .callout }
+> This is the final and fourth post in the series "#StartupIreland Pre-Budget Submissions 2015"
 
 ## Recommendation: Single-installment R&D Tax Credits
 
