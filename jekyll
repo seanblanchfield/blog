@@ -35,6 +35,11 @@ elif [[ "$1" == "deploy" ]]; then
         $ENV_VARS \
         $DOCKER_IMAGE:latest \
         jekyll build
+
+    echo_green "Committing and pushing changes"
+    git commit -a -m "CLI deployment"
+    git push
+
     echo_green "Deploying site..."
     rsync -a $COMMON_SCRIPT_DIR/public $DEPLOY_HOST:$DEPLOY_DIR
     echo_green "Done."
