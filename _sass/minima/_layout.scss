@@ -10,11 +10,17 @@ body {
  * Site header
  */
 .site-header {
-  background-color: $background-color;
-  border-bottom: 1px solid $border-color-01;
-  
+  background-color: $header_color;
+  padding-bottom: 1rem;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
   .site-description {
       display: inline-block;
+      flex: auto;
+      flex-shrink: 1;
       h1 {
           margin-bottom: 0;
           a.site-title {
@@ -24,7 +30,7 @@ body {
             margin-bottom: 0;
             
             padding-right: 45px;
-            
+            text-decoration: none;
             &,
             &:visited {
               color: $site-title-color;
@@ -35,21 +41,37 @@ body {
           margin-bottom: 0;
       }
   }
+  .links {
+    flex: auto;
+    flex-direction: column;
+    text-align: right;
+  }
   .social-links {
-      display: inline-block;
+      margin-bottom: 1rem;
+      .social-media-list {
+        margin-right: 0;
+        display: inline-block;
+        li {
+          a {
+            padding: 0;
+            border: none;
+          }
+          float: right;
+          margin: 0;
+        }
+      }
   }
   .site-nav {
-      position: absolute;
-      display: inline-block;
+      position: relative;
+      // display: inline-block;
 
       .nav-trigger {
         display: none;
       }
     
       .menu-icon {
-        float: right;
-        width: 36px;
-        height: 26px;
+        width: 18px;
+        height: 15px;
         line-height: 0;
         padding-top: 10px;
         text-align: center;
@@ -60,11 +82,7 @@ body {
       }
     
       label[for="nav-trigger"] {
-        display: block;
-        float: right;
-        width: 36px;
-        height: 36px;
-        z-index: 2;
+        display: inline-block;
         cursor: pointer;
       }
     
@@ -75,6 +93,10 @@ body {
     
       input:checked ~ .trigger {
         display: block;
+        position: absolute;
+        right: 0;
+        background-color: $background-color;
+        border: 1px solid $border-color-01;
         padding-bottom: 5px;
       }
     
@@ -93,7 +115,6 @@ body {
       
       @include media-query($on-palm) {
         position: static;
-        float: right;
         border: none;
         background-color: inherit;
     
@@ -132,7 +153,7 @@ ul.pager {
 }
 ul.pager li {
   display: inline;
-  border: 1px solid black; 
+  border: 1px solid $border-color-01;
   padding: 10px; 
   margin: 5px;
 }
@@ -141,33 +162,21 @@ ul.pager li {
  * Site footer
  */
 .site-footer {
+  background-color: $header_color;
   border-top: 1px solid $border-color-01;
   padding: $spacing-unit 0;
   
-  .footer-col-wrapper {
+  .footer-columns {
     @include relative-font-size(0.9375);
     color: $brand-color;
     display: flex;
-  
-    .footer-col {
-      margin-bottom: $spacing-unit / 2;
-    }
-  
+    
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
     @include media-query($on-palm) {
-      .footer-col {
-        width: calc(100% - (#{$spacing-unit} / 2));
-        padding: 0 ($spacing-unit / 2);
-  
-        &:first-child {
-          padding-right: $spacing-unit / 2;
-          padding-left: 0;
-        }
-  
-        &:last-child {
-          padding-right: 0;
-          padding-left: $spacing-unit / 2;
-        }
-      }
+      flex-direction: row;
     }
   }
 
@@ -175,8 +184,6 @@ ul.pager li {
     padding: 5px 5px 2px 0
   }
 }
-
-
 
 
 /**
@@ -334,7 +341,7 @@ ul.pager li {
     h5 {
       @include relative-font-size(1.125);
     }
-    
+
     h6 {
       @include relative-font-size(1.0625);
     }
