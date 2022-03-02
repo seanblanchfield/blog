@@ -12,7 +12,7 @@ tags:
 - Home Automation
 ---
 
-In my last post I described how I [optimised my home heating]({% link _posts/2022-02-23-automating-heating-with-home-assistant.md %}) with Home Assistant and then created virtual energy sensors to monitor my estimated gas usage from Home Assistant’s Energy Dashboard. In this post I’ll describe how I used the same strategy to monitor the real-time energy use of the majority of devices in my house without using any power meters. A big shout out to the amazing [Powercalc](https://github.com/bramstroker/homeassistant-powercalc) integration for Home Assistant, which makes this a relatively simple process, with extremely powerful results.
+In my last post I described how I [optimised my home heating]({% link current/_posts/2022-02-23-automating-heating-with-home-assistant.md %}) with Home Assistant and then created virtual energy sensors to monitor my estimated gas usage from Home Assistant’s Energy Dashboard. In this post I’ll describe how I used the same strategy to monitor the real-time energy use of the majority of devices in my house without using any power meters. A big shout out to the amazing [Powercalc](https://github.com/bramstroker/homeassistant-powercalc) integration for Home Assistant, which makes this a relatively simple process, with extremely powerful results.
 
 <!-- more -->
 

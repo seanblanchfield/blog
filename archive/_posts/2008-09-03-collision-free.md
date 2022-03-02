@@ -6,8 +6,6 @@ layout: post
 link: https://seanblanchfield.com/collision-free/
 slug: collision-free
 title: Collision-Free
-categories:
-- Life
 ---
 
 Having finally decided to learn to drive, and armed with a learner permit, I've begun to take lessons.
