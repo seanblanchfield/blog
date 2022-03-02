@@ -18,13 +18,13 @@ Several years ago, during [DemonWare's](http://www.demonware.net/ "DemonWare") i
 
 One day in Vancouver, our sales director, Art Santos, decided to convert me to [David Allen's "Getting Things Done" (GTD)](http://www.davidco.com/) methodology. GTD spreads through co-workers, who have either taken pity on their colleagues, or need them to pull it together. They often sound like acolytes of a new-age cult, much like Art did that day, and I do nowadays. For the uninitiated, GTD is a methodology for approaching your work and managing your time, created by David Allen as a management coach over many years. It's simple, effective, and in no way cultish or bullshitty. It's just a specific pragmatic approach that is popular because it has worked for so many people.
 
-![<a href="http://geekandpoke.typepad.com/geekandpoke/2008/04/busy-times.html">Busy times</a>](/images/2011/07/busytimes-300x214.jpg){: .captioned .right}
+![<a href="http://geekandpoke.typepad.com/geekandpoke/2008/04/busy-times.html">Busy times</a>](/images/2011/07/busytimes-300x214.jpg){: .captioned .right-half}
 
 GTD is mainly about how to deal with emails, schedule work, and keep track of tasks in such a way that you have strong visual feedback and control, with nothing slipping through the cracks. A very appealing aspect is its focus on how a simple system that you can trust leaves you free to actually relax at the end of the day, and stop stressing out about what you've forgot to do, or who you've forgotten to email. I vouch for it - it worked for me. I became both more efficient and less stressed.
 
 Over the last year or so I've realized that there is an important dimension that GTD fails to adequately deal with, namely energy. I imagine that there is a roughly fixed amount of energy that I have in any given day to spend how I will. However, different kinds of tasks, interruptions, conversations and people drain this energy at different rates. Where GTD helps me control how much time I spend on tasks, I also want an easy system at hand to monitor the hidden cost of these tasks. How much energy they consume, not just how much time. If you will, its about effectiveness, not just efficiency. I have devised an accounting system for personal energy, and its proven interesting, and perhaps useful. It has definitely made me more aware of where it is all going.
 
-![Do you recognise this co-worker, stealing your energon cubes?](/images/2011/07/01-300x225.jpg){: .captioned .right}
+![Do you recognise this co-worker, stealing your energon cubes?](/images/2011/07/01-300x225.jpg){: .captioned .right-half}
 
 In my system, a unit of personal mental energy is called the Energon Cube. If you are of my generation, you may remember that Decepticons were all about stealing these in the mid '80s. I get 24 Energon Cubes each day. When I'm in [flow](http://en.wikipedia.org/wiki/Flow_(psychology)), I use up one Energon Cube every 20 minutes or so. This means I can get about 6 or 7 hours of full flow work done, and have a bit left over for cooking dinner. I'm talking about that rare kind of day devoid of interruptions, in which you complete a hefty piece of difficult work to full satisfaction, and go home with a smile on your face.
 
@@ -37,7 +37,7 @@ Unfortunately, interruptions are the least of our worries. My estimates of the c
 *   Other people's conversations: 1.5 Energon Cubes per 20 minutes. This one is insidious - unless you have a personal office, you are likely losing 33% productivity just from other peoples words slicing up your train of thought.
 *   Heated emotions: 5 - 10 energon cubes per incident. Heated emotions are all too common in startups, which are populated by passionate people pouring themselves into their work. For me at least, any emotionally charged altercation leeches out a significant portion of my daily Energon quota.
 
-![An impromptu 2 hour debate at a surprised programmer's desk](/images/2011/07/energon-300x222.jpg){: .captioned .right}
+![An impromptu 2 hour debate at a surprised programmer's desk](/images/2011/07/energon-300x222.jpg){: .captioned .right-half}
 
 I'm sure there are many other decepticon energon traps out there - the list is young, and is sure to become more complete. It is already paying off for me though, giving me a simple vocabulary to think with, spot the traps, and (I hope) figure out how to avoid them.
 

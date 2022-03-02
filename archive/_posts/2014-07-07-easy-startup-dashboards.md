@@ -35,7 +35,7 @@ Our next attempt was to order a bunch of system-on-a-HDMI-stick Android media pl
 
 **The good news is that attempt number 3 worked, and I want to share it with you today**. 
 
-![The Beaglebone Black](/images/2014/07/Screen-Shot-2014-07-07-at-19.06.20.png){: .captioned .right }
+![The Beaglebone Black](/images/2014/07/Screen-Shot-2014-07-07-at-19.06.20.png){: .captioned .right-half }
 
 In 2011 we gave a spare office to the entrepreneurs from Computer Science in Trinity College Dublin known as [Tophat](http://tophat.ie). From that terrific collaboration, various great things have come. Most recently, [Colm Vize](https://mloccy.github.io/Beaglebone-Black-Dashboards/) has come to our aid and sorted out our dashboard situation. The answer was a particular cocktail of cheap components that, when taped to the back of a spare monitor, turn it into solid and flexible wall-mounted live dashboard.
 

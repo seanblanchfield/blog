@@ -25,7 +25,7 @@ There's a fundamental difference between the economics of software companies and
 
 In software, however, the rules are radically different. With no need for materials, manufacturing or shipping, the marginal cost approaches zero, meaning additional sales are nearly _pure profit_. Once you've managed to create a valuable product, sales can go global overnight on a shoestring. The millions spent on salaries can be quickly overshadowed by the profit. Consider Google: a 14 year-old software company with revenues of [$40 billion](http://investor.google.com/financial/tables.html), growing at 30% year on year, with 25% profit margins (despite investing heavily in themselves). Assuming their 60 thousand global employees make a (ridiculously generous) average salary of $100K, total payroll is still dwarfed by annual profits of more than $10 billion.
 
-![](/images/2012/08/image00.png){: .right}
+![](/images/2012/08/image00.png){: .right-half}
 
 Clearly, the big opportunity for Ireland is not to create mere thousands of jobs through companies like Google, but to create a real domestic software industry and keep these kinds of profits at home. This will be the true knowledge economy - one that not only pays people's bills, but which creates _real_ wealth and is sustained by each generation of entrepreneurs investing in the next.
 

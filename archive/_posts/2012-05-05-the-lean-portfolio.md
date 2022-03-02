@@ -22,7 +22,7 @@ In previous posts I discussed why serial entrepreneurs should upgrade to [paral
 
 ## The Changing Face of Startups
 
-![Lean Portfolio companies from around the world](/images/2012/05/lean-portfolios2-300x273.png){: .captioned .right}
+![Lean Portfolio companies from around the world](/images/2012/05/lean-portfolios2-300x273.png){: .captioned .right-half}
 
 In the last 10 years the cost of starting up dropped massively, with everything from email servers to accountancy moving to the cloud. Digital sales channels such as app stores and social media have made it possible to go global on a shoestring. Capital efficient strategies such as the Lean Startup and Agile Development have helped us focus fewer resources into more impactful products. It is not uncommon now to see founders bootstrap a company to profitability, raising funding _after_ they are breaking even.
 
@@ -38,7 +38,7 @@ At Scale Front, we are aiming to bootstrap 10 new projects to market in 2012, us
 
 ## The “EPIC” Molecule
 
-![Execution - People - Ideas - Capital](/images/2012/05/TheLeanPortfolio-300x230.png){: .captioned .right}
+![Execution - People - Ideas - Capital](/images/2012/05/TheLeanPortfolio-300x230.png){: .captioned .right-half}
 A bit of quick research on the companies above reveals striking similarities in their language and thought processes. Having written down our own plan before googling these guys, I was initially shocked to see my words on their websites. My second reaction was extreme validation that such talented people had reached the same conclusions.
 
 The common thread running through these companies is what I’m going to cheesily refer to as the _EPIC molecule_. The four elements that combine to make this super-strong molecule are: **E**xecution, **P**eople, **I**deas and **C**apital. Rocket Internet’s CEO calls them their “[four pillars: the idea; the money; the people and the execution](http://www.businessbecause.com/news/inside-view-on-top-jobs/inside-view-rocket-internet-81331)”. Science Inc talks about “ideas, talent, resources and financing”. Team Europe lists “idea, team, product/IT, reach and finance”. IG Expansion talks about business model, team, operations and finance.
