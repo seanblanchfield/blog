@@ -45,3 +45,10 @@ feed:
   excerpt_only: true
  
 google_analytics: UA-4197397-3
+
+exclude:
+  - Dockerfile
+  - jekyll
+  - nginx
+
+
