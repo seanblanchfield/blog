@@ -58,3 +58,29 @@ I believe that founders who insist on validating their markets with mock website
 
 The Lean Startup is a star for us to steer by, so we solve real problems for actual people in lucrative markets. It's a method we can learn from, but shouldn't blindly adopt. If you _can_ use all of it, you're lucky. If you can't, and people think you're old fashioned, just remember that at least you're not part of the herd.
 
+---
+## Archived Comments
+
+{: .archived-comment}
+> **March 20, 2012 at 5:08 pm, Dan Callahan says:**
+> 
+> Great comments Sean. I experienced your third reality check myself as we were iterating every few weeks when sales cycles were in months.
+> 
+> Dan
+
+{: .archived-comment}
+> **October 8, 2012 at 12:44 pm, Tristan Kromer says:**
+> 
+> Great points. I think the most serious is #4-5. Most people claiming to be lean who throw up a crappy landing page as a smoke test aren’t testing anything. They are just harvesting emails.
+> 
+> There are too many people out there optimizing the click through rate on these landing pages by making the value proposition as vague as possible and putting a pretty picture up. This tests nothing and has nothing to do with lean startup.
+> 
+> The challenge for the lean startup movement is to have an impact without being diluted to a series of meaningless buzzwords and misapplied tactics.
+
+{: .archived-comment}
+> **May 21, 2013 at 8:36 pm, Nick Pelling says:**
+> 
+> Here’s my own list:-
+> http://nanodome.wordpress.com/2011/10/05/lean-startups-suck-here-are-10-reasons-why/
+> 🙂
+> 

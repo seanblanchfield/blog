@@ -57,3 +57,13 @@ Allow proprietary directors to choose whether or not they avail of PRSI Class �
 In the next part of this series I'll post our recommendations to reform the the tax incentives that are currently in place to encourage people to startup companies. This includes proposing UK-style CGT relief for entrepreneurs, and reforming our multiple tax incentives into a single UK-style SEIS scheme.
 
 You can stay tuned by following [me](http://twitter.com/seanblanchfield) and [StartupIreland](http://twitter.com/startupireland) on Twitter.
+
+---
+---
+## Archived Comments
+
+{: .archived-comment}
+> **January 30, 2015 at 2:04 pm, Peter Daly says:**
+> 
+> I very much agree with the above as a company founder. The presumption behind the rules on PAYE Tax Credit seems to be that all entrepreneurs are running profitable companies. But for tech startups that can take quite a while so there needs to be some form of special treatment for startups and not just tech ones. More generally, we take a lot of pride here in Ireland in being entrepreneur friendly and having an excellent environment for start ups. The reality is that in many ways we are way behind the UK. The top rate of income tax kicks in here around €33k versus around £150,000 in the UK. The first £10M of gain on sale of companies is tax free in the UK. We need to urgently address these issues or we will see more people deciding to set up their next company in Tech City, London instead of Dublin
+> 

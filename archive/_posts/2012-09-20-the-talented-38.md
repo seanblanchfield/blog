@@ -234,3 +234,57 @@ Won the Young Scientist competition at the age of sixteen, went to MIT for a whi
 ([Twitter](https://twitter.com/genemurphy) AngelList) 
 <img src="/images/2012/09/redeem-and-get1.jpg" align="right" />
 From the launchpad of Portobello College's Students' Union presidency, the charismatic Gene Murphy has blasted through multiple marketing and events-based startups before landing on his current daily deals winner. Redeem&Get makes it possible for merchants to benefit from the likes of Groupon and Citydeals without getting overwhelmed by managing all the new customers. A super-connector of Dublin's many startup events, Gene can often be found holding court over noodles and wine at Izakaya Bar on George's Street.
+
+---
+## Archived Comments
+
+{: .archived-comment}
+> **September 21, 2012 at 9:39 am, Shane Meehan says:**
+> Great list. I’m sure there’ll be lots of opinions about people those not on the list, but great to see so many influential tech influencers.
+ 
+{: .archived-comment}
+> **September 20, 2012 at 9:51 pm, @darse123 says:**
+> Great piece put together by sean…only a new comer on the start-up scene but have to say it’s inspiring to see how Dublin has all this talent on show…keep up the good work
+
+{: .archived-comment}
+> **September 21, 2012 at 12:20 am, Mick Skelly says:**
+> Great list. I’ve been lucky enough to have personally received great advice from easily half of the guys on it.
+
+{: .archived-comment}
+> **September 21, 2012 at 8:33 pm, Peter Connor says:**
+> Thanks for the mention, myself and John are humbled to be on this list. As always we’d like to thank the team that work with us.
+
+{: .archived-comment}
+> **September 22, 2012 at 6:24 am, Patrick says:**
+> Fantastic list of innovation, I have to say, Oral-eye has caught my Eye, pardon the pun, but anything that can save people’s lives in such a simplistic fashion with technology already there, just twinning the expertise to that technology, is pretty genius alright, hats off and it is a priceless piece of innovation as how can anyone put a price on life..
+
+{: .archived-comment}
+> **September 24, 2012 at 12:04 pm, Mark Moore says:**
+> @Patrick- thanks for the words of encouragement! We’re pretty excited about the global potential of our system and relatively cost effective means of mass cancer screening. If you’d like more info on the clinical aspects let me know and I’d be delighted to followup. mark@oraleye.com
+> @Sean & @Dylan, our whole team are very grateful for your support. You guys are like shepherds for so many Dublin startups! Thanks again
+
+{: .archived-comment}
+> **September 22, 2012 at 7:43 am, Lucinda says:**
+> Great list but no women on it!
+
+{: .archived-comment}
+> **October 3, 2012 at 1:58 pm, Nurney says:**
+> Should really be “The Pale’s Top Technology and Startup Leaders” – such a limited view of whats happening in Ireland
+
+{: .archived-comment}
+> **October 3, 2012 at 2:12 pm, Sean Blanchfield says:**
+> Thanks for all the feedback. Naturally the list reflects our own networks, even though we *do* make a serious effort to get to know everyone. In terms of female entrepreneurs, we’d really love to hear about people you think should be included. There’s some really great female-led tech startups emerging now, though we couldn’t think of any that have got strong traction or an exit yet.
+> 
+> In terms of the Pale, there’s plenty of non-Dubliners on the list, but most of them do indeed work from Dublin. If you know people who we missed, please mention them!
+
+{: .archived-comment}
+> **May 6, 2014 at 1:21 pm, Myriam says:**
+> As Lucinda noticed, you totally excluded several Irish female entries.
+> Could you kindly amend this by writing a follow-up post, please?
+> 
+> You can get the profiles from:
+> http://www.siliconrepublic.com/careers/item/36073-wit2014
+> http://technologyvoice.com/2012/10/05/another-talented-38-more-of-irelands-top-technology-and-startup-leaders
+> http://technologyvoice.com/2013/10/06/ireland%E2%80%99s-technology-women-yet-another-talented-38
+> 
+> Thanks a million!

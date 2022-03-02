@@ -83,3 +83,83 @@ Bootstrapped startups often find that when they most need growth capital, they h
 For us, the portfolio approach is the only logical way forward. It allows us to scale our own experience more effectively, making the biggest impact possible with our limited time.
 
 We are bootstrapping by balancing consultancy work with internal projects. Bootstrapping is slow, but the pace allows us to extract every possible lesson from our first few projects, establishing our own execution process as we go. We will soon launch our second product, and will temporarily double headcount with interns tasked with market testing. Looking towards the future, we may choose to raise external funding to increase the number of projects we can run. In subsequent posts I’ll discuss some of the lessons we’re learning, and reflect on the challenges and advantages that we’re discovering in the portfolio approach.
+
+---
+## Archived Comments
+
+{: .archived-comment}
+> **May 5, 2012 at 7:08 pm, Killian Murphy says:**
+> 
+> Great post Sean.
+> 
+> As you say, there are a number of people executing somewhat similar approaches, you mention several I was unaware of. The first one I came across was Obvious Corp, started by Ev Williams of Blogger. I was very taken with the idea at the time. Of course, one of their first products was Twitter, which quickly eclipsed Obvious.
+> 
+> In the world outside of Tech, investment banks are run along moderately similar lines. An investment bank is really a pile of capital and a bunch of small businesses using it in various ways, with centralized services (finance, legal, IT, HR, ..). There are obvious differences, but there are significant parallels also. The banks are open to funding new ideas and compensating people appropriately based on their success (primarily) and on the overall organization’s success (secondarily). Interestingly, they fund people with conflicting goals and let the market sort it out. The startups use the prestige and capital of the parent to attract business, so they have an advantage over standalone organizations doing the same thing. The downside of their model, obvious to everyone now, is that the parent company is susceptible to catastrophic failure of one of the “startups” (even though these are typically separate legal entities) primarily due to the need to retain trust in the parent. This also impacts all of the other businesses. e.g. Lehman’s structured products startups failed catastrophically, taking out their M&A, corporate finance and other (perfectly good) businesses along with it.
+> Lessons from this: You need to be able to allow one of the spinouts to fail, or you need to be able to bail it out, while isolating the wider business in either case.
+> (interestingly, one of the first things that Obvious did was “bail out” Odeo, by buying back the stock from their investors).
+> 
+> Interestingly I have found big tech companies to be quite different. They tend to focus on the successful products, extracting as much value as possible but making it difficult to shift as the market shifts. The internal politics are typically aligned to avoid competition with the successful product, so ultimately it gets cannibalized externally rather than internally. One tech company that leveraged internal competition quite successfully was Microsoft, though the competition typically happened well in advance of a public product.
+> Some lessons from this: You may want to be able to make multiple bets in a space, and you want to be able to create a competitor to / the next generation of your successes. The latter is, of course, a problem you hope to have, as it presupposes a success.
+> 
+> Y combinator is clearly following at least some of this model. They are more loosely coupled, and in particular I don’t believe they give each entrepreneur a position in the overall fund. I’m a big fan of your model in this respect. It’s more likely to lead to positive cooperation between your spinouts.
+> 
+> Lastly, the valley VC guys are nibbling on the edges of some of this, with incubator spaces, networking between their investments and use of the VC’s contacts etc to do portfolio presentations to large customers / partners / etc. But as you say, they haven’t figured out how to scale to the level you outline yet. Their advantage is also their disadvantage – they have too much money to invest.
+> 
+> Bottom line, I love the idea and I’m delighted to see someone pursuing it in Ireland. I’ve felt for some time that Ireland could use a Y combinator equivalent, given the level of entrepreneurial talent and the lack of risk capital (with the emphasis on risk). You’re setting yourselves up nicely to fill that need.
+> 
+> Good luck.
+> Killian Murphy.
+
+{: .archived-comment}
+> **May 9, 2012 at 10:14 am, Sean Blanchfield says:**
+> 
+> Thanks Killian. There’s not much info to be found online about Obvious Corp, apart from the “bail out” of Odeo, as you put it. However, as the organisation that launched Twitter, it makes for a pretty great example.
+> 
+> I love the parallels with investment banks, but I’m not sure how to apply them. Perhaps Lean Portfolios should seek to raise capital on the stock markets?
+> 
+> I agree that big tech companies tend to double down on their current products rather than figure out how to continue the innovation that made them successful. A successful product inevitably becomes bloated with features intended to expand sales into new customer segments, but which in fact serve to make it cumbersome for basic usage, and unintelligible to new users. This prepares the ground for a new crop of competitors with simplified solutions (but who will probably succumb to the same end).
+> 
+> In terms of the lessons you call out:
+> 1. I agree fully that spin outs should be allowed to fail. I think the whole approach relies on a “fail fast” culture, and that this must extend all the way to spin outs.
+> 
+> 2. Making multiple bets in a space is very interesting, if tricky. With one established spin out operating in a market, a second could potentially benefit from several advantages (e.g., great market knowledge, access to customers, business processes). I can easily imagine being tempting to specialize into a particular market with multiple startups, but the challenge would be to incentivize cooperation between their competing founders.
+> 
+> Many thanks for your great comment, and let’s catch up next time I’m in the bay area.
+> 
+> Sean
+
+{: .archived-comment}
+> **May 9, 2012 at 10:29 am, Brian Gladstein says:**
+> 
+> Hi Sean,
+> What an interesting, attractive idea. I haven’t executed this model yet, but what you describe here is exactly my long-term vision for the company I have been building for 2 years.
+> 
+> Explorics is starting with Execution and People in your “EPIC” model. Our focus so far is on go-to-market. We employ lean startup strategies and help other companies with their IDEAS, using other sources of CAPITAL that have already been secured. We coach these companies and provide resources to help them discover their target customers, learn (in a validated way) about reaching that market, and then iterate their product & go-to-market strategies together to build something repeatable.
+> 
+> We are now adding our own product development resources into the mix because our clients are asking for us to build product front-ends that help them iterate even faster. And as that part of the business scales, we will be pushing our own IDEAS through the funnel too.
+> 
+> Then, in time, comes the CAPITAL part of your model, when we can self-fund our IDEAS, using our own PEOPLE who know how to EXECUTE.
+> 
+> Honestly – I don’t know if we will build this model over time. It is the dream for my company, but it is a new model that hasn’t been widely proven yet.
+> 
+> But now I’m thinking that maybe what I’m doing, while fairly unique, isn’t completely isolated. If there are smart people out there thinking about the same thing… perhaps I really am on the right track!
+> 
+> Thank you for sharing!
+
+{: .archived-comment}
+> **May 10, 2012 at 9:24 am, Rory says:**
+> 
+> Sean,
+> 
+> Great post. Sound like a great idea, love the portfolio concept and I think it could work particularly in light of the work the Samwer bros etc are doing. In theory the portfolio approach should allow you to minimise the waste of the learning when the inevitable failures occur and might just bring the lean startup process to another (more efficient) level. Best of luck with it!!!!!!!
+
+{: .archived-comment}
+> **May 17, 2012 at 2:10 pm, Peter Connor says:**
+> 
+> That’s an interesting idea Sean.
+
+{: .archived-comment}
+> **May 20, 2012 at 12:10 pm, Sean Blanchfield says:**
+> 
+> Thanks to Phil Riordan for pointing out two more examples of portfolios – Kevin Rose’s Milk and Churn Labs.
+

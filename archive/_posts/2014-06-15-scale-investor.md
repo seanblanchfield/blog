@@ -50,6 +50,23 @@ While the rest of the venture industry continues to bet on the startups that des
 *   Little downside risk. Every investment is a company that already has traction.
 *   Highly synergistic. Investments can be chosen to leverage existing industry experience and network.
 
-The only challenge the Scale Investor faces is his ability to do what every VC says they do: _help the company scale_.
+The only challenge the Scale Investor faces is his ability to do what every VC says they do: *help the company scale*.
 
-_Let me know what you think in the comments section._
+---
+## Archived Comments
+
+{: .archived-comment}
+> **June 15, 2014 at 5:46 pm, Eamonn Carey says:**
+> 
+> Really interesting. I’ve been thinking about something similar but at an even earlier stage. We do the proactive search at the pre-build stage – looking for people who have some sort of expertise or a really interesting idea that has immediate revenue generation potential. We co-invest in the ideas we think have some potential and then help them scale through a combination of helping with marketing, PR, biz dev, sales, design, build, HR and more. I’ve also started doing a little bit of this with more established pre-A round companies who need help to scale. I think this approach works best when you take the model that A16Z and Google Ventures have taken – you don’t just provide money – you have a bunch of really talented designers, sales guys, biz dev and marketing people and others on staff or on board to help these companies scale. Most companies I’ve met don’t need money as much as they need good advice and good people to help them grow. That’s where the potential for scale investors or something similar lies.
+
+{: .archived-comment}
+> **June 17, 2014 at 11:41 am, Damien Hoffman says:**
+> This is a massively underserved layer of the ecosystem. My company Wall St. Cheat Sheet — http://wallstcheatsheet.com — falls into the strike zone of this strike zone of this underserved market. We bootstrapped from the idea stage to one of the largest media companies in the U.S. (by traffic), all the while generating more EBIT than almost all the “sexy” VC-backed horses. Here was the issue: for many years our finances were textbook for growth-stage Private Equity, BUT we were too small; simultaneously, we were the right size for VC, but our finances were too strong to accept the downsides of VC capital as explained here http://www.mindfi.re/4-ugly-truths-about-raising-capital/
+
+{: .archived-comment}
+> **June 17, 2014 at 12:30 pm, Sean Blanchfield says:**
+> 
+> Thanks for the comment Damien. It sounds like we’re really talking about micro-P.E., as opposed to venture capital. My bet is that there’s going to be more and more companies like yours, hitting strong revenues early, thanks to dropping costs, increasing productivity and wider understanding of startup strategies (e.g., Lean Startup). A huge opportunity for investors that dedicate themselves to scaling this emerging class of company.
+> By the way, I’m in NYC next week and I think we could have an interesting PageFair / Wall St Cheat Sheet conversation. Will ping you by email.
+> 

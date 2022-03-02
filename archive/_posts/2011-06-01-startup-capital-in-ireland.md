@@ -43,3 +43,49 @@ To recap:
 3.  Meanwhile, give experienced startup teams money on spec
 
 My hope is that this can develop into a self-sustaining ecology, which can provide apt early-stage capital at low cost and effort. This will beget a generation of new successful startups. In time, the founders of this wave of successful startups will become the Irish angels - personally capable of vetting and capitalizing companies in their own niches. Perhaps then "Silicon Liffey" will be a bit closer to Silicon Valley.
+
+---
+## Archived Comments
+
+{: .archived-comment }
+> June 2, 2011 at 2:16 pm
+> **Kieran says:**
+> 
+> Hi Sean
+> 
+> Just a follow up on one of the points you’ve raised:
+> 
+> > “Rife suspicion that entrepreneurs exist to con money out of investors”.
+> 
+> Equally amongst the startups is a suspicion or belief that many > investors are there to move the founders aside once the startup grows > through dilution etc. It has happened regularly.
+> 
+> Good thought provoking post, thanks
+> Kieran
+> 
+
+{: .archived-comment }
+> **8June 3, 2011 at 11:54 am, Simon Dobson says:**
+>
+> Sounds like the situation hasn’t changed much from a decade ago when > we did Aurium. I think the point about the lack of specialised > expertise is a good one: maybe there’s a niche for a consultancy that > provides this to the various incubators around town? I’d be up for it… > 🙂
+
+{: .archived-comment }
+> **June 3, 2011 at 4:34 pm, Cormac says:**
+> Great post Sean.
+> 
+> My co-founder & I spent the month of April 2009 fundraising in Ireland  (this was after we spent Jan-Mar ’09 in the Valley with Y-Combinator). Our experience was similar to yours – the first two bullet points certainly sound familiar.
+> 
+> The contrast between Ireland/Dublin and the Valley is so stark that it > seems almost impossible to fix. As you said, you need people who’ve had successful exits to become active angels in Ireland, but if they can’t get their companies funded there in the first place then it’s unlikely that they’ll become angels there – they are more likely to stay where they’ve had success e.g., in the valley.
+> 
+> When our company was acquired we were in a position to sit on the > other side of the table. Any time I think of angel investing it’s never in Ireland because my belief is that founders have a better chance of success if they are around a strong ecosystem, so this means I have a preference for valley startups. This is obviously selfish but it’s a real concern for people with limited capital (which is presumably most people) – if you’re going to spend your money then you > want to make sure it has the best chance of returning. Unfortunately, the side effect is that Ireland misses out and the situation doesn’t improve.
+
+{: .archived-comment }
+> **June 16, 2011 at 8:07 am, Startup Capital says:**
+>
+> Sean Blanchfield nails it. 
+
+{: .archived-comment }
+> **September 10, 2011 at 5:49 pm, craig says:**
+>
+> Sean, I really enjoyed your post. Completely agree that there can be > no large success if investors only invest in already profitable > companies or those whose business model is easy for them to grasp and > see an exit.
+> One thing which I think the government could do to help these kind of > startups is use some of the endless empty office space around our > cities and create centres for startups to get a desk or two etc. I > actually wrote a post about this on my blog at http://craigbrookes.com/> 2011/08/24/cultivating-a-startup-environment-in-ireland/
+> 
