@@ -67,3 +67,25 @@ I'm writing this because bargaining with stock options like they are cash is dis
 2.  **You will have lots of fun**. Life is short, and work is a big part of it. Don't waste your time on Earth working on something you can't make yourself care about. Have a startup adventure instead.
 3.  **It will equip you to become a founder too**. Work with great people who've done it before. Next time round, it could be you.
 4.  **Money**. Last of the list. If the startup works out, you will get a payout on your options (probably enough to buy a nice car or put a downpayment on a house). The acquirer will now work hard to keep you on the team, and offer you a new compensation package, probably involving a higher-than-average industry salary and golden handcuffs package, which is all yours to refuse if you wish.
+
+---
+## Archived Comments
+
+{: .archived-comment}
+> **November 10, 2013 at 6:59 pm, Russell Banks says:**
+> 
+> Great post Sean, thanks for sharing your insight!
+
+{: .archived-comment}
+> **November 12, 2013 at 8:34 am, Killian Murphy says:**
+> 
+> Great blog, Sean.
+> 
+> For #5, note also that investors generally (though not always) get preferred stock, whereas employee stock options are usually for common stock. The preferred stock is worth more than the common stock because it has things like liquidation preferences attached. The ratio in value between preferred to common starts high in the early days of a startup and typically declines as the risk declines (which means that the value of liquidation preferences declines, for example).
+> 
+> This ratio is important because, as you say, ESOP options need to be granted at fair market value to avoid capital gains taxes. If the company has only sold preferred stock to investors, how do you calculate the fair market value of common stock options? Unsurprisingly, the answer is “pay lawyers”. Wilson Sonsini has a primer here for those not yet asleep.. : http://wsgr.com/WSGR/Display.aspx?SectionName=publications/PDFSearch/CorpLawBulletin_1004.htm
+
+{: .archived-comment}
+> **March 2, 2014 at 9:50 pm, Conor Neill says:**
+> 
+> Wonderful post, really helpful and easy to understand. I love that you finish with an upbeat end 😉 We get one go at this life and a rich boring life wouldn’t be as fun as a rich adventurous life… Since rich or poor depend so much on circumstance, we can drop it as a significant goal = hence the deal is boring or adventure!!! 😉

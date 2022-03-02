@@ -451,3 +451,12 @@ blockquote.callout::before {
   font-size: 2rem;
   margin-right: 1rem;
 }
+
+blockquote.archived-comment {
+  font-size: $base-font-size * 0.9;
+  font-style: normal;
+  background-color: scale-color($background-color, $lightness: -20%);
+  padding: 1rem;
+  color: #7d7d7d;
+  border: 1px solid;
+}

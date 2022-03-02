@@ -49,3 +49,27 @@ To put it bluntly, Capital Gains Tax does what it says on the tin: it taxes capi
 Thankfully, there is a simple fix, one that should be palatable to the Minister, and which has been proven elsewhere. CGT exemptions already exist, such as on the sale of your main residence or if you win the Lotto. In 2010, the United Kingdom brought in one more exemption, called “Entrepreneurs’ Relief”. This scheme provides a £10 million lifetime capital gains allowance that will be taxed at only 10%, with some simple eligibility limitations to exclusively target entrepreneurs (you must actually have worked in the company and own at least 5% of it). As with the amazing [Seed Enterprise Investment Scheme](http://www.seis.co.uk/), the UK is leading the way in terms of promoting innovation. On the 15th October, Minister Noonan has a chance to genuinely support Irish entrepreneurs and startups, boosting the entire ecosystem with one cheap and simple measure. Let’s introduce our own “Entrepreneurs’ Relief” program, granting low Capital Gains Tax on the first €10M a person makes by directly creating or investing in startups. It will make little direct difference to the exchequer, but will motivate investors and entrepreneurs alike to stay in Ireland and dedicate themselves to building new companies, jobs and wealth. 
 
 Sean Blanchfield is chief executive of [PageFair](http://pagefair.com), co-founder of [Demonware](http://demonware.net) and organiser of the [Techpreneurs](http://techpreneurs.org) startup CEO community. You can follow him on Twitter [@seanblanchfield](http://twitter.com/seanblanchfield).
+
+---
+## Archived Comments
+
+{: .archived-comment}
+> **November 4, 2013 at 10:58 am, John Dineen says:**
+> 
+> Thanks for highlighting this issue Sean. The absence of a true entrepreneurial voice among the leadership of our country is leading to some daft decisions. Encourage start-up activity through the seed funds but take away all the upside by increasing CGT. I doubt that Britain’s startup strategy is being shaped by teachers and trade unionists.
+> 
+> For personal wealth creation, becoming an entrepreneur is a really bad decision. If you want to get rich in Ireland, take a job in the public sector, ideally as a doctor. It is no surprise that our smartest people end up in healthcare.
+> 
+> We talk a lot about supporting entrepreneurship but decisions like this highlights how superficial that support really is.
+
+{: .archived-comment}
+> **January 13, 2014 at 8:56 am, Tony Kelly says:**
+> 
+> More voices singing this song:-
+> 
+> http://www.independent.ie/business/irish/slash-tax-to-create-jobs-and-attract-business-report-urges-29910158.html
+
+{: .archived-comment}
+> **February 4, 2015 at 3:11 pm, Luke says:**
+> 
+> Hard to believe that CGT has increased to such penal levels in Ireland.

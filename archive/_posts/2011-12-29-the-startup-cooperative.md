@@ -93,3 +93,192 @@ Having once upon a time worked in a [Students' Union](http://tcdsu.org/), I have
 If anyone would like to talk more about trying this in Dublin, please leave a comment or get in touch through the usual channels. The "basic package" is about fostering easy collaboration, and the "add-ons" are about improving the execution of ideas. Personally, I would like to have a conversation about how many of these add-ons should be initially in-scope, and then I'd like to rope in a lawyer to better understand how the co-op could be incorporated. My hope is that with the right group of initial members, a gentle and low-maintenance start could be made that permits us to reap early rewards, and move at our own pace towards a larger group reinforced by huge mutual benefit.
 
 If anyone elsewhere in the world finds themselves inspired to try this, or even start a conversation about it in your locality, please leave a comment below so that others who come later can find you.
+
+---
+
+## Archived Comments
+
+{: .archived-comment }
+> **December 30, 2011 at 7:36 am, BitRabbit says:**
+> 
+> Hello Sean,
+> 
+> Nice article, could have tried to participate in such a thing if I still was in Dublin…
+> Not that it already exists, but there is an example of a video game company setup as a cooperative. The very successful Motion Twin in France (4m turnover for 11 people) is one of them. They are well known for games such as “My Brute” and open source tools and VM (Haxe and Neko).
+
+{: .archived-comment }
+> **December 30, 2011 at 9:34 am, James Corbett says:**
+> 
+> Great reading Sean. Can I recommend having a chat with fellow member of the Social Entrepreneurs Ireland network – Golden Anikwe – founder of Co-operative Support Services (CSS) which has been working to establish a customised support structure for co-operative businesses in Ireland.
+
+{: .archived-comment }
+> **December 30, 2011 at 7:17 pm, Liam Ryan says:**
+> 
+> Great reading Sean, and a topic I believe will be of interest to all entrepreneurs out there.
+> 
+> I can’t help think upon reading your post that this co-op follows a structure similar to an “accelerator” or “incubator” such as YCombinator, 500startups, TechStars or Startup Bootcamp.
+> This co-op needs to be defined as an organization set up by it’s members for it’s members. The members are active entrepreneurs who seek to act on opportunities in their markets of experience.
+> 
+> But let’s face it, ideas are only ideas unless acted upon. Everyone with a flare in business or entrepreneurship has ideas, and lots of them. We talk with colleagues and do a bit of research around an idea and then we write short descriptions of them and imagine a route to market…but that’s all we do. We save them in a lonely folder fooling ourselves in the belief that we will someday have the balls to act upon them.
+> 
+> It’s been considered that 9/10 ideas (or startups) fail. They fail because perhaps the market was not yet matured for it, the route to market was wrong, or the team behind the idea was wrong or they couldn’t get the product together in time. Now imagine a co-op like this that would make the difference between creating a successful business or creating a worthless product.
+> 
+> To add to what you mentioned above, I see the co-op providing the following:
+> 
+> 1. An opportunity to weed out the crap ideas. They say it’s best to fail fast when you’re a startup. Instead, I say it’s best to not even start if there is no real business in your idea. Ideas can be actively discussed and challenged by the members.
+> 
+> 2. An opportunity to build a great team. When an idea is perceived to be a valuable opportunity for the market, members with an interest in the particular space can then put their name forward to continue with the opportunity and form a team with set targets and milestones. It is also important to realise that the team can and should change during the process of the startup venture. For example, a team of developers can move between the co-ops businesses once the market has been qualified and a sales pipeline has been identified. A business student loves researching new markets and finding routes to market (but lacks the experience of knowing what to do next) so they work with the team on the early stages of new startups. This is a way we can draw from the experience the members have at the right time.
+> 
+> 3. An opportunity to pool resources to provide assistance to the teams. At the end of the day, the members will want the startup to succeed as all members will benefit.
+> 
+> At the end of the day, I believe that all members acknowledge that owning 100% of that idea in that lonely folder is worth nothing, and always will if they decide not to act on them. This co-op is a great opportunity to churn out great ideas and great businesses.
+
+{: .archived-comment }
+> **January 2, 2012 at 5:20 pm, Alan O'Dea says:**
+> 
+> Great series of articles.
+> 
+> In terms of the ownership issues this is easily solved by founder vesting clauses which are very popular in US tech companies and easily implemented I don’t really know why this isn’t adopted here.
+> 
+> http://www.foundersatwork.com/1/archives/07-2007/1.html
+> 
+> You are discussing many of the same issues that face tech investors, groups and venture capital companies and the portfolios of start-ups and founders both serial and parallel they work with.
+> 
+> Investors want their team, start-ups, ideas and portfolios to succeed so hey have started to address these issues with stuff like standardised term sheets and legal documents and support, knowledge exchange and incubator programmes so founders can get on with developing their ideas into MVP’s and work through the stages of customer development to either find scalable products and businesses or move on to ones that can.
+> 
+> Of particular note are
+> 
+> Work by Dave MC Clure’s 500 Start-ups – http://500.co/
+> Work by Brad Feld and the Foundry Group – http://www.feld.com/wp/archives/tag/term-sheet
+> Work by the Lean Start-up Labs guys – http://lsrgroup.wordpress.com/
+> Work by the Hack-fwd Guys – http://hackfwd.com/
+> The Start-up Genome & Compass – http://blog.startupcompass.co
+
+{: .archived-comment }
+> **January 3, 2012 at 11:09 am, Mike M says:**
+> 
+> Hi Sean
+> 
+> Great article, interesting idea.
+> I agree with Alan that some of the ownership issues can be addressed by vesting. Of course negotiating the conditions attached to vesting may be as interesting as the ownership conversation that Sean talks about. But the process of vesting does provide checkpoints to measure performance against upfront agreements.
+> 
+> I like the idea of the co-op from the point of view of seeking investment as well. The representatives/leaders of the co-op would probably be seasoned entrepreneurs, and be well connected into the VC community. An entrepreneurial co-op would have good insight into which members are ready for investment, and possibly be able to get members into VC’s where they may not have easy access on their own. It is kind of incubator-like, but not run by investors….
+> 
+> Once a co-op hits some kind of critical mass, it could be helpful in publicity, discussing issues with Dept of Jobs,Enterprise and Innovation (discussions on tax breaks on patents, prsi discounts and so on), coop investment roadtrips etc. I see a lot of potential for an organisation that represents startups, run by startup entrepreneurs, in Ireland.
+> 
+> In my view, a coop could be extended to run on a nonprofit basis, or possibly be geared to a small profit, but mainly to cover a sinking fund or similar. Membership could be on a invitational basis, and members could pay to belong to the coop by assigning some small percentage of sales over a fixed period. Of course if no sales are made, members wont be paying anything, which is why its good to limit membership to invitations to startups with good business cases.
+> 
+> All in all, I like the idea, lots of potential.
+
+{: .archived-comment }
+> **January 3, 2012 at 2:47 pm, Mick McArdle says:**
+> 
+> Hi Seán, this is very useful. Thank you. To add to what you have said, I think there is merit in the spinouts also being employee-owned, for-profit cooperatives (as distinct from, say, partnerships or limited companies). Irish legislation may need to change – the Department says this is in motion but I don’t expect it to happen too soon – and funding agencies need to be educated on the benefits of the cooperative structure to facilitate funding.
+
+{: .archived-comment }
+> **January 4, 2012 at 9:02 am, Frederic Herrera says:**
+> 
+> Hi Sean,
+> 
+> Great post and I’m interested in the model. Inward tech transfers where coop could localize for range of application areas might be interesting. I did a search for Business Commons concept last year but nothing came up. Fred
+
+{: .archived-comment }
+> **January 11, 2012 at 5:47 pm, Paul O'Grady says:**
+> 
+> Hi Sean,
+> 
+> Great post, very interesting, I really like the photoshopped images!
+> 
+> Some comments below…
+> 
+> * You mention the awkward discussion about ownership etc. Another discussion that may cause heated debate is the discussion on what technology stack to use (think .net V Python), how does the co-op handle that? Will the stack used by the co-op be mentioned in its founding articles?
+> * I agree with Alan O’Dea on founder vesting clauses—important for rewarding commitment.
+> * I’m not sure about using the term co-op. In the professions they form partnerships for the same purpose. The legal entity for what you propose will probably be a partnership (I think)—unless it’s non-profit.
+> * It would be very important to have a member with hard-nosed commercial experience. Engineers like to work on interesting projects and may lose sight of the commercial side of things.
+> 
+> Your ideas on parallel entrepreneurism and the startup co-op remind me of the lean startup approach to product development, where a startup releases a product in quick time to be used by its customers and uses customer feedback to build the next iteration of the product (build-measure-learn loop). With the co-op idea it seems to be taking a step above, where many different business ideas/hypotheses (each with a different ‘vision’) are tested in parallel—lean startup principles should fit nicely with the co-op idea (you may have mentioned this before).
+> 
+> Looking forward to seeing how the discussion progresses,
+> 
+> Paul.
+
+{: .archived-comment }
+> **February 23, 2012 at 9:21 pm, John Healy says:**
+> 
+> Sean,
+> 
+> Love the idea.
+> 
+> My reco: List the complimentary skill sets (specifically) in the potential co-op membership group.
+> 
+> Tech –
+> Front end (CSS3, HTML5 etc
+> Back-End: (PHP, Ruby etc
+> 
+> Sales:
+> B-to-B Experience (which industries)
+> B-to-C ” ”
+> Sales contacts (list co. & industry)
+> 
+> Product Development
+> Prducts & Markets
+> 
+> Marketing:
+> Online (list media, strategy, campaigns)
+> Offline (list campaigns)
+> 
+> Etc … Etc
+> 
+> John
+
+{: .archived-comment }
+> **December 9, 2012 at 11:45 pm, Cameron says:**
+> 
+> Hi Sean, nice read. I had been researching the Co-op concept in relation to developers and designers to avoid the nice-to-have but useless seed investors.
+> 
+> Did this ever go anywhere?
+> 
+> I am looking at setting up a similar model in Australia.
+
+{: .archived-comment }
+> **December 11, 2012 at 12:16 pm, Sean Blanchfield says:**
+> 
+> Cameron,
+> 
+> What we ended up doing is a startup lab – http://scalefront.com. This benefits in similar ways, but is straight-up owned by the founders. It’s a company instead of a coop, much in the vein of Betaworks or Science. I’d be interested in hearing about what you are planning.
+> 
+> Sean
+
+{: .archived-comment }
+> **December 11, 2012 at 10:09 pm, Cameron says:**
+> 
+> Sure I will send you the paper once I have completed it. Thanks talk soon.
+> 
+> Cameron
+
+{: .archived-comment }
+> **May 15, 2015 at 6:22 pm, Benoît says:**
+> 
+> Excellent post! I’m actually working on a similar project in Canada, where the coop model is well developed. I’m curious about the reasons why you finally ended up choosing a company model instead of a coop?
+
+{: .archived-comment }
+> **July 5, 2015 at 2:22 pm, Mahdi Farimani says:**
+> 
+> Very nice read Sean. Thank you.
+> As a parallel entrepreneur and startup mentor and software project manager, I had this idea of creating a coop for a long time. I worked as a project manager/UI designer/customer care for several projects. for each project I call the people that needed for doing the project, including the web developer, mobile develop and graphic designer. We get the project done and split the money equally. If we could work in a platform lets say a co op company the reputation remain goes to the company so we could get other projects as well. recently I think about this concept again. I participated in a startup event and the team want to continue working on the idea.
+> I want to start this co op but there are some issues that i have i mind:
+> 1.lets say we have more than one developer or graphic designer or any other specialist in the coop and more than one want to participate in a specific idea, what we should do?
+> 2.I suppose when a company created out of an idea the company can hold a share of coop. is that applicable?
+> 
+> I’m living in Iran/Tehran. I hope we can help each other someway.
+
+{: .archived-comment }
+> **March 3, 2017 at 12:04 pm, Aaron Cohen says:**
+> 
+> Hi Sean, very interesting article, and it looks like scalefront is faring quite well. I am developing a concept for a “collaborative of collaboratives” model, applied to the social enterprise sector and targeted towards youth. The idea here is to push the co-op model even further, where actual spin-off social enterprises/IP are still owned equally by the co-op, and leadership teams are decentralized and dynamic. Moreover, additional co-ops could be established following this model and potentially share in the profits.
+> 
+> This may be a completely radical concept, but I am curious if the experiment could work for younger people who seek impact alongside profits. I will have a more detailed write-up in the coming weeks, but I wanted to get your initial take on this concept and see if you have any suggestions to help increase the chance of success for this experiment.
+> 
+> Thanks,
+> 
+> Aaron Cohen

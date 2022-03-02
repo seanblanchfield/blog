@@ -65,3 +65,18 @@ We are witnessing an unprecedented level of entrepreneurship, with a great many 
 *   Allow candidate to bring their families on an extended holiday visa of 12 months.
 *   Drop the minimum salary to €20K.
 
+---
+## Archived Comments
+
+{: .archived-comment}
+> **August 20, 2012 at 11:12 am, Bernie Goldbach says:**
+> 
+> Have you considered showing potential international hires how to set up as sole traders in Ireland and then taking them on as contractors? That’s part of the way that I got started in Ireland back in the 90s.
+
+{: .archived-comment}
+> **August 20, 2012 at 5:17 pm, Andrea says:**
+> 
+> Hi Bernie
+> 
+> I am originally from Argentina, I have explored that avenue originally when I arrived, it was not legally possible for me to set up as a sole trader, and since I didn’t have a potential partner residing in Ireland I couldn’t set up a company either (unless I had 100K)
+> 

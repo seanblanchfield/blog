@@ -121,3 +121,53 @@ I can live with having to work harder to convince investors, but losing opportun
 
 ![join the startup cooperative](/images/2011/12/join-the-communist-party-poster.jpg "join the startup cooperative"){: .captioned .right-half}
 I believe it would be possible for a cooperative organisation of entrepreneurs to manage a collective portfolio of ideas and companies. Such a co-op would not only make it possible to work on more ideas with more people, but it could make each idea easier to investigate. An umbrella organization, owned by its members, creates opportunities to greatly improve collaboration and streamline the development of ideas. This may sounds wacky, but I’ve already found supporters. Stay tuned for my next post, [The Startup Co-op]({% link archive/_posts/2011-12-29-the-startup-cooperative.md %}).
+
+---
+## Archived Comments
+
+{: .archived-comment}
+> **October 31, 2011 at 4:52 pm, Dylan says:**
+> 
+> This is an awesome post and every founder (or founder-to-be) should read it.
+> 
+> The parallel approach works to a point (I use a variation on it) but my total population of projects is usually very small (maybe 2-3 at any one time). Once a clear leader has been established I crunch on that to get it up and running (in every sense). I think it’s pretty challenging to be involved heavily in multiple fully-running startups though.
+
+{: .archived-comment}
+> **November 1, 2011 at 10:40 pm, Josh Ledgard says:**
+> 
+> Thanks for the mention of KickoffLabs. I wrote a post about your startup co-op idea a while back pushing larger companies to create these…
+> 
+> http://www.startupnw.com/seattle/content/a/articles/item/492
+
+{: .archived-comment}
+> **November 4, 2011 at 7:21 pm, Simon Dobson says:**
+> 
+> Fantastic stuff!!
+> 
+> Takes me back to when we did Aurium, and the things we simply couldn’t do then that’d be no-brainers now. I ran the company out of the President’s Bar in the Davenport for the first two months, but we then needed offices: now you’d be crazy to rent premises just to write code in, assuming your engineering team was used to working distributed.
+
+{: .archived-comment}
+> **November 6, 2011 at 9:59 pm, Liam Ryan says:**
+> 
+> Interesting post Sean. I enjoyed reading it!
+> 
+> I like your approach here to essentially spreading yourself lean in a number of ideas (with the hope that one of them could be that special nugget of gold that will rocket you into fame along side the Zuckerbergs and Dorseys) but what happens if one, two or three of the ideas could end up being that next Facebook or Twitter?
+> 
+> If a parallel entrepreneur spreads himself/herself too lean, they could really miss their window of opportunity. And what if they see a real opportunity in say 2 or 3 of your lean startups, what do you do then? Bite the bullet and make a choice? What if it’s the wrong choice?
+> 
+> Realistically you can’t share your opportunities with a ‘co-op’ so to speak, because the founder is the only person that can truly execute a vision for the idea.
+> But, if we can harness the vision within this ‘co-op’, together with entrepreneurs who can act together for the ‘doing’ part…then we’re onto a winner.
+> 
+> As much as I like the idea, I can’t help but feel that personal greed could be the down fall of this co-op without proper structure and rules (comfortably adhered to by each member) in place.
+> 
+> Interested in hearing more though!
+
+{: .archived-comment}
+> **February 29, 2012 at 9:35 am, Mark Hegarty says:**
+> 
+> This is a superb post. Coming to it a little late though. I want to link this to our blog if I may, as a post.
+> 
+> I like the quote “”The trouble with opportunity is that it always comes disguised as hard work.” – Anonymous, its so true.
+> 
+> We get to speak to a lot of business start ups, and If I am ever asked for some advice when starting a business, I’m going to send people to this link. We provide small blog posts through our site. Tips and tricks to get you started with a new business if you will at http://www.irishformations.ie . Its interesting that you mention managing risk early in the post. We wrote an article on this recently: http://www.irishformations.ie/blog/starting-a-business-in-ireland-and-how-to-manage-risk/ Sean, If theres anything we can do for you, give us a call. Looking forward to following this blog.
+> 

@@ -57,3 +57,21 @@ I believe that as soon as each startup is ready to make this jump, they should j
 Although I think the Startup Bootcamp model can play an important role, and I think it’s worth dedicating time to support it, I don’t think it’s right for everyone. More so than any time in the past, it is possible to start a profitable company by yourself from your bedroom. Dublin is an amazing place to do so. It is the city that connects the US and European business worlds, and the technology scene is exploding. When I walk to work I can’t swing a cat without hitting someone from Google or Facebook. There is a [tech meetup on every night](http://eventsden.com/), so many they often clash with each other. Meanwhile, prime office space in the city center is practically free.
 
 In other words, if you’re a tenacious techie in Dublin, there’s nothing in your way. Why not just do it? Build apps in your bedroom, and demo them in Starbucks. Then say hi to the crew from the accelerators when you see them at the tech event in the evening.
+
+---
+## Archived Comments
+
+{: .archived-comment}
+> **February 21, 2012 at 1:43 pm, Nick Hawtin says:**
+> 
+> Thanks, Sean.
+> Terrific point about colaboration space being cheap. In a world full of free wifi and great coffee shops, it is indeed the least important element.
+> There is no one-size-fits-all solution. It’s about going for it – and occasionally about listening to the right advice along the way.
+> Good luck!
+
+{: .archived-comment}
+> **March 15, 2012 at 3:49 pm, Nicholas O Shiel says:**
+> 
+> Hi Sean
+> Interesting blog and a great description of how things work in the real world. Provides a great insight to the practical side of business incubation. Enjoyed it greatly and look forward to more.
+
