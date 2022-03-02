@@ -3,7 +3,7 @@
     //   Convert images marked for captioning into captioned figures.
     document.querySelectorAll("img.captioned").forEach(function(imgNode) {
         let classes = imgNode.classList.toString();
-        imgNode.insertAdjacentHTML("beforebegin", "<div class='" + classes + "'>" + imgNode.outerHTML + "<span>"+ imgNode.alt+"</span></div>");
+        imgNode.insertAdjacentHTML("beforebegin", "<figure class='" + classes + "'>" + imgNode.outerHTML + "<figcaption>"+ imgNode.alt+"</figcaption></figure>");
         imgNode.remove();
     });
 </script>

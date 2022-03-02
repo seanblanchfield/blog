@@ -369,28 +369,29 @@ table.hljs-ln {
 /**
  * Captioned images / figures
  */
-div.captioned {
+ figure.captioned {
   width: 100%; 
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.144);
+  background-color: scale-color($background-color, $lightness: -20%);
   
   img {
       width: 100%;
   }
-  span {
+  figcaption {
       font-size: $small-font-size;
       font-weight: 600;
       padding: 0.5rem;
       display: block;
   }
 }
-div.captioned.right-half,
+
+figure.right-half,
 img.right-half {
   width: 50%; 
   margin-left: 1rem;
   float: right; 
 }
-div.captioned.left-half,
+figure.left-half,
 img.left-half {
   width: 50%; 
   margin-right: 1rem;
