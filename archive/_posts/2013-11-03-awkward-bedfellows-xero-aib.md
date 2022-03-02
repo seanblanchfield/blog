@@ -20,7 +20,7 @@ In [PageFair](http://pagefair.com) I'm striving to automate as much admin as pos
 
 [Allied Irish Bank](http://aib.ie) is the bank we chose, and as our expectations of Irish banks go, we're largely happy. A big shout out to business centre staff, who have always worked hard to help us out.
 
-![organgrinder](/images/2013/11/organgrinder.jpg){: .right }
+![organgrinder](/images/2013/11/organgrinder.jpg){: .right-half }
 
 However, AIB's "Internet Business Banking" is a typically confusing online banking system, with theatrically obtuse security features that succeed at frustrating the user instead of the fraudster. At least it more or less works, unlike [Bank of Ireland](http://boi.ie)'s corresponding system (which I've never successfully used without having to telephone a helpdesk to decipher unhelpful error codes). I've heard that Ulster Bank's online banking system is great, but they suffer from a lack of branches - handy for those inevitable occasions you actually need to see someone.
 

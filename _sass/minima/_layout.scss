@@ -384,17 +384,26 @@ div.captioned {
       display: block;
   }
 }
-div.captioned.right,
-img.right {
+div.captioned.right-half,
+img.right-half {
   width: 50%; 
   margin-left: 1rem;
   float: right; 
 }
-div.captioned.left,
-img.left {
+div.captioned.left-half,
+img.left-half {
   width: 50%; 
   margin-right: 1rem;
   float: left; 
+}
+img.right {
+  float: right;
+}
+img.left {
+  float: left;
+}
+img.center {
+  margin: 0 auto;
 }
 img.full-width {
   width: 100%;

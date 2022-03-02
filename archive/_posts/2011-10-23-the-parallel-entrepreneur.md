@@ -119,5 +119,5 @@ I can live with having to work harder to convince investors, but losing opportun
 
 ## In our next episode...
 
-![join the startup cooperative](/images/2011/12/join-the-communist-party-poster.jpg "join the startup cooperative"){: .captioned .right}
+![join the startup cooperative](/images/2011/12/join-the-communist-party-poster.jpg "join the startup cooperative"){: .captioned .right-half}
 I believe it would be possible for a cooperative organisation of entrepreneurs to manage a collective portfolio of ideas and companies. Such a co-op would not only make it possible to work on more ideas with more people, but it could make each idea easier to investigate. An umbrella organization, owned by its members, creates opportunities to greatly improve collaboration and streamline the development of ideas. This may sounds wacky, but I’ve already found supporters. Stay tuned for my next post, [The Startup Co-op]({% link archive/_posts/2011-12-29-the-startup-cooperative.md %}).

@@ -3,7 +3,7 @@ layout: default
 ---
 <article>
 
-  <header>
+  <header {% if page.image %}style="--featured-image: url('{{ page.image }}');"{% endif %}>
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
 

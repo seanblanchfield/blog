@@ -52,7 +52,7 @@ This "basic package" promotes collaboration by providing a convenient place to p
 
 Most entrepreneurs have more ideas than they can possibly investigate, but those who are currently successfully selling into a market tend to have particularly good ones. At this stage in the startup life-cycle, new ideas are about solving immediate market needs. Ironically, it is at this front line of business that the entrepreneur has the least time to develop them.
 
-![Ideas from the front line](/images/2011/12/War_correspondent_typing_his_despatch.jpg){: .captioned .right}
+![Ideas from the front line](/images/2011/12/War_correspondent_typing_his_despatch.jpg){: .captioned .right-half}
 
 As well as housing active ideas from existing teams, the co-op is in a good position to accept ideas from the front line, from entrepreneurs who have no time to develop them. For example, say a member of the co-op is currently a CEO of a company providing healthcare iPad apps for doctors. He might spot a potentially lucrative opportunity in the adjacent physiotherapy market, but be unable to exploit it himself. Instead, he donates the idea to the co-op. Other members, who have the time, can run with it. When this team eventually spins out, the originator of the idea can receive consideration, such as shares in the new company.
 
@@ -60,7 +60,7 @@ By designing the co-op to house ideas with and without associated teams, it beco
 
 ## Add-On #2: _Spread the Risk_
 
-![Spread the Risk](/images/2011/12/risk-spread.jpg){: .captioned .left}
+![Spread the Risk](/images/2011/12/risk-spread.jpg){: .captioned .left-half}
 
 The parallel approach is about spreading the entrepreneurial risk, and the startup co-op provides an opportunity to spread it even further. The co-op can be designed to take a small equity stake in all spin outs (e.g., 10% in return for licensing the idea), so that it receives a return on any phenomenal successes that it spawns. It can then pay dividends back to its members.
 
@@ -74,7 +74,7 @@ I currently run Dublin Techpreneurs, a closed-membership social group of about 4
 
 ## Add-On #4: _Economies of Scale_
 
-![Counting pennies](/images/2011/12/pennies-e1325182028788.jpg){: .right}
+![Counting pennies](/images/2011/12/pennies-e1325182028788.jpg){: .right-half}
 
 Even in this age of cloud computing, early-stage teams still face operational issues related to their small size and non-existent budgets. The startup co-op is in a position to solve this by providing access to shared services and resources that the teams could not individually afford.
 

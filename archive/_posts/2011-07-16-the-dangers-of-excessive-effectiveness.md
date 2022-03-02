@@ -15,7 +15,7 @@ My last post, on [effectiveness and efficiency via the technology of Transformer
 
 <!-- more -->
 
-![Got a GTD monkey on your back?](/images/2011/07/gtd_book_spoof.jpg){: .captioned .right}
+![Got a GTD monkey on your back?](/images/2011/07/gtd_book_spoof.jpg){: .captioned .right-half}
 
 For example, I am writing this on a Saturday from an isolated retreat and health spa – the kind of place that doesn't permit cell phone use in any common areas. Hence, I am typing this from my rather luxurious room, which doesn't have a TV. What else am I to do? When I sit still, my mind roams through unfinished tasks and projects, picking out those that I can easily get done in my current environment. Suitable candidates hover before my eyes, enticing me to get up and complete one, to collect my bonus of happy accomplishment. All else being equal, I go for the ironic choice – write up that blog post on how professional effectiveness is hard to not inappropriately misapply in your personal life.
 

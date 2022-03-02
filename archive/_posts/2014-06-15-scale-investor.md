@@ -16,7 +16,7 @@ I’ve written before about the [venture chasm]({% link archive/_posts/2013-07-0
 
 <!-- more -->
 
-![A typical venture investment outcome](/images/2014/06/file0001353856202.jpg){: .captioned .right}
+![A typical venture investment outcome](/images/2014/06/file0001353856202.jpg){: .captioned .right-half}
 
 I asked that question in 2012 as I was contemplating a partnership that would turn our incubator into an EU dealflow funnel for a US VC firm. Many of the companies on my list of potential investment deals had ended up outside the venture capital system. Today, I can clearly see how that happens. Our incubator has been swallowed by its first spinout, [PageFair](http://pagefair.com "PageFair"), and we’ve got unbelievable traction. Like other lucky CEOs, I’m faced with a tough choice between two full-time jobs: selling to customers or selling to investors. The former sounds like a more honest living.
 

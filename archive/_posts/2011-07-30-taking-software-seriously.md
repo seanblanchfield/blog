@@ -23,7 +23,7 @@ Three reasons you should read this post:
 
 ## Here's the Spiel
 
-![The files are IN the computer??](/images/2011/07/zoolander_imac_1-300x188.jpg){: .captioned .right}
+![The files are IN the computer??](/images/2011/07/zoolander_imac_1-300x188.jpg){: .captioned .right-half}
 
 
 Software is innately incredibly complicated, and preventing it from getting too complicated is even more complicated. It's really really complicated. And worse, it's invisible. You can't see any of the moving parts: in software these are the operations that the processor performs on data in memory, and occur via electrical signals zipping about on an unimaginably small scale at an unbelievable speed. Unlike other engineers, programmers are unable to stand back from their invention, run it a little bit, and take in everything that's happening. To re-iterate:
@@ -32,7 +32,7 @@ Software is innately incredibly complicated, and preventing it from getting too 
 *   it all happens millions of times faster than you can form a single thought
 *   it's generally so complicated that you'd be unable to assimilate the whole system even if you could see it.
 
-![Inside the mind of a programmer](/images/2011/07/inception13.jpg){: .captioned .right}
+![Inside the mind of a programmer](/images/2011/07/inception13.jpg){: .captioned .right-half}
 
 Because of this, the key skill in programming is an overdeveloped aptitude for [spatial-temporal reasoning](http://en.wikipedia.org/wiki/Spatial-temporal_reasoning "Spatial-Temporal Reasoning"). A programmer has in his/her head a mental model of all the components of the system, and how they interact with each other. To program effectively, you've got to be able to experiment with that mental model and play out the consequences. It can take a while to build up this mental model, and get it ready for use. For me, the experience is easiest to compare to walking around a familiar city. You know where the streets are, you've got an idea of where to find different kinds of things you might need. But it takes a bit of effort to actually navigate to your destination. Distractions don't help. It's like trying to get your Christmas gift shopping all done in one day: you've got 30 shops to visit, not enough time, and you've got to plow through the human crush to get from one to the other.
 
