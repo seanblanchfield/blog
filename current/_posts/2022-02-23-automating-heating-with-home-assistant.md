@@ -113,7 +113,7 @@ A related drawback is that if turn the thermostat down the house temperature may
 
 ## **The Marginal Value of Smart TRVs**
 
-Smart TRVs are cheaply available, such as the ZigBee-controlled [HY386](https://www.alibaba.com/product-detail/HY368-Zigbee-Radiator-Actuator-TRV_1600327750522.html?spm=a2700.wholesale.0.0.7f585cad6h6Slb) (currently €22.28 on AliExpress). I discussed this in [some detail]({% link _posts/2022-02-01-automating-the-hy367-hy368-smart-radiator-actuator-in-home-assistant.md %}) in a previous post. I see two main benefits to replacing existing my regular TRVs with these smart TRV:
+Smart TRVs are cheaply available, such as the ZigBee-controlled [HY386](https://www.alibaba.com/product-detail/HY368-Zigbee-Radiator-Actuator-TRV_1600327750522.html?spm=a2700.wholesale.0.0.7f585cad6h6Slb) (currently €22.28 on AliExpress). I discussed this in [some detail]({% link current/_posts/2022-02-01-automating-the-hy367-hy368-smart-radiator-actuator-in-home-assistant.md %}) in a previous post. I see two main benefits to replacing existing my regular TRVs with these smart TRV:
 
 1.  They can be reconfigured with new target temperatures whenever the thermostat temperature is changed. This fully addresses the limitations discussed above.
 2.  They can be explicitly actuated by Home Assistant based on the temperature from a separate sensor in the middle of the room. This might be an improvement on letting them actuate themselves based on the temperature they read from their location at near the bottom of the radiator.

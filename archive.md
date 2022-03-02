@@ -5,5 +5,7 @@
 layout: home
 pagination: 
   enabled: true
-  category: current
+  category: archive
+permalink: /archive/
+title: Archive
 ---

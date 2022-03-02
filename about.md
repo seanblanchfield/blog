@@ -1,10 +1,6 @@
 ---
-author: Sean Blanchfield
-comments: true
-date: 2009-02-24 20:15:32+00:00
 layout: page
-link: https://seanblanchfield.com/about/
-slug: about
+permalink: /about/
 title: About Me
 ---
 
