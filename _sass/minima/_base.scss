@@ -13,7 +13,38 @@ dl, dd, ol, ul, figure {
 
 }
 
-
+// Custom font.
+@font-face {
+  font-family: "Quattrocento Sans";
+  src: url("/assets/fonts/QuattrocentoSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Quattrocento Sans";
+  src: url("/assets/fonts/QuattrocentoSans-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Quattrocento Sans";
+  src: url("/assets/fonts/QuattrocentoSans-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Quattrocento Sans";
+  src: url("/assets/fonts/QuattrocentoSans-Italic.ttf");
+  font-style: oblique;
+}
+@font-face {
+  font-family: "Quattrocento Sans";
+  src: url("/assets/fonts/QuattrocentoSans-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Quattrocento Sans";
+  src: url("/assets/fonts/QuattrocentoSans-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: oblique;
+}
 
 /**
  * Basic styling
@@ -273,10 +304,12 @@ table {
     border: 1px solid $table-border-color;
   }
 
+  display: block;
+  -webkit-overflow-scrolling: touch;
+          -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-x: auto;
+  
   @include media-query($on-laptop) {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-            -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-x: initial;
   }
 }
