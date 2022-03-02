@@ -11,7 +11,7 @@ tags:
 - Code
 ---
 
-**TL;DR**. _In this post I go on a major rant against the Javascript/Babel/Webpack/Node development stack, and then talk about the problems I'm facing in my attempt to jettison that stack and instead make my javascript application run natively in web browsers. (Run javascript in a browser? Revolutionary, I know!)_
+**TL;DR**. *In this post I go on a major rant against the Javascript/Babel/Webpack/Node development stack, and then talk about the problems I'm facing in my attempt to jettison that stack and instead make my javascript application run natively in web browsers. (Run javascript in a browser? Revolutionary, I know!)*
 <!-- more -->
 
 ## The Rant
