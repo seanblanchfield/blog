@@ -447,9 +447,20 @@ blockquote.callout {
   }
 }
 blockquote.callout::before { 
-  content: "\1f6c8"; 
-  font-size: 2rem;
+  background-image: url(/images/information_icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+  content: " ";
+  
   margin-right: 1rem;
+  margin-bottom: 1rem;
+  @include media-query($on-palm) {
+    width: 128px;
+    margin-bottom: 0;
+  }
 }
 
 blockquote.archived-comment {
