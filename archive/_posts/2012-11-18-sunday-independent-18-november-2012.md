@@ -13,11 +13,13 @@ tags:
 - Tech
 ---
 
-The following article was published in the [Sunday Independent](www.independent.ie) today, 18th November 2012.
 
 Although both our economy and our people are depressed, there was a ray of light in this week’s auction of the part of the radio spectrum necessary for next-generation “4G” mobile networks. Our talented twenty and thirty year olds are joining the diaspora abroad, and the majority of my own circle of friends have fled, only to pop back up on Facebook from new locations such as Vancouver, New York, London and Japan. What’s particularly annoying are their Facebook updates, such as “ordered 100Mbps home internet last night for $30, installation finished this morning”.
 
 <!-- more -->
+
+{: .callout }
+> The following article was published in the [Sunday Independent](www.independent.ie) today, 18th November 2012.
 
 Internet access of this scale, affordability and ease has been an Irish dream for over ten years, but for all our talk of our “digital economy”, it is one we have yet to realise. In Ireland, over 70% of us settle for broadband connections slower than 10Mbps. Although we encourage all our businesses to go online, it takes weeks to get one of these connections installed.
 

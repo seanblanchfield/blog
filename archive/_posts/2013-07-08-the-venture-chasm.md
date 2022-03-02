@@ -17,7 +17,8 @@ The technology sector is buzzing and we’re hearing more about venture capitali
 
 <!-- more -->
 
-This piece originally appeared in the [Sunday Business Post](http://businesspost.ie) on 7th July 2013
+{: .callout }
+> This piece originally appeared in the [Sunday Business Post](http://businesspost.ie) on 7th July 2013
 
 ## Adventure Capital
 

@@ -46,7 +46,8 @@ The basis of this argument is that the Node.js/Webpack/Babel build pipeline for 
 
 These were very valid reasons in the past, but not necessarily in January 2021. According to [CanIUse](https://caniuse.com/es6-module), 92.48% of web browsers in use now support Javascript modules. This will probably be more like 96% by the end of the year. Meanwhile, they report that ES6 is supported by 94.37%. Therefore, if you are willing to detect and reject IE and Opera Mini, then points (1) and (2) above are no longer an issue. Meanwhile, the performance question addressed by point (3) is largely addressed by HTTP/2 (which is now supported on [95.5% of devices](https://caniuse.com/?search=http%2F2), or in other words, supported by recent versions of every major browser except Opera Mini).
 
-_Preemptive defense_: I know bundling tools like webpack will always be able perform some additional optimization, like tree-shaking, but I could also argue that the root problem there is bloat due to poor dependency discipline.
+{: .callout }
+> _Preemptive defense_: I know bundling tools like webpack will always be able perform some additional optimization, like tree-shaking, but I could also argue that the root problem there is bloat due to poor dependency discipline.
 
 Taken together, this means that in theory we should be able to write a pure ES6 SPA today without Node.js, a "bundler" or a "transpiler". Inspired, and in a fit of frustration, I decided to try to port my entire SPA codebase back to ES6. It didn't quite work out (yet). The high-level reason is that it turns out that not only have we collectively used our Node.js build pipeline to solve the original three problems, but we've gone further and solved some other problems too, and our frameworks and tools now have some inconvenient assumptions built-in.
 

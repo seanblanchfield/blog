@@ -15,7 +15,8 @@ The budget is coming early this year, and rumour has it that Minister Noonan wil
 
 <!-- more -->
 
-This article originally appeared in the [Sunday Business Post](http://sbp.ie) on 29th September 2013
+{: .callout }
+> This article originally appeared in the [Sunday Business Post](http://sbp.ie) on 29th September 2013
 
 The CGT cheques mailed to the revenue are now 65% bigger than five years ago (up 13% percentage points from 20%). Ironically, these successive increases have been accompanied by various confused policies supposed to support startups. One example is the three year corporation tax holiday given to startups, announced in tandem with the first of the CGT bumps. Sounds good, but most startups reinvest revenues into hiring and growth, leaving no profits behind to benefit from this "relief". It seems that our policy makers aren’t very familiar with life from a startup entrepreneur’s perspective.
 

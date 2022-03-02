@@ -15,7 +15,8 @@ The seventeenth century polymath Blaise Pascal famously quipped that he was sorr
 
 <!-- more -->
 
-This piece originally appeared in the [Sunday Business Post](http://businesspost.ie) on 14th July 2013
+{: .callout }
+> This piece originally appeared in the [Sunday Business Post](http://businesspost.ie) on 14th July 2013
 
 ## Business Model as a Stage Performance
 

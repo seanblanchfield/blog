@@ -397,16 +397,16 @@ img.left-half {
   margin-right: 1rem;
   float: left; 
 }
-img.right {
+.right {
   float: right;
 }
-img.left {
+.left {
   float: left;
 }
-img.center {
+.center {
   margin: 0 auto;
 }
-img.full-width {
+.full-width {
   width: 100%;
 }
 
@@ -429,4 +429,25 @@ img.full-width {
       &:hover { border-color: $border-color-02 }
     }
   }
+}
+
+blockquote.callout {
+  font-size: $base-font-size * 0.9;
+  font-style: normal;
+  background-color: scale-color($background-color, $lightness: -20%);
+  padding: 1rem;
+  color: #d0c58a;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px dashed;
+  @include media-query($on-palm) {
+    flex-direction: row;
+  }
+}
+blockquote.callout::before { 
+  content: "\1f6c8"; 
+  font-size: 2rem;
+  margin-right: 1rem;
 }
