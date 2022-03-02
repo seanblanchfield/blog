@@ -36,9 +36,13 @@ elif [[ "$1" == "deploy" ]]; then
         $DOCKER_IMAGE:latest \
         jekyll build
 
-    echo_green "Committing and pushing changes"
-    git commit -a -m "CLI deployment"
-    git push
+    if [[ -n $(git status -s) ]]; then
+        echo_green "Committing and pushing changes"
+        git commit -a -m "CLI deployment"
+        git push
+    else
+        echo_green "Skipping push, as there are no changes detected."
+    fi
 
     echo_green "Deploying site..."
     rsync -a $COMMON_SCRIPT_DIR/public $DEPLOY_HOST:$DEPLOY_DIR
