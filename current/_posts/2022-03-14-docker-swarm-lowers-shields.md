@@ -35,7 +35,7 @@ When docker configures iptables for an ingress service port, it creates three ru
 -A DOCKER-INGRESS -p tcp -m state --state RELATED,ESTABLISHED -m tcp --sport 8080 -j ACCEPT
 ```
 
-In my cluster, an ingress port might be `80` or `443`, used for the load balancer (I am using *docker-flow-proxy* running with [letsencrypt-provisioner](https://github.com/seanblanchfield/docker-flow-proxy-letsencrypt-provisioner)). Or it might be an internal service, which I want to be available across every container in every stack in the cluster (e.g., logging). I achieve the latter by having logging clients connect to the `DOCKER_GW_BRIDGE` IP address (which I have pinned to its normal value `172.18.0.1` via the `bip` option in `daemon.json`). So, in the above example, I can connect to `172.18.0.1:8080` from any container and reach the service (i.e., `nc 172.18.0.1 8080` succeeds)
+In my cluster, an ingress port might be `80` or `443`, used for the load balancer (I am using *docker-flow-proxy* running with [letsencrypt-provisioner](https://github.com/seanblanchfield/docker-flow-proxy-letsencrypt-provisioner)). Or it might be an internal service, which I want to be available across every container in every stack in the cluster (e.g., logging). I achieve the latter by having logging clients connect to the `DOCKER_GW_BRIDGE` IP address. So, in the above example, I can connect to `172.18.0.1:8080` from any container and reach the service (i.e., `nc 172.18.0.1 8080` succeeds)
 
 By removing any of the above rules, I would disable access both from the internet and from inside the cluster. However, after a bit of experimenting, I found that I could harden the rules by restricting the `ACCEPT` rule to only allow internal docker source IP addresses (i.e., `172.16.0.0/12`):
 
