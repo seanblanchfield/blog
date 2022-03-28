@@ -31,7 +31,7 @@ In constast to Home Assistant's default camera transcoding, *WebRTC Camera* uses
 
 WebRTC Camera can be installed via HACS, and then can you enable it via Home Assistant's "Configuration > Devices & Services > Integrations". 
 
-I had a little difficulty with the latest release available on HACS at the time of this writing (v2.1.1), as described in [issue #280](https://github.com/AlexxIT/WebRTC/issues/280). If the version in HACS at the time you are reading this is v2.2.0 or greater, you may not have any issues. However, to resolve my issue, needed to manually install v2.2.0 by copying the v2.2.0 "webrtc" folder from github ([herehere](https://github.com/AlexxIT/WebRTC/tree/v2.2.0/custom_components/webrtc)) into my `custom_components` directory.
+I had a little difficulty with the latest release available on HACS at the time of this writing (v2.1.1), as described in [issue #280](https://github.com/AlexxIT/WebRTC/issues/280). If the version in HACS at the time you are reading this is v2.2.0 or greater, you may not have any issues. However, to resolve my issue, needed to manually install v2.2.0 by copying the v2.2.0 "webrtc" folder from github ([here](https://github.com/AlexxIT/WebRTC/tree/v2.2.0/custom_components/webrtc)) into my `custom_components` directory.
 
 I also encountered a strange problem where the custom `webrtc-camera` card was only intermittently found by the lovelace UI (resulting in "Custom element doesn't exist" errors where the card should be in the UI). To resolve this I manually added the relevant JS module in my Lovelace resources. You can do this from "Configuration > Dashboards > Resources", or if you use Lovelace in YAML mode, by adding something like the following:
 
