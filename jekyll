@@ -46,7 +46,7 @@ elif [[ "$1" == "deploy" ]]; then
     fi
 
     echo_green "Deploying site..."
-    rsync -a --delete $COMMON_SCRIPT_DIR/public $DEPLOY_HOST:$DEPLOY_DIR
+    rsync -a --delete $COMMON_SCRIPT_DIR/public/ $DEPLOY_HOST:$DEPLOY_DIR
     echo_green "Done."
 
 else
