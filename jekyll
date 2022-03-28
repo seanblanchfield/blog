@@ -1,5 +1,5 @@
 #! /bin/bash
-set -e
+set -ex
 
 function echo_green() {
     echo -e "\033[32m$1\033[00m"
@@ -28,6 +28,7 @@ elif [[ "$1" == "shell" ]]; then
         $ENV_VARS \
         --entrypoint="bash" \
         $DOCKER_IMAGE:latest
+
 elif [[ "$1" == "deploy" ]]; then
     echo_green "Rebuilding site..."
     docker run --rm  -it \
@@ -36,16 +37,16 @@ elif [[ "$1" == "deploy" ]]; then
         $DOCKER_IMAGE:latest \
         jekyll build
 
-    if [[ -n $(git status -s) ]]; then
+    if [[ -n "$(git status --porcelain )" ]]; then
         echo_green "Committing and pushing changes"
-        git commit -a -m "CLI deployment"
+        git add -A  && git commit -m "CLI deployment"
         git push
     else
         echo_green "Skipping push, as there are no changes detected."
     fi
 
     echo_green "Deploying site..."
-    rsync -a $COMMON_SCRIPT_DIR/public $DEPLOY_HOST:$DEPLOY_DIR
+    rsync -a --delete $COMMON_SCRIPT_DIR/public $DEPLOY_HOST:$DEPLOY_DIR
     echo_green "Done."
 
 else
