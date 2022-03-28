@@ -212,6 +212,7 @@ data:
   url: https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/cfcc3137009463.5731d08bd66a1.png
 ```
 
+
 The above values can be templated. For example, the URL of a camera snapshot is contained in the `entity_picture` attribute of your camera entities (including with a short-lived auth token). To display a camera snapshot, you could call the service as follows (e.g., from an automation) (replacing `PUBLIC_ROOT_URL` with whatever your public Home Assistant URL is, e.g., "https://example.duckdns.org:8123/" or perhaps your NabuCasa address):
 
 
