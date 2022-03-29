@@ -159,7 +159,7 @@ template:
      device_class: power
      state_class: measurement
      state: >
-       {{ is_state('switch.combi_boiler_relay_switch', 'on')  iif(states('input_number.combi_boiler_power_usage'), 0) }}
+       {{ is_state('switch.combi_boiler_relay_switch', 'on') | iif(states('input_number.combi_boiler_power_usage'), 0) }}
 ```
 {% endraw %}
 
