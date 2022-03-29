@@ -387,13 +387,19 @@ table.hljs-ln {
 
 figure.right-half,
 img.right-half {
-  width: 50%; 
+  width: 100%; 
+  @include media-query($on-palm) {
+    width: 50%;
+  }
   margin-left: 1rem;
   float: right; 
 }
 figure.left-half,
 img.left-half {
-  width: 50%; 
+  width: 100%; 
+  @include media-query($on-palm) {
+    width: 50%;
+  }
   margin-right: 1rem;
   float: left; 
 }
