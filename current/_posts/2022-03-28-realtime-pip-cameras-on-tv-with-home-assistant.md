@@ -4,7 +4,7 @@ date: 2022-03-28 13:00
 layout: post
 link: https://seanblanchfield.com/realtime-pip-cameras-on-tv-with-home-assistant/
 slug: realtime-pip-cameras-on-tv-with-home-assistant
-title: Realtime Picture-in-Picture Camera Feeds on your TV with Home Assistant
+title: Real-Time Picture-in-Picture Camera Feeds on your TV with Home Assistant
 image: /images/2022/03/tv-camera-pip.jpg
 tags:
 - Code
