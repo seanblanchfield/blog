@@ -144,9 +144,10 @@ sensor boiler_energy:
 ```
 {% endraw %}
 
-I then started taking manual readings from my gas meter, and noting them down in a spreadsheet along with the value of the '_Boiler Cumulative Time Today_' sensor. Soon enough I could tell that I was typically using about 14kWh of gas every hour that the boiler was on.  
+I then started taking manual readings from my gas meter, and noting them down in a spreadsheet along with the value of the '_Boiler Cumulative Time Today_' sensor. The meter readings were in cubic meters, which I could convert to kWh by multiplying by the "conversion factor" given on my gas utility bills. My current conversion factoris 11.401kWh / cubic meter, but this can vary depending on the source of the gas supply.  My comparing the meter readings to the numbe of hours the boiler ran between each reading, I could estimate that I was typically using about 14kWh of gas every hour that the boiler was on.  
+![Recorded number of hours the boiler ran each day, as the Spring weather improved)](/images/2022/02/cumulative_boiler_run_time.png){: .captioned }
 
-I stored this in a new input helper called `input_number.combi_boiler_power_usage`, and then created a new template sensor that evaluates to the boiler’s current power consumption in Watts:  
+I stored my estimate of 14000 Wh/hour in a new input helper called `input_number.combi_boiler_power_usage`, and then created a new template sensor that evaluates to the boiler’s current power consumption in Watts:  
 
 
 {% raw %}
@@ -163,7 +164,15 @@ template:
 ```
 {% endraw %}
 
-I then added a new sensor using the “integration” platform to integrate (in the calculus sense of the word) the boiler power over time to get total energy:  
+
+The state of the above sensor will evaluate to zero if the boiler relay switch is off, or to the value of the `input_number.combi_boiler_power_usage` input helper if the boiler is on. Some note on the attributes defined above:
+
+*   `unit_of_measurement: W` is important. According to the docs for the [integration](https://www.home-assistant.io/integrations/integration/) platform, a sensor that measures in units of “W” will be integrated into an energy sensor in units of kWh.
+*   `device_class: power` is important. From my testing, this is necessary for the integration platform to produce an output sensor that has the attribute `device_class: energy`, which is necessary for it to work with the Energy Dashboard.
+*   `state_class: measurement`. According to the [sensor platform docs](https://developers.home-assistant.io/docs/core/entity/sensor/#available-state-classes) this describes the sensor as measuring a current value (vs a predicted value or an aggregate of some kind), and it is necessary to opt into long-term statistics. I haven’t tested if it is strictly necessary for our purposes, but it seems like good practice.
+
+
+I then added a new sensor using the [integration](https://www.home-assistant.io/integrations/integration/) platform (i.e., the Home Assistant integration called "integration", in the calculus sense of the word) to integrate (as in sum up) the boiler power over time to get total energy:  
 
 ``` yaml
 sensor:
