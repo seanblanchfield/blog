@@ -144,7 +144,7 @@ sensor boiler_energy:
 ```
 {% endraw %}
 
-I then started taking manual readings from my gas meter, and noting them down in a spreadsheet along with the value of the '_Boiler Cumulative Time Today_' sensor. The meter readings were in cubic meters, which I could convert to kWh by multiplying by the "conversion factor" given on my gas utility bills. My current conversion factoris 11.401kWh / cubic meter, but this can vary depending on the source of the gas supply.  My comparing the meter readings to the numbe of hours the boiler ran between each reading, I could estimate that I was typically using about 14kWh of gas every hour that the boiler was on.  
+I then started taking manual readings from my gas meter, and noting them down in a spreadsheet along with the value of the '_Boiler Cumulative Time Today_' sensor. The meter readings were in cubic meters, which I could convert to kWh by multiplying by the "conversion factor" given on my gas utility bills. My current conversion factor is 11.401kWh / cubic meter, but this can vary depending on the source of the gas supply.  My comparing the meter readings to the number of hours the boiler ran between each reading, I could estimate that I was typically using about 14kWh of gas every hour that the boiler was on.  
 ![Recorded number of hours the boiler ran each day, as the Spring weather improved)](/images/2022/02/cumulative_boiler_run_time.png){: .captioned }
 
 I stored my estimate of 14000 Wh/hour in a new input helper called `input_number.combi_boiler_power_usage`, and then created a new template sensor that evaluates to the boiler’s current power consumption in Watts:  
