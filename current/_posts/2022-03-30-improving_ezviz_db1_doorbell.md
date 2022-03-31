@@ -47,7 +47,7 @@ The final result is acceptable, but if you look closely, you can definitely see 
 
 I also tried removing the logo from the white faceplate. I found that I didn't need to touch the acetone at all, and that I could remove the logo using just fine grit sandpaper (600 grit, and then 1200 grit). It turned out that the white faceplate is a lot more forgiving. I cannot tell that the area was sanded no matter how close I look. However, the finish on the sanded area of the black faceplate will always look a slightly different.
 
-**If you want to copy this procedure, I recommend the use of fine-grit sandpaper only. If you use acetone, you will end up sanding it anyway. **
+**If you want to copy this procedure, I recommend the use of fine-grit sandpaper only. If you use acetone, you will end up sanding it anyway.**
 
 ![The final result. Slightly matt texture where logo was removed on black faceplate, but perfect result on white faceplate](/images/2022/03/ezviz_db1/06_final_result.png){: .captioned}
 
