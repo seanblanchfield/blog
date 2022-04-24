@@ -102,7 +102,7 @@ The original PiPup repository hasn't been updated in a few years, and has some i
 
 Make sure you have enabled developer options on your Android TV, and know what its IP address is (instructions are given on Stackoverflow [here](https://stackoverflow.com/questions/31421872/adb-connection-to-an-androidtv#:~:text=You%20need%20to%20use%20ADB,are%20now%20a%20developer%22%20appears.)).
 
-The following commands assume you have ADB installed on your workstation. 
+The following commands assume you have ADB installed on your workstation, and that you are running Linux or MacOS. If you are running Windows,  `grep` and/or `curl` might be missing or work differently for you (you can instead use equivalent Windows commands, or install Windows versions of the `grep` and `curl` commands from something like *GnuWin32*, or skip testing the installation with the `grep` and `curl` bits below). 
 
 ``` bash
 adb connect YOUR_ANDROID_TV_IP_ADDRESS
@@ -110,9 +110,9 @@ adb install app-debug.apk
 
 # Confirm installation
 adb shell pm list packages | grep pip
-# Note that the apk identifies itself as "nl.begner.pipup"
+# Note that the apk identifies itself as "nl.rogro82.pipup"
 # Grant permissions for it to draw a system alert window (required on Nvidia Shield at least)
-adb shell appops set nl.begner.pipup SYSTEM_ALERT_WINDOW allow
+adb shell appops set nl.rogro82.pipup SYSTEM_ALERT_WINDOW allow
 
 ```
 
