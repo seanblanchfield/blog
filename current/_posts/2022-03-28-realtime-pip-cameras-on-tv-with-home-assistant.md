@@ -173,8 +173,7 @@ pipup_image_on_tv:
       "media": { 
         "image": {
           "uri": "{{ url }}",
-          "width": {{ width | default(640) }},
-          "height": {{ height | default(480) }}
+          "width": {{ width | default(640) }}
         }
       }
     }
