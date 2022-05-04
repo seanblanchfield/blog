@@ -39,7 +39,7 @@ In constast to Home Assistant's default camera transcoding, *WebRTC Camera* uses
 
 WebRTC Camera can be installed via HACS, and then can you enable it via Home Assistant's "Configuration > Devices & Services > Integrations". 
 
-In version v2.2.0 I encountered a strange problem where the custom `webrtc-camera` card was only intermittently found by the lovelace UI (resulting in "Custom element doesn't exist" errors where the card should be in the UI). To resolve this I manually added the relevant JS module in my Lovelace resources. You can do this from "Configuration > Dashboards > Resources", or if you use Lovelace in YAML mode, by adding something like the following:
+I encountered a strange problem where the custom `webrtc-camera` card was only intermittently found by the lovelace UI (resulting in "Custom element doesn't exist" errors where the card should be in the UI). To resolve this I manually added the relevant JS module in my Lovelace resources. You can do this from "Configuration > Dashboards > Resources", or if you use Lovelace in YAML mode, by adding something like the following:
 
 ``` yaml
 lovelace:
@@ -49,7 +49,6 @@ lovelace:
     - url: /webrtc/webrtc-camera.js?v2.2.0
       type: module
 ```
-When I upgraded to version v2.3.0, this problem seemed to go away. Your mileage may vary!
 
 I could then add WebRTC camera cards to my UI by adding a "manual" card with yaml like this (where "PASSWORD" is redacted AND "CAMERA IP" represents the local camera IP address):
 
