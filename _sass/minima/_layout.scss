@@ -354,6 +354,7 @@ ul.pager li {
 // Disable alternate row coloring and borders for tables created by highlight.js line numbers.
 table.hljs-ln {
   border: none;
+  margin-bottom: 0px;
   th {
     border: none;
   }
@@ -363,9 +364,21 @@ table.hljs-ln {
   td.hljs-ln-numbers {
       padding-right: 1rem;
   }
+  tr:last-child {
+    padding-bottom: 14px;
+  }
 }
 
-
+.hljs {
+  ::-webkit-scrollbar {
+      height: 6px;
+      background: #bbbbbb63;
+  }
+  ::-webkit-scrollbar-thumb:horizontal{
+      background: #bbbbbb;
+      border-radius: 2px;
+  }
+}
 /**
  * Captioned images / figures
  */
