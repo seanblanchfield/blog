@@ -33,7 +33,7 @@ You may think this is either weird, or cool, or evil. I admit that from a securi
 
 ## Related Reading and Other Solutions
 
-* There is an [open RFC](https://github.com/home-assistant/supervisor/issues/2564) to add a network mount manager to Home Assistant. @ukro provides a compelling list of use cases for this (including this use case), and I think it would be a wonderful addition to Home Assistant. If you're affected by this, consider subscribing to that issue.
+* There is an [open RFC](https://github.com/home-assistant/supervisor/issues/2564) to add a network mount manager to Home Assistant. @ukro provides a compelling list of use cases for this (including this use case), and I think it would be a wonderful addition to Home Assistant. If you're affected by this, consider voting for the [feature request](https://community.home-assistant.io/t/nas-mount-on-hass-os/320218) and subscribing to that [github issue](https://github.com/home-assistant/supervisor/issues/2564).
 
 * @ukro's started a forum thread on configuring [NAS shares on Proxmox](https://community.home-assistant.io/t/solved-hassos-mount-nas-network-share/303292/91), and there is quite a lot of discussion from other users about what worked for them, and what didn't.
 
