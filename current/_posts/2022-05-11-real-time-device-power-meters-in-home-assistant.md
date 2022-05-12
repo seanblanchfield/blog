@@ -21,7 +21,7 @@ I display this power meter on my main dashboard, which is displayed on a wall mo
 
 ## Requirements
 - **Home Assistant** (of course!)
-- **Power sensors**.  I previously [posted about how I used Powercalc](/2022/02/virtual-energy-meters-with-powercalc) to create power and energy sensors that estimated the power usage of all the smart devices (and some dumb devices) in my house. Since then I've bought and installed a bunch of [Shelly Plus 1PM](https://shelly.cloud/shelly-plus-1pm/)s and [Shelly 1PM](https://shelly.cloud/products/shelly-1pm-smart-home-automation-relay/)s and (and some power monitoring zigbee smart plugs) to monitor the power usage of all our big dumb appliances.  I also bought and installed a [Shelly EM](https://shop.shelly.cloud/shelly-em-50a-clamp-wifi-smart-home-automation-1#139) to monitor total electricity usage at the fuse board supply (and I got an extra clamp to measure my electric oven / stove 32A circuit). My Home Assistant now has a near complete view of electricity usage in my house. You'll might need something similar for this to be of use to you.
+- **Power sensors**.  I previously [posted about how I used Powercalc](/2022/02/virtual-energy-meters-with-powercalc) to create power and energy sensors that estimated the power usage of all the smart devices (and some dumb devices) in my house. Since then I've bought and installed a bunch of [Shelly Plus 1PM](https://shelly.cloud/shelly-plus-1pm/)s and [Shelly 1PM](https://shelly.cloud/products/shelly-1pm-smart-home-automation-relay/)s and (and some power monitoring zigbee smart plugs) to monitor the power usage of all our big dumb appliances.  I also bought and installed a [Shelly EM](https://shop.shelly.cloud/shelly-em-50a-clamp-wifi-smart-home-automation-1#139) to monitor total electricity usage at main supply to the house from my consumer unit/breaker box (and I got an extra clamp to measure my electric oven / stove 32A circuit). My Home Assistant now has a near complete view of electricity usage in my house. You'll might need something similar for this to be of use to you.
 - **[Bar Card](https://github.com/custom-cards/bar-card)** to drive the basic bar chart (install from HACS)
 - **[Config Template Card](https://github.com/iantrich/config-template-card)** to use javascript templates as values in Home Assisant YAML configuration (install from HACS if you don't already use it).
 - **[Custom Card Mod](https://github.com/thomasloven/lovelace-card-mod)** to define custom CSS styles for the bar chart (install from HACS if you don't already use it)
@@ -57,7 +57,7 @@ This allows me to define template sensors by placing them in a new file in the `
 ## Creating the "Other" category
 
 I also added a template sensor to capture the delta between the total measured power usage of the house, and the sum of all device-level power sensors (whether estimated by Powercalc or measured at the socket). This is the "*other*" category in the bar chart. It represents:
-- discrepancies between reality and in my powercalc estimates
+- discrepancies between reality and my powercalc estimates
 - time discrepancy between sensors reporting in
 - dumb appliances (like a hair dryer) that are being used from non-monitored sockets.
 
