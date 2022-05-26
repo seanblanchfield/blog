@@ -57,8 +57,8 @@ First, I need to acknowledge that I am indebted to the IPCamTalk community and t
 In the sections below I discuss not just my conclusions and recommendations, but also how I arrived at each solution. You can read this post linearly, or jump to the bit you're most interested in:
 
 - For improving the physical look of the device, see my previous post on [removing the logo and swapping buttons](2022/03/improving-ezviz-db1-doorbell).
-- [Detect the button being pressed](#detecting-button-presses)
-- [Choosing the a desktop configuration tool, and how to use it](#the-desktop-configuration-tool)
+- [Detecting the button being pressed](#detecting-button-presses)
+- [Choosing a desktop configuration tool, and how to use it](#the-desktop-configuration-tool)
 - [Choosing and changing the firmware](#changing-the-firmware)
 - [Choosing a mobile app to use](#choosing-a-mobile-app)
 - [Integrating with Home Assistant](#integrating-with-home-assistant)
@@ -95,7 +95,7 @@ The remaining solutions basically monitor the doorbell wiring to sense when the 
 
 When the (dumb) doorbell is pressed, the smart relay will detect voltage at its input, send an event to your automation hub, and it will connect the AC supply to the chime.
 
-I saw two drawbacks to this approach. First, I didn't want to install another 5V DC transformer. I preferred a solution that could be powered by the 12-24V AC power supply that was already in place (admittedly, I could have added a rectifier and resistors to convert to 5V DC at the cost of added complexity).  
+I saw two drawbacks to this approach. First, I didn't want to install a 5V DC power supply. I preferred a solution that could be powered by the 12-24V AC power supply that was already in place (admittedly, I could have added a rectifier and resistors to convert to 5V DC at the cost of added complexity).  
 
 Second, smart doorbells are not like dumb doorbells. A smart doorbell has specific power requirements, normally 12 - 24V AC, which cannot be connected to the input of a Shelly 1. A second rectifier would be required to convert current coming back from the doorbell into DC so that it could be wired into the Shelly's input. 
 
@@ -109,7 +109,7 @@ Another problem is that since a smart doorbell is continuously powered, the norm
 > From my own measurements, the voltage drop across the doorbell when supplied with 12V AC was about 11.6V. Using Ohm's law, *R = V&divide;I* = 11.6V/0.2375A = 49&#8486;.
 > When the doorbell is pressed, its resistance drops to near-zero and so does the voltage drop I measure across it. I therefore think it's reasonable to visualize these doorbells as a resistor and a relay in parallel.
 
-I decided to find a different route. Unlike other Shelly devices, the €11 [Shelly Uni](https://shop.shelly.cloud/shelly-uni-wifi-smart-home-automation#394) can be powered by 12-24V AC. Therefore, I could power it from the existing doorbell wiring, without the need for an separate DC power supply or various bridge rectifiers (in fact, it has an onboard bridge rectifier). The *Uni* is an ESP8266 with two output relays (which I didn't use) and a selection of useful sensors for detecting binary or analog inputs. My new plan was to power a *Uni* by connecting it in parallel with the existing doorbell AC power supply, and then to detect button presses by connecting the `IN_1` binary input contact to the doorbell circuit. 
+I decided to find a different route. Unlike other Shelly devices, the €11 [Shelly Uni](https://shop.shelly.cloud/shelly-uni-wifi-smart-home-automation#394) can be powered by 12-24V AC. Therefore, I could power it from the existing doorbell wiring, without the need for a separate DC power supply or various bridge rectifiers (in fact, it has an onboard bridge rectifier). The *Uni* is an ESP8266 with two output relays (which I didn't use) and a selection of useful sensors for detecting binary or analog inputs. My new plan was to power a *Uni* by connecting it in parallel with the existing doorbell AC power supply, and then to detect button presses by connecting the `IN_1` binary input contact to the doorbell circuit. 
 
 ![The Shelly Uni](/images/2022/05/db1/shelly_uni_pins.png){: .captioned }
 
@@ -137,9 +137,9 @@ I initially understood the power kit as a resistor that allowed some current to 
 
 ![Internals of the DB1 power kit](/images/2022/05/db1/power_kit_internals.jpg){: .captioned }
 
-My hypothesis is that the power kit understands the power consumption of the smart doorbell, and allows that current to pass through it with near zero resistance under normal conditions, effectively bypassing any solenoid that it is parallel with. I I think that it detects the voltage change in the circuit when the doorbell is pressed, and switches to preventing that current flowing through it, effectively diverting it to the solenoid. I haven't tested this hypothesis, but I'd be fascinated to hear other people's opinions on it.
+My hypothesis is that the power kit understands the power consumption of the smart doorbell, and allows that current to pass through it with near zero resistance under normal conditions, effectively bypassing any solenoid that it is parallel with. I think that it detects the voltage change in the circuit when the doorbell is pressed, and switches to preventing that current flowing through it, effectively diverting it to the solenoid. I haven't tested this hypothesis, but I'd be fascinated to hear other people's opinions on it.
 
-With the power kit installed, the DB1 could control the relay exactly as I hoped, as shown in this slow-motion video of a button press. You can see the relay closing at the same time that the multimeter measures a drop in voltage across the doorbell as the doorbell closes the circuit (NB: I was powering the doorbell with 24V AC during this test).
+With the power kit installed, the DB1 could control the relay exactly as I hoped, as shown in this slow-motion video of a button press. You can see the relay closing at the same time that the multimeter measures a drop in voltage across the doorbell as the doorbell closes the circuit (note: I was powering the doorbell with 24V AC during this test).
 
 <video controls width="100%" loop controls autoplay>
     <source src="/images/2022/05/db1/db1_relay_test.mp4"
@@ -147,17 +147,17 @@ With the power kit installed, the DB1 could control the relay exactly as I hoped
     Sorry, your browser doesn't support embedded videos.
 </video>
 
-In the other half of the circuit, I would detect whether the relay was open or closed by connecting the *Shelly Uni*'s `IN_1` contact to one of the relay's output contacts. The *Shelly Uni* user manual provides a diagram for detecting AC voltage through a momentary or toggle switch (shown previously), which are electrically equivalent to a relay. Consequently I initially supplied the relay's output contacts with 24V AC. At first it seemed that this worked, but after a day of operation is was clearly unstable. The Shelly would not consistently detect doorbell presses. It would also only detect when the doorbell press ended, not when it started. It turned out I wasn't the first person to notice these problems.
+In the other half of the circuit, I would detect whether the relay was open or closed by connecting the *Shelly Uni*'s `IN_1` contact to one of the relay's output contacts. The *Shelly Uni* user manual provides a diagram for detecting AC voltage through a momentary or toggle switch (shown previously), which are electrically equivalent to a relay. Consequently I initially supplied the relay's output contacts with 24V AC. At first it seemed that this worked, but after a day of operation I could see it was clearly unstable. The Shelly would not consistently detect doorbell presses, and it would also only detect when the doorbell press ended, not when it started. It turned out I wasn't the first person to notice these problems.
 
 I found [this Shelly forum thread](https://www.shelly-support.eu/forum/index.php?thread/10954-shelly-uni-betrieb-mit-dc-und-oder-ac/&postID=115659#post115659) (in German, Google translate version [here](https://www-shelly--support-eu.translate.goog/forum/index.php?thread/10954-shelly-uni-betrieb-mit-dc-und-oder-ac/&postID=115659&_x_tr_sl=de&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp)) in which users @thgoebel and @DIYROLLY discuss the same frustrations of detecting AC with the Shelly Uni, and conclude that it either has a design flaw or that the user manual incorrectly describes it supports detecting AC at its inputs. User @thgoebel makes the practical suggestion to just switch to DC if possible, or if not possible to add a diode to half-rectify the AC signal into the input sensor.
 
 ## Final Circuit Diagram
 
-I decided that it was easier, and probably more reliable, to switch to DC. This basically involved removing AC from the relay's output contacts and replacing it with a 1.5V battery. It was obvious that I needed to connect the other end of the battery to something. The Shelly manual is silent on this question, but I decided to try connecting it to the "Internal Ground" sensor, which is shown as unused in the relevant diagrams from Shelly. Finally, it worked.
+I decided that it was easier, and probably more reliable, to switch to DC. This basically involved removing AC from the relay's output contacts and replacing it with a 1.5V battery. Then I had to figure out where to connect the other other side of the battery. The Shelly manual is silent on this question, but I decided to try connecting it to the "Internal Ground" sensor, which is shown as unused in the relevant diagrams from Shelly. Finally, it worked.
 
 ![Working doorbell detection with Shelly Uni. Shelly and doorbell are powered off same supply. Blue represents separate battery-powered circuit.](/images/2022/05/db1/shelly_DC_button_direct_detection_success.png){: .captioned }
 
-The battery in this circuit should last nearly forever. It is only consumed when the doorbell is pressed. In the Shelly forum thread linked previously, user @thgoebel reported that the *Shelly Uni* input sensor consumes about 1mA of current. Assuming 2 seconds per doorbell press and 5 visitors per day gives about 1 hour per year of battery consumption. Therefore, yearly energy consumption is about 1mAh. A cheap AAA battery has a capacity of about 850-1200mAh, and would therefore last about a thousand years! (except for its shelf-life of probably only 10 years &#128534;)
+The battery in this circuit should last nearly forever. It is only consumed when the doorbell is pressed. In the Shelly forum thread linked previously, user @thgoebel reported that the *Shelly Uni* input sensor consumes about 1mA of current. Assuming 2 seconds per doorbell press and 5 visitors per day gives about 1 hour per year of battery consumption. Therefore, yearly energy consumption is about 1mAh. A cheap AAA battery has a capacity of about 850-1200mAh, and would therefore last about a thousand years! (unfortunately, its shelf-life is probably only 10 years &#128534;)
 
 ## Assembly
 ![Various stages of assembly. Left to right: labelled components in their enclosure, the neatly-packed enclosure, and final installation location in the electrical consumer unit (breaker box) cabinet](/images/2022/05/db1/db1_push_sensor_assembly.png){: .captioned }
@@ -172,25 +172,26 @@ The total cost of the project (excluding time of course!) came to about €23 Eu
 |----------------------------------------------|--------|--------------------------------------------------------------------------|
 | Shelly Uni                                   | €10.90 | [Shelly](https://shop.shelly.cloud/shelly-uni-wifi-smart-home-automation#394)      |
 | Relay module (24V AC Coil Non-Latching SPDT) |  €7.15 | [RS Online](https://ie.rs-online.com/web/p/power-relays/0376830)                      |
-| battery holder                               |  €0.74 | [RS Online](https://ie.rs-online.com/web/p/battery-holders/1854605)                   |
+| Battery holder                               |  €0.74 | [RS Online](https://ie.rs-online.com/web/p/battery-holders/1854605)                   |
 | Strip board                                  |  €2.26 | [RS Online](https://ie.rs-online.com/web/p/matrix-boards/8971408)                     |
 | Terminal block                               |  €0.87 | [RS Online](https://ie.rs-online.com/web/p/pcb-terminal-blocks/8971339)               |
 | Junction box                                 |  €1.06 | [Example item from Irish electrical retailer](https://xpresselectrical.ie/product/obo-a8-ip55-junction-box-65x65x32mm/) |
 | **TOTAL:**                                       | **€22.98** |                                                                          |
 
-![Adjusting the electronic chime duration to 2 seconds](/images/2022/05/db1/app_screenshots/guarding_vision_electronic_chime_duration.jpg){: .captioned .right-third }
 
 ## Notes on voltage
 Once everything was working smoothly, I experimented with voltage. I had done most of my testing on 24V AC, but found that I could switch the transformer over to 12V AC and everything continued to work fine. I have left it at 12V ever since.
 
 ## Notes on mechanical vs electronic chime
 
+![Adjusting the electronic chime duration to 2 seconds](/images/2022/05/db1/app_screenshots/guarding_vision_electronic_chime_duration.jpg){: .captioned .right-third }
+
 In the doorbell app settings you have various options relating to how the doorbell should try to sound a chime. You must set this to either "mechanical" or to "electronic". Mechanical will momentarily switch the Shelly's input. By selecting "elecronic chime" you can adjust the duration up to 10 seconds. For example, if you set it to 5 seconds, the Shelly input sensor will switch `on` for exactly 5 seconds, starting when the doorbell button is pressed.
 
 ---
 
 # The Desktop Configuration Tool
-Although some configuration options are available via mobile apps, advanced configuration is possible by using a desktop app. The "Configuring Doorbell Tips" section of the [HikVision Doorbell 101](https://ipcamtalk.com/threads/new-rca-hsdb2a-3mp-doorbell-ip-camera.31601/page-101#post-412577) contains links to the desktop applications you can try, all of which seem to be repackaged versions of the base "iVMS 4200" application, give or take some features. I tried iVMS-4200, EZVIZ PC Studio and HikVision's Batch Configuration Tool. The *HikVision Batch Configuration Tool* seemed to be the most complete, stable, smallest and fastest, and is the one I settled on. I read on the IPCamTalk forums that later versions of the *Batch Configuration Tool* had removed some options and that the preferred version is v3.0.2.6, which is hard to find. Thankfully, [David L provides links to it on IPCamTalk](
+Although some configuration options are available via mobile apps, advanced configuration is possible by using a desktop app. The "Configuring Doorbell Tips" section of the [HikVision Doorbell 101](https://ipcamtalk.com/threads/new-rca-hsdb2a-3mp-doorbell-ip-camera.31601/page-101#post-412577) contains links to the desktop applications you can try, all of which seem to be repackaged versions of the base "iVMS 4200" application, give or take some features. I tried *iVMS-4200*, *EZVIZ PC Studio* and HikVision's *Batch Configuration Tool*. The *Batch Configuration Tool* seemed to be the most complete, stable, smallest and fastest, and is the one I settled on. I read on the IPCamTalk forums that later versions of the *Batch Configuration Tool* had removed some options and that the preferred version is v3.0.2.6, which is hard to find. Thankfully, [David L provides links to it on IPCamTalk](
 https://ipcamtalk.com/threads/new-rca-hsdb2a-3mp-doorbell-ip-camera.31601/post-504191).
 
 Some things you might want to do with the Batch Configuration tool:
@@ -320,7 +321,7 @@ It's worth mentioning that the call quality in all these apps far surpassed my e
 
 While testing the various apps I found that I could re-use an account I made on the *Hik-Connect* app in the *RCA Security* app, and vice versa. In addition, when I added my doorbell to the *Hik-Connect* app it appeared in the *RCA Security* app. It appears that both the *Hik-Connect* app and the *RCA Security* apps are frontends to the same backend database where account details and registered devices are stored.
 
-The *Hik-Connect* app and the *Guarding Vision* app are visually identical and clearly based on the same code, but do not share the same backend database. However, I noticed that I could share the doorbell from my *Guarding Vision* account with my *Hik-Connect* / *RCA Security* account. There's no benefit in having both the *Guarding Vision* and *Hik-Connect* apps installed (they have identical UIs), however the *RCA Security* app provides a much nicer UI for interacting with the doorbell as a camera and two-way intercom.  The *Guarding Vision* and *RCA Security* apps therefore complement each other well: 
+Meanwhile, the *Hik-Connect* app and the *Guarding Vision* app are visually identical and clearly based on the same code, but do not share the same backend database. However, I noticed that I could share the doorbell from my *Guarding Vision* account with my *Hik-Connect* / *RCA Security* account. There's no benefit in having both the *Guarding Vision* and *Hik-Connect* apps installed (they have identical UIs), however the *RCA Security* app provides a much nicer UI for interacting with the doorbell as a camera and two-way intercom.  The *Guarding Vision* and *RCA Security* apps therefore complement each other well: 
 
 |                 | Good Camera UI   | Receive VoIP calls |
 |-----------------|------------------|--------------------|
@@ -333,7 +334,7 @@ The *Hik-Connect* app and the *Guarding Vision* app are visually identical and c
 {: .callout }
 > **How to share a device between Guarding Vision and RCA Security.**
 >
-> I initially had difficulty sharing the doorbell between these two apps, but found one path that worked. Basically, you must first share the device from *Guarding Vision* to *Hik-Connect*. As soon as it is shared with *Hik-Connec*t it will appear in *RCA Security* too. To perform the share, start in *Guarding Vision*, click the sharing icon on the device, "Share with User", then "Share via QR Code". Take a screenshot of that QR code and put it somewhere you can scan with your phone camera (e.g., send to anothe phone, desktop or printer). Then from the *Hik-Connect* app, choose "Add Device", and scan the QR code. This will apply for sharing, and will send a notification to *Guarding Vision*. As soon as you approve that notification, you should have access to the doorbell from both apps (and you can uninstall *Hik-Connect* at this point if you like).
+> I initially had difficulty sharing the doorbell between these two apps, but found one path that worked. Basically, you must first share the device from *Guarding Vision* to *Hik-Connect*. As soon as it is shared with *Hik-Connec*t it will appear in *RCA Security* too. To perform the share, start in *Guarding Vision*, click the sharing icon on the device, "Share with User", then "Share via QR Code". Take a screenshot of that QR code and put it somewhere you can scan with your phone camera (e.g., send to another phone, desktop or printer). Then from the *Hik-Connect* app, choose "Add Device", and scan the QR code. This will apply for sharing, and will send a notification to *Guarding Vision*. As soon as you approve that notification, you should have access to the doorbell from both apps (and you can uninstall *Hik-Connect* at this point if you like).
 
 ---
 
@@ -425,11 +426,12 @@ I found myself more concerned about the security of this device than I was for i
 
 ## Related work:
 
+[@msmcknight](https://ipcamtalk.com/threads/new-rca-hsdb2a-3mp-doorbell-ip-camera.31601/page-315#post-524011) on the IPCamTalk forums provides a good analysis of the device's traffic. First, he makes some valid complaints about the permission-creep of the app, which requires access to location, camera, microphone and storage. I confirmed this in the *Guarding Vision* app, although I also noted that I could disable location and camera permission after setup without any consequences. I could also disable storage permission, but the app started nagging for storage access every time I open it. 
+
 {: .callout .no-icon .right-half }
 > **Recommendation: once your app is set up, revoke location and camera permission.**
 
-[@msmcknight](https://ipcamtalk.com/threads/new-rca-hsdb2a-3mp-doorbell-ip-camera.31601/page-315#post-524011) on the IPCamTalk forums provides a good analysis of the device's traffic. First, he makes some valid complaints about the permission-creep of the app, which requires access to location, camera, microphone and storage. I confirmed this in the *Guarding Vision* app, although I also noted that I could disable location and camera permission after setup without any consequences. I could also disable storage permission, but the app started nagging for storage access every time I open it. He also identified the following traffic from his firewall:
-
+He also identified the following traffic from his firewall:
 
 - **time.ys7.com:123** (NTP). First hitting a server in China (time.ys7.com) 
 - **0.amazon.pool.ntp.org:123** (NTP). After configuration NTP via the Desktop *Batch Config Tool*.
@@ -481,7 +483,7 @@ Connection: Close
 /image/pic/fc4b013f86fd428690075c605c53a44f?c=a0d85aaf
 ```
 
-It appears that his EZVIZ camera was uploading a picture, probably a snapshot, to Amazon. It is bad that uses unencrypted HTTP (although the payload image itself is "hikencoded", whatever that means) and that there is no apparent authentication involved (and therefore it might be possible for the image to be accessed by unauthorized parties). In my analysis below I will show some similar traffic from the DB1 doorbell, which is at least properly encrypted. I'll show later why I believe these uploads are simply camera snapshots of events, allowing a gallery of events to be displayed in-app.
+It appears that his EZVIZ camera was uploading a picture, probably a snapshot, to Amazon. It is bad that it uses unencrypted HTTP (although the payload image itself is "hikencoded", whatever that means) and that there is no apparent authentication involved (and therefore it might be possible for the image to be accessed by unauthorized parties). In my analysis below I will show some similar traffic from the DB1 doorbell, which is at least properly encrypted. I'll show later why I believe these uploads are simply camera snapshots of events, allowing a gallery of events to be displayed in-app.
 
 ## What I expected to find
 
@@ -542,16 +544,15 @@ iptables-restore < /tmp/iptables.bak
 
 When I was finished testing, I switched the doorbell back to the normal network by connecting the Windows machine with *Batch Config Tool* to the "intercept" network, and re-adding the doorbell under its "intercept" WiFi IP address. I was then able to reconfigure it to connect back to the normal WiFi, and reboot.
 
-
 ### Housekeeping Traffic
 
-At startup, the doorbell exchanges DHCP traffic with the network gateway (router) to obtain an IP address. It then performs some DNS queries to resolve its NTP server and "**litedev.ezvizlife.com**". Later, it performs occasional DNS queries during normal usage to resolve **alarm.eu.s3.amazonaws.com** (which is a CNAME for Amazon's Simple Storage Service). It goes on to ping the network gateway every 15 seconds.
+At startup, the doorbell exchanges DHCP traffic with the network gateway (router) to obtain an IP address. It then performs some DNS queries to resolve its NTP server and "**litedev.ezvizlife.com**". Later, it performs occasional DNS queries to resolve **alarm.eu.s3.amazonaws.com** (which is a CNAME for Amazon's Simple Storage Service). It goes on to ping the network gateway every 15 seconds.
 
 ### LAN Service Discovery Requests
 
 At startup, the doorbell sends various UPnP network discovery requests. Specifically, it sends [Simple Service Discovery Protocol (SSDP)](https://en.wikipedia.org/wiki/Simple_Service_Discovery_Protocol) "M-SEARCH" requests to the multicast address `239.255.255.250.1900`, with the queries `device:InternetGatewayDevice`, `service:WANIPConnection`, `service:WANPPPConnection` and `upnp:rootdevice`. This is an apparent attempt to discover the WAN IP address over UPnP. 
 
-However the last one of these requests seems to be a little overzealous. Section 1.3.3 of the [UPnP spec](https://openconnectivity.org/upnp-specs/UPnP-arch-DeviceArchitecture-v2.0-20200417.pdf) specifies that all UPnP devices should respond to "M-SEARCH" queries for `upnp:rootdevice`. In my case, all of my Reolink cameras respond to it.  The doorbell does not appear to make any use this information, and it doesn't complain if it doesn't get any responses. I assume this SSDP query is a vestige of some previous device this firmware was used on. 
+However the last one of these requests seems to be a little overzealous. Section 1.3.3 of the [UPnP spec](https://openconnectivity.org/upnp-specs/UPnP-arch-DeviceArchitecture-v2.0-20200417.pdf) specifies that all UPnP devices should respond to "M-SEARCH" queries for `upnp:rootdevice`. In my case, all of my Reolink cameras responded to it.  The doorbell does not appear to make any use this information, and it doesn't complain if it doesn't get any responses. I assume this SSDP query is a vestige of some previous device this firmware was used on. 
 
 {: .callout .no-icon }
 > **Recommendation: For peace of mind, isolate the doorbell onto a separate network from cameras and UPnP devices in your home that it might access via multicast, and which might contain sensitive information. E.g., don't allow it to discover your NAS or baby monitor.**
@@ -562,7 +563,7 @@ RTSP traffic is served from port `udp/554`. The ONVIF API is served from port `t
 
 ### Ongoing Device Traffic
 
-The doorbell talks to a lot of IP addresses, which seem to be randomly selected from a large pool of candidates at startup. Across 4 test runs (with the doorbell rebooted between each test), I captured traffic to 27 different remote IP addresses at 33 different IP:port endpoints (i.e., some IP addresses host services at multiple ports). Nearly all the endpoints were different in each test run. In fact, the only IP address seen in multiple test runs were the ones that **litedev.ezvizlife.com** resolves to. The IP addresses I observed were all located in either Amazon's AWS datacenter in Ireland ("EU-West"), a Tencent datacenter in Germany or a UCloud datacenter in the United Kingdom. HikVision/EZVIZ seems to have taken care to locate their data processing in the EU, possibly to comply with GDPR privacy regulations (though it is worth noting that some of those European servers are operated by other Chinese companies). I am located in Ireland, so it is very possible I am getting servers close to me returned. Users in other continents may seem completely different IP addresses.
+The doorbell talks to a lot of IP addresses, which seem to be randomly selected from a large pool of candidates at startup. Across 4 test runs (with the doorbell rebooted between each test), I captured traffic to 27 different remote IP addresses at 33 different IP:port endpoints (i.e., some IP addresses host services at multiple ports). Nearly all the endpoints were different in each test run. In fact, the only IP address seen in multiple test runs were the ones that **litedev.ezvizlife.com** resolves to. The IP addresses I observed were all located in either Amazon's AWS datacenter in Ireland ("EU-West"), a Tencent datacenter in Germany, or a UCloud datacenter in the United Kingdom. HikVision/EZVIZ seems to have taken care to locate their data processing in the EU, possibly to comply with GDPR privacy regulations (although it is worth noting that some of those European servers are operated by other Chinese companies). I am located in Ireland, so it is very possible I am getting servers close to me returned. Users in other continents may seem completely different IP addresses.
 
 Excluding **litedev.ezvizlife.com**, none of the other IP addresses were discovered using DNS. I tried to find where these IP addresses came from by unpacking the firmware using `binwalk`, and searching the unpacked contents with `grep` and a hex editor. The only hardcoded IP address I could find was for a DNS server (which I never saw used). 
 
@@ -577,14 +578,14 @@ I have done my best to analyse all the other traffic generated by the doorbell, 
 |---------------------------|----------------------------------------------|-----------------------------------------------------|---------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
 | **litedev.ezvizlife.com** |                            Download settings | tcp/8666                                            | Startup                                                       | 34.241.130.159, 52.49.49.41, 52.214.240.162                                                                | Amazon AWS EU-WEST (Ireland)                           |
 | **MQTT**           |                          Event communication | tcp/31006                                           | Continuous                                                    | 34.241.60.75, 34.242.204.148, 34.244.52.156, 52.31.32.77, 54.194.209.162, 54.74.241.227                    | Amazon AWS EU-WEST (Ireland)                           |
-| **STUN**           |          Discover public IP and port binding | udp/31007, udp/6002, udp/6003                       | P2P video stream initialization                               | 162.62.52.164, 162.62.57.218, 34.241.60.75, 34.242.204.148, 54.194.209.162, 54.74.241.227                  | Amazon AWS EU-WEST (Ireland), Tencent (United Kingdom) |
+| **STUN**           |          Discover public IP and port binding | udp/31007, udp/6002, udp/6003                       | P2P video stream initialization                               | 162.62.52.164, 162.62.57.218, 34.241.60.75, 34.242.204.148, 54.194.209.162, 54.74.241.227                  | Amazon AWS EU-WEST (Ireland), Tencent (Germany) |
 | **S3 upload**      |          Upload snapshots of doorbell events | tcp/443 (TLS)                                       | When the doorbell is pressed                                  | 52.218.31.34, 52.218.40.154, 52.218.52.81                                                                  | Amazon S3 EU-WEST (Ireland)                            |
 | **Voice**          |              Relay 2-way voice communication | tcp/12347, tcp/12772, tcp/12949, tcp/7300, tcp/7900 | During intercom use or answering the doorbell via the app     | 54.154.13.64, 52.16.5.242, 118.193.65.147, 118.193.65.147                                                  | Amazon S3 EU-WEST (Ireland), UCloud (United Kingdom)   |
 | **TURN**           | Relay video stream if P2P connectivity fails | tcp/7760, tcp/9020                                  | During P2P video stream                                       | 101.36.97.120, 118.193.64.78, 118.193.65.151, 118.193.65.18, 118.26.104.236, 152.32.198.139, 152.32.198.25 | Ucloud (United Kingdom)                                |
 
 Additional notes:
 - I observed hundreds packets identical to those I list above as "**STUN**", but sent to endpoints like `100.116.154.109:10378`, `100.64.96.243:10257` and `100.67.102.13:10317`. These are not routable IP addresses, but are from the "Shared Address Space" range [100.64.0.0 - 100.127.255.255](https://www.rfc-editor.org/rfc/rfc6598.html). My best guess is that they are left over from debugging/QA, and unfortunately result in hundreds of useless UDP packets flying around your LAN every time you have a caller.
-- I probably have merely scraped the surface of the number of potential endpoints the doorbell may use to try to get these services fulfilled. In the packet captures I studied, I could see the doorbell simultaneously connecting to services at different IPs and ports, probably to increase the chance of success. I previously mentioned that @msmcknight settled on blocking a handful of destination ports, which he found to be unnecessary for the functioning of the doorbell. I now believe his doorbell simply reacted to these firewall rules by failing over to using alternative endpoints. 
+- With just 4 test runs, I have probably captured just a small fraction of the number of potential endpoints the doorbell may use to try to get these services fulfilled. In the packet captures I studied, I could see the doorbell simultaneously connecting to services at different IPs and ports, probably to increase the chance of success. I previously mentioned that @msmcknight settled on blocking a handful of destination ports, which he found to be unnecessary for the functioning of the doorbell. I now believe his doorbell simply reacted to these firewall rules by failing over to using alternative endpoints. 
 - The **MQTT** endpoints use normal MQTT that can be decoded by wireshark. The doorbell sends its serial number as its MQTT username, with the password "test". The doorbell publishes messages to topics like `/3300/<incrementing counter>`, and subscribes to a topic matching the doorbell's serial number, into which the server publishes on sub-topics like  `<serial number>/3100/<incrementing counter>`. The messages have small binary payloads, and I haven't decoded them. I imagine they correspond to motion and bell push events from the camera, and instructions from the server to attempt to initiate a P2P connection to the phone app (i.e., it plays the role of a *signalling* server in STUN or WebRTC parlance).
 - The **STUN** endpoints receive simple XML requests and reply with short XML responses containing the public (WAN) IP address and the source port that the doorbell is communicating from on the WAN address. The doorbell sends a ridiculous number of redundant requests to the STUN servers. It is easy to observe hundreds of duplicate messages going to each of several endpoints in quick succession. I know from my Demonware days that it is only necessary to send a handful of packets to two hosts, with a very occasional "heartbeat". 
 - STUN at `udp/31007` usually seems to be hosted on the same IP address as the "MQTT Server" (on `tcp/31006`), with additional endpoints used for redundancy.
@@ -593,7 +594,7 @@ Additional notes:
 I decided to probe the effects of blocking access to each of these services above using `iptables`.
 
 - **litedev.ezvizlife.com**. I blocked destination port `udp/8666` and rebooted the doorbell. It was then unable to initialize itself, and showed as "Offline" in the app. However, local access via RTSP, ONVIF and the desktop *Batch Configuration Tool* continued to work.
-- **TURN**. I blocked ports `tcp/7760` and `tcp/9020`, and tried to stream video through the app. I expected peer-to-peer UDP-based streaming to continue to work. Unfortunately, most of the time the app refused to play video at all (although occasionally it worked for a little while). It seems that the doorbell will often unnecessarily bail out when it can't reach a TURN server, instead trying to establish a peer-to-peer UDP stream via STUN. This is a shame because TURN is only supposed to be a failover for UDP peer-to-peer, and normally isn't required.
+- **TURN**. I blocked ports `tcp/7760` and `tcp/9020`, and tried to stream video through the app. I expected peer-to-peer UDP-based streaming to continue to work. Unfortunately, most of the time the app refused to play video at all (although occasionally it worked for a little while). It seems that the doorbell unnecessarily bails out when it can't reach a TURN server, instead trying to establish a peer-to-peer UDP stream via STUN. This is a shame because TURN is only supposed to be a failover for UDP peer-to-peer, and normally isn't required.
 - **S3 upload server**. I blocked `tcp/443` (i.e., SSL). As soon as I pressed the button, the doorbell went into a frensy retrying to upload the snapshot, and became unresponsive. As soon as I unblocked the port, it became responsive again. However, the snapshot in the app UI for that event remained broken.
 - **Voice server**. I blocked destination addresses `54.154.13.64`, `52.16.5.242`, `118.193.65.147`, `118.193.65.147`. The app continued to generally work, but the it gave an error if I tried to activate two-way voice communication. 
 
@@ -601,7 +602,7 @@ I decided to probe the effects of blocking access to each of these services abov
 
 Although it is initially alarming to see the doorbell connect to so many diverse server endpoints, there is nothing treacherous going on.  Every service contacted by doorbell is necessary and expected, and is supplied by multiple redundant endpoints. If any endpoints are blocked, functionality will either break or degrade (while the doorbell fails over to an alternative endpoint). In any case, attempting to block by destination IP is futile, because the doorbell uses a very large and dynamic set of service endpoints.
 
-It surprised me that a TCP server is used to relay voice communication. I notice that the *RCA Security* app allows you to use the intercom separately to the video feed. Therefore, the doorbell must send caller-side audio *both* through UDP video stream *and* through the TCP voice server; meanwhile audio from the app is sent back to the doorbell only through the TCP voice server. An alternative design would have been for the app to reply to the doorbell's UDP audio-video stream with a UDP audio-only stream. This would have the lowest latency possible, and eliminate a server dependency. My guess is that a third party voice chat was used, with a drop-in client library and a server-side app (which HikVision/EZVIZ is hosting on AWS and UCloud).
+It surprised me that a TCP server is used to relay voice communication. I notice that the *RCA Security* app allows you to use the intercom separately to the video feed. Therefore, the doorbell must send caller-side audio *both* through UDP video stream *and* through the TCP voice server; meanwhile audio from the app is sent back to the doorbell only through the TCP voice server. An alternative design would have been for the app to reply to the doorbell's UDP audio-video stream with a UDP audio-only stream. This would have the lowest possible latency, and eliminate a server dependency. My guess is that a third party voice chat solution was used, with a drop-in client library and a server-side app (which HikVision/EZVIZ is hosting on AWS and UCloud).
 
 It is a shame that there are so many server dependencies. When these servers are eventually taken offline, some doorbell functionality will stop working (although I have confirmed that local RTSP/ONVIF camera functionality will continue to work). Planned obsolescence is a risk for all smart doorbells, but this represents a missed opportunity to allow this device to work independently of its manufacturer's servers. In an ideal world, I would have liked:
 - the ability to specify which MQTT server to use for event communication.
@@ -614,7 +615,7 @@ Although the device works (and works reliably), the firmware is clearly sloppy i
 From a security perspective, I can say that everything I observed seemed necessary for the advertised functionality, and nothing looked nefarious. It is true that it uploads camera snapshots and audio (and sometimes video) to servers, but no more than any other smart doorbell. Like any IoT device, it could contain a hidden backdoor that could activate sleeper code that does something I didn't observe in my tests, but the same caveat goes for nearly every bit of software running in all our homes. The firmware does appear to be sloppy in places, and may be vulnerable to buffer overrun exploits if someone cared to develop one, which could conceivably be delivered by flooding the router with malicious UDP packets in the hope of slipping one back to the doorbell's STUN client code. This is a theoretical risk, and similar risks exist for a lot of IoT devices that we use. I bet if I analysed most IoT devices to an equivalent extent I would also see sloppiness and potential attack vectors. My conclusion is that this device should be treated as a similar security risk as all the other IoT devices on the network, and that the appropriate precaution is to isolate it insofar as possible from other devices.
 
 {: .callout .no-icon }
-> **Recommendation: For peace of mind, isolate the device on a VLAN. Other than that, let it talk to its servers.**
+> **Recommendation: For peace of mind, isolate the device on a VLAN or a separate WiFi. Other than that, let it talk to its servers.**
 
 ---
 
@@ -795,7 +796,9 @@ This revealed various IP addresses, most of which seem to be local IP addresses 
 ```
 From this list, the "**public1.114dns.com**" / `114.114.114.114` DNS server could conceivably be used, but I never witnessed it. We also see the `239.255.255.250` multicast address, which is used for UPnP SSDP requests at startup. The rest of the IP addresses are not routable.
 
-
+---
+# The End
+---
 
 {: .callout }
 > **What would an open source smart doorbell look like?**
