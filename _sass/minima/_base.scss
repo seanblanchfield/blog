@@ -118,6 +118,10 @@ figcaption {
  */
 ul, ol {
   margin-left: $spacing-unit;
+
+  li {
+    margin-bottom: 0.3em;
+  }
 }
 
 li {
@@ -173,6 +177,7 @@ blockquote {
   padding-left: $spacing-unit / 2;
   @include relative-font-size(1.125);
   font-style: italic;
+  font-size: $base-font-size * 0.8;
 
   > :last-child {
     margin-bottom: 0;

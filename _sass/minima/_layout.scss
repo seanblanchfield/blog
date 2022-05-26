@@ -398,15 +398,35 @@ table.hljs-ln {
   }
 }
 
-figure.right-half,
-img.right-half {
-  width: 100%; 
+
+blockquote.right-third,
+figure.right-third,
+img.right-third {
+  width: 100%;
+  
   @include media-query($on-palm) {
     width: 50%;
+    margin-left: 1rem;
   }
-  margin-left: 1rem;
+
+  @include media-query($on-laptop) {
+    width: 33%;
+    margin-left: 1rem;
+  }
   float: right; 
 }
+
+blockquote.right-half,
+figure.right-half,
+img.right-half {
+  
+  @include media-query($on-palm) {
+    width: 50%;
+    margin-left: 1rem;
+  }
+  float: right; 
+}
+blockquote.left-half,
 figure.left-half,
 img.left-half {
   width: 100%; 
@@ -462,7 +482,7 @@ blockquote.callout {
   align-items: center;
   border: 1px dashed;
 }
-blockquote.callout::before { 
+blockquote.callout:not(.no-icon)::before { 
   background-image: url(/images/information_icon.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -470,7 +490,6 @@ blockquote.callout::before {
   width: 32px;
   height: 32px;
   content: " ";
-  
   margin-right: 1rem;
   margin-bottom: 1rem;
   @include media-query($on-palm) {
@@ -485,4 +504,8 @@ blockquote.archived-comment {
   padding: 1rem;
   color: #7d7d7d;
   border: 1px solid;
+}
+// Highlight.js override
+.hljs-comment {
+  color: #928c6d !important;
 }
