@@ -497,7 +497,7 @@ I am experienced with low level networking and peer-to-peer systems. As CTO of D
 - UDP or TCP traffic from a server (probably one of the previous servers) for the purpose of coordinating peer-to-peer connections, along the lines of the STUN and ICE RFCs. This basically tells the doorbell to initiate a connection out to a peer that is seeking to connect (e.g. the Hik-Connect app on your phone).
 - UDP traffic to various different IP/port endpoints where the phone app might be reachable. I'd expect my mobile carrier's IP address range to show up here, and my WAN IP and my phone's LAN IP.
 
-See this [great PDF from the IETF](https://www.ietf.org/documents/144/IETF_ICE_intro_92.pdf) for a primer on punching holes through NATS for peer-to-peer communication using ICE and STUN. 
+See this [great PDF from the IETF](https://www.ietf.org/documents/144/IETF_ICE_intro_92.pdf) for a primer on punching holes through NATs for peer-to-peer communication using ICE and STUN. 
 
 Based on the above list, I'd expect the doorbell's functionality to make it look quite chatty. This didn't seem to explain everything @msmcknight reported though, so I decided to do a deeper analysis. 
 
