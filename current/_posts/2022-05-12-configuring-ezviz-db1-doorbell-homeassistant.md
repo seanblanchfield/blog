@@ -17,7 +17,7 @@ I'm on a mission to rid my house of Cloud dependencies and recently replaced my 
 
 # The best smart doorbell?
 
-![The EZVIZ DB1 doorbell (with logo removed)](/images/2022/05/db1/db1_mounted_closeup.jpg){: .captioned .right-half }
+![The EZVIZ DB1 doorbell (with logo removed and button swapped)](/images/2022/05/db1/db1_mounted_closeup.jpg){: .captioned .right-half }
 
 The [EZVIZ DB1](https://www.ezviz.com/product/db1/960) should not be confused with any of the other similarly named products from EZVIZ. The [DB1 Pro](https://www.ezviz.com/product/db1-pro/39208), [DB1C](https://www.ezviz.com/product/db1c/27224), [DB2](https://www.ezviz.com/inter/product/db2/38579), and [DB2 Pro](https://www.ezviz.com/product/db2-pro/38327) are *completely* different devices.  EZVIZ is a sub-brand of HikVision, and the [DB1](https://www.ezviz.com/product/db1/960) is actually a rebadged *Hikvision DS-HD1*, and is also sold as the *RCA HSDB2A*, *LaView LV-PDB1630-U*, *Nelly's NSC-DB2* and *LTS LTH-7132-WIFI*. It has mostly equivalent specs to the wired Nest doorbell, but has an improved resolution of **2048x1536 pixels** (vs Nest's 1600x1200), and a greater **180&deg; vertical field of view** (vs 160&deg;), which means you can see parcels left on the ground. It's the only smart doorbell I've come across that has an integrated PIR sensor, which is more reliable for person detection than video motion detection (and more reliable than AI person detection so long as its not facing a public footpath). It is also less than half the price of the wired Google Nest doorbell. 
 
