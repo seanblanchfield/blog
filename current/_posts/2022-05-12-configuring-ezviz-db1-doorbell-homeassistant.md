@@ -512,7 +512,6 @@ airmon-ng check kill # kill interfering processes
 airmon-ng start wlp2s0 4 # Put interface wlp2s0 into monitor mode on channel 4
 # Return the WiFi interface to normal
 airmon-ng stop wlp2s0mon
-
 ```
 This passive monitoring approach was pretty easy to set up but many packets were not captured due to the distance between my workstation and the doorbell. This made it hard to confidently analyse what the doorbell was doing.
 
@@ -563,7 +562,7 @@ RTSP traffic is served from port `udp/554`. The ONVIF API is served from port `t
 
 ### Ongoing Device Traffic
 
-The doorbell talks to a lot of IP addresses, which seem to be randomly selected from a large pool of candidates at startup. Across 4 test runs (with the doorbell rebooted between each test), I captured traffic to 27 different remote IP addresses at 33 different IP:port endpoints (i.e., some IP addresses host services at multiple ports). Nearly all the endpoints were different in each test run. In fact, the only IP address seen in multiple test runs were the ones that **litedev.ezvizlife.com** resolves to. The IP addresses I observed were all located in either Amazon's AWS datacenter in Ireland ("EU-West"), a Tencent datacenter in Germany, or a UCloud datacenter in the United Kingdom. HikVision/EZVIZ seems to have taken care to locate their data processing in the EU, possibly to comply with GDPR privacy regulations (although it is worth noting that some of those European servers are operated by other Chinese companies). I am located in Ireland, so it is very possible I am getting servers close to me returned. Users in other continents may seem completely different IP addresses.
+The doorbell talks to a lot of IP addresses, which seem to be randomly selected from a large pool of candidates at startup. Across 4 test runs (with the doorbell rebooted between each test), I captured traffic to 27 different remote IP addresses at 33 different IP:port endpoints (i.e., some IP addresses host services at multiple ports). Nearly all the endpoints were different in each test run. In fact, the only IP addresses seen in multiple test runs were the ones that **litedev.ezvizlife.com** resolves to. The IP addresses I observed were all located in either Amazon's AWS datacenter in Ireland ("EU-West"), a Tencent datacenter in Germany, or a UCloud datacenter in the United Kingdom. HikVision/EZVIZ seems to have taken care to locate their data processing in the EU, possibly to comply with GDPR privacy regulations (sidenode: some of those European servers are operated by other Chinese companies, and the UK is no longer in the EU). I am located in Ireland, so it is very possible I am getting servers close to me returned. Users in other continents may seem completely different IP addresses.
 
 Excluding **litedev.ezvizlife.com**, none of the other IP addresses were discovered using DNS. I tried to find where these IP addresses came from by unpacking the firmware using `binwalk`, and searching the unpacked contents with `grep` and a hex editor. The only hardcoded IP address I could find was for a DNS server (which I never saw used). 
 
