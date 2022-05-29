@@ -41,6 +41,7 @@ The closest popular alternative devices are the Nest Doorbell (Wired) and the Ri
 ### Cons
 - Button press events **not exposed** via API, and therefore can't be automated against without a bit of hacking.
 - The device can support **only three simultanous streaming clients**. 
+- Some visitors, from pensioners to PhDs, inexplicably press the PIR sensor instead of the button. Even with the faceplate button swapped to make it the only contrasting element in the design, some people continue to jab at the PIR sensor (and can't even tell me why). More work required perhaps.
 - There are a **confusing number of firmwares** available, each of which have different pros and cons.
 - There are **multiple apps to choose from**, none of which are perfect, and most of which reliably fail to receive calls from the doorbell.
 - Despite its main operation being local-network or peer-to-peer, it tries to open up a **lot of connections to internet servers**. Should I trust the Chinese state-owned [Hangzhou Hikvision Digital Technology Company](https://en.wikipedia.org/wiki/Hikvision) more or less than Google or Amazon?
@@ -56,7 +57,7 @@ First, I need to acknowledge that I am indebted to the IPCamTalk community and t
 
 In the sections below I discuss not just my conclusions and recommendations, but also how I arrived at each solution. You can read this post linearly, or jump to the bit you're most interested in:
 
-- For improving the physical look of the device, see my previous post on [removing the logo and swapping buttons](2022/03/improving-ezviz-db1-doorbell).
+- For improving the physical look of the device and swapping button colours, see my previous post on [removing the logo and swapping buttons](2022/03/improving-ezviz-db1-doorbell). 
 - [Detecting the button being pressed](#detecting-button-presses)
 - [Choosing a desktop configuration tool, and how to use it](#the-desktop-configuration-tool)
 - [Choosing and changing the firmware](#changing-the-firmware)
@@ -797,6 +798,9 @@ From this list, the "**public1.114dns.com**" / `114.114.114.114` DNS server coul
 
 ---
 # The End
+
+If you would like to add any comments or corrections, please join the discussion over at my [Home Assistant community post](https://community.home-assistant.io/t/ezviz-db1-hikvision-hd1-doorbell-with-shelly-uni-general-deepdive/).
+
 ---
 
 {: .callout }
