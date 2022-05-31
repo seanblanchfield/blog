@@ -359,7 +359,7 @@ You can also create a "XSPF" file on your desktop to act as a VLC shortcut for q
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <playlist xmlns="http://xspf.org/ns/0/" xmlns:vlc="http://www.videolan.org/vlc/playlist/ns/0/" version="1">
-    <title>Scaletta</title>
+    <title>Doorbell</title>
     <trackList>
         <track>
             <location>rtsp://admin:VERIFICATION_CODE@DOORBELL_IP_ADDRESS:554/Streaming/Channels/101/</location>
@@ -387,7 +387,7 @@ A few different entities will be available over ONVIF:
 - **Cell Motion Detection**. I believe this is video motion detected by the doorbell in the motion detection zone that you may have set up from the desktop configuration tool (screenshots in the Desktop Configuration Tool section above)
 - **Motion Alarm**. I believe this is the PIR sensor.
 - **Field Detection**. I don't know what this is. It has never detected anything for me.
-- **MainStream** and **SubStream**. Camera entities for the low/high resolution stream. I recommend disabling these entity to help you avoid accidentally using them somewhere and consuming precious streaming connections.
+- **MainStream** and **SubStream**. Camera entities for the low/high resolution stream. I recommend disabling these entities to help you avoid accidentally using them somewhere and consuming precious streaming connections.
 - **Reboot**. A button that reboots the doorbell.
 
 A doorbell snapshot image is available at the URL **http://DOORBELL_IP_ADDRESS/onvif/snapshot.jpg**, if you want to include it in mobile notifications etc.
@@ -488,7 +488,7 @@ It appears that his EZVIZ camera was uploading a picture, probably a snapshot, t
 
 ## What I expected to find
 
-I am experienced with low level networking and peer-to-peer systems. As CTO of Demonware I was closely involved in design and implementation of the peer-to-peer code and hosted platform that connect millions of players in real-time in the Call of Duty video game franchise, and many other video games. Based on my recollection of implementing the [ICE](https://datatracker.ietf.org/doc/html/rfc5245) and the [STUN](https://datatracker.ietf.org/doc/html/rfc3489) RFCs for  establishing peer-to-peer communication through NATs, I expect a product like the DB1 doorbell to generate the following kind of traffic at a minimum:
+I am experienced with low level networking and peer-to-peer systems. As CTO of Demonware I was closely involved in design and implementation of the peer-to-peer code and hosted platform that connect millions of players in real-time in the Call of Duty video game franchise, and many other video games. Based on my recollection of implementing the [ICE](https://datatracker.ietf.org/doc/html/rfc5245) and the [STUN](https://datatracker.ietf.org/doc/html/rfc3489) RFCs for  establishing peer-to-peer communication through NATs, I expect a product like the DB1 doorbell to generate the following types of traffic at a minimum:
 
 - Normal housekeeping traffic like NTP for time synchronisation, DHCP for obtaining an IP address and DNS server information, DNS queries for various servers, and ICMP (pings).
 - TCP traffic to a server that sends events corresponding to doorbell presses and motion detection.
@@ -550,7 +550,7 @@ At startup, the doorbell exchanges DHCP traffic with the network gateway (router
 
 ### LAN Service Discovery Requests
 
-At startup, the doorbell sends various UPnP network discovery requests. Specifically, it sends [Simple Service Discovery Protocol (SSDP)](https://en.wikipedia.org/wiki/Simple_Service_Discovery_Protocol) "M-SEARCH" requests to the multicast address `239.255.255.250.1900`, with the queries `device:InternetGatewayDevice`, `service:WANIPConnection`, `service:WANPPPConnection` and `upnp:rootdevice`. This is an apparent attempt to discover the WAN IP address over UPnP. 
+At startup, the doorbell sends various UPnP network discovery requests. Specifically, it sends [Simple Service Discovery Protocol (SSDP)](https://en.wikipedia.org/wiki/Simple_Service_Discovery_Protocol) "M-SEARCH" requests to the multicast address `239.255.255.250:1900`, with the queries `device:InternetGatewayDevice`, `service:WANIPConnection`, `service:WANPPPConnection` and `upnp:rootdevice`. This is an apparent attempt to discover the WAN IP address over UPnP. 
 
 However the last one of these requests seems to be a little overzealous. Section 1.3.3 of the [UPnP spec](https://openconnectivity.org/upnp-specs/UPnP-arch-DeviceArchitecture-v2.0-20200417.pdf) specifies that all UPnP devices should respond to "M-SEARCH" queries for `upnp:rootdevice`. In my case, all of my Reolink cameras responded to it.  The doorbell does not appear to make any use this information, and it doesn't complain if it doesn't get any responses. I assume this SSDP query is a vestige of some previous device this firmware was used on. 
 
@@ -563,7 +563,7 @@ RTSP traffic is served from port `udp/554`. The ONVIF API is served from port `t
 
 ### Ongoing Device Traffic
 
-The doorbell talks to a lot of IP addresses, which seem to be randomly selected from a large pool of candidates at startup. Across 4 test runs (with the doorbell rebooted between each test), I captured traffic to 27 different remote IP addresses at 33 different IP:port endpoints (i.e., some IP addresses host services at multiple ports). Nearly all the endpoints were different in each test run. In fact, the only IP addresses seen in multiple test runs were the ones that **litedev.ezvizlife.com** resolves to. The IP addresses I observed were all located in either Amazon's AWS datacenter in Ireland ("EU-West"), a Tencent datacenter in Germany, or a UCloud datacenter in the United Kingdom. HikVision/EZVIZ seems to have taken care to locate their data processing in the EU, possibly to comply with GDPR privacy regulations (sidenode: some of those European servers are operated by other Chinese companies, and the UK is no longer in the EU). I am located in Ireland, so it is very possible I am getting servers close to me returned. Users in other continents may seem completely different IP addresses.
+The doorbell talks to a lot of IP addresses, which seem to be randomly selected from a large pool of candidates at startup. Across 4 test runs (with the doorbell rebooted between each test), I captured traffic to 27 different remote IP addresses at 33 different IP:port endpoints (i.e., some IP addresses host services at multiple ports). Nearly all the endpoints were different in each test run. In fact, the only IP addresses seen in multiple test runs were the ones that **litedev.ezvizlife.com** resolves to. The IP addresses I observed were all located in either Amazon's AWS datacenter in Ireland ("EU-West"), a Tencent datacenter in Germany, or a UCloud datacenter in the United Kingdom. HikVision/EZVIZ seems to have taken care to locate their data processing in the EU, possibly to comply with GDPR privacy regulations (*side note*: some of those European servers are operated by other Chinese companies, and the UK is no longer in the EU). I am located in Ireland, so it is very possible I am getting servers close to me returned. Users in other continents may see completely different IP addresses.
 
 Excluding **litedev.ezvizlife.com**, none of the other IP addresses were discovered using DNS. I tried to find where these IP addresses came from by unpacking the firmware using `binwalk`, and searching the unpacked contents with `grep` and a hex editor. The only hardcoded IP address I could find was for a DNS server (which I never saw used). 
 
@@ -606,13 +606,13 @@ It surprised me that a TCP server is used to relay voice communication. I notice
 
 It is a shame that there are so many server dependencies. When these servers are eventually taken offline, some doorbell functionality will stop working (although I have confirmed that local RTSP/ONVIF camera functionality will continue to work). Planned obsolescence is a risk for all smart doorbells, but this represents a missed opportunity to allow this device to work independently of its manufacturer's servers. In an ideal world, I would have liked:
 - the ability to specify which MQTT server to use for event communication.
-- a standard STUN/TURN implementation (like [coturn](https://github.com/coturn/coturn)), so you could host it yourself or configure the doorbell to use a publicly available solution (such as Google's STUN servers, which support WebRTC video chat in Chrome). 
+- a standard STUN/TURN implementation (like [coturn](https://github.com/coturn/coturn)), so you could host it yourself or configure the doorbell to use a publicly available solution (such as Google's STUN servers, which are used by Chrome for WebRTC). 
 - no uploading of snapshots to Amazon S3 or any other internet service. There is already a peer-to-peer connection to the app that snapshots can be downloaded through.
 - no separate voice relay server. Just a two-way peer-to-peer UDP stream with the app.
 
-Although the device works (and works reliably), the firmware is clearly sloppy in places. It performs unnecessary SSDP discovery on the LAN and sends hundreds of test STUN traffic to non-existent non-routable IP addresses. In fact, it sends hundreds of packets to every STUN server, when a handful would suffice. It fails to stream video if it cannot connect to a "TURN" service, even though that is just a backup communication channel. When I looked inside the firmware I saw it still contains lots of leftover debugging information. None of this is critical, but sloppiness and poor security go hand-in-hand.
+Although the device works (and works reliably), the firmware is clearly sloppy in places. It performs unnecessary SSDP discovery on the LAN and sends hundreds of test STUN packets to non-routable IP addresses. In fact, it sends hundreds of packets to every STUN server, when a handful would suffice. It fails to stream video if it cannot connect to a "TURN" service, even though that is just a backup communication channel. When I looked inside the firmware I saw it still contains lots of leftover debugging information. None of this is critical, but sloppiness and poor security go hand-in-hand.
 
-From a security perspective, I can say that everything I observed seemed necessary for the advertised functionality, and nothing looked nefarious. It is true that it uploads camera snapshots and audio (and sometimes video) to servers, but no more than any other smart doorbell. Like any IoT device, it could contain a hidden backdoor that could activate sleeper code that does something I didn't observe in my tests, but the same caveat goes for nearly every bit of software running in all our homes. The firmware does appear to be sloppy in places, and may be vulnerable to buffer overrun exploits if someone cared to develop one, which could conceivably be delivered by flooding the router with malicious UDP packets in the hope of slipping one back to the doorbell's STUN client code. This is a theoretical risk, and similar risks exist for a lot of IoT devices that we use. I bet if I analysed most IoT devices to an equivalent extent I would also see sloppiness and potential attack vectors. My conclusion is that this device should be treated as a similar security risk as all the other IoT devices on the network, and that the appropriate precaution is to isolate it insofar as possible from other devices.
+From a security perspective, I can say that everything I observed seemed necessary for the advertised functionality, and nothing looked nefarious. It is true that it uploads camera snapshots and audio (and sometimes video) to servers, but no more than any other smart doorbell. Like any IoT device, it could contain a hidden backdoor that could activate sleeper code that does something I didn't observe in my tests, but the same caveat goes for nearly every bit of software running in all our homes. The firmware does appear to be sloppy in places, and may be vulnerable to buffer overrun exploits if someone cared to develop one, which could conceivably be delivered by flooding the router with malicious UDP packets in the hope of slipping one back to the doorbell's STUN client code. This is a theoretical risk, and similar risks exist for a lot of IoT devices that we use. I bet if I analysed most IoT devices to an equivalent extent I would also see sloppiness and potential attack vectors. My conclusion is that this device should be treated as a similar security risk to all the other IoT devices on the network, and that the appropriate precaution is to isolate it insofar as possible from other devices.
 
 {: .callout .no-icon }
 > **Recommendation: For peace of mind, isolate the device on a VLAN or a separate WiFi. Other than that, let it talk to its servers.**
@@ -744,7 +744,7 @@ total 552K
 -rwxrwxrwx 1 sean sean  963 May 25 21:11 ys.aac
 ```
 
-The Jefferson file system in the firmware contains only AAC audio files, which correspond to the various audio messages the doorbell can make. `binwalk` failed to uncompress/decode the file `48388.lzo`, so I'm not sure what's in there. I suspect that it might be software library containing *eCos RTOS* and/or *IOTO*.
+The Jefferson file system in the firmware contains only AAC audio files, which correspond to the various audio messages the doorbell can make. `binwalk` failed to uncompress/decode the file `48388.lzo`, so I'm not sure what's in there. I suspect that it might be a software library containing *eCos RTOS* and/or *IOTO*.
 
 The file `B0100.lzo` was uncompressed successfully and seems to be compiled object code, which still contains debug symbols and various other interesting strings (even file paths on the developers' computers).
 
