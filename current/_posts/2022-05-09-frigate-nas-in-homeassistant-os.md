@@ -154,7 +154,7 @@ shell_command: !include shell_commands.yaml
 
 Then I created a new `shell_commands.yaml` file containing the SSH command above (again, where 'PASSWORD' and 'NAS_IP_ADDRESS' are redacted):
 ``` yaml
-mount_frigate_nas: ssh root@172.17.0.1 -p 22222 -i /ssl/homeassistant_rsa -C "mkdir -p /mnt/data/supervisor/media/frigate; if ! mountpoint /mnt/data/supervisor/media/frigate; then mount -t cifs -o 'username=frigate,password=PASSWORD' //NAS_IP_ADDRESS/frigate /mnt/data/supervisor/media/frigate; fi"
+mount_frigate_nas: ssh root@172.17.0.1 -p 22222 -i /ssl/homeassistant_rsa -o "StrictHostKeyChecking=no" -C "mkdir -p /mnt/data/supervisor/media/frigate; if ! mountpoint /mnt/data/supervisor/media/frigate; then mount -t cifs -o 'username=frigate,password=PASSWORD' //NAS_IP_ADDRESS/frigate /mnt/data/supervisor/media/frigate; fi"
 ```
 
 Next I needed to control how the Frigate add-on starts. First I disabled "Start on boot" in the Frigate add-on. Then I created a new automation that is triggered whenever Home Assistant starts, and which waits for the NAS to become available (I use the [Ping](https://www.home-assistant.io/integrations/ping/) integration to create the `binary_sensor.diskstation` sensor), then I wait for an additional minute to allow any NAS initialisation to complete, then I run the shell command to mount the directory, and finally I start the Frigate add-on.
