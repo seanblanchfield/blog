@@ -15,6 +15,9 @@ I'm on a mission to rid my house of Cloud dependencies and recently replaced my 
 
 <!-- more -->
 
+{: .callout .no-icon }
+> This is the second post in a series about the EZVIZ DB1 smart doorbell. Also see [Improving the DB1 Doorbell](/2022/03/improving-ezviz-db1-doorbell) and [Making a New EZVIZ DB1 Button](/2022/06/new-ezviz-db1-button).
+
 # The best smart doorbell?
 
 ![The EZVIZ DB1 doorbell (with logo removed and button swapped)](/images/2022/05/db1/db1_mounted_closeup.jpg){: .captioned .right-half }

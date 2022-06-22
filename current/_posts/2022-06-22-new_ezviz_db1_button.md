@@ -4,7 +4,7 @@ date: 2022-06-22 11:00
 layout: post
 link: https://seanblanchfield.com/new-ezviz-db1-button
 slug: new-ezviz-db1-button
-title: Improving the Ezviz DB1 Button
+title: Making a New EZVIZ DB1 Button
 image: /images/2022/06/db1_button_cover_image.jpg
 tags:
 - Code
@@ -14,6 +14,9 @@ tags:
 The EZVIZ DB1 smart doorbell has a physical design flaw that makes one in four visitors to my house press the PIR sensor instead of the doorbell button. I made one more attempt to address this flaw.
 
 <!-- more -->
+
+{: .callout .no-icon }
+> This is the third post in a series about the EZVIZ DB1 smart doorbell. Also see [Improving the DB1 Doorbell](/2022/03/improving-ezviz-db1-doorbell) and [Deepdive into the EZVIZ DB1 Doorbell with Home Assistant](/2022/05/ezviz-db1-doorbell-deepdive-homeassistant).
 
 I previously tried to resolve this flaw by [swapping the buttons](http://localhost:4000/2022/03/improving-ezviz-db1-doorbell) between faceplates to make sure the button was the only high-contrast element on the faceplate. This left the doorbell with the following appearance:
 
