@@ -57,7 +57,7 @@ First, I need to acknowledge that I am indebted to the IPCamTalk community and t
 
 In the sections below I discuss not just my conclusions and recommendations, but also how I arrived at each solution. You can read this post linearly, or jump to the bit you're most interested in:
 
-- For improving the physical look of the device and swapping button colours, see my previous post on [removing the logo and swapping buttons](2022/03/improving-ezviz-db1-doorbell). 
+- For improving the physical look of the device and swapping button colours, see my previous post on [removing the logo and swapping buttons](/2022/03/improving-ezviz-db1-doorbell). 
 - [Detecting the button being pressed](#detecting-button-presses)
 - [Choosing a desktop configuration tool, and how to use it](#the-desktop-configuration-tool)
 - [Choosing and changing the firmware](#changing-the-firmware)
