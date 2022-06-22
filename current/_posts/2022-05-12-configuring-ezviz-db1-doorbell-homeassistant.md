@@ -283,6 +283,10 @@ With the sole exception of *Guarding Vision*, I had difficulty using the apps to
 {: .callout .no-icon }
 > **Recommendation: The *Guarding Vision* app is the most reliable for receiving VoIP calls from your doorbell (we haven't missed a caller since we started using it).**
 
+To ensure that you receive calls using the *Guarding Vision* app, you need to have your notifications set up correctly. It's a little unintuitive, but you must have **both** "*Receive Call from Doorbell*" **and** "*Notifications*" turned on.
+
+![Configuring Guarding Vision to ensure you receive doorbell calls](/images/2022/05/db1/guarding_vision_notification_settings.png){: .captioned }
+
 ![Turning off auto updates for the single app that works reliably. Find it in the Google Play app, hit the overflow menu, and deselect "auto-update"](/images/2022/05/db1/app_screenshots/guarding_vision_disable_auto_update.jpg){: .captioned .right-half }
 
 
