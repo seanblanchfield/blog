@@ -18,7 +18,7 @@ The EZVIZ DB1 smart doorbell has a physical design flaw that makes one in four v
 {: .callout .no-icon }
 > This is the third post in a series about the EZVIZ DB1 smart doorbell. Also see [Improving the DB1 Doorbell](/2022/03/improving-ezviz-db1-doorbell) and [Deepdive into the EZVIZ DB1 Doorbell with Home Assistant](/2022/05/ezviz-db1-doorbell-deepdive-homeassistant).
 
-I previously tried to resolve this flaw by [swapping the buttons](http://localhost:4000/2022/03/improving-ezviz-db1-doorbell) between faceplates to make sure the button was the only high-contrast element on the faceplate. This left the doorbell with the following appearance:
+I previously tried to resolve this flaw by [swapping the buttons](/2022/03/improving-ezviz-db1-doorbell) between faceplates to make sure the button was the only high-contrast element on the faceplate. This left the doorbell with the following appearance:
 
 ![The EZVIZ DB1 doorbell (with logo removed and button swapped)](/images/2022/05/db1/db1_mounted_closeup.jpg){: .captioned .right-half }
 
@@ -61,7 +61,7 @@ The next part of the puzzle was to put a decal on the new button to make its fun
 
 ![New decals from Upstate Vinyl Decals](/images/2022/06/db1_button_decals.jpg)
 
-I took the faceplate off the doorbell, removed the old button using a plectrum (see my [previous post](http://localhost:4000/2022/03/improving-ezviz-db1-doorbell) for a picture of this process), and mounted the new button. The remaining gum that attached the original button was sufficient to hold the new button in place, so no new adhesive was required. I then carefully applied the new decal.
+I took the faceplate off the doorbell, removed the old button using a plectrum (see my [previous post](/2022/03/improving-ezviz-db1-doorbell) for a picture of this process), and mounted the new button. The remaining gum that attached the original button was sufficient to hold the new button in place, so no new adhesive was required. I then carefully applied the new decal.
 
 ![New decals from Upstate Vinyl Decals](/images/2022/06/db1_button_faceplate_new_button.jpg)
 
