@@ -49,7 +49,7 @@ I then trimmed the piece down to the inscribed circle, starting with a bench gri
 
 ![The polished button](/images/2022/06/db1_button_polished.jpg){: .captioned }
 
-To ensure a perfect fit on the doorbell, I decided to bind the new white button onto the button from the brown faceplate, which I was definitely never going to use for anything else. This increased the overall thickness of the new button, and ensured that it had the precise keying on the back to allow it be precisely seated into the faceplate. I sanded down the front of the button to remove the original decal, and then I flooded the concave face of the brown button with epoxy and sandwiched the two together. It was a bit tricky to keep the two parts aligned while they were bonding, and if I was doing it again would make life easier by letting the epoxy cure until tacky before sandwiching the two pieces.
+To ensure a perfect fit on the doorbell, I decided to bind the new white button onto the button from the brown faceplate, which I was definitely never going to use for anything else. This increased the overall thickness of the new button, and ensured that it had the necessary keying on the back to allow it be precisely seated into the faceplate. I sanded down the front of the button to remove the original decal, and then I flooded the concave face of the brown button with epoxy and sandwiched the two together. It was a bit tricky to keep the two parts aligned while they were bonding, and if I was doing it again would make life easier by letting the epoxy cure until tacky before sandwiching the two pieces.
 
 ![Bonding the new white button to the brown button with epoxy](/images/2022/06/db1_button_epoxy.jpg){: .captioned }
 
