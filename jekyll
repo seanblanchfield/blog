@@ -1,5 +1,5 @@
 #! /bin/bash
-set -ex
+set -e
 
 function echo_green() {
     echo -e "\033[32m$1\033[00m"
@@ -19,6 +19,13 @@ ENV_VARS="--env JEKYLL_UID=$USER_ID --env JEKYLL_GID=GROUP_ID --env JEKYLL_ENV=p
 
 # VOLUME_MOUNTS="--volume $COMMON_SCRIPT_DIR/_config.yml:/blog/_config.yml --volume $COMMON_SCRIPT_DIR/source:/blog/source --volume $COMMON_SCRIPT_DIR/public:/blog/public "
 VOLUME_MOUNTS="--volume $COMMON_SCRIPT_DIR:/srv/jekyll"
+
+if ! which wrangler > /dev/null; then
+    echo "Could not find wranger. This is required to deploy to cloudflare. Please install with:"
+    echo "sudo npm install -g wrangler"
+    echo "and then run `wrangler login`"
+    exit -1
+fi
 
 if [[ "$1" == "docker_build" ]]; then
     docker build . -t $DOCKER_IMAGE
@@ -46,7 +53,14 @@ elif [[ "$1" == "deploy" ]]; then
     fi
 
     echo_green "Deploying site..."
-    rsync -a --delete $COMMON_SCRIPT_DIR/public/ $DEPLOY_HOST:$DEPLOY_DIR
+    # rsync -a --delete $COMMON_SCRIPT_DIR/public/ $DEPLOY_HOST:$DEPLOY_DIR
+    docker run -rm \
+        $COMMON_SCRIPT_DIR/public:/public
+        --env CLOUDFLARE_ACCOUNT_ID=e56e3666adb50c8c320d9f8666fb16ba \
+        --env CLOUDFLARE_API_TOKEN=SyB1s4KQeIsz0ynqpUE16C-wwes1rHD8X0DnycGw \
+        jez500/wrangler:latest \
+         pages publish /public
+
     echo_green "Done."
 
 else
