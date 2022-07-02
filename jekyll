@@ -55,7 +55,7 @@ elif [[ "$1" == "deploy" ]]; then
     echo_green "Deploying site..."
     docker run --rm \
         -v $COMMON_SCRIPT_DIR/public:/public \
-        --env-file=.env\
+        --env-file=.env \
         jez500/wrangler:latest \
             pages publish \
                 --project-name $CLOUDFLARE_PAGES_PROJECT \
