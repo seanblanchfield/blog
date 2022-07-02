@@ -53,14 +53,12 @@ elif [[ "$1" == "deploy" ]]; then
     fi
 
     echo_green "Deploying site..."
-    # rsync -a --delete $COMMON_SCRIPT_DIR/public/ $DEPLOY_HOST:$DEPLOY_DIR
     docker run --rm \
         -v $COMMON_SCRIPT_DIR/public:/public \
-        --env CLOUDFLARE_ACCOUNT_ID=e56e3666adb50c8c320d9f8666fb16ba \
-        --env CLOUDFLARE_API_TOKEN=SyB1s4KQeIsz0ynqpUE16C-wwes1rHD8X0DnycGw \
+        --env-file=.env\
         jez500/wrangler:latest \
             pages publish \
-                --project-name seanblanchfield-blog \
+                --project-name $CLOUDFLARE_PAGES_PROJECT \
                 /public
 
     echo_green "Done."
