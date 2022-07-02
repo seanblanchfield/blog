@@ -59,7 +59,9 @@ elif [[ "$1" == "deploy" ]]; then
         --env CLOUDFLARE_ACCOUNT_ID=e56e3666adb50c8c320d9f8666fb16ba \
         --env CLOUDFLARE_API_TOKEN=SyB1s4KQeIsz0ynqpUE16C-wwes1rHD8X0DnycGw \
         jez500/wrangler:latest \
-         pages publish /public
+            pages publish \
+                --project-name seanblanchfield-blog \
+                /public
 
     echo_green "Done."
 
