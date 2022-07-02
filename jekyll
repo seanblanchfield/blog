@@ -1,6 +1,8 @@
 #! /bin/bash
 set -ex
 
+CLOUDFLARE_PAGES_PROJECT=seanblanchfield-blog
+
 function echo_green() {
     echo -e "\033[32m$1\033[00m"
 }
