@@ -69,5 +69,4 @@ Here is the doorbell before and after this fix. I have a hard time imagining how
 
 ![Before and After](/images/2022/06/db1_button_before_and_after.jpg)
 
-***Update 26 July 2021:** It's now one month later, and I'm happy to report that we've had no visitors confuse the button and the PIR sensor. This fix appears to have worked.
-*
+***Update 26 July 2021:** It's now one month later, and I'm happy to report that we've had no visitors confuse the button and the PIR sensor. This fix appears to have worked.*
