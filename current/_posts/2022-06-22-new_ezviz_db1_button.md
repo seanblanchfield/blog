@@ -35,9 +35,9 @@ Many visitors inexplicably press the PIR sensor instead of the button. So far, n
 
 I decided to craft a new button, which would protrude from the faceplate, and hopefully seem more "pressable". If I remember my UX design terminology collectly from the excellent [Design of Everyday Things](https://www.amazon.co.uk/Design-Everyday-Things-MIT-Press/dp/0262525674) (which I highly recommend), I hoped that the new button would present a more perceptible "affordance" to a visitor to my house.
 
-As near as I can measure using my old analogue Vernier calipers, the button on the doorbell has a diameter of 32.8mm. I wanted to find a thick piece of white plastic that I could replace it with. I searched through all the bottle tops in my house, but I couldn't find anything appropriate. My eyes then landed on a left over plastic wall socket blanking plate (which costs about €2 in a [local hardware store](https://www.diy.ie/departments/mk-white-1-gang-single-raised-slim-profile-blanking-plate/53952_BQ.prd)). 
+As near as I can measure using my old analogue Vernier calipers, the button on the doorbell has a diameter of 32.8mm. I wanted to find a thick piece of white plastic that I could replace it with. I searched through all the bottle tops in my house, but I couldn't find anything appropriate. My eyes then landed on a leftover plastic wall socket blanking plate (which costs about €2 in a [local hardware store](https://www.diy.ie/departments/mk-white-1-gang-single-raised-slim-profile-blanking-plate/53952_BQ.prd)). 
 
-This is moulded from a hard white plastic (I believe it is [Urea Formaldehyde](https://en.wikipedia.org/wiki/Urea-formaldehyde)), which can be filed, sanded and polished, with a wall thickness if about 4mm. I used the button from the brown faceplace to inscribe a 32.8mm circle onto it.
+This is moulded from a hard white plastic (I believe it is [Urea Formaldehyde](https://en.wikipedia.org/wiki/Urea-formaldehyde)), which can be filed, sanded and polished, with a wall thickness of about 4mm. I used the button from the brown faceplace to inscribe a 32.8mm circle onto it.
 
 ![Incribing a circle onto a 1 gang wall socket blanking plate](/images/2022/06/db1_button_blanking_plate.jpg){: .captioned }
 
@@ -49,7 +49,7 @@ I then trimmed the piece down to the inscribed circle, starting with a bench gri
 
 ![The polished button](/images/2022/06/db1_button_polished.jpg){: .captioned }
 
-To ensure a perfect fit on the doorbell, I decided to bind the new white button onto the button from the brown faceplate, which I was definitely never going to use for anything else. This increased the overall thickness of the new button, and ensured that it had the necessary keying on the back to allow it be precisely seated into the faceplate. I sanded down the front of the button to remove the original decal, and then I flooded the concave face of the brown button with epoxy and sandwiched the two together. It was a bit tricky to keep the two parts aligned while they were bonding, and if I was doing it again I would make life easier by letting the epoxy cure until tacky before sandwiching the two pieces.
+To ensure a perfect fit on the doorbell, I decided to bond the new white button onto the button from the brown faceplate, which I was definitely never going to use for anything else. This increased the overall thickness of the new button, and ensured that it had the necessary keying on the back to allow it be precisely seated into the faceplate. I sanded down the front of the button to remove the original decal, and then I flooded the concave face of the brown button with epoxy and sandwiched the two together. It was a bit tricky to keep the two parts aligned while they were bonding, and if I was doing it again I would make life easier by letting the epoxy cure until tacky before sandwiching the two pieces.
 
 ![Bonding the new white button to the brown button with epoxy](/images/2022/06/db1_button_epoxy.jpg){: .captioned }
 
