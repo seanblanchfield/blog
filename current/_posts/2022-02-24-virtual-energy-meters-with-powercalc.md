@@ -131,7 +131,7 @@ For convenience, I added a template sensor to do a better job of giving the curr
  icon: 'mdi: battery-charging-medium'
  state: >-
    {% if states('vacuum.xiaomi_vacuum_cleaner') == 'docked' %}
-     {% if state_attr('vacuum.xiaomi_vacuum_cleaner', 'battery_level')int < 100 %}
+     {% if state_attr('vacuum.xiaomi_vacuum_cleaner', 'battery_level')|int < 100 %}
        charging
      {% else %}
        docked
