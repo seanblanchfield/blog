@@ -55,7 +55,7 @@ From the threads I've read, most people who ask how to store Frigate data on the
 
 First, I needed to get SSH access to the Home Assistant host (not to a container). Note that if you use a SSH addon (even the wonderful ["SSH & Web Terminal"](https://github.com/hassio-addons/addon-ssh) add on) the environment you are connecting to is a docker container running on the host. Changes you make to the system will not be visible to other containers, and will not survive a restart. 
 
-To get SSH access to the host, you need to format a USB key with the label "CONFIG" and place an `authorized_keys` file on it that contains the public half of an SSH key pair. Detailed instructions are given in the developer documentation [here](https://developers.home-assistant.io/docs/operating-system/debugging/). If you follow in my footsteps, I recommend that you create a new dedicated key pair by following the instructions at the bottom of that page, which you should not use for any other purpose. I saved my new SSH key pair under the name **homeassistant_rsa**.
+To get SSH access to the host, you need to format a USB key with the label "CONFIG", place an `authorized_keys` file on it that contains the public half of an SSH key pair, insert it into your Home Assistant host and reboot. Detailed instructions are given in the developer documentation [here](https://developers.home-assistant.io/docs/operating-system/debugging/). If you follow in my footsteps, I recommend that you create a new dedicated key pair by following the instructions at the bottom of that page, which you should not use for any other purpose. I saved my new SSH key pair under the name **homeassistant_rsa**.
 
 I could now test SSH to the host using that SSH key.
 ``` bash
