@@ -94,7 +94,7 @@ I also added a template sensor to capture the delta between the total measured p
 {% endraw %}
 
 ## Creating the Power Meter Cards
-I placed the power meter code in the `yaml` file corresponding to a dashboard that I manage manually. If you want manage your dashboards from the UI, you will need add a "manual" card so that you can specify the card definitions in yaml.
+I placed the power meter code in the `yaml` file corresponding to a dashboard that I manage manually. I was was managing dashboards from the UI (as you probably are), I would have placed the code below in "manual" cards.
 
 The main graphic is a native gauge card, defined as follows:
 
