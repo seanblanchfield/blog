@@ -94,6 +94,7 @@ I also added a template sensor to capture the delta between the total measured p
 {% endraw %}
 
 ## Creating the Power Meter Cards
+I placed the power meter code in the `yaml` file corresponding to a dashboard that I manage manually. If you want manage your dashboards from the UI, you will need add a "manual" card so that you can specify the card definitions in yaml.
 
 The main graphic is a native gauge card, defined as follows:
 
@@ -148,6 +149,8 @@ variables:
   - entity: sensor.unaccounted_power
     name: Other
 entities: 
+  # Note: this list of entities may seem redundant, but is necessary to inform
+  # config-template-card which entities to watch for updates.
   - sensor.cooking_power
   - sensor.laundry_power
   - sensor.dishwasher_power
