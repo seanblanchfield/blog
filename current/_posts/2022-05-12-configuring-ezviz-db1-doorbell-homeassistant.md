@@ -27,14 +27,14 @@ The [EZVIZ DB1](https://www.ezviz.com/product/db1/960) should not be confused wi
 The closest popular alternative devices are the Nest Doorbell (Wired) and the Ring Pro 2, which in my experience were reasonably good cloud-based cameras but useless doorbells that caused me to regularly miss callers to the house, with multi-second audio lag if I tried to talk to anyone at the door using their apps. In contrast, the *DB1* has the potential to be both a great camera *and* a great smart doorbell. 
 
 ### Pros
-- **Low-latency local RTSP camera stream**, allowing it to be viewed with near zero lag, and integrated with Network Video Recorders like Frigate, BlueIris, and MotionEye.
-- Motion events (both video and PIR) accessible via local **ONVIF API**.
+- **Low-latency local RTSP camera stream**, allowing it to be viewed with near zero lag, and integrated with Network Video Recorders (NVRs) like Frigate, BlueIris, and MotionEye.
+- Motion events (both video and PIR) are accessible via local **ONVIF API**.
 - **Excellent image resolution** that beats competing doorbells.
 - Its uniquely high **vertical field of view** produces an image with a natural portrait orientation, which is excellent for seeing the ground below the doorbell as well as the person in front of it. In other words, you can see parcels left on the ground.
 - **Excellent configurability** as a camera.
 - You see and hear callers via a **peer-to-peer video connection**, producing optimal performance and minimal lag, and eliminating the variability of routing and processing the video stream via underprovisioned or flakey cloud servers (I have rarely managed to be able to hold a conversation with a caller using my Ring or Nest doorbells)
-- **No delayed notifications** resulting in missed callers (looking at you, Google and Amazon)
-- Wired doorbell ensures a **constant power supply**.
+- **No delayed notifications** that result in missed callers (looking at you, Google and Amazon)
+- As a wired doorbell it has a **constant power supply**.
 - No battery means a relatively **small form factor**, comparable with Nest Wired doorbell.
 - You can add a **MicroSD card** to record recent events callers and motion events, which are then available in-app.
 - **No subscription**. There is no cloud service involved in using this device, which means no monthly fees.
@@ -42,11 +42,11 @@ The closest popular alternative devices are the Nest Doorbell (Wired) and the Ri
 - **Cheap**. It is currently priced at about €155 (or $118 on Amazon.com), versus €279 for the Nest Doorbell (wired) or the €250 for the Ring Pro 2.
 
 ### Cons
-- Button press events **not exposed** via API, and therefore can't be automated against without a bit of hacking.
+- Button press events are **not exposed** via an API, and therefore can't be automated against without a bit of hacking.
 - The device can support **only three simultanous streaming clients**. 
-- Some visitors, from pensioners to PhDs, inexplicably press the PIR sensor instead of the button. Even with the faceplate button swapped to make it the only contrasting element in the design, some people continue to jab at the PIR sensor (and can't even tell me why). More work required perhaps.
+- Some visitors, from pensioners to PhDs, inexplicably press the PIR sensor instead of the button. Even with the faceplate button swapped to make it the only contrasting element in the design, some people continue to jab at the PIR sensor (and can't even tell me why). (I finally resolved this by [making a more prominent button](/2022/06/new-ezviz-db1-button))
 - There are a **confusing number of firmwares** available, each of which have different pros and cons.
-- There are **multiple apps to choose from**, none of which are perfect, and most of which reliably fail to receive calls from the doorbell.
+- There are **multiple apps to choose from**, none of which are perfect, and most of which are unreliable at receiving calls from the doorbell.
 - Despite its main operation being local-network or peer-to-peer, it tries to open up a **lot of connections to internet servers**. Should I trust the Chinese state-owned [Hangzhou Hikvision Digital Technology Company](https://en.wikipedia.org/wiki/Hikvision) more or less than Google or Amazon?
 
 
@@ -56,11 +56,11 @@ I managed to resolve this list of cons to my satisfaction, leaving me with a sma
 
 # Contents
 
-First, I need to acknowledge that I am indebted to the IPCamTalk community and their [HikVision Doorbell 101](https://ipcamtalk.com/threads/new-rca-hsdb2a-3mp-doorbell-ip-camera.31601/page-101#post-412577) page. I wish that every super-long evergreen forum thread has someone like David L maintaining a summary that distills out the collected wisdom of the entire thread. If you are planning to buy one of these doorbells, that 101 page will be your bible.
+First, I need to acknowledge that I am indebted to the IPCamTalk community and their [HikVision Doorbell 101](https://ipcamtalk.com/threads/new-rca-hsdb2a-3mp-doorbell-ip-camera.31601/page-101#post-412577) page. I wish that every super-long evergreen forum thread has someone like David L maintaining a summary that distills out the collective wisdom of the entire thread. If you are planning to buy one of these doorbells, that 101 page will be your bible.
 
 In the sections below I discuss not just my conclusions and recommendations, but also how I arrived at each solution. You can read this post linearly, or jump to the bit you're most interested in:
 
-- For improving the physical look of the device and swapping button colours, see my previous post on [removing the logo and swapping buttons](/2022/03/improving-ezviz-db1-doorbell). 
+- For improving the physical look of the device and swapping button colours, see my previous post on [removing the logo and swapping buttons](/2022/03/improving-ezviz-db1-doorbell) and my follow up post on making a [new, more prominent, button](/2022/06/new-ezviz-db1-button). 
 - [Detecting the button being pressed](#detecting-button-presses)
 - [Choosing a desktop configuration tool, and how to use it](#the-desktop-configuration-tool)
 - [Choosing and changing the firmware](#changing-the-firmware)
