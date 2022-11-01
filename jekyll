@@ -10,8 +10,6 @@ function echo_green() {
 COMMON_SCRIPT_PATH="$(realpath ${BASH_SOURCE[0]})"
 COMMON_SCRIPT_DIR="$(dirname $COMMON_SCRIPT_PATH)"
 DOCKER_IMAGE="blog"
-DEPLOY_HOST=shirka
-DEPLOY_DIR=~/seanblanchfield.com
 
 USER_ID="$(id -u)"
 GROUP_ID="$(id -g)"
