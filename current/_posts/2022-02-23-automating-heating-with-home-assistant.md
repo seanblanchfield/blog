@@ -45,7 +45,9 @@ I then removed the Nest Thermostat, disconnected the Nest Heat Link from the boi
 ![The Fibaro FGS-212 Z-wave relay switch with the wiring formerly used by the Nest Heat Link
 ](/images/2022/02/fibaro.jpg){: .captioned }
 
-Next came the Home Assistant configuration. I used the **[min/max](https://www.home-assistant.io/integrations/min_max/)** [platform](https://www.home-assistant.io/integrations/min_max/) to pick out the coolest temperature sensor from a list of sensors that were already installed around the house (most of these are primarily motion sensors that also expose a temperature sensor, but some are [WirelessTags](https://wirelesstag.net/) that I had previously installed for monitoring temperatures).
+Next came the Home Assistant configuration. I used the **[min/max](https://www.home-assistant.io/integrations/min_max/)** [platform](https://www.home-assistant.io/integrations/min_max/) to pick out the coolest temperature sensor from a list of sensors that were already installed around the house (most of these are primarily motion sensors that also expose a temperature sensor, but some are dedicated zigbee temperature sensors I previously installed for monitoring temperatures).
+
+I recommend using a Min/Max helper to create the "coolest room temperature" sensor. When I first implemented this approach, this helper didn't exist yet, so here is the yaml code that achieves the same thing:
 
 ``` yaml
 sensor thermostat:
@@ -100,6 +102,9 @@ I began writing some automations to automatically switch between the “home” 
 
 I supplemented this with some automations to switch the thermostat into “away” mode if everyone has left the house, and to switch back into either “home” or “sleep” mode whenever any returns. I then added some more automations to avoid wasting energy by temporarily switching off the boiler if any external doors are left open for any reason. I’m sure that over time, the list of heating automations will expand.  
 
+{: .callout }
+> *September 2022*: I found the scheduler component above a little hard to find when I needed it. It is strange to have automation rules outside the normal automation engine. In September 2022 Home Assistant introduced the ["Schedule" helper](https://www.home-assistant.io/blog/2022/09/07/release-20229/#new-helper-weekly-schedule), and I removed the custom Scheduler Component, and instead created a Schedule helper called "Thermostat night mode". I then added a few regular automations to switch the thermostat mode according to this schedule.
+
 The final piece of the puzzle was to spend a few days monitoring the temperatures in the house, adjusting the TRVs in each room to ensure that each room could reach the target temperature but would not overshoot it.  
 
 The end result is very even heating throughout the house, with all rooms within 1&#8451; of each other. The thermostat settings are available on the main wall tablet, and easy for anyone to use. The regular radiator system is balanced and the TRVs are tuned so that each room will heat quickly to the target temperature and stop.  Meanwhile, Home Assistant makes sure that the boiler is on whenever a radiator TRV might want to open up, and that the boiler turns off whenever it is not needed or would be wasteful.
@@ -108,7 +113,9 @@ The end result is very even heating throughout the house, with all rooms within 
 
 ## **Limitations**
 
-Although I’m happy with this approach, it has the drawback that if I want to increase the target temperature, I need to first retune all the TRVs to make it possible for that temperature to be reached. Right now, the TRVs allow each room to reach about 20&#8451;. If I increased the thermostat to 21&#8451; (or set the thermostat to the “comfort” preset), the rooms would not reach it due to the TRVs closing the radiators, and the boiler would never be shut off.  
+Some community members have rightly pointed out that this approach assumes one target temperature for the whole house. It is not possible to have different temperatures for living areas and bedrooms, for example. Smart TRVs may solve this (see next section). My defense is that in ideal circumstances, a house should be a well insulated box. Therefore, heating different parts of the box to different temperatures is futile - all parts of the box will soon equalize temperature. Home insulation should be the first area of investment, before considering smart TRVs or the kind of setup I describe in this post. Admittedly, only recently-built passive houses are likely to approach the ideal standard of zero heat loss. All I can say is that my house seems to be a reasonably-well insulated box, but your mileage may vary.
+
+Another drawback that if I want to increase the target temperature, I need to first retune all the TRVs to make it possible for that temperature to be reached. Right now, the TRVs allow each room to reach about 20&#8451;. If I increased the thermostat to 21&#8451; (or set the thermostat to the “comfort” preset), the rooms would not reach it due to the TRVs closing the radiators, and the boiler would never be shut off.  
 
 A related drawback is that if turn the thermostat down the house temperature may become uneven. For example, if I change the preset to “sleep”, the target temperature is changed to 17&#8451;. The boiler will kick in for a bit if any room drops below 17&#8451;. During the time the boiler is on, some smaller rooms may heat up to their maximum TRV temperature of 20&#8451;, which is a waste of energy, and might leave those rooms uncomfortably hot.  
 
@@ -125,3 +132,7 @@ I haven’t decided if these benefits are compelling enough to warrant the insta
 ## If you made it this far...
 
 If your home heating is similar to mine, you might also be interested in how I created [virtual gas meters using Home Assistant](/2022/02/virtual-gas-meters-home-assistant), to give me a real-time view into our gas usage. 
+
+## Reddit Discussion
+
+A bunch of well informed community members have shared their opinion on my approach on Reddit. The [thread is well worth a read](https://www.reddit.com/r/homeassistant/comments/101spqk/automating_heating_with_home_assistant/).
