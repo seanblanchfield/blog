@@ -121,70 +121,7 @@ Smart TRVs are cheaply available, such as the ZigBee-controlled [HY386](https://
 
 I haven’t decided if these benefits are compelling enough to warrant the installation of eleven new battery-hungry devices around the house.
 
-## **Bonus Achievement: Monitoring Gas Energy**
 
-Unfortunately we do not have smart gas meters in Ireland. However, I realised that I could now make some reliable estimates of real-time gas consumption in Home Assistant. My only gas powered appliance is my boiler, and now that boiler is exclusively controlled by Home Assistant. So long as the radiators are balanced and the TRVs are properly set, then the boiler should only be switched on when heating is required, during which time it should use a steady amount of gas. This conclusion allowed me to create some virtual energy sensors based on boiler run time, and add these into the Home Assistant Energy dashboard.  
+## If you made it this far...
 
-![](/images/2022/02/gas-consumption.png)
-
-Gas consumption chart from the Home Assistant Energy Dashboard
-
-To start with, I needed to track how long the boiler was run for.   
-
-{% raw %}
-``` yaml
-sensor boiler_energy:
- - platform: history_stats
-   name: 'Boiler Cumulative Time Today'
-   entity_id: switch.combi_boiler_relay_switch
-   state: "on"
-   type: time
-   start: "{{ now().replace(hour=0, minute=0, second=0) }}"
-   end: "{{ now() }}"
-```
-{% endraw %}
-
-I then started taking manual readings from my gas meter, and noting them down in a spreadsheet along with the value of the '_Boiler Cumulative Time Today_' sensor. The meter readings were in cubic meters, which I could convert to kWh by multiplying by the "conversion factor" given on my gas utility bills. My current conversion factor is 11.401kWh / cubic meter, but this can vary depending on the source of the gas supply.  My comparing the meter readings to the number of hours the boiler ran between each reading, I could estimate that I was typically using about 14kWh of gas every hour that the boiler was on.  
-![Recorded number of hours the boiler ran each day, as the Spring weather improved)](/images/2022/02/cumulative_boiler_run_time.png){: .captioned }
-
-I stored my estimate of 14000 Wh/hour in a new input helper called `input_number.combi_boiler_power_usage`, and then created a new template sensor that evaluates to the boiler’s current power consumption in Watts:  
-
-
-{% raw %}
-``` yaml
-template:
- - sensor:
-   - name: combi_boiler_current_power_usage
-     unique_id: combi_boiler_current_power_usage
-     unit_of_measurement: W
-     device_class: power
-     state_class: measurement
-     state: >
-       {{ is_state('switch.combi_boiler_relay_switch', 'on') | iif(states('input_number.combi_boiler_power_usage'), 0) }}
-```
-{% endraw %}
-
-
-The state of the above sensor will evaluate to zero if the boiler relay switch is off, or to the value of the `input_number.combi_boiler_power_usage` input helper if the boiler is on. Some note on the attributes defined above:
-
-*   `unit_of_measurement: W` is important. According to the docs for the [integration](https://www.home-assistant.io/integrations/integration/) platform, a sensor that measures in units of “W” will be integrated into an energy sensor in units of kWh.
-*   `device_class: power` is important. From my testing, this is necessary for the integration platform to produce an output sensor that has the attribute `device_class: energy`, which is necessary for it to work with the Energy Dashboard.
-*   `state_class: measurement`. According to the [sensor platform docs](https://developers.home-assistant.io/docs/core/entity/sensor/#available-state-classes) this describes the sensor as measuring a current value (vs a predicted value or an aggregate of some kind), and it is necessary to opt into long-term statistics. I haven’t tested if it is strictly necessary for our purposes, but it seems like good practice.
-
-
-I then added a new sensor using the [integration](https://www.home-assistant.io/integrations/integration/) platform (i.e., the Home Assistant integration called "integration", in the calculus sense of the word) to integrate (as in sum up) the boiler power over time to get total energy:  
-
-``` yaml
-sensor:
- - platform: integration
-   name: boiler_energy_kwh
-   source: sensor.combi_boiler_current_power_usage
-   unit_prefix: k
-   method: left
-```
-
-I could then go to the Energy Dashboard and add this new sensor `sensor.boiler_energy_kwh` as a “_Gas Source_”.  
-
-## **Next Steps**
-
-The virtual energy sensor approach is basically to use some prior knowledge about a device’s energy profile and some current knowledge about its state to work out how much power it is currently using. I realised that I could apply this strategy to a wide range of electrical devices in the house. About 5 minutes later I realised that I wasn’t the first person to think of this, and that Bram Gerritsen had already created the wonderful [Powercalc](https://github.com/bramstroker/homeassistant-powercalc) integration to do just this. In my next post I’ll describe how I used Powercalc to accurately track power for the majority of devices in my house without using any power meters.
+If your home heating is similar to mine, you might also be interested in how I created [virtual gas meters using Home Assistant](/2022/02/virtual-gas-meters-home-assistant), to give me a real-time view into our gas usage. 
