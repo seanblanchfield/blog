@@ -13,9 +13,9 @@ tags:
 ---
 
 
-Unfortunately, we do not have smart gas meters in Ireland. However, I realised that I could use Home Assistant to create virtual gas meters, which provide a good real-time estimate of gas usage. 
+Unfortunately, we do not have smart gas meters in Ireland. However, I realised that I could use Home Assistant to create virtual gas meters, which provide a good real-time estimate of natural gas usage. 
 
-The only appliance that uses gas in our house is our combi-boiler, which has the job of heating the radiators for central heating, and heating domestic hot water. In my [previous post](/2022/02/automating-heating-with-home-assistant) I discussed how I took direct control of my central heating by replacing Nest with a z-wave relay controlled by Home Assistant. This meant that Home Assistant now knew exactly when the boiler was burning gas. So long as the radiators are balanced and the TRVs are properly set, then the boiler should only be switched on when heating is required, during which time it should use a steady amount of gas. This conclusion allowed me to create some virtual energy sensors based on boiler run time, and add these into 
+The only appliance that uses gas in our house is our combi-boiler, which has the job of heating the radiators for central heating, and heating domestic hot water. In my [previous post](/2022/02/automating-heating-with-home-assistant) I discussed how I took direct control of my central heating by replacing Nest with a z-wave relay controlled by Home Assistant. This allowed Home Assistant to know exactly when the boiler was burning gas. So long as the radiators are balanced and the TRVs are properly set, then the boiler should only be switched on when heating is required, during which time it should use a steady amount of gas. This conclusion allowed me to create some virtual energy sensors based on boiler run time, and add these into 
 the Home Assistant Energy dashboard.  
 
 ![](/images/2022/02/gas-consumption.png)
@@ -39,7 +39,7 @@ sensor boiler_energy:
 ```
 {% endraw %}
 
-I then started taking manual readings from my gas meter, and noting them down in a spreadsheet along with the value of the '_Boiler Cumulative Time Today_' sensor. The meter readings were in cubic meters, which I could convert to kWh by multiplying by the "conversion factor" given on my gas utility bills. My current conversion factor is 11.401kWh / cubic meter, but this can vary depending on the source of the gas supply.  My comparing the meter readings to the number of hours the boiler ran between each reading, I could estimate that I was typically using about 14kWh of gas every hour that the boiler was on.  
+I then started taking manual readings from my gas meter, and noted them down in a spreadsheet along with the value of the '_Boiler Cumulative Time Today_' sensor. The meter readings were in cubic meters, which I could convert to kWh by multiplying them by the "conversion factor" given on my gas utility bills. My current conversion factor is 11.401kWh / cubic meter, but this can vary depending on the source of the gas supply.  My comparing the meter readings to the number of hours the boiler ran between each reading, I could estimate that I was typically using about 14kWh of gas for every hour that the boiler was on.  
 ![Recorded number of hours the boiler ran each day, as the Spring weather improved)](/images/2022/02/cumulative_boiler_run_time.png){: .captioned }
 
 I stored my estimate of 14000 Wh/hour in a new input helper called `input_number.combi_boiler_power_usage`, and then created a new template sensor that evaluates to the boiler’s current power consumption in Watts:  
@@ -86,9 +86,9 @@ I could then go to the Energy Dashboard and add this new sensor `sensor.boiler_e
 
 ## Tracking Domestic Hot Water Gas Usage
 
-My combi boiler also heats hot water for the shower and wash basins in the house. It is supplied with pumped tank water for this. Whenever a hot water tap / faucet opens, the pump starts and the boiler heats the water on the fly. The pump is only feeds the boiler, and nothing else. I could therefore apply a similar strategy to track gas used to heat hot water. All I needed to do was figure out when the pump was running, and what the average gas used was per second.
+My combi boiler also heats hot water for the shower and wash basins in the house. It is supplied with pumped tank water for this purpose. Whenever a hot water tap / faucet opens, the pump starts and the boiler heats the water on the fly. The pump only supplies the boiler, and nothing else. I could therefore apply a similar strategy to track the gas consumption for hot water heating. All I needed to do was figure out when the pump was running, and what the average gas used was per second.
 
-I installed a [Shelly 1PM](https://www.shelly.cloud/en-ie/products/product-overview/shelly-plus-1-pm-2-pack/shelly-plus-1-pm) to track the pump activity. Whenever the pump is consuming energy, I know that the boiler is heating hot water.
+I installed a [Shelly 1PM](https://www.shelly.cloud/en-ie/products/product-overview/shelly-plus-1-pm-2-pack/shelly-plus-1-pm) to track the pump activity. Whenever the pump is using power, I know that the boiler is heating hot water.
 
 To calculate gas energy used for domestic hot water heating, I studied gas usage during a period during the Summer, when central heating was completely turned off. I noted that during a period of about 80 days, the pump ran for 33.549 hours and that 40.78 cubic meters (464.995 kWh) of gas was used (according to manual readings taken from the physical gas meter). This means that my boiler has a gas power consumption of 13.86kW for domestic hot water heating.
 
