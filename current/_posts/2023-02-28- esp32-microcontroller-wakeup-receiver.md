@@ -4,7 +4,7 @@ date: 2023-02-28 16:00
 layout: post
 link: https://seanblanchfield.com/esp32-microcontroller-wakeup-receiver
 slug: esp32-microcontroller-wakeup-receiver
-title: Low power wakeup receiver for a ESP32 battery-powered project
+title: Low power wake-up receiver for an ESP32 battery-powered project
 image: /images/2023/02/esp32-microcontroller-wakeup-receiver.jpg
 tags:
 - Code
