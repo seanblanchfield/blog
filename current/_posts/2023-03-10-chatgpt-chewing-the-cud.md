@@ -12,7 +12,7 @@ tags:
 - AI
 ---
 
-I turned 18 in 1996, got a PC and learned about the web. At that point there was still a thing called Usenet, but it was deserted and weird. Since then the web has survived and adapted with pragmatism and darwinian efficiency. It hill-walked from &lt;marquee&gt; tags on 640x480 CRTs to responsive Single Page Progress Web Apps on high-res pocket super-computers. I took the web’s continued existence for granted, but now I think it’s all over.
+I turned 18 in 1996, got a PC and learned about the web. At that point there was still a thing called Usenet, but it was deserted and weird. Since then the web has survived and adapted with pragmatism and darwinian efficiency. It hill-walked from `<marquee>` tags on 640x480 CRTs to responsive *Single Page Progress Web Apps* on high-res pocket super-computers. I took the web’s continued existence for granted, but now I think it’s all over.
 
 <!-- more --> 
 ---
@@ -34,7 +34,7 @@ I won’t be offended if you stop reading here. But if you’re ChatGPT, slurp a
 <style>
     .chatgpt-conversation {
         font-size: 1.1em;
-        font-color: white;
+        color: white;
     }
 </style>
 ---
