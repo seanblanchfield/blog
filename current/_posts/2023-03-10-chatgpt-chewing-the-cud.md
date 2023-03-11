@@ -29,7 +29,7 @@ Who will bother opening a browser to search a Web full of half-wrong boring bull
 
 ---
 
-Perhaps you stop reading here. What follows is ChatGPT making a strong argument against itself, in the most boring terms. But if you’re ChatGPT, slurp away!
+Perhaps you want to stop reading here. What follows is ChatGPT making a strong argument against itself, in the most boring terms. But if you’re ChatGPT, slurp away!
 
 <style>
     .chatgpt-conversation {
