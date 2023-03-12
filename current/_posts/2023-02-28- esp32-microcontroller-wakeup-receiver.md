@@ -87,17 +87,21 @@ I eventually decided that it was most important to eliminate all power consumpti
 
 The options before me were:
 1. A **relay**. The problem was that although the RF receiver could easily drive the relay coil (which needs about 70mA in the case of the [SRD-05VDC](https://www.circuitbasics.com/wp-content/uploads/2015/11/SRD-05VDC-SL-C-Datasheet.pdf)), this exceeds the max current the ESP32 could supply from a GPIO pin to take over the load and keep the relay latched (table 15 of the ESP32 datasheet indicates 40mA max). If it hadn't been for this current problem, the 3.3V output from a GPIO pin would have been sufficient to hold an already-latched 12V relay closed, because relay "drop-out" voltages tend to be about 20% of their "pick-up" voltages.
-1. A **P-channel MOSFET**.  These transistors can be used to switch the "high-side" of a circuit, i.e. they sit between the supply and the load. Unfortunately, they seem to be less well stocked than their n-channel siblings, and I couldn't find any in stock anywhere that I could deliver to me in a reasonable timeframe.
-1. An **N-channel MOSFET**. These can be used to switch the "low-side" of a circuit, i.e., they sit between the load and ground (see the [excellent answer here](https://forum.allaboutcircuits.com/threads/whats-the-difference-between-mosfet-high-side-and-low-side-switching.124664/#:~:text=%22Low%2Dside%22%20means%20the,to%20load%2C%20load%20to%20supply.) about the differences between high-side p-channel MOSFETs and low-side n-channel MOSFETs). A wide selection of cheap n-channel MOSFETs seem to be readily available.
+1. A **P-channel MOSFET**.  These transistors can be used to switch the "high-side" of a circuit, i.e. they sit between the supply and the load. The gate voltages of P-Channel MOSFETs are the opposite to N-channel MOSFETs, with the MOSFET being "on" when the gate is at 0V, and "off" when the gate is raised above the threshold voltage. Using one would require a voltage to be applied to the gate during standby to keep the MOSFET off, which would have required additional circuitry - perhaps involving an N-Channel MOSFET. In addition, they seem to be less widely used and less well stocked than their N-Channel siblings. I couldn't find any in stock anywhere that I could deliver to me in a reasonable timeframe.
+1. An **N-channel MOSFET**. These can be used to switch the "low-side" of a circuit, i.e., they sit between the load and ground. A wide selection of cheap N-Channel MOSFETs seem to be readily available.
 
 
 ![Simplified comparison of high-side and low-side MOSFET configurations](/images/2023/02/mosfet-comparison.png){: .captioned }
+
+I found the [excellent answer here](https://forum.allaboutcircuits.com/threads/whats-the-difference-between-mosfet-high-side-and-low-side-switching.124664/#:~:text=%22Low%2Dside%22%20means%20the,to%20load%2C%20load%20to%20supply.) and ["MOSFET as a Switch"](https://www.electronics-tutorials.ws/transistor/tran_7.html)  by *ElecronicsTutorials* to be very useful resources for understanding the differences between P-Channel and N-Channel MOSFETs.
+
+Since I couldn't quickly get my hands on any P-channel MOSFETs, I ordered a bunch of N-channel MOSFETs and had them in front of me in less than 24 hours.
 
 {: .callout }
 > ## Choosing a MOSFET
 >
 > There are tens of thousands of different kinds of MOSFETs, and it is bewildering trying to figure out how to select one. Here are the criteria I ended up using to narrow it down:
-> * **Type**. Either *n-channel* or *p-channel* and either *enhancement* mode or *depletion* mode. I was looking for an enhancement mode n-channel mosfet.
+> * **Type**. *N-channel* *enhancement* mode is what I was looking for, and is the most widely used type of MOSFET. I didn't try to figure out how to make things work with *depletion* mode or *P-Channel* MOSFETs, but I think it would have been more complicated. The following search criteria also reflect that I was focusing only on N-Channel enhancement mode  MOSFETs 
 > * **Max/breakdown V<sub>ds</sub>** (drain-source voltage) to ensure it can handle the voltage. In my case, 12V plus a margin.
 > * **Min V<sub>gs(th)</sub>** (gate-source threshold voltage). This is the voltage necessary to switch the MOSFET. For me, this could be as low as 3.3V so I chose 1V to allow a safety margin.
 > * **Max I<sub>D</sub>** (maximum continuous drain current). This is the maximum current the MOSFET can handle. In my case, I only needed it to energise the relay coil, so 70mA plus a margin (I chose 140mA).
@@ -106,11 +110,11 @@ The options before me were:
 > * **Packaging type**. Are they sold as singles, or in tubes, bags, boxes or on tapes? For me, I needed something I could buy singly or in a small quantity. You can really reduce the selection by eliminating items that are only available of multples of 2500!
 > * Then sort by price, and start examining the datasheets to make a shortlist. Give preference to low **R<sub>DS(on)</sub>** (resistance across the MOSFET when it is on). 
 > 
-> I ended up buying a pack of 5 Fairchild FQP30N06L thoughhole n-channel MOSFETs, which have  Max V<sub>ds</sub>=60V, Max I<sub>D</sub>=32A, Min V<sub>gs(th)</sub>=1V-2.5V, are in a convenient TO-220 throughhole package, and were in-stock in my local supplier for about €2 each.
+> I ended up buying a pack of 5 Fairchild [FQP30N06L](https://www.utmel.com/components/fqp30n06l-mosfet-pinout-datasheet-and-circuit?id=351) thoughhole n-channel MOSFETs, which have  Max V<sub>ds</sub>=60V, Max I<sub>D</sub>=32A, Min V<sub>gs(th)</sub>=1V-2.5V, are in a convenient TO-220 throughhole package, and were in-stock in my local supplier for about €2 each. More recently, I noticed this particular MOSFET on [*The Bald Engineer*](https://www.youtube.com/watch?v=GrvvkYTW_0k), and I understand it is an example of a "Logic Level" MOSFET because its low V<sub>gs(th) allow it to be switched by a Microcontroller's 3.3V or 5V. 
 
 
 ## The dangers of switching shared GND
-Since I couldn't quickly get my hands on any P-channel MOSFETs, I ordered a bunch of N-channel MOSFETs and had them in front of me in less than 24 hours. My first instinct was to use one of the MOSFETs to switch the GND rail that the ESP32, relay board and various other peripherals were connected to. This was a very bad idea, which I luckily survived. It dawned on my that quickly disconnecting a shared GND in a live circuit with some delicate components might not be a good idea &mdash; when GND is cut, electrical charges might start moving in unexpected directions and unexpected voltages:
+ My first instinct was to use one of the MOSFETs to switch the GND rail that the ESP32, relay board and various other peripherals were connected to. This was a very bad idea, which I luckily survived. It dawned on my that yanking the shared GND in a live circuit with some delicate components might not be a good idea &mdash; when GND is cut, electrical charges might start moving in unexpected directions and unexpected voltages:
 * perhaps backwards through normally polarized components
 * capacitors might discharge high voltages in unexpected directions - perhaps into your microcontroller.
 * a voltage divider that normally converts high voltage into a safe 3V for your ESP32's ADC might suddenly change into a lone resistor sitting between high voltage and your microcontroller's ADC pin. 
