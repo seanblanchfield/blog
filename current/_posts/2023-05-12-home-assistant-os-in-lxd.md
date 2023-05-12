@@ -25,7 +25,7 @@ Acknowledgements to:
  - [xiki and stgraber on the LXD forums](https://discuss.linuxcontainers.org/t/vm-from-disk-image/11473/19)
 
  Prerequisites:
- - Have bridge networking set up so that you can access your LXD containers and VMs directly over your network.
+ - Have bridge networking set up so that you can access your LXD containers and VMs directly over your network. [Here's how I got bridge networking running](/2023/05/home-assistant-os-in-lxd) without Docker screwing it up.
 
 ## Instructions to run Home Assistant OS under LXD
 ``` bash
