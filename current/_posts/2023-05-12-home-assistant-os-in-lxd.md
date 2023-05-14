@@ -63,15 +63,28 @@ At this point, Home Assistant started up normally.
 ![Home Assistant's startup screen](/images/2023/05/HA_in_LXD.png){: .captioned}
 
 
+## Shell access to the VM
+
+If you attempt to log into the VM in the normal LXD/LXC way (e.g., `lxc shell ha`), you will find yourself at a login prompt for which there is no login that works. This is because the Home Assistant OS image is configured to prevent root SSH access, unless special steps are taken. 
+
+If you want to connect to the VM via SSH, the easiest way is to use the Home Assistant [SSH addon](https://github.com/hassio-addons/addon-ssh), which provides an environment inside a docker container in the VM that you can SSH into.
+
+If you want to SSH into the host VM, then we could follow the [procedure in the developer docs](https://developers.home-assistant.io/docs/operating-system/debugging/#home-assistant-operating-system), which are basically to boot the host with a USB drived labelled "CONFIG" attached to it, which contains an `authorized_keys` file, which contains the public part of an SSH key.  After booting up, the root account will be able to authenticate using that SSH key. The extra step required here is to pass the USB device into the VM as discussed below.
+
+{: .callout }
+> It seems a bit unnecessary to plug a physical USB drive into a virtual machine. It would be nice if we could emulate a USB drive instead.  I tried to do this by  creating a loop device via the Loop Setup (`losetup`) command and formatting it to ext4 with the label "CONFIG", but I got stuck trying to pass the device into the VM. People seem to have success following [@TomP's advice on the linuxcontainers forum](https://discuss.linuxcontainers.org/t/mounting-a-loop-device-in-a-lxd-container/14804/8), but I got a `Error: Invalid devices: Device validation failed for "loop-control": Unsupported device type`. Perhaps this only works with containers, not with VMs. In any case, I'm not confident that Home Assistant OS would have accepted `authorized_keys` from the loop device even if I had succeeded.
+>
+>  
+> I also investigated using the `dummy_hcd` (Dummy Host Controller Driver) and `g_mass_storage` ([Mass Storage Gadget](https://docs.kernel.org/usb/mass-storage.html) kernel modules to emulate a USB device. Although `dummy_hcd` was [introduced](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=962708) in Linux kernel 5.10 (released in December 2020), `g_mass_storage` is still not included by default. I'm on Debian 11 (Bullseye), which has `dummy_hcd` but not `g_mass_storage`. I'm not motivated enough to recompile the kernel to get it. For now, I'll keep my eye on `g_mass_storage` and maybe try again if it appears in a kernel update from Debian.
+
 ## USB devices
 
 I haven't yet tried to pass any USB devices through to HA. I believe the tutorial on the [LXD forums here](https://discuss.linuxcontainers.org/t/usb-passthrough-on-ubuntu-based-vms/12170
-) will be a good starting point for that.  With luck a command like the following will be all that is required:
+) contains everything required, consisting of something like the following:
 
 ``` bash
 # Find `vendorid` and `productid` with `lsusb` on the host.
 lxc config device add ha myusbdevice usb vendorid=058f productid=6387
-
 ```
 
 
