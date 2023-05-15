@@ -4,7 +4,7 @@ date: 2023-05-12 15:00
 layout: post
 link: https://seanblanchfield.com/home-assistant-os-in-lxd
 slug: home-assistant-os-in-lxd
-title: How to Run Home Assistant OS under LXD
+title: How to Run Home Assistant OS in a Virtual Machine under LXD
 image: /images/2023/05/home-assistant-os-in-lxd.jpeg
 
 tags:
@@ -25,7 +25,7 @@ Acknowledgements to:
  - [xiki and stgraber on the LXD forums](https://discuss.linuxcontainers.org/t/vm-from-disk-image/11473/19)
 
  Prerequisites:
- - Have bridge networking set up so that you can access your LXD containers and VMs directly over your network. [Here's how I got bridge networking running](/2023/05/home-assistant-os-in-lxd) without Docker screwing it up.
+ - Have bridge networking set up so that you can access your LXD containers and VMs directly over your network. [Here's how I got bridge networking running](/2023/05/bridge-networking-in-lxd) without Docker screwing it up.
 
 ## Instructions to run Home Assistant OS under LXD
 ``` bash
