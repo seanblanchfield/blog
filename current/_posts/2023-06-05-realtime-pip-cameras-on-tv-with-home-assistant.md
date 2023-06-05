@@ -1,9 +1,9 @@
 ---
 author: Sean Blanchfield
-date: 2022-03-28 13:00
+date: 2023-06-05 13:00
 layout: post
-link: https://seanblanchfield.com/realtime-pip-cameras-on-tv-with-home-assistant/
-slug: realtime-pip-cameras-on-tv-with-home-assistant
+link: https://seanblanchfield.com/realtime-pip-cameras-on-tv-with-home-assistant-v2/
+slug: realtime-pip-cameras-on-tv-with-home-assistant-v2
 title: Real-Time Picture-in-Picture Camera Feeds on your TV with Home Assistant
 image: /images/2022/03/tv-camera-pip.jpg
 tags:
@@ -16,7 +16,8 @@ I've found a way to get a RTSP camera feed to display in a picture-in-picture po
 <!-- more -->
 
 {: .callout }
-> **Update, June 2023**. Things have moved on since I initially wrote this post. In particular, *go2rtc* was launched, which I now use instead of either of the *WebRTC Camera* or *RTSPtoWeb* options I discuss below. I have therefore rewritten this guide, and I recommend you [head over to the new version](realtime-pip-cameras-on-tv-with-home-assistant-v2/) instead.
+> This is an updated version of a guide I wrote in March 2022, which was based upon the *WebRTC Camera* home assistant integration. Its author, [@AlexxIT](https://github.com/AlexxIT) has since launched *go2rtc*, which replaces it and is a significant improvement. I have updated this guide accordingly.
+
 
 Home Assistant [natively](https://www.home-assistant.io/blog/2022/03/02/release-20223/) allows you to cast a camera feed to an Android TV, but when I tried to embrace this feature I found two big drawbacks. First, any content that is already being played will be rudely interrupted. For example, your Netflix show will be replaced by the doorbell feed, and you'll need to navigate back into it again to restart it. Second, video latency can very bad. If your video is from a cloud-based camera, like a Ring or Nest doorbell, you will have the unavoidable delay added by the internet roundtrip, plus the processing delay on the cloud server. In my experience, this can be shocking 5-15 seconds under normal conditions. However, even for local video streams from IP cameras, Home Assistant adds a processing delay. My best understanding is that this processing delay is related to Home Assistant transcoding the IP camera stream into HLS (via the `generic_camera`, `stream` and `ffmpeg` integrations), so they can be consumed in a web browser. A stream delay of 10+ seconds is a problem for all of us who want our door camera to usefully display when someone presses the doorbell. In my limited testing, the normal result is that I get to watch an action replay of my awkward pandemic-era tipping interaction with the delivery guy as soon as I plop myself back in the couch. No one wants that.
 
@@ -28,65 +29,51 @@ I did my testing using a &euro;60 Reolink 520A PoE IP camera, which is hardwired
 1. Home Assistant is trying to transcode the RTSP stream in real-time. This will add a processing delay, which will also vary depending on system load.
 1. Viewing a real-time stream over TCP (i.e., HTTP) is not optimal. Any congestion between the Home Assistant host, the router and the web browser will lead to dropped packets, which will cause TCP to pause the stream while it spends seconds trying to confirm retransmission (instead of forgetting about the past, and focussing on the present). The optimal solution is to display the original RTSP stream (which is UDP, not TCP) in the web browser. Unfortunately, web browsers do not support viewing raw RTSP streams. This is why Home Assistant is transcoding them in the first place.
 
-After exploring some options, I found a great solution in [WebRTC Camera](https://github.com/AlexxIT/WebRTC), which builds on [RTSPtoWebRTC](https://github.com/deepch/RTSPtoWebRTC). My career in the video games industry and my adventures in the adblock wars have given me lots of experience implementing low level networking, designing real-time protocols and using WebRTC for inventive purposes, so thankfully I understand the fundamentals of this already. WebRTC is a browser technology that is designed for realtime media. Unlike every other protocol that web browsers speak, WebRTC is based on UDP. UDP is fast instead of reliable. In this case, UDP allows the stream to move on when a video or audio frame gets lost, instead of stalling the stream and spending seconds trying to recover the old data. If you do video calls in your web browser without using fancy plugins, then that video and audio may well be running over WebRTC. 
+In the original version of this guide, I discussed using [WebRTC Camera](https://github.com/AlexxIT/WebRTC) (built on top of [RTSPtoWebRTC](https://github.com/deepch/RTSPtoWebRTC)) to solve this problem. This has now been superceded by [go2rtc](https://github.com/AlexxIT/go2rtc), which was created by the same author, and is a lot more capable. *go2rtc*  connects to all your cameras on one side, and proxies them via multiple protocols (with optional format transcoding) to the rest of your network. In our use-case, it connects to camera RTSP streams, and repackages them into the WebRTC protocol, which web browsers can understand.  
 
-{: .callout}
-> ![Acronym headache: Comparing WebRTC Camera vs RTSPtoWeb Add-On](/images/2022/03/WebRTC_Camera_integration_vs_RTSPtoWeb_AddOn.png){: .captioned .right-half}
-Time for a quick comparison of the [WebRTC Camera integration](https://github.com/AlexxIT/WebRTC) vs the [RTSPtoWeb Add-On](https://community.home-assistant.io/t/add-on-rtsptoweb-and-rtsptowebrtc/387846). One day after I published this, I noticed that [Allen Porter](https://github.com/allenporter/) had published the [RTSPtoWeb](https://community.home-assistant.io/t/add-on-rtsptoweb-and-rtsptowebrtc/387846) Add-On, as an alternative to [WebRTC Camera](https://github.com/AlexxIT/WebRTC). This is very exciting, because *WebRTC Camera* is based on the deprecated [RTSPtoWebRTC](https://github.com/deepch/RTSPtoWebRTC), while Allen's new add-on is based on its successor [RTSPtoWeb](https://github.com/deepch/RTSPtoWeb). Architecturally, one is an integration for Home Assistant Core, while the other is an Add-On for Home Assistant Supervisor (see discussion between their respective authors [here](https://github.com/AlexxIT/WebRTC/issues/138)). As an integration, *WebRTC Camera* provides a custom card, and (in an arguably hacky way) downloads the *RTSPtoWebRTC* proxy server binary into your `/config` directory, and runs it. Alternatively, as a Supervisor Add-On, *RTSPtoWeb Add-On* arranges for the Home Assistant Supervisor to run the *RTSPtoWeb* proxy in a new Docker container, which is then available for use by the native [RTSPtoWebRTC](https://www.home-assistant.io/integrations/rtsp_to_webrtc/) integration that was released very recently in v2022.2, which adds native WebRTC support into regular picture glance cards. The *RTSPtoWeb Add-On* approach is clearly less hacky, more elegant and leverages new native functionality. I expect it to replace *WebRTC Camera*, and I'm looking forward to this happening, however the following drawbacks are keeping me from switching just yet: 
-* You can't watch video streams from outside your network, because Home Assistant's native WebRTC player doesn't yet support NAT traversal, which is necessary to route UDP traffic between your device and the *RTSPtoWeb* proxy. (see this [issue](https://github.com/deepch/RTSPtoWebRTC/issues/148)).
-* Audio is [not yet supported by *RTSPtoWeb*](https://github.com/deepch/RTSPtoWeb#api-documentation). You can support it by switching back to the older *RTSPtoWebRTC*, but that would eliminate a lot of the benefit of upgrading from *WebRTC Camera*.
-* Security. The *WebRTC Camera* integration provides a service that allows short-lived non-guessable video URLs to be created for use in notifications. I don't know how to achieve similar functionality with the RTSPtoWeb addon, and expect I would need to expose the RTSPtoWeb proxy to the internet via port forwarding, which is a security concern.
-
-
-In contrast to Home Assistant's default camera transcoding, *WebRTC Camera* uses *RTSPtoWebRTC* as a light-weight proxy between the RTSP and WebRTC protocols. It basically repackages the data as-is from RTSP UDP packets into WebRTC UDP packets, without doing any CPU-intensive transcoding of the video payload. This effectively eliminates your Home Assistant's CPU as a bottleneck, resulting in a fantastic reduction in video stream delay. *WebRTC Camera* also provides a custom lovelace card that you can use to view the WebRTC video streams.
-
-WebRTC Camera can be installed via HACS, and then can you enable it via Home Assistant's "Configuration > Devices & Services > Integrations". 
-
-I encountered a strange problem where the custom `webrtc-camera` card was only intermittently found by the lovelace UI (resulting in "Custom element doesn't exist" errors where the card should be in the UI). To resolve this I manually added the relevant JS module in my Lovelace resources. You can do this from "Configuration > Dashboards > Resources", or if you use Lovelace in YAML mode, by adding something like the following:
-
-``` yaml
-lovelace:
-  # ...
-  resources:
-    # ...
-    - url: /webrtc/webrtc-camera.js?v2.2.0
-      type: module
-```
-
-I could then add WebRTC camera cards to my UI by adding a "manual" card with yaml like this (where "PASSWORD" is redacted AND "CAMERA IP" represents the local camera IP address):
-
-``` yaml
-type: 'custom:webrtc-camera'
-url: 'rtsp://admin:PASSWORD@CAMERA_IP:554//h264Preview_01_sub'
-```
-
-It is also possible to avoid embedding the literal RTSP stream in the UI yaml. A more elegant approach is to create a [generic_camera](https://www.home-assistant.io/integrations/generic/) entity, and then to reference that. I use a split configuration, so I added the following to my `configuration.yaml` ("IP_CAMERAS" is a label so that this doesn't interfere with other top-level `camera:` definitions):
-``` yaml
-camera IP_CAMERA: !include ip_cameras.yaml
-```
-
-Then I created `ip_cameras.yaml` to define various IP cameras and their RTSP streams:
-
-``` yaml
-- platform: generic
-  name: Front Driveway RTSP
-  stream_source: rtsp://admin:PASSWORD@CAMERA_IP:554//h264Preview_01_sub
-  # Following line not necessary, but added Reolink snapshot URL for completeness:
-  still_image_url: http://CAMERA_IP/cgi-bin/api.cgi?cmd=Snap&channel=0&user=admin&password=PASSWORD 
-```
-
-Now, the WebRTC cards can be changed to reference the camera entity (from which it will extract the RTSP stream):
-
-``` yaml
-type: 'custom:webrtc-camera'
-entity: camera.front_driveway_rtsp
-background: true # Keeps stream active even when not displayed, to speed up loading.
-```
-
-At this point, WebRTC streams were working inside my network, but I couldn't access them outside my house. This is because they run over UDP, and my router was simply rejecting all those unexpected inbound UDP packets. To fix this, I needed to set up some port forwarding at my router. As recommended by in the [documentation](https://github.com/AlexxIT/WebRTC#webrtc-external-access) I forwarded UDP traffic on 10 ports (50000-50010) from my WAN address to my Home Assistant host's LAN address. I then navigated to the integration's config options ("Configuration > Devices & Services > Integrations > WebRTC Camera") and told the WebRTC integration that these ports were available for it to use. I could then view the WebRTC video streams from outside my network.
+My career in the video games industry and my adventures in the adblock wars have given me lots of experience implementing low level networking, designing real-time protocols and using WebRTC for inventive purposes, so thankfully I understand the fundamentals of this already. WebRTC is a browser technology that is designed for realtime media. Unlike every other protocol that web browsers speak, WebRTC is based on UDP. UDP is fast instead of reliable. In this case, UDP allows the stream to move on when a video or audio frame gets lost, instead of stalling the stream and spending seconds trying to recover the old data. If you do video calls in your web browser without using fancy plugins, then that video and audio may well be running over WebRTC. 
 
 {: .callout }
-> I run the excellent [Nginx Proxy Manager](https://github.com/hassio-addons/addon-nginx-proxy-manager) addon so that I can securely access my Home Assistant when I am away from the house, without proxying through any remote internet servers. I had previously run an Nginx reverse proxy on a VPS server, but this added unacceptable latency, an extra point of failure, and unnecessary bandwidth cost when trying to stream live video remotely. Now when I access a video stream remotely, the traffic consists of UDP packets traveling from my phone to my home router, with no additional bandwidth costs. The popular alternative is to forward HTTPS traffic directly to [Home Assistant Core configured with DuckDNS/LetsEncrypt](https://www.home-assistant.io/blog/2017/09/27/effortless-encryption-with-lets-encrypt-and-duckdns/), but this entirely disables unencrypted HTTP, and effectively prevents you from directly accessing your Home Assistant via its local network address. In contrast, the *Nginx Proxy Manager* approach keeps your Home Assistant accessible over both HTTPS (via your public domain name) and HTTP (via your local LAN address). This gives you the best of all worlds - security, performance and peace of mind that you will still be able to access your Home Assistant if your internet goes down. I recommend it!
+> Trouble viewing RTSP streams in VLC on Ubuntu/Debian? [Debian disabled RTSP support](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=982299) in their build of VLC. To open RTSP streams in VLC, you need to build your own version or install from the Snap store instead.
+
+Whereas Home Assistant's default video transcoding is pretty CPU-intensive, *go2rtc* (under normal usage) simply repackages data as-is from RTSP UDP packets into WebRTC UDP packets, without doing any transcoding of the video payload. This effectively eliminates your Home Assistant's CPU as a bottleneck, resulting in a fantastic reduction in video stream delay. To view these streams in Home Assistant, you use the [WebRTC Camera](https://github.com/AlexxIT/WebRTC) integration, which provides a WebRTC javascript client that can connect to the *go2rtc* server.  If you are also using [Frigate](https://frigate.video/) as your NVR, then you are probably more than halfway there already - Frigate v12 includes *go2rtc* as a core component, and [Frigate HASS Card](https://github.com/dermotduffy/frigate-hass-card) has native support for it.
+
+To proceed, you need to have *go2rtc* running somewhere, e.g.:
+* As part of Frigate (this is what I do)
+* As a stand-alone Docker container
+* As a Home Assistant add-on (which is a docker container managed by Home Assistant)
+
+In addition, you need to install the [WebRTC Camera](https://github.com/AlexxIT/WebRTC) integration via HACS, which allows us to test everything, as well as request short-lived URLs that contain live video streams to display on the TV.
+
+Cameras must be configured in your *go2rtc* config file (or in your Frigate config file). I have both the *main* stream and *sub* stream configured for every camera, which has the following benefits:
+- It centralizes configuration for all cameras in one place
+- It standardizes all camera URLs used in Home Assistant and elsewhere, even though the cameras are from different manufacturers.
+- It eliminates usernames and passwords from the camera URLs used in Home Assistant and elsewhere.
+- It relieves cameras of the CPU load involved in serving multiple clients. Every camera now has exactly one client.
+
+Cameras configured in *go2rtc* can be tested using its config page (available on port 1984) and by connecting directly to the proxied RTSP streams in VLC. 
+
+> ![Generic Camera config for a go2rtc proxied stream](/images/2023/06/go2rtc_generic_camera_config.png){: .captioned .right-half}
+
+When I confirmed everything in go2rtc was working correctly, I proceeded to create a Home Assistant [generic_camera](https://www.home-assistant.io/integrations/generic/) for each of them. Note that *go2rtc* version 1.5 provides a live still image for each camera on a standard URL (if using Frigate, [the docs explain](https://docs.frigate.video/configuration/advanced/#custom-go2rtc-version) how to upgrade the *go2rtc* version). This allows each generic camera to be configured with the URL of the RTSP stream hosted by *go2rtc* and a still image transcoded by *go2rtc*. 
+
+WebRTC camera UI cards could then be defined to reference the generic camera entity (from which it will extract the RTSP stream):
+
+``` yaml
+type: 'custom:webrtc-camera'
+entity: camera.driveway_sub
+```
+
+At this point, WebRTC streams were working inside my network, but I couldn't access them when away from my house. To fix this, I needed to set up some port forwarding at my router and to tell *go2rtc* what my public IP address was. This would allow the WebRTC client in the mobile web browser to attempt to connect to my router's public IP, and for those UDP packets to get forwarded to the *go2rtc* server.  
+
+First, I forwarded port **8555** from my router back to the LAN IP address that the *go2rtc* server was running on. This is the port that [*go2rtc* uses for WebRTC communication](https://github.com/AlexxIT/go2rtc#configuration). I then specified the public IP and port in the *go2rtc* configuration file:
+``` yaml
+webrtc:
+  candidates:
+    - <PUBLIC IP ADDRESS>:8555
+``` 
+
+After this, it was possible to view the camera streams remotely over WebRTC.
 
 The performance difference between the new WebRTC streams and the standard HLS streams was considerable. Viewing them side-by-side from my workstation on my LAN, I could see a significant difference in quality and in timeliness.
 
@@ -251,7 +238,7 @@ display_driveway_pip_popup_on_tv:
   - service: webrtc.create_link
     data:
       link_id: '{{ link_id }}'
-      entity: camera.front_driveway
+      entity: camera.driveway_sub
       open_limit: 1
       time_to_live: 60
   - service: rest_command.pipup_url_on_tv
@@ -260,7 +247,7 @@ display_driveway_pip_popup_on_tv:
       message: Someone is at the front door
       width: 640
       height: 480
-      url: PUBLIC_ROOT_URL/webrtc/embed?url={{ link_id }}&webrtc=false
+      url: PUBLIC_ROOT_URL/webrtc/embed?url={{ link_id }}
 
 ```
 {% endraw  %}
