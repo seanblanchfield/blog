@@ -82,7 +82,11 @@ Create a script at `/usr/local/bin/post-docker.sh`:
 
 date > /var/log/post-docker-timestamp
 iptables -I DOCKER-USER -i br0 -o br0 -j ACCEPT
+```
 
+Make it executable:
+``` bash
+sudo chmod u+x /usr/local/bin/post-docker.sh
 ```
 
 Create a `systemd` unit at `/etc/systemd/system/postdocker.service`:
