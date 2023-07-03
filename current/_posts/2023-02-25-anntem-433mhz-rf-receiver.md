@@ -34,6 +34,8 @@ I figured out how to configure and use the barely-documented but highly efficien
 }
 </style>
 
+Please also see my related post on [building a wake-up receiver](/2023/02/esp32-microcontroller-wakeup-receiver) using this component.
+
 # Transcript
 
 Recently, I was looking for an RF wake-up receiver for my current project. It’s a battery powered project, and I need it to be powered off until a low power module receives an RF signal and wakes the whole thing up. While hunting around for something cheap, available and suitable, I found this module on AliExpress, by Anntem. It was advertised as the “DC3.5V 6V 9V 12V RF wireless remote control 433Mhz lithium battery power outlet on/off mini small switch module controller”.
