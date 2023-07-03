@@ -67,7 +67,7 @@ I made a [youtube video](https://seanblanchfield.com/2023/02/anntem-433mhz-rf-re
 | 8                     | Factory reset    |                                 |                               |
 
 ## Simplest Configuration of a Wake-Up Receiver
-The simplest way to use this as a wake-up receiver would be to directly power your project through it. It's wide voltage range and 2A load capacity should allow some easy configurations. For example, a Lithium-Ion Polymer ("LiPo") battery will delivery more than the required 3.5V over nearly its entire discharge curve (above 0&deg;C at least). This can run the RF receiver, and the blue output lead can pass through a 3.3V linear voltage regulator (e.g., the LD1117V33) and into an ESP32 microcontroller. 
+The simplest way to use this as a wake-up receiver would be to directly power your project through it. It's wide voltage range and 2A load capacity should allow some easy configurations. For example, a Lithium-Ion Polymer ("LiPo") battery will deliver more than the required 3.5V over nearly its entire discharge curve (above 0&deg;C at least). This can run the RF receiver, and the blue output lead can pass through a 3.3V linear voltage regulator (e.g., the LD1117V33) and into an ESP32 microcontroller. 
 An even simpler albeit less efficient approach would be to use a regular 5V USB battery pack to power the 5V V<sub>IN</sub> of an ESP32 devboard via the RF receiver. 
 
 The remote could then be used to wake up the project momentarily, or for one of the predefined latched-mode periods (10s, 30s, 60s or 300s). To automatically wake up the system, an [EV1527 transmitter module](https://www.aliexpress.com/item/32686841608.html) (or a salvaged PCB from a remote) could be hardwired to a permanently-powered ESP32.
