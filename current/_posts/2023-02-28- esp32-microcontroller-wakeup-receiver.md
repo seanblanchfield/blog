@@ -28,6 +28,8 @@ Sometimes, you want to wake up on demand, e.g., in response to an event that onl
 
 The main problem with wake-up receivers is that you can't buy them. A web search for wake-up receivers will yield academic and industry papers, but nothing you can order on Digikey or AliExpress. This [short paper by Touchstone Semiconductors](https://www.digikey.com/Site/Global/Layouts/DownloadPdf.ashx?pdfUrl=9FF445EB4C7A4E6D94ECB980372DC036) describes building a *passive* wakeup receiver as a potential application of the ultra low-power Touchstone TS12011 OpAmp. Unfortunately their design depends on a salvaged super-regenerative receiver from a pre-transistor radio (another thing you can't buy) and doesn't discuss the corresponding transmitter, or how to avoid waking up whenever there is radio noise. As of Spring 2023, it seems like wake-up receivers haven't quite arrived yet. For now, we have to build our own. 
 
+{: .callout }
+> **Correction, 3 July 2023**: [@renewaveboard](https://www.youtube.com/channel/UCp0v7urX-f5PYcoTyy33t5Q) pointed out the in comments of my related [Youtube video](https://www.youtube.com/watch?v=MGSSIwKDliA&lc=Ugz_Og1TH2hw0NIbJMx4AaABAg) that *RadioControlli* makes the &euro;15 [RC-WuTRX-434](https://radiocontrolli.eu/WakeUp-Receiver-Module-433MHz-RC-WuTRX-434-p245910165) module, which is a purpose-built wake-up receiver module that uses 130&micro;A in lower-power mode.
 
 ![Edwin Armstrong presenting the super-regenerative receiver in June 1922. Source: Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Edwin_Armstrong_and_superregenerative_receiver.jpg/1200px-Edwin_Armstrong_and_superregenerative_receiver.jpg){: .captioned}
 
