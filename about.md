@@ -6,7 +6,9 @@ image: /images/2018/12/Sean_square.jpg
 ---
 
 
-My name is Sean Blanchfield, and I am a technologist and entrepreneur from Dublin, Ireland.  My most recent company was PageFair, where I was CEO and co-founder, helping web publishers [stop revenue loss due to adblocking](https://pagefair.com). PageFair was acquired by Blockthrough in late 2018. Prior to PageFair, I was best known as as the technical cofounder of Demonware, which pioneered online technology for the world's leading video games, including Call of Duty and Guitar Hero, and which was acquired by the largest video games company in the world in 2007. I previously organized *Techpreneurs*, an informal but invite-only monthly meetup for 120+ Dublin startup founders. I have written occasional pieces for Sunday newspapers, try to help young startups where I can, and have very occasionally invested. In my spare time I like to tinker with electronics, IOT and woodworking.
+My name is Sean Blanchfield, and I am a technologist and entrepreneur from Dublin, Ireland.  My most recent company was PageFair, where I was CEO and co-founder, helping web publishers [stop revenue loss due to adblocking](https://pagefair.com). PageFair was acquired by Blockthrough in late 2018. Prior to PageFair, I was best known as as the technical cofounder of Demonware, which pioneered online technology for the world's leading video games, including Call of Duty and Guitar Hero, and which was acquired by the largest video games company in the world in 2007. I also founded and co-organize *Techpreneurs*, an invite-only monthly meetup for Irish technical founders. I have written occasional pieces for Sunday newspapers, try to help young startups where I can, and have very occasionally invested. 
+
+I am currently an entrepreneur-in-residence at Dogpatch Labs, taking on consulting projects here and there, and am quite excited about hardware and IoT.
 
 ## My Companies
 
