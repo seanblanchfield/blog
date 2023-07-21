@@ -27,6 +27,9 @@ Acknowledgements to:
  Prerequisites:
  - Have bridge networking set up so that you can access your LXD containers and VMs directly over your network. [Here's how I got bridge networking running](/2023/05/bridge-networking-in-lxd) without Docker screwing it up.
 
+ Suggested UI:
+- Various UI screenshots below are of [LXDWare's LXDDashboard](https://lxdware.com/). There are many web-based UIs for managing LXD, and I briefly tried them all before settling on LXDDashboard. It's straightforward, easy to install, easy to use and well-featured. You can install it in all kinds of ways, including in an LXC container or in Docker. 
+
 ## Instructions to run Home Assistant OS under LXD
 ``` bash
 # make a directory to work from
@@ -79,14 +82,20 @@ If you want to SSH into the host VM, then you can follow the [procedure in the d
 
 ## USB devices
 
-I haven't yet tried to pass any USB devices through to HA. I believe the tutorial on the [LXD forums here](https://discuss.linuxcontainers.org/t/usb-passthrough-on-ubuntu-based-vms/12170
-) contains everything required, consisting of something like the following:
+Passing USB devices through to a VM is straightforward.  [This tutorial](https://discuss.linuxcontainers.org/t/usb-passthrough-on-ubuntu-based-vms/12170
+) on the LXD forums discusses how to add a device using the terminal.
 
+First, find the USB device's *vendor ID* and *product ID* using `lsusb`:
+
+![Find USB device IDs with "lsusb"](/images/2023/05/lsusb.jpeg){: .captioned}
+
+You can add the device to the VM at the command line as follows:
 ``` bash
-# Find `vendorid` and `productid` with `lsusb` on the host.
 lxc config device add ha myusbdevice usb vendorid=058f productid=6387
 ```
+Alternatively, add it in LXDDashboard by you can picking the VM, navigating to "devices" in the main menu, and then "USB":
 
+![Add USB device to a VM using LXDDashboard ](/images/2023/05/lxddash_add_device.jpeg)
 
 ## Background Setup
 
