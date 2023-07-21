@@ -91,7 +91,7 @@ First, find the USB device's *vendor ID* and *product ID* using `lsusb`:
 
 You can add the device to the VM at the command line as follows:
 ``` bash
-lxc config device add ha myusbdevice usb vendorid=058f productid=6387
+lxc config device add ha myusbdevice usb vendorid=obda productid=8771
 ```
 Alternatively, add it in LXDDashboard by you can picking the VM, navigating to "devices" in the main menu, and then "USB":
 
