@@ -72,6 +72,9 @@ An even simpler albeit less efficient approach would be to use a regular 5V USB 
 
 The remote could then be used to wake up the project momentarily, or for one of the predefined latched-mode periods (10s, 30s, 60s or 300s). To automatically wake up the system, an [EV1527 transmitter module](https://www.aliexpress.com/item/32686841608.html) (or a salvaged PCB from a remote) could be hardwired to a permanently-powered ESP32.
 
+{: callout }
+> I directly wired an ESP32 onto the transmitter PCB pictured above via a small assembly of transistors that shorted one of the transmitter buttons. The transmitter is normally powered by 6V, which I achieved by boosting the ESP32's VIN output (about 4.5V) with 2 AAA batteries, reaching about 6.5V.  Since I now needed to switch a voltage higher than the ESP32's logic level of 3.3V, I needed to use a combination of an NPN and a PNP transistor, following the comprehensive tutorial [here](https://www.w9xt.com/page_microdesign_pt12_hv_pnp_switching.html).  I noted that I could boost the range by further increasing the voltage to about 8.5V without damaging the transmitter. I also noted that range was optimal when the transmitter is in a horizontal position. 
+
 ## Wake-Up Receiver and Deep Sleep
 
 One downside to the previous configuration is that the ESP32 is completely powered off until the system is explicitly woken up. A refinement is to keep power connected to the ESP32, put it in deepsleep, and to wake it up on a RTC GPIO pin that the RF receiver is connected to. This allows the ESP32 to also wake up based on a timer (or any other local event wired to a GPIO pin). If following this approach, care should be taken to use a voltage divider or similar to reduce the voltage coming from the RF receiver to a safe 3.3V (my reading of table 15 in the [ESP32 datasheet](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf) is that the maximum permissible voltage is 3.3V + 0.3V = 3.6V).
