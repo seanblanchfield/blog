@@ -15,7 +15,7 @@ I’ve been operating Gettings Things Done (GTD) since the 2000s. Among other th
 - I normally have less than 5 emails in my inbox. Every email gets processed. If you write me an email, you can be sure that I will read it soon, and if it requires action from me, I will translate it into my to-do list and calendar, or delegate/reject and let you know.
 - Clear and actionable requests will probably move directly into my to-do list or calendar. Ambiguous emails will likely languish for a few days before being lobbed right at you for clarification. 
 Requests that I can satisfy in less than 5 minutes will probably get done immediately.
-- I am on instant messenger channels like Slack, Whatsapp, Signal and Telegram but I don’t manage them as part of my GTD workflow. They are disjointed and ephemeral and I treat them as asynchronous. I might reply immediately, or I might not; I might forget about it, miss the notification, or dismiss the notification if I’m on personal time or it’s inconvenient. If it’s important and you require me to act, you should choose email.
+- I am on Slack, Whatsapp, Signal and Telegram but I don’t manage them as part of my GTD workflow. They are disjointed and ephemeral and I treat them as asynchronous. I might reply immediately, or I might not; I might forget about it, miss the notification, or dismiss the notification if I’m on personal time or it’s inconvenient. If it’s important and you require me to act, you should choose email.
 - For work-related IMs, please prefer Slack. If you're trying to escalate, start with Whatsapp. If it’s personal, I prefer Signal. If you need to grab my attention in real-time, contact me however you need to, including a phone call.
 - I don't check social platforms like LinkedIn or Twitter for messages, so don't bother trying to communicate with me there. 
 
@@ -24,7 +24,6 @@ Some boundaries:
 - If I don’t know you, don’t expect a response.
 - If you phone me from a number I don’t recognise, I won’t answer.
 - Send me a message whenever you like, but I probably won’t respond until I’m next working.
-- Please don’t try to expedite responses to email by chasing me on IM. 
 
 # Communication style
 - I am personable and open, but can be quite goal oriented, and I’m often guilty of cutting short the chitchat, and moving on to meeting goals and the main topic.
@@ -51,7 +50,8 @@ For the most part, people seem to like being managed by me, however I don’t ha
 - I want short async updates on progress and outcomes as you go (email, IM etc) so we can spend our F2F time more productively.
 - I never want to chase you for work or updates.
 - I never want to discover you’re failing because you’re missing something you need to succeed. When something gets harder than expected, you need to call in support.
-- This job is one step in your career. I’ll probably want you to spend as much of it with the company, but my hope is that you will ultimately outgrow any company you join. We can be realistic about that, and talk openly about getting you the experience you need to grow as quickly as you can.  
+- This job is one step in your career. I’ll want you to spend as much of it as possible with the company, but my hope is that you will ultimately outgrow any company you join. We can be realistic about that, and talk openly about getting you the opportunities and experience you need to grow as quickly as you can.
+
 
 # Meetings
 Meetings scale badly. As you add people, their cost grows linearly and their quality plummets exponentially. Before organising a meeting, consider if some kind of async group chat would suffice instead (email, slack or a github ticket). 
@@ -73,8 +73,10 @@ Introductions are made possible by reputation and network - two things it takes 
 - Before you introduce someone to me, please ask me first and tell me why.
 
 # I am happy when
-- I am using the maximum amount of everything I’ve learned so far to solve a new problem.
 - I am in a group of fun and smart people and am learning at full speed about something interesting.
+- I am using the maximum amount of everything I’ve learned so far to solve a new problem.
+- I’m part of a happy and productive team that knows how to do hard things together.
+
 - I’m engrossed in practising and improving some skill or craft.
 
 # I am frustrated when
