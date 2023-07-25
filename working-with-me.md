@@ -83,9 +83,12 @@ Introductions are made possible by reputation and network - two things it takes 
 - I detect bullshit or something disingenuous.
 
 # Pitfalls
-- I have a tendency to jump deep-dive down interesting looking rabbit holes, which is fun but can be an unplanned and bad use of my time, and could be a waste of yours. If I’m pulling the conversation in a direction out of curiosity, feel free to flag it.
-  
+- I have a tendency to jump deep-dive down **interesting looking rabbit holes**, which is fun but can be an unplanned and bad use of my time, and could be a waste of yours. If I’m pulling the conversation in a direction out of curiosity, feel free to flag it.
+
+- **The perfect is the enemy of the good**. People have previously pointed out that I over-invest in building upfront infrastructure rather than just getting a job done in the quickest way. There is a tension between getting things done *right* vs getting things done *quickly*. It's okay to hack or bodge something together if it can be quickly replaced later on, but we always have to mind our technical debt and avoid creating shoddy foundations for the rest of our work. I agree I have a tendency to perfectionism and wanting to make sure that each piece of work is complete before I move on. I try to keep that in check.
+
 - I get a kick out of improving any craft, whether that’s coding, welding, woodworking, sewing or gaming. This can sometimes be fun disguised as work. If I seem to have ended up in the weeds but have an inexplicable grin on my face, you might need to intervene.
+
 
 # Books that significantly influenced me
 - [Getting Things Done](https://en.wikipedia.org/wiki/Getting_Things_Done) <br />
