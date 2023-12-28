@@ -15,7 +15,7 @@ tags:
 
 I am running Docker alongside LXD on my home server, and I want the various VMs and containers I am running to get their own IP addresses on my LAN and to be generally available for normal phones, laptops and other devices to connect to. 
 
-This normally just requires LXD bridge networking (for which there are plenty of tutorials online), but it turns out that Docker interferes with it. Fixing it took a bit of research and experiementation. Here are details on what worked for me.
+This normally just requires LXD bridge networking (for which there are plenty of tutorials online), but it turns out that Docker interferes with it. Fixing it took a bit of research and experimentation. Here are details on what worked for me.
 
 <!-- more -->
 ---
@@ -73,7 +73,7 @@ If you are also using docker, it modifies `iptables` in a way that prevents traf
 sudo iptables -I DOCKER-USER -i br0 -o br0 -j ACCEPT
 ```
 
-To make this survive reboots, I needed to create a script that runs after docker has started (i.e., after docker has created the `DOCKER-USER` iptables chain. 
+To make this survive reboots, I needed to create a script that runs after docker has started (i.e., after docker has created the `DOCKER-USER` iptables chain).
 
 Create a script at `/usr/local/bin/post-docker.sh`:
 
