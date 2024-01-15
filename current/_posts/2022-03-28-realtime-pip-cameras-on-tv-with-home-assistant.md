@@ -99,7 +99,7 @@ The bottom camera is the WebRTC stream, which has a delay of about 1 second, wit
 
 Android TV doesn't provide a native API to allow the display of picture-in-picture popups. However, you can use the [PiPup](https://github.com/rogro82/PiPup) app on your Android TV to display the popups for you. PiPup provides a REST API, which you can communicate with from Home Assistant. 
 
-The original PiPup repository hasn't been updated in a few years, and has some important outstanding pull requests. Therefore, we cannot install it in the recommended way. We need madjam002's [pull request](https://github.com/rogro82/PiPup/pull/34) (also discussed in this [issue](https://github.com/rogro82/PiPup/issues/8)), which adds support for displaying embedded web content with javascript. That pull request contains a link to an [APK build of PiPup](https://github.com/rogro82/PiPup/pull/34#issuecomment-933015085) with the relevant improvements. Download that APK ("*app-debug.apk*").
+The original PiPup repository hasn't been updated in a few years, and has some important outstanding pull requests. Therefore, we cannot install it in the recommended way. We need madjam002's [pull request](https://github.com/rogro82/PiPup/pull/34) (also discussed in this [issue](https://github.com/rogro82/PiPup/issues/8)), which adds support for displaying embedded web content with javascript. In addition, desertblade has added a fix in his fork that makes PiPup properly close its connection to Frigate when it's done. Therefore, I recommend you use [desertblade's build](https://github.com/desertblade/PiPup/releases). Download that APK ("*app-debug.apk*").
 
 Make sure you have enabled developer options on your Android TV, and know what its IP address is (instructions are given on Stackoverflow [here](https://stackoverflow.com/questions/31421872/adb-connection-to-an-androidtv#:~:text=You%20need%20to%20use%20ADB,are%20now%20a%20developer%22%20appears.)).
 
@@ -116,6 +116,8 @@ adb shell pm list packages | grep pip
 adb shell appops set nl.rogro82.pipup SYSTEM_ALERT_WINDOW allow
 
 ```
+
+Before you can test it, you need to start PiPup on your TV, so that it's running in the background.
 
 You can now confirm that it is working by using cURL to post a command to the app's REST API. Put this example payload (copied from the original docs) into a file `post.json`:
 ``` json
@@ -222,7 +224,6 @@ data:
   url: https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/cfcc3137009463.5731d08bd66a1.png
 ```
 
-
 The above values can be templated. For example, camera entities in Home Assistant typically have a `entity_picture` attribute that contains a URL to a current camera snapshot (including a short-lived auth token). To display a camera snapshot, you could call the service as follows from an automation (replace `<PUBLIC_ROOT_URL>` with the literal value of your public Home Assistant root URL, e.g., "https://example.duckdns.org:8123/"):
 
 
@@ -236,7 +237,9 @@ data:
 ```
 {% endraw %}
 
-Displaying an image in this way is nearly instantaneous, but if you can tolerate 1-2 seconds for a video stream to initialize, you can also show the live video stream using WebRTC. To do this, we use the `webrtc.create_link` service (documented [here](https://github.com/AlexxIT/WebRTC/wiki/Cast-or-share-camera-stream)) to generate a temporary video stream webpage at a nominated URL. We then send the URL of that page to the PiPup service. To put this together, we need to create a Home Assistant script, which gives us the ability to store a random ID in a variable, which we can then pass into the `webrtc.create_link` service and then into the `rest_command_pipup_url_on_tv` service.
+Displaying an image in this way is nearly instantaneous, but if you can tolerate 1-2 seconds for a video stream to initialize, you can also show the live video stream using WebRTC. To do this, we use the `webrtc.create_link` service (documented [here](https://github.com/AlexxIT/WebRTC/wiki/Cast-or-share-camera-stream)) to generate a temporary video stream webpage at a nominated URL. We then send the URL of that page to the PiPup service. 
+
+To put this together, we need to create a Home Assistant script, which gives us the ability to store a random ID in a variable, which we can then pass into the `webrtc.create_link` service and then into the `rest_command_pipup_url_on_tv` service.
 
 Here is the yaml of a working script, which you can add to your `scripts.yaml` or define using the UI at "Configuration > Automations & Scenes > Scripts"  (remember to replace `PUBLIC_ROOT_URL`):
 
@@ -265,7 +268,26 @@ display_driveway_pip_popup_on_tv:
 ```
 {% endraw  %}
 
-Now, whenever you want to pop the camera feed up on your TV, just call `script.display_driveway_pip_popup_on_tv`. Voilà!
+Now, whenever you want to pop the camera feed up on your TV, just call `script.display_driveway_pip_popup_on_tv`. 
+
+The final piece is to make sure that PiPup is running when we need it, so you don't manually need to start it every time you restart your Android TV box. We can do this by sending the following command to the Android box via Home Assistant's ADB integration:
+``` bash
+ps -ef | grep -v grep | grep pipup || am start nl.rogro82.pipup/.MainActivity
+``` 
+
+Here is what that looks like as an automation:
+
+![Starting PiPup automatically in an automation](/images/2022/03/adb-cmd-start-pipup.png){:.captioned }
+
+Here is the `yaml` version of that step in the automation:
+``` yaml
+service: androidtv.adb_command
+data:
+  command: >-
+    ps -ef | grep -v grep | grep pipup || am start nl.rogro82.pipup/.MainActivity
+target:
+  device_id: 014b02b50b1142bd5738bae18f5df54d
+```
 
 ![Pop up over Netflix](/images/2022/03/tv-camera-pip.jpg)
 The above image is still showing a feed from my driveway camera instead of my doorbell camera. The next step is to get rid of my Nest Camera and replace is with something better. I'll cover that in my next post.
