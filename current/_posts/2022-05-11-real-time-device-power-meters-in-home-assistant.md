@@ -166,11 +166,18 @@ entities:
   - sensor.unaccounted_power
 element:
   type: 'custom:bar-card'
-  entities: ${vars.filter(v => states[v.entity].state > 5).sort((v1,v2) => states[v2.entity].state-states[v1.entity].state)}
+  entities: |- 
+      ${ vars.filter(v => {
+        let ent = states[v.entity];
+        if(!ent || ent.state === undefined || !ent.state === 'unknown') {
+          console.warn(`Power meter: Entity ${v.entity} not found`);
+        }
+        return ent.state > 5
+      }).sort((v1,v2) => states[v2.entity].state-states[v1.entity].state)}
   direction: right
   entity_row: true
   min: 0
-  max: ${ Math.max(...vars.map(v => states[v.entity].state))}
+  max: ${ Math.max(...vars.map(v => states[v.entity]).filter(Boolean).map(v => v.state).filter(s => s !== 'unknown').map(Number)) }
   height: 20px
   stack: vertical
   decimal: 0
