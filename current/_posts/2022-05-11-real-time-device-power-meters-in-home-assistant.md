@@ -132,6 +132,8 @@ variables:
     name: Lights
   - entity: sensor.fridge_smart_plug_power
     name: Fridge
+  - entity: sensor.fridge_fake
+    name: FakeFridge
   - entity: sensor.tv_smart_plug_power
     name: TV
   - entity: sensor.workstation_sensor_power
@@ -156,6 +158,7 @@ entities:
   - sensor.dishwasher_power
   - sensor.all_lights_power
   - sensor.fridge_smart_plug_power
+  - sensor.fridge_fake
   - sensor.tv_smart_plug_power
   - sensor.workstation_sensor_power
   - sensor.boiler_sensor_power
@@ -169,15 +172,21 @@ element:
   entities: |- 
       ${ vars.filter(v => {
         let ent = states[v.entity];
-        if(!ent || ent.state === undefined || !ent.state === 'unknown') {
+        if(ent === undefined || ent.state === undefined) {
           console.warn(`Power meter: Entity ${v.entity} not found`);
         }
-        return ent.state > 5
-      }).sort((v1,v2) => states[v2.entity].state-states[v1.entity].state)}
-  direction: right
-  entity_row: true
-  min: 0
-  max: ${ Math.max(...vars.map(v => states[v.entity]).filter(Boolean).map(v => v.state).filter(s => s !== 'unknown').map(Number)) }
+        else if(ent.state === 'unknown') {
+          console.warn(`Power meter: Entity ${v.entity} state is unknown`);
+        }
+        else if(isNaN(ent.state)) {
+          console.warn(`Power meter: Entity ${v.entity} state is not a number`);
+        }
+        else return Number(ent.state) > 5;
+      }).sort((v1,v2) => states[v2.entity].state - states[v1.entity].state)}
+    direction: right
+    entity_row: true
+    min: 0
+    max: ${ Math.max(...vars.map(v => states[v.entity]).filter(e => !!e).map(e => e.state).filter(n => !isNaN(n))) }
   height: 20px
   stack: vertical
   decimal: 0
