@@ -22,7 +22,7 @@ After *DemonWare* I found myself in the *Zynga* era of web-based social gaming, 
 
 I was consulting CTO in *Jolt Online* in 2010, after its acquisition by *GameStop*, and I rapidly built a dev team, helped launch a few new social games, and built an interesting gamified internal sales campaign platform that was used by about 30 thousand staff. 
 
-In 2011 I co-founded [Front Square](http://frontsquare.com) and built a multiplayer social game and gamified platform to taught the principles of *Lean Six Sigma* in enterprises. This scalably solved a very difficult education-delivery problem, but was killed by a long sales cycle.
+In 2011 I co-founded *Front Square* and built a multiplayer social game and gamified platform to taught the principles of *Lean Six Sigma* in enterprises. This scalably solved a very difficult education-delivery problem, but was killed by a long sales cycle.
 
 In 2012 Brian McDonnell and I regrouped as *Scale Front*, a venture lab in which we tried to parallelize the Lean Startup method. We filtered 50 business ideas down to 5 product launches, and produced 2 businesses. One of these businesses, [PageFair](http://pagefair.com), soon became our core focus. 
 
