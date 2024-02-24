@@ -20,9 +20,9 @@ We specialized in online video gaming. I had an amazing time hiring geniuses, in
 
 After *DemonWare* I found myself in the *Zynga* era of web-based social gaming, a continuation of the multiplayer arc, distilled down and gone mainstream. With [Brian McDonnell](https://twitter.com/mcdonnellb) I re-engineered and ran [Utopia](http://utopia-game.com), a massively multiplayer team-based web strategy game. I believe it to be oldest running game of its kind, with an extremely dedicated base of users, many of whom have been playing since the game's launch in the late 1990s. *Utopia* was acquired by [MUGA Gaming](http://www.mugagamingllc.com/) in 2017.
 
-I was consulting CTO in *Jolt Online* in 2010, after its acquisition by *GameStop*, and I rapidly built a dev team, helped launch a few new social games, and co-designed an interesting gamified sales campaign platform that was used by about 30 thousand staff. 
+I was consulting CTO in *Jolt Online* in 2010, after its acquisition by *GameStop*, and I rapidly built a dev team, helped launch a few new social games, and built an interesting gamified internal sales campaign platform that was used by about 30 thousand staff. 
 
-I 2011 I co-founded [Front Square](http://frontsquare.com) and built a multiplayer social game and gamified platform to taught the principles of *Lean Six Sigma* in enterprises. This scalably solved a very difficult education-delivery problem, but was killed by a long sales cycle.
+In 2011 I co-founded [Front Square](http://frontsquare.com) and built a multiplayer social game and gamified platform to taught the principles of *Lean Six Sigma* in enterprises. This scalably solved a very difficult education-delivery problem, but was killed by a long sales cycle.
 
 In 2012 Brian McDonnell and I regrouped as *Scale Front*, a venture lab in which we tried to parallelize the Lean Startup method. We filtered 50 business ideas down to 5 product launches, and produced 2 businesses. One of these businesses, [PageFair](http://pagefair.com), soon became our core focus. 
 
