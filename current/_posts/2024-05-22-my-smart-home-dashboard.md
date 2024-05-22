@@ -58,7 +58,7 @@ When I open up the Home Assistant app, the main screen is a dashboard containing
 
 ## Software Used
 
-To begin with, here are the tools I used for this project:
+Here are the tools I used for this project:
 
 - *SketchUp Make 2017*. This is the last free desktop version of SketchUp. It is no longer officially offered, but you can find [downloads online](https://www.reddit.com/r/Sketchup/comments/10f2jy4/where_can_i_download_sketchup_make_2017/). Alternatively, you can pay for Sketchup Pro.
 - [*Twilight Render*]((https://www.twilightrender.com/)) for rendering realistic ray-traced images of sketchup 3D models.
@@ -70,13 +70,13 @@ Lukevink's forum topics from 2020, [3D Floorplan with Hue and Saturation individ
 
 
 ## Step 1: Have an Accurate 3D Model
-I already had an accurate 3D model of my home, which I had used for various purposes over the years. You will probably have to create your own. The rest of this blog post assume you used Sketchup to create the model, but you can probably adapt it to other more advanced modelling tools like *Blender*.
+I already had an accurate 3D model of my home, which I had used for various purposes over the years. You will probably have to create your own. The rest of this blog post assumes you used Sketchup to create the model, but you can probably adapt it to other more advanced modelling tools like *Blender*.
 
 ## Step 2: Separate Each Floor
 I took a copy of the main model and split it up by floor in Sketchup. To split it up:
 1. Make copy of the model so that you end up with two models of your house side-by-side.
 1. Position a horizontal section plane just below the ceiling of the floor that you want to render.
-1. Activate the section plane, and select "Edit > Intersect Faces > With Model".
+1. Activate the section plane, and select `Edit` > `Intersect Faces` > `With Model`.
 1. Deactivate or delete the section plane, switch to parallel projection from the view menu, and select all unwanted geometry in the copy of the house you are working on, and delete it. This should leave just the floor you want to work on exposed. 
 1. Sketchup models are shell-based, so the walls of the floor you just intersected will be hollow when viewed from above. This doesn't look good when rendered. To fix this, fill in the tops of the walls with rectangles, and make them black or some other solid colour.
 1. Repeat the above process for each floor of the house. At the end, you should have split your house up into a couple of adjacent models (one for each floor).
@@ -87,6 +87,7 @@ Sketchup scenes allow us to choose a camera position to view each floor from and
 1. Use the navigation tools (Orbit, Pan, Zoom) to position the camera and adjust the view of your floor until you have the desired perspective. Try to keep the camera angle consistent so that the final renders of each floor make sense together (and aren't rotated 90&deg; from each other, for example).  If you want the scene to remember a new camera angle you need to click the "update" (&#128260;) button on the Scenes panel.
 1. Click on the plus button (⊕) in the Scenes panel to create a new scene.
 1. Double-click on the scene tab in the Scenes panel to rename it. Choose a descriptive name that helps you identify the view or perspective saved in the scene.
+1. You can also select any geometry you want to exclude from the scene and hide it. It will only be hidden in this scene. 
 1. Repeat for each floor. For example, I ended up with three scenes: *downstairs*, *upstairs* and *attic*.
 
 ![Sketchup showing my "Attic" scene](/images/2024/05/floorplan/scenes.jpg){: .captioned }
@@ -112,18 +113,20 @@ If you want to have any dynamic doors or windows in your scene, you must render 
 
 ### Lighting
 
+![Selecting a light](/images/2024/05/floorplan/selecting_a_light.jpg){: .captioned .right-half }
+
 1. Use the "edit environment" dialog to ensure the sun is turned off.
 1. Select a light using the context menu or Twilight Render toolbar, and switch it on. Make sure no other lights are on (lights that are active are indicated by checkmarks in the Light tool menu).
-![Selecting a light](/images/2024/05/floorplan/selecting_a_light.jpg){: .captioned .right-half }
 1. Start a render using the "Interior" preset. This will ensure that there is no ambient light in the scene.
-
 1. Save the rendered image with a filename like `floorname_lightname.png`, e.g., `downstairs_dining_room.png`.
+
+![Rendering a light with the "interior" preset](/images/2024/05/floorplan/rendering_single_light.png){: .captioned }
 
 Repeat the above process for each light you want to dynamically depict in the final UI. If there are lights in separate rooms that cannot cast light into each other, you can potentially speed things up by rendering them at the same time (they can be split into separate images later on).
 
 ## Post-processing in GIMP
 
-We now use GIMP to make any final adjustment to the rendered images. Adjustments we might make include cropping and adjusting brightness, making sure all layers line up properly.
+We now use GIMP to make any final adjustment to the rendered images. Adjustments we might make include cropping and adjusting brightness and making sure all layers line up properly.
 
 ![Visualization of layered image in GIMP](/images/2024/05/floorplan/attic_layer_stack.jpg){: .captioned .right-half }
 
@@ -131,7 +134,7 @@ We now use GIMP to make any final adjustment to the rendered images. Adjustments
 - Use `File` > `Open as Layers` and select all rendered images for a floor. This will create a new image with all the renders as separate layers.
 - Re-order layers so that dark "base" layer is the bottom layer, followed by the "ambient" layer.
 - Hide all layers except for the "base" and "ambient" layers.
-- Set the mode of all the lighting layers to "Lighten only". This will hide any pixels in the layer that are not brighter than the underlying layers.
+- Set the mode of all the lighting layers to `Lighten only`. This will only show pixels that are brighter than the underlying layers.
 - Adjusting the opacity of the "ambient" layer now simulates different amounts of ambient daylight.
 ![Layers in GIMP](/images/2024/05/floorplan/gimp-layers.png){: .captioned }
 - Adjust layers if necessary to make sure they are pixel-aligned with the base layers
@@ -141,13 +144,13 @@ We now use GIMP to make any final adjustment to the rendered images. Adjustments
 - Reduce the brightness of the base layer to the level you want to see at night time. It should be bright enough for you to easily identify each room, but dark enough to contrast with any lighting layers that are shown on top of it. 
 - Crop the image to the desired size.
 
-- **For rooms with multiple independently-controlled RGB lights**. Later on we will use CSS transforms to color-shift each lighting layer to represent the current color of the lightbulb. For this to work well, we want to have each layer contain only the area that is lit. Use the select tool with a wide feather to select just the lit area in each lighting layer, invert the selection, and delete everything else. 
+- **Multiple independently-controlled RGB lights in one room**. Later on we will use CSS transforms to color-shift each lighting layer to represent the current color of the lightbulb. When a room is lit by multiple lighting layers, these color-shifted layers will be overlaid on top of each other, and we will get a better result if we clear any pixels that don't pertain to the area that it is lighting. Use the select tool with a wide feather to select just the lit area in each lighting layer, invert the selection, and delete everything else. 
 
 - **Dynamic doors/windows**. If you have a door or window that you want to display in open or closed positions depending on a binary sensor, then you'll need to prepare a "base" layer and an "ambient" layer for it. For example, when my front door is open, I have a `downstairs_front_door_base` layer displayed above the main base layer, and a `downstairs_front_door_ambient` displayed above the ambient lighting layer (with both ambient layers set to the same opacity). It is best to clear everything irrelevant from these layers by selecting the door/window with the select tool, inverting the section, and clearing it. Use the same selection to clear both the base and ambient layers, so they precisely overlay each other.
 
 - **Dynamic doors/windows with dynamic lighting**. If you have a dynamic door that may additionally be illuminated by a dynamic light, that's just one more layer. For example, my front door might be illuminated by the hall light when it is open. So, as well as the `downstairs_front_door_base` and `downstairs_front_door_ambient` layers discussed above, I also have a `downstairs_front_door_illuminated` layer. The latter layer is only displayed when the dining room light it on, and has the same CSS transforms applied to it as the dining room lighting layer so that it matches.
 
-- Before we export everything, review all layers to make sure they are named well and work well. You should be able to toggle visibility and vary opacity to get a preview of the final effect that will be achieved in Home Assistant.
+- Before we export everything, review all layers to make sure they are named well and work well. You should be able to toggle visibility and vary opacity to get a preview of the final effect that will be achieved in Home Assistant, as shown in the video below.
 
 <video width="100%" controls>
   <source src="/images/2024/05/floorplan/gimp-layers.m4v" type="video/mp4">
@@ -155,7 +158,7 @@ Your browser does not support the video tag.
 </video>
 
 - Export the layers as images. GIMP 2 doesn't support this natively, but you can use the [Script-Fu](https://docs.gimp.org/en/install-script-fu.html) script called "[export-layers-plus.zip](https://www.gimp-forum.net/Thread-exporting-all-the-layers)".
-    - `File` > `Export Layers...`, select a destination, and set the naming template to something like `downstairs_%l.png` to output files with names like "downstairs_dining_room.png" based on the layer name.
+    - `File` > `Export Layers...`, select a destination, and set the naming template to something like `downstairs_%l.png` to output files with names like `downstairs_dining_room.png` based on the layer name.
 
 ![Exporting layers as images](/images/2024/05/floorplan/gimp_script_fu_export_layers.png){: .captioned .right-half }
 
@@ -169,12 +172,12 @@ The previous steps give us a GIMP file for each floor, with layers representing 
 - the hue of any RGB lights
 - the current state of doors and windows that you specifically rendered, based on contact sensor state.
 
-We achieve this using the built-in [Picture Elements](https://www.home-assistant.io/dashboards/picture-elements/) card, which allows us to display an image, and then position other images on top of it, as well things like icons and labels.  We use the 3rd party [card-mod](https://github.com/thomasloven/lovelace-card-mod) to allow us to apply custom styles. *Card Mod" supports templates, which allows us to dynamically adjust the visibility, opacity and hue of layers to reflect the current state of lights, doors and windows.
+We achieve this using the built-in [Picture Elements](https://www.home-assistant.io/dashboards/picture-elements/) card, which allows us to display an image, and then position other images on top of it, as well things like icons and labels.  We use the 3rd party [card-mod](https://github.com/thomasloven/lovelace-card-mod) to allow us to apply custom styles. *Card Mod* supports templates, which allows us to dynamically adjust the visibility, opacity and hue of layers to reflect the current state of lights, doors and windows.
 
 ### Basic Picture Element boilerplate
 Let's build up a simple example.
 
-Here's is a basic use of a *Picture Elements* to display the background base image, and an overlay "ambient" image with 50% opacity:
+Here's is a basic use of a *Picture Elements* to display the background base image, and an overlay "ambient" image:
 
 ``` yaml
   - type: picture-elements
@@ -361,7 +364,7 @@ In my home, I have 4 doors and one window cover represented like this.
 
 ### Interactive controls
 
-To make the dashboard interactive, we need to add some additional elements to control devices. As you can see from the video at the top of this post, I have icons and labels positioned across the dashboard to control lights, and indicate status of things like current energy, last motion, temperature, humidity and so on. This is all done with regular *Picture Elements" features.
+To make the dashboard interactive, we need to add some additional elements to control devices. As you can see from the video at the top of this post, I have icons and labels positioned across the dashboard to control lights, and indicate status of things like current energy, last motion, temperature, humidity and so on. This is all done with regular *Picture Elements* features.
 
 ### Variants for tablets etc
 I display these floorplans in different dashboards, with some light customisation for different contexts. For example, the home screen on the app is a vertical stack containing the floorplans for each floor of the house, while I have separate dashboards for tablets in various locations that just show the floorplan relevant to those locations. To avoid code duplication, I define the core list of elements for each floor in a single location, and include it from different *Picture Element* cards.
@@ -392,7 +395,8 @@ This is then included from different Home Assistant dashboards like this:
 
 I found it tricky to get the labels and icons to display well on screens of different sizes. To keep the icons and labels in a consistent position and size relative to the floorplan, I use the following tricks.
 
-#### **1. Scale icons and labels based on screen size.**
+**1. Scale icons and labels based on screen size.**
+
 I created a CSS file called `media-breakpoints.css`, which defines a CSS variable called `--scaling-factor` at different screen sizes in increments of 40px. For example, at 400px wide `scaling-factor` is defined as `1.0`, while at 800px wide it is set to `2.0`. You can grab a copy of this file [here](/images/2024/05/floorplan/media-breakpoints.css).
 
 This CSS file is included from the *Picture Elements* card as follows:
@@ -413,7 +417,7 @@ transform: scale(calc(1.0 * var(--scaling-factor)))
 
 The icon or label will then automatically grow or shrink to fit the screen size.
 
-### Position the centre of icons and labels 
+**2. Position the centre of icons and labels**
 
 The icons and labels now grow and shrink depending on screen size, which makes positioning by their edges inconsistent. Instead, I position each item by its centre, relative to the top-left of the entire floorplan.
 
