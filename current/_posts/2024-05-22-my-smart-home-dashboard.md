@@ -188,15 +188,15 @@ Here's is a basic use of a *Picture Elements* to display the background base ima
           action: none
         style:
           transform: inherit
-          bottom: 0%
-          left: 0%
+          top: 0%
+          width: 100%
           mix-blend-mode: lighten
 ```
 
 There's some boilerplate in that code that we'll need to repeat a lot, and deserves some explaining:
 - `tap_action` and `hold_action`. This makes the image non-clickable. Without these, your mouse will turn into a pointer whenever it is over any part of the image.
 - `transform: inherit`. Picture Elements automatically applies a `transform: translate(50%, 50%)` to all images. This line disables that transform.
-- `bottom: 0` and `left: 0` explicitly position the image at the origin.
+- `top: 0` and `width: 100%` explicitly position the image at the origin and make it the same width as the base image.
 - `mix-blend-mode: lighten` tells the browser to only render pixels that are lighter than the underlying pixels in lower layers.
 
 ### Displaying ambient luminosity
@@ -218,8 +218,8 @@ Thankfully *Card Mod* allows us to specify jinja2 templates, which are evaluated
           action: none
         style:
           transform: inherit
-          bottom: 0%
-          left: 0%
+          top: 0%
+          width: 100%
           mix-blend-mode: lighten
         card_mod:
           style: |
@@ -245,8 +245,8 @@ To add an overlay for a dimmable white smart light, we can add an extra `image` 
     action: none
   style:
     transform: inherit
-    bottom: 0%
-    left: 0%
+    top: 0%
+    width: 100%
     mix-blend-mode: lighten
   card_mod:
     style: |
@@ -299,8 +299,8 @@ All the layers are conditionally displayed depending on the state of the door se
     action: none
   style:
     transform: inherit
-    bottom: 0%
-    left: 0%
+    top: 0%
+    width: 100%
   card_mod:
     style: |
       {% set sensor = 'binary_sensor.front_door_sensor_open' %}
@@ -316,8 +316,8 @@ All the layers are conditionally displayed depending on the state of the door se
     action: none
   style:
     transform: inherit
-    bottom: 0%
-    left: 0%
+    top: 0%
+    width: 100%
     mix-blend-mode: lighten
   card_mod:
     style: |
@@ -336,8 +336,8 @@ All the layers are conditionally displayed depending on the state of the door se
     action: none
   style:
     transform: inherit
-    bottom: 0%
-    left: 0%
+    top: 0%
+    width: 100%
     mix-blend-mode: lighten
   card_mod:
     style: |
