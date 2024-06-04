@@ -658,9 +658,9 @@ Sean ... founder sales....
 
 **Sean:** company to do. it's not quite the Demonware we sold them. We were 25 people when they acquired and, it's more than 10 times that now. But that's the next part of my answer. The people. Don't know how you feel, I mean this with great respect to everyone I've worked with since.
 
-**Sean:** But it's the best team I've ever been on. Hmm. I think that was a question of timing. That team was assembled in 2002, 2003, you know, I looked around my research lab. Who wants to be in the games industry and got the first group, and then John, John Kirk over from Havok. 
+**Sean:** But it's the best team I've ever been on. Hmm. I think that was a question of timing. That team was assembled in 2002, 2003, you know, I looked around my research lab. Who wants to be in the games industry and got the first group, and then John Kirk over from Havok. 
 
-**Sean:** So that was, John Tillman on Dave and myself, that was the initial dev team. Uh, then when we started to hire, we basically went back to college and we started getting people at Netsoc like Michael Collins and Steffen. Um, and then we started expanding saying who else is in an internet society that people, good people knew each other, you know, uh, Vlad, Rob Sennett, Emmanuel, um, Morgan Brickley, Morgan Brickley, like DC Redbrick or UL Skynet.
+**Sean:** So that was, John, Tilman, Eoin, Dave and myself, that was the initial dev team. Uh, then when we started to hire, we basically went back to college and we started getting people at Netsoc like Michael Collins and Steffen. Um, and then we started expanding saying who else is in an internet society that people, good people knew each other, you know, uh, Vlad, Rob Synnott, Emmanuel, um, Morgan Brickley, Morgan Brickley, like DC Redbrick or UL Skynet.
 
 **Sean:** Craig came from there, you know, everyone knows each other. Uh, we need another great person. Who do we know? Well, and someone would say like, Rob is graduating this year. We need to hire him. Okay. Where is he? And he's in, right? And we just got the best in the country, the smartest graduates. And we had the pick of Ireland, Irish universities, ?
 
@@ -674,17 +674,17 @@ Sean ... founder sales....
 
 **Sean:** People wanted to solve hard problems. Everything was hard back then, scaling up systems, online, we were basically inventing this stuff half the time. It certainly attracted a certain kind of person, but also the fact that, it's very powerful when you're asked to join a company by someone you already know and respect and want to work with and you've worked with in college and here's a chance to work with them professionally and get paid.
 
-**Sean:** And what it wasn't was the money. Sure. Yeah. While we were paying ourselves like 30, 000 euro. That was a big salary for us, at the time and that's what the developers are getting paid maybe after a few years ramping up to 40, so inflation and everything but you know It's different days these days.
+**Sean:** And what it wasn't was the money. Sure. Yeah. While we were paying ourselves like €30,000. That was a big salary for us, at the time and that's what the developers are getting paid maybe after a few years ramping up to 40, so inflation and everything but you know It's different days these days.
 
 **Dylan:** Back then in early mid 2000s you had less startups certainly in ireland, but even generally when you look at the many startups that you look at today I think I had a much tougher time recruiting that density of talent because People are more inclined to think about their own startups as a viable path, a viable alternative.
 
-**Sean:** Yeah, every time there's a crash, you get a good lot of good people like the 2007 2008 financial crash, you know, great news for startups. Sure. Right, it frees up talent to get into small companies and other people start companies. You know, there were a few years there where there was like a thousand startups in Dublin.
+**Sean:** Yeah, every time there's a crash, you get a good lot of good people like the 2007, 2008 financial crash, you know, great news for startups. Sure. Right, it frees up talent to get into small companies and other people start companies. You know, there were a few years there where there was like a thousand startups in Dublin.
 
 **Sean:** Now, these days, This is Dublin where it's got a lot of international tech here for a relatively small population. But the people who I would have hoped would have started their companies and been the next crop of extremely talented engineers, the top of their class in the universities and I've worked with some of them.
 
-**Sean:** They're all working in Meta, HubSpot, Intercom, getting paid, 200, 300, maybe 400, 000 like total compensation, basically it makes zero financial sense to consider doing a startup relative to that. They'll become rich just sitting where they are.
+**Sean:** They're all working in Meta, HubSpot, Intercom, getting paid, 200, 300, maybe €400,000 like total compensation, basically it makes zero financial sense to consider doing a startup relative to that. They'll become rich just sitting where they are.
 
-**Sean:** There's people I thought with next to you and me, but they're there now. And they have been for the last seven or eight years. And good for them, I suppose, but not great for the economy. 
+**Sean:** There's people I thought were the next to you and me, but they're there now. And they have been for the last seven or eight years. And good for them, I suppose, but not great for the economy. 
 
 **Dylan:** That's a wrap. This was amazing. this was a lot of stuff. Okay, let's click save. Yeah. Okay, thanks for listening.
 
