@@ -33,9 +33,9 @@ Get it on [Spotify](https://podcasters.spotify.com/pod/show/middleware-files/epi
 
 **Dylan:**   Hi, I'm Dylan Collins, and you're about to hear a conversation with Sean Blanchfield about the history of Demonware, one of the original video game middleware pioneers that he and I founded in the early 2000s.
 
-This episode was originally inspired by Mitch Lasky and Blake Robbins' GameCraft podcast on gaming, which, by the way, you should check out, and specifically by our view that they skipped an important episode on the role of middleware companies in the growth of the sector. So if you're curious about the origins of online gaming or just want to hear some unvarnished startup war stories about what building companies in a pre cloud era was like, I think you might enjoy this.
+This episode was originally inspired by Mitch Lasky and Blake Robbins' [GameCraft podcast](https://gamecraftpod.com/) on gaming, which, by the way, you should check out, and specifically by our view that they skipped an important episode on the role of middleware companies in the growth of the sector. So if you're curious about the origins of online gaming or just want to hear some unvarnished startup war stories about what building companies in a pre cloud era was like, I think you might enjoy this.
 
-
+---
 **Dylan:** I gotta get like a pic of this just to kick things off. There's some history being made right here.
 
 **Dylan:** Let's see if we can assemble the oral history of Demonware, or Demonware up until the Activision acquisition. The bits of the early bits of Demonware we remember. 
@@ -50,9 +50,7 @@ This episode was originally inspired by Mitch Lasky and Blake Robbins' GameCraft
 
 **Sean:** Yeah, 
 
-**Dylan:** I think so. So, okay, right, let's begin. Like, What were you doing in 2003?
-
-**Dylan:** That was the official start date of Demonware. 
+**Dylan:** I think so. So, okay, right, let's begin. What were you doing in 2003? That was the official start date of Demonware. 
 
 **Sean:** July 13th. 2003. 
 
@@ -62,111 +60,94 @@ This episode was originally inspired by Mitch Lasky and Blake Robbins' GameCraft
 
 **Dylan:** Oh, Phorest. That's Phorest with a &quot;ph&quot;. 
 
-**Sean:** Yeah. Our first venture.
+**Sean:** Yeah. Our first venture. We started as undergrads. 
 
-**Sean:** I started as undergrads. 
-
-**Dylan:** Now, now run by Ronan Perceval. That's a whole other 
-
-**Dylan:** story. Shout out, shout out to Ronan. 
+**Dylan:** Now, now run by Ronan Perceval. That's a whole other story. Shout out, shout out to Ronan. 
 
 **Sean:** Yeah. Ronan has done amazing with that company. Built it up the honest hard way. 
 
-**Dylan:** Yes. You were doing a PhD. 
+**Dylan:** Yes. You were doing a PhD...
 
-**Sean:** Basically trying to anonymize file sharing. I think I'd made it onto Metallica's Napster list and that had inspired me to do an undergrad dissertation in anonymizing file sharing so that no one would get caught again.
-
-**Sean:** And then I parlayed that into a PhD and it was basically like TOR. So I was kind of doing darknet in retrospect before we had darknet, but then TOR came out, and it was better. And at the same time. We were trying to do a new company and spin it out of Phorest. 
+**Sean:** Basically trying to anonymize file sharing. I think I'd made it onto Metallica's Napster list and that had inspired me to do an undergrad dissertation in anonymizing file sharing so that no one would get caught again. And then I parlayed that into a PhD, and it was basically like TOR. So I was kind of doing darknet, in retrospect before we had darknet, but then TOR came out, and it was better. And at the same time, we were trying to do a new company and spin it out of Phorest. 
 
 **Dylan:** I can't remember exactly how we got onto this visual metaphor breakthrough, but essentially we were postulating that, &quot;Hey, gaming at the time was all client-server, surely it would make sense to have some sort of peer-to-peer distributed model&quot;, do you remember that?
 
-**Sean:** Yeah, I do. I think I remember the conversation. Because you and I and Ronan were running Phorest. I think you guys were full time. I was part time. We did our management meetings on a Saturday in Ronan's apartment, Wintergarden, which is our official headquarters because he had the poshest sounding address.
-
-**Sean:** I think you had done your undergrad dissertation on the games industry. And you had looked a lot at Havok, which was a Trinity College spin out at the time. And Steve was one of my former lecturers and their staff were people correcting my lab assignments as an undergrad.
+**Sean:** Yeah, I do. I think I remember the conversation. Because you and I and Ronan were running Phorest. I think you guys were full time. I was part time. We did our management meetings on a Saturday in Ronan's apartment, Wintergarden, which was our official headquarters because he had the poshest sounding address. I think you had done your undergrad dissertation on the games industry. And you had looked a lot at *Havok*, which was a Trinity College spin out at the time. And Steve was one of my former lecturers and their staff were people correcting my lab assignments as an undergrad.
 
 **Sean:** At the end of one of those sessions, you asked a question: &quot;Sean, the kind of stuff you're doing in your PhD. Is there anything kind of networky that we could do something kind of like Havok with?&quot;
 
 **Dylan:** So with that extremely technical question, a middleware company was born. 
 
-**Sean:** I remember a question like that and a long pregnant pause and I was like. &quot;There might be something there&quot;. I was thinking about peer-to-peer file sharing networks like Kazaa at the time, which were federated peer-to-peer they had, instead of everyone connected to everyone trying to share their Metallica songs or MP3s or whatever, there were super nodes and it was more scalable.
+**Sean:** I remember a question like that and a long pregnant pause and I was like. &quot;There might be something there&quot;. I was thinking about peer-to-peer file sharing networks like Kazaa at the time, which were federated peer-to-peer. Instead of everyone connected to everyone trying to share their Metallica songs or MP3s or whatever, there were super nodes and it was more scalable.
 
-**Sean:** We played Quake a lot and Soldier of Fortune and stuff like that back then in the computer labs, LAN games is what existed then and they were client-server architecture. We also knew, I think of EverQuest. So massively multiplayer games existed back then as well. Just one or two.
+**Sean:** We played Quake a lot and Soldier of Fortune and stuff like that back then in the computer labs, LAN games is what existed then, and they were client-server architecture. We also knew, I think of EverQuest. So massively multiplayer games existed back then as well. Just one or two.
 
 **Sean:** EverQuest was the big one at the time. That's where we started thinking maybe we could take this file sharing style technology and get rid of these servers. 
 
-**Dylan:** Probably worth stating that at the time, our plan was to build. What we ended up calling a network state propagation engine.
+**Dylan:** Probably worth stating that at the time, our plan was to build what we ended up calling a network state propagation engine. That's what we thought we were going to build. A distributed network engine that would allow for multiplayer games to not require a dedicated client-server set up. So in theory, 
 
-**Dylan:** That's what we thought we were going to build. A distributed network engine that would allow for multiplayer games to not require a dedicated client-server set up. So in theory, 
+**Sean:** In particular, in our business plan, we were saying this multiplayer thing is probably going to take off and no one's there yet. Then we thought, well, the hardest problems are going to have to be solved. And the hardest one we can find is massively multiplayer and those servers are very expensive. So we're going to use peer-to-peer technology to eliminate those servers, so that massively multiplayer games can run in this peer-to-peer network, without there being servers. That was version one of what was in the business plan. 
 
-**Sean:** in particular, in our business plan, we were saying this multiplayer thing is probably going to take off and no one's there yet. Then we thought, well, the hardest problems are going to have to be solved. And the hardest one we can find is massively multiplayer and those servers are very expensive. So we're going to use peer-to-peer technology to eliminate those servers, so that massively multiplayer games can run in this peer-to-peer network, without there being, servers. That was version one of what was in the business plan. 
-
-**Dylan:** That was the dream. At the time, this was all, to a large degree, like pre cloud. 
+**Dylan:** That was the dream. At the time, this was all, to a large degree, like pre-cloud. 
 
 **Sean:** Oh yeah. 
 
-**Dylan:** Right, I mean, there was no 
+**Dylan:** Right, I mean, there was no ...
 
-**Sean:** This whole story is pre cloud.
+**Sean:** This whole *story* is pre-cloud.
 
-**Dylan:** Yeah. But I guess for the benefit of people listening today , like there was no abstracted infrastructure. There was no AWS, there was no Google cloud platform. There was no Azure. 
+**Dylan:** Yeah. But I guess for the benefit of people listening today, there was no abstracted infrastructure. There was no AWS, there was no Google cloud platform. There was no Azure. 
 
 **Sean:** Absolutely. The internet was there, it was smaller, but it existed. And if you wanted to put something on it, you had to get a server, and that meant a physical box and you had to connect it into something, maybe go to a data center and have a direct relationship and put the server in your car, drive it over, or whatever. 
 
 **Dylan:** Yeah. It's hard to believe that is only 20 years ago, which both sort of a long time and not very much time at all.
 
-**Sean:** Yeah, there's definitely a barrier to entry there. Right. 
+**Sean:** Yeah, there's definitely a barrier to entry there, right? 
 
-**Dylan:** It really was. And I think as we were looking at gaming at the time and we were beginning to think about where this might go, like EverQuest at the time, which had about, about a quarter of a million subscribers, a month.
+**Dylan:** It really was. And I think as we were looking at gaming at the time and we were beginning to think about where this might go, like EverQuest at the time, which had about, about a quarter of a million subscribers, a month. And that was seen as peak online gaming. Like, this was absolutely, this was incredible. It was almost unbelievable, literally. This is clearly as big as online gaming is going to be. But it wasn't so much that we thought games were going to be bigger, but we thought that there were going to be more EverQuests. Or more things like EverQuest. I think was one of the hypotheses that we had. 
 
-**Dylan:** And that was seen as peak online gaming. Like, this was absolutely, this was incredible. It was almost unbelievable, literally. This is clearly as big as online gaming is going to be. But it wasn't so much that we thought games were going to be bigger, but we thought that there were going to be more EverQuests. Or more things like EverQuest. I think was one of the hypotheses that we had. 
-
-**Sean:** Yeah, we thought it was cool. And we wanted to be in the middle of that. And massively multiplayer is like a hard problem. We thought in order to be worthy of success , we have to do something difficult. That's not actually how the world works, it turns out, but we were trying to find the hardest problem to solve. I think we spent most of 2002 and 2003 trying to raise money. 
+**Sean:** Yeah, we thought it was cool. And we wanted to be in the middle of that. And massively multiplayer is like a hard problem. We thought in order to be worthy of success, we have to do something difficult. That's not actually how the world works, it turns out, but we were trying to find the hardest problem to solve. I think we spent most of 2002 and 2003 trying to raise money. 
 
 **Dylan:** It took us a full year to raise money. 
 
-**Sean:** And there wasn't many people in Ireland you could raise money from at that point. I remember we were turning up to Dermot Desmond's office, pitching, massively multiplayer network middleware, but we got money. We got half a million from DBIC at the time
+**Sean:** And there wasn't many people in Ireland you could raise money from at that point. I remember we were turning up to Dermot Desmond's office, pitching massively multiplayer network middleware, but we got money. We got half a million from *DBIC* at the time
 
-**Dylan:** DBIC... Dublin Business Innovation Centre
+**Dylan:** *DBIC*... Dublin Business Innovation Centre
 
-**Sean:** Enterprise Ireland and a couple of angels,
+**Sean:** *Enterprise Ireland* and a couple of angels,
 
 **Dylan:** a few angels. Yeah. 
 
 **Sean:** Possibly the only company in Ireland in that year that raised anything. 
 
-**Dylan:** Yeah, it was a time, it was a tough time, wasn't it? That was, it was post, post kind of 2001 
+**Dylan:** Yeah, it was a time, it was a tough time, wasn't it? That was, it was post-, post- kind of 2001 
 
-**Sean:** Post bubble. Post crash. And that was summer of 2003. I was there in my PhD saying, gee, I didn't think we were gonna succeed at that, but now what do I do? I, went to my supervisor, 
+**Sean:** Post-bubble. Post-crash. And that was summer of 2003. I was there in my PhD saying, &quot;gee, I didn't think we were gonna succeed at that, but now what do I do?&quot; I, went to my supervisor, and said &quot;we've raised money, we're going, bye&quot; . They all said, &quot;yeah, we're sure you'll come back someday&quot;. That didn't happen. We got an office in middle Abbey street, which was the former worker's party headquarters. As Ian Kehoe described it, &quot;a shabby place&quot;. That summer we moved in and we rewired it ourselves, no, sorry, I should edit that out, we definitely didn't rewire that building ourselves. 
 
-**Dylan:** and said, &quot;
-
-**Sean:** we've raised money, we're going, bye&quot; . They all said, &quot;yeah, we're sure you'll come back someday&quot;. That didn't happen. We got an office in middle Abbey street, which was the former worker's party headquarters. As Ian Kehoe described it, &quot;a shabby place&quot;. That summer we moved in and we rewired it ourselves, no, sorry, I should edit that out, we definitely didn't rewire that building ourselves. 
-
-**Dylan:** No, enough time has passed. 20 years. I mean, we absolutely rewired that building. I mean, you rewired that building. 
+**Dylan:** No, enough time has passed. 20 years. I mean, we absolutely rewired that building. I mean, *you* rewired that building. 
 
 **Sean:** You nearly cut your leg off. 
 
 **Dylan:** You nearly electrocuted yourself. 
 
-**Sean:** Several times. Yeah. We installed CAT5 up and down it. Surprising how much CAT5 you can put in a building. 
+**Sean:** Several times. Yeah. We installed CAT5 up and down it. It's surprising how much CAT5 you can put in a building. 
 
 **Dylan:** You know the big problem, we actually, when you say we installed it up and down, we made the mistake of installing it up rather than installing it down, instead of using gravity to our advantage.
 
 **Sean:** Yeah, yeah, that does sound like us. Yeah, so, first couple of weeks was everyone pitching in, refurbishing the building and wiring it up. Laying carpets, building computers. So actually our workstations are built from scratch because we were frugal and we bought components and we assembled them in the meeting room. Everyone's workstation was a tower PC we built ourselves with a decent graphics card. Initial team, we didn't talk about initial team, but it was a whip around my research lab, plus John Kirk, who'd recently been in a round of layoffs from Havok and Steve Collins tapped us on the shoulder 
 
-**Dylan:** and said, 
+**Dylan:** and said ... 
 
-**Sean:** if you need anyone, get this guy, he's the best.
-
-**Sean:** He was in the last and first out layoffs from Havok due to their post dotcom bubble woes. He was the only experienced engineer on the team. And still probably the best programmer I've ever worked with. He professionalized a lot of us and we started building.
+**Sean:** ... if you need anyone, get this guy, he's the best.
+He was in the last and first out layoffs from Havok due to their post dotcom bubble woes. He was the only experienced engineer on the team. And still probably the best programmer I've ever worked with. He professionalized a lot of us and we started building.
 
 **Dylan:** Mmm. 
 
-**Sean:** Version one was what was in the business plan - a peer-to-peer network that could run a massively multiplayer game. That was a frenetic time as we learned to work with each other, learned how to code for real, we were smart students, but we hadn't coded professionally. Learned what source control was.
+**Sean:** Version one was what was in the business plan - a peer-to-peer network that could run a massively multiplayer game. That was a frenetic time as we learned to work with each other, learned how to code for real, we were smart students, but we hadn't coded professionally, learned what source control was. All this stuff was new. John was basically teaching us. 
 
-**Sean:** All this stuff was new. John was basically teaching us. You were applying intense and very necessary pressure from the other room to get something that we can take on the road 
+You were applying intense and very necessary pressure from the other room to get something that we can take on the road 
 
-**Dylan:** We went building some demos and hypothesizing our way into The difficult thing we thought that we wanted to solve for people and went to talk to some game studios, and I remember like we would look around like big chunky laptops. Do you remember that? To demonstrate that we had like a product that was doing networking.
+**Dylan:** We went building some demos and hypothesizing our way into the difficult thing we thought that we wanted to solve for people and went to talk to some game studios, and I remember like we would lug around like big chunky laptops. Do you remember that? To demonstrate that we had like a product that was doing networking.
 
 **Sean:** I remember the run up to that was that demo, was paper airplanes flying around the world. 
 
@@ -182,19 +163,15 @@ This episode was originally inspired by Mitch Lasky and Blake Robbins' GameCraft
 
 **Sean:** Yeah. It was quite hard to describe, quite hard to show. 
 
-**Sean:** I think that roadshow we went on, the process of getting onto it, I think was interesting because LinkedIn didn't exist, right? We had to try and set up meetings in an industry we really had no background in. 
+**Sean:** I think that roadshow we went on, the process of getting onto it, I think was interesting because *LinkedIn* didn't exist, right? We had to try and set up meetings in an industry we really had no background in. 
 
 **Dylan:** I remember it was literally cold emailing studio after studio after studio.
 
-**Sean:** You had copies of Edge magazine highlighting the names of people at studios. in the previous company, we had a bit of a pedigree in spam. 
+**Sean:** You had copies of *Edge* magazine, highlighting the names of people at studios. In the previous company, we had a bit of a pedigree in spam. 
 
 **Dylan:** That's, that's harsh. It was opt-in communication. Well, was it opt-in back then? Actually, maybe it wasn't opt-in communication. 
 
-**Sean:** The very first product was SMSing people promotions about Smirnoff Ice, which is an alco-pop, without their permission. That was our scrappy start in that company. In a similar vein, from knowing people's names, heads of studios that we collected from Edge magazine, 
-
-**Sean:** we 
-
-**Sean:** started guessing what their email addresses probably were, made a long list of guesses of email addresses and basically spammed the whole bunch with things like. &quot;Hey, just so happens we're going to be in Madison, Wisconsin on Tuesday.&quot; 
+**Sean:** The very first product was SMSing people promotions about *Smirnoff Ice*, which is an alco-pop, without their permission. That was our scrappy start in that company. In a similar vein, from knowing people's names, heads of studios that we collected from Edge magazine, we started guessing what their email addresses probably were, made a long list of guesses of email addresses and basically spammed the whole bunch with things like. &quot;Hey, just so happens we're going to be in Madison, Wisconsin on Tuesday.&quot; 
 
 **Dylan:** We are passing through entirely coincidentally. We're going to be in your small town. 
 
@@ -206,55 +183,51 @@ This episode was originally inspired by Mitch Lasky and Blake Robbins' GameCraft
 
 **Dylan:** Somewhere along the line, we realized that, actually, there's very, very few companies building MMOs, because they're so expensive, and they're going to take years. But why don't we look at these other game companies that are doing smaller things? Where they might have to think about multiplayer. 
 
-**Sean:** I kind of remember learning that lesson on that trip. 
+**Sean:** I kind of remember learning that lesson on *that* trip. 
 
 **Dylan:** It might've been that, we learned a lot of lessons on that trip. 
 
-**Sean:** When I think about that trip, I specifically remember, Madison Wisconsin, one of the most unlikely places to randomly be, but they were like, okay, you happen to be here. We got into Raven, which had make Soldier of Fortune at that point. They said, yeah, come in over lunch, pitch the team. So we were in the canteen and the entire engineering team and CTO filed out around us for the demo. And we were demoing our paper airplanes game. 
+**Sean:** When I think about that trip, I specifically remember, Madison Wisconsin, one of the most unlikely places to randomly be, but they were like, okay, you happen to be here. We got into *Raven*, which had made *Soldier of Fortune* at that point. They said, yeah, come in over lunch, pitch the team. So we were in the canteen and the entire engineering team and CTO filed out around us for the demo. And we were demoing our paper airplanes game. 
 
-**Sean:** Thankfully we weren't being judged too much on the graphics. And it might have crashed once or twice. But I think they got it. Like, see this airplane now? It's in this zone. It's going to fly over there. Now that airplane just flew from this laptop to that laptop. They just switched servers. I think I remember them going, oh, that's cool. So at least they recognized it. But then ... this could be Zombie in Seattle saying this either. They said, &quot;this is cool, but it's not what anyone needs right now&quot;.
+Thankfully we weren't being judged too much on the graphics. And it might have crashed once or twice. But I think they got it. Like, see this airplane now? It's in this zone. It's going to fly over there. Now that airplane just flew from this laptop to that laptop. They just switched servers. I think I remember them going, oh, that's cool. So at least they recognized it. But then ... this could be *Zombie* in Seattle saying this either. They said, &quot;this is cool, but it's not what anyone needs right now&quot;.
 
 **Dylan:** Yeah, yeah, yeah. 
 
-**Sean:** &quot;Massively multiplayer is cool, but can we get four players in a session. That's what we need to do. We've got a single player game, we need a multiplayer mode.&quot; A massively multiplayer game is a totally different business proposition.
-
-**Sean:** I think lesson one was that first trip we were taught, we were told you gotta do session based games. And then we went back to the drawing board, we did session based games. And then there was a GDC the following March and we went back to the GDC, we were saying, &quot;yeah, we've got session based games like client-server, basically&quot;.
-
-**Sean:** Basically a reimplementation of the quake networking model. Quake 2 , which Carmac had open sourced, and we turned into basically a middleware that ran along the same lines with all the same tricks, and we were demoing it at GDC, in our little Enterprise Ireland booth. Right? 
+**Sean:** &quot;Massively multiplayer is cool, but can we get four players in a session. That's what we need to do. We've got a single player game, we need a multiplayer mode.&quot; A massively multiplayer game is a totally different business proposition. I think lesson one was that first trip we were taught, we were told you gotta do session based games. And then we went back to the drawing board, we did session based games. And then there was a GDC the following March and we went back to the GDC, we were saying, &quot;yeah, we've got session based games, like client-server, basically&quot;. Basically a reimplementation of the quake networking model, Quake 2 , which Carmac had open-sourced, and we turned into basically a middleware that ran along the same lines with all the same tricks, and we were demoing it at GDC, in our little Enterprise Ireland booth. Right? 
 
 **Dylan:** That must've been in 2000... GDC 2004, right?
 
 **Sean:** Start of 2004. People we're like, &quot;that's cool if we were doing a PC game, but we're doing a Xbox game&quot;. 
 
-**Sean:** Incidentally around that time, our business model prediction that this multiplayer thing was going to turn out to be big was on the money, and we were in the right place at the right time, because Microsoft had just dropped a billion or 2 billion into Xbox Live and created the space and said, from now on, every game is going to be a multiplayer game. It's got to have this checkbox on the back. So these meetings were setting up themselves at GDC. And we were saying, we're a networking middleware that helps you take your single player experience and put multiplayer into it. 
+Incidentally around that time, our business model prediction that this multiplayer thing was going to turn out to be big was on the money, and we were in the right place at the right time, because Microsoft had just dropped a billion or 2 billion into *Xbox Live* and created the space and said, from now on, every game is going to be a multiplayer game. It's got to have this checkbox on the back. So these meetings were setting up themselves at GDC. And we were saying, we're a networking middleware that helps you take your single player experience and put multiplayer into it. 
 
-**Sean:** But they were like, &quot; this is a console game, which one's the server?&quot; If it's Quake or something, and someone's really invested in their computer, it makes sense that there's a server. But they're like, &quot;these are simple session based games. Can you just do a straight peer- to- peer model?&quot; Like in a racing game or something. You just want all of the players just blipping their coordinates to each other four times a second. That's all they wanted. So back from GDC that time, back to the dev team, the news I was bringing is &quot;we over engineered again&quot;. We got to go even simpler, and do straight peer-to-peer. So that was version three, from an engineering perspective, because we tried to do massively multiplayer, then we tried to do client-server, and then we're like, okay, we got to do peer-to-peer. Incidentally, peer-to-peer had its own challenges in terms of Network Address Translation. Trying to get people to connect to each other, which was hard to solve. 
+But they were like, &quot; this is a console game, which one's the server?&quot; If it's Quake or something, and someone's really invested in their computer, it makes sense that there's a server. But they're like, &quot;these are simple session based games. Can you just do a straight peer- to- peer model?&quot; Like in a racing game or something. You just want all of the players just blipping their coordinates to each other four times a second. That's all they wanted. So back from GDC that time, back to the dev team, the news I was bringing is &quot;we over engineered again&quot;. We got to go even simpler, and do straight peer-to-peer. So that was version three, from an engineering perspective, because we tried to do massively multiplayer, then we tried to do client-server, and then we're like, okay, we got to do peer-to-peer. Incidentally, peer-to-peer had its own challenges in terms of *Network Address Translation*. Trying to get people to connect to each other, which was hard to solve. 
 
 **Dylan:** But also at the time, like, the general state of the internet right? Do you remember that being a factor? Maybe it was so early that it actually didn't matter in a sense, but it was definitely, I mean, irrespective of people's home setups. 
 
-**Sean:** People had shitty internet connections. Network address translation is basically the same now as it used to be. Back then, to solve it, you had to solve it yourself. These days, you can get a library or, it's done for you. But, I'm sitting at home here and I've got a 500 megabit connection. It's not expensive. Back then our company was running on a 10 megabit connection or something. 
+**Sean:** People had shitty internet connections. Network Address Translation is basically the same now as it used to be. Back then, to solve it, you had to solve it yourself. These days, you can get a library or, it's done for you. But, I'm sitting at home here and I've got a 500 megabit connection. It's not expensive. Back then our company was running on a 10 megabit connection or something. 
 
 **Dylan:** Was it even that? 
 
-**Sean:** Maybe not even. And the typical home connection was, two megabits was loads, it was a lot. Games like Quake were designed to run on a modem, a 56K modem. We had that in mind as that's what we're aiming for, that we use tiny amounts of RAM, like a 200K in RAM and it'll run on a modem. So. There was a lot of engineering challenge in trying to make sure that if when used correctly Your racing game would perform well or your shooter game would perform well even if the player is on a dial-up modem, and it was possible, but that was a challenge. 
+**Sean:** Maybe not even. And the typical home connection was... two megabits was loads, it was a lot. Games like Quake were designed to run on a modem, a 56K modem. We had that in mind as that's what we're aiming for, that we use tiny amounts of RAM, like a 200K in RAM and it'll run on a modem. So. There was a lot of engineering challenge in trying to make sure that if when used correctly your racing game would perform well or your shooter game would perform well even if the player was on a dial-up modem, and it was possible, but that was a challenge. 
 
-**Dylan:** This is a sort of flash forward/ backward kind of question when you think about the challenges that You and the dev team had then versus the kinds of challenges that a software startup today will see, aren't they harder? Were they harder then? Is that sort of an apples to apples question or comparison you can make? 
+**Dylan:** This is a sort of flash forward / backward kind of question: when you think about the challenges that you and the dev team had then versus the kinds of challenges that a software startup today will see, are they harder? Were they harder then? Is that sort of an apples to apples question or comparison you can make? 
 
-**Sean:** Yeah, it was harder because you had to build it yourself. These days, a lot of these problems are just solved. Examples where we needed to encrypt communication. We had to figure out a library. You don't want to write your own. We had to use libtomcrypt. We got Tom from Ontario to fly over to Dublin and we talked to him and you know, it was a bit more full contact figuring out that stuff.
+**Sean:** Yeah, it was harder because you had to build it yourself. These days, a lot of these problems are just solved. Examples are we needed to encrypt communication. We had to figure out a library. You don't want to write your own. We had to use [libtomcrypt](https://www.libtom.net/). We got Tom [St Denis] from Ontario to fly over to Dublin and we talked to him and you know, it was a bit more full-contact figuring out that stuff.
 
-**Sean:** The network address translation so that you can get two people behind two home routers to talk to each other. We had to research this significantly ourselves and build up a system from scratch, and you'd get that off the shelf now. When it came to scaling the servers ...we haven't really got to that stage of the story... It was running on Linux, but it was before the 2. 4 kernel that had this thing called Epoll, which allowed you to scale. But before that, it was very unscalable and it was very hard to have more than a thousand connections open to a server, or at least performance would rapidly decline after that. We were at that level where we're writing in C code, performant server networking code , and we were thinking about what kernel we're running on, things you just really would not think about today. There's any number of libraries that'll just solve it for you. The problem wouldn't come up because if you're running on, , say NGINX or, any number of the Python web servers or any of the other languages, they all just have it built in. You wouldn't hit the problem. It's all pre solved for you. Of course, the internet was there, but Stack Overflow wasn't, and the resources you have today, the kind of documentation, you could Google something and the answer you get might be an academic paper that you'd need to take a day or two out to properly understand.
+The Network Address Translation, so that you can get two people behind two home routers to talk to each other. We had to research this significantly ourselves and build up a system from scratch, and you'd get that off the shelf now. When it came to scaling the servers ...we haven't really got to that stage of the story... It was running on Linux, but it was before the 2.4 kernel that had this thing called *Epoll*, which allowed you to scale. But before that, it was very unscalable and it was very hard to have more than a thousand connections open to a server, or at least performance would rapidly decline after that. 
 
-**Dylan:** It's interesting, right? Cause when I think back to where the games industry was in general around that time, around sort of 2003, 2004, like it was going through a step change in complexity, right? I think it's fair to say, cause , it wasn't just multiplayer that was opening because you had, presumably as a function of Moore's Law, with Xbox being rolled out, and PS, what would it have been then... PS3 on the horizon? So much more graphical sophistication, and you had all of these other middleware companies that were almost being formed in response to that. We talked about Havok earlier. We should probably do a separate section on middleware companies just in general. But you had Havok, you had RenderWare and I mean, MathEngine, I mean, NaturalMotion might or might not have been born around then. All of these different companies were there providing complexity shortcuts for the industry as it, it strained to figure out how to build with these, with these new lack of constraints, I suppose, fundamentally. It was almost like a kind of a Cambrian technical explosion. 
+We were at that level where we're writing in C code, performant server networking code, and we were thinking about what kernel we're running on, things you just really would not think about today. There's any number of libraries that'll just solve it for you. The problem wouldn't come up because if you're running on, say NGINX or, any number of the Python web servers or any of the other languages, they all just have it built in. You wouldn't hit the problem. It's all pre-solved for you. Of course, the internet was there, but *Stack Overflow* wasn't, and the resources you have today, the kind of documentation. You could Google something and the answer you get might be an academic paper that you'd need to take a day or two out to properly understand.
+
+**Dylan:** It's interesting, right? Cause when I think back to where the games industry was in general around that time, around sort of 2003, 2004, like it was going through a step change in complexity, right? I think it's fair to say, 'cause, it wasn't just multiplayer that was opening because you had, presumably as a function of Moore's Law, with Xbox being rolled out, and PS (what would it have been then... PS3 on the horizon?) so much more graphical sophistication, and you had all of these other middleware companies that were almost being formed in response to that. We talked about Havok earlier. We should probably do a separate section on middleware companies just in general. But you had *Havok*, you had *RenderWare* and *MathEngine*, *NaturalMotion* might or might not have been born around then. All of these different companies were there providing complexity shortcuts for the industry as it, it strained to figure out how to build with these, with these new lack of constraints, I suppose, fundamentally. It was almost like a kind of a Cambrian technical explosion. 
 
 **Sean:** You know, in a gold rush, you make money by selling picks and shovels? And it was like a gold rush of people trying to sell picks and shovels to the other gold rush of people trying to make the games.
 
 **Dylan:** And everyone underpricing. 
 
-**Sean:** We should, get back to where, the answer to the GameSpy bit came in, though. Which is online services for games.
+**Sean:** We should, get back to where, the answer to the *GameSpy* bit came in, though. Which is online services for games.
 
-**Dylan:** It must have been post 2004, post GDC GDC 2004, that's where we first encountered GameSpy. Because it was in those same conversations where people started to say, I think it might've been an English studio that said it to us first, but it's like, &quot;Hey, we are going to build like four player sort of, PVP type thing. Maybe we've built one thing before, by the way, could you build us a lobby system?&quot;
-
-**Dylan:** And I remember you and I looking at each other in probably near panic, me, probably naturally confidently going, &quot;absolutely no problem. We're thinking about lobby systems!&quot;, mentally going, &quot;what is a lobby system?&quot;
+**Dylan:** It must have been post-2004, post-GDC 2004, that's where we first encountered GameSpy. Because it was in those same conversations where people started to say, I think it might've been an English studio that said it to us first, but it's like, &quot;Hey, we are going to build like four player sort of, PVP type thing. Maybe we've built one thing before, by the way, could you build us a lobby system?&quot; And I remember you and I looking at each other in probably near panic, me, probably naturally confidently going, &quot;absolutely no problem. We're thinking about lobby systems!&quot;, mentally going, &quot;*what is a lobby system?*&quot;
 
 **Sean:** It's then that I remember every meeting, same feedback saying &quot;that's cool, but where's the lobby system? Do you expect us to use GameSpy?&quot; And we were like, &quot;Maybe? We're doing the hard problem here. GameSpy is in this other part of the market. You can keep on using them.&quot; And the feedback we were getting was: &quot;have you guys tried to use them?&quot; 
 
@@ -262,10 +235,11 @@ This episode was originally inspired by Mitch Lasky and Blake Robbins' GameCraft
 
 **Sean:** We probably started hearing it in the first trip and we were bluffing our way through saying, yeah, lobby systems, GameSpy, yeah, yeah, of course. I think I remember thinking it was weird that you'd say there's a system for that. The lobby is just a screen with people's screen names on it, right? I mean, how do you need a system for that? 
 
-**Dylan:** Yeah, it didn't seem difficult. And also GameSpy, like, it's funny, I mean, I'm sure there's like, someone's done the history of GameSpy, but if they haven't, they should. It was interesting that it didn't seem like a hard problem and I remember a moment where you had estimated that it was gonna take about two months . Two to three. At which point I probably just announced it 
+**Dylan:** Yeah, it didn't seem difficult. And also GameSpy, like, it's funny, I mean, I'm sure there's like, someone's done the history of GameSpy, but if they haven't, they should. It was interesting that it didn't seem like a hard problem and I remember a moment where you had estimated that it was gonna take about two months. Two to three. At which point I probably just announced it! 
 
-**Sean:** Yeah, it was about three years in the end
+**Sean:** Yeah, it was about three years in the end.
 
+---
 
 **Sean:** Was it in response to our first customer? I think we had made the peer-to-peer stuff, right? It was like engineering version 3 of the product. Middleware for a peer-to-peer game. Was it Starship Troopers or was it Stacked?
 
@@ -284,7 +258,6 @@ This episode was originally inspired by Mitch Lasky and Blake Robbins' GameCraft
 **Sean:** That was our first customer. That was a little bit of validation, and then around the same timeline (and I think it must have been 2004) that was when we got on to MTV Stacked, which was the two English guys in Reno, Nevada. Tim and Ian? Yeah, we started working with them. They needed some networking because they had the license to the MTV Stacked brand, which was a poker tournament, like, Texas Holden tournament. They were going to ship on Xbox. They had the scion on of the 52nd wealthiest man in the U.S. or something, investing a constant amount of cash as his pet project. So it was a project that wouldn't die, and wouldn't ship, it just kept on getting more investment, but they needed the networking bit.
 
 
-
 **Dylan:** Myelin media.
 
 **Sean:** Myelin media.
@@ -295,27 +268,27 @@ This episode was originally inspired by Mitch Lasky and Blake Robbins' GameCraft
 
 **Dylan:** Carl Icon's son.
 
-**Sean:** And he just kept him putting more and more money in. Right, so that was kind of like customer one or two. They had a background in slot machines, I think, the other kind of gaming. That's why they were in Nevada, and they were doing computer games, and it was poker. But anyway, they needed the networking bit, and they were like, well, we also need the other bit, which is we need to arrange these tournaments. So that led us into the online services bit. Yeah, "we'll do that too, we need a customer".
+**Sean:** And he just kept on putting more and more money in. Right, so that was kind of like customer one or two. They had a background in slot machines, I think, the *other* kind of gaming. That's why they were in Nevada, and they were doing computer games, and it was poker. But anyway, they needed the networking bit, and they were like, well, we also need the other bit, which is we need to arrange these tournaments. So that led us into the online services bit. Yeah, "we'll do that too, we need a customer".
 
 **Dylan:** Yeah. Yeah.
 
-**Sean:** Us competing with GameSpy came in,  because we learned it wasn't enough for us to say "you can just go to GameSpy and they'll sell you that bet". That wasn't flying, even with these guys. So that's what we really heard: "Have you guys tried to use GameSpy? It's unusable. It's a cobbled together collection of stuff." When you read it as code, there was no coding standard. It looked like it'd be written by different interns in different years.
+**Sean:** Us competing with GameSpy came in,  because we learned it wasn't enough for us to say "you can just go to GameSpy and they'll sell you that bit". That wasn't flying, even with these guys. So that's what we really heard: "Have you guys tried to use GameSpy? It's unusable. It's a cobbled together collection of stuff." When you read it as code, there was no coding standard. It looked like it'd be written by different interns in different years.
 
 **Dylan:** To your point, I think it was originally just Quake server code.
 
-**Sean:** I think it was a standalone PC application to try to find other Quake servers. That's where it came from. And then it just had other bits added in - a bit of voice, a bit of leaderboards, all kind of working in a noncohesive of kind of way. And around this time... when did it Xbox Live launch? Around... 2003?
+**Sean:** I think it was a standalone PC application to try to find other Quake servers. That's where it came from. And then it just had other bits added in - a bit of voice, a bit of leaderboards, all kind of working in a non-cohesive of kind of way. And around this time... when did it Xbox Live launch? Around... 2003?
 
 **Dylan:** It was announced around about then, yeah.
 
-**Sean:** Xbox Live had launched, and it was excellent. Microsoft really knocked it out of the park in the design of this. It was a beautiful API, very well considered, compared to GameSpy, I mean, it was a very cohesive, and we looked at it and thought, from an engineering point of view, we wouldn't really change anything here. This is a really nice API. And we thought, gee, people, you know, they've got this on Xbox, they're going to need something on PlayStation. So we thought: let's make something that's exactly the same.
+**Sean:** Xbox Live had launched, and it was excellent. Microsoft really knocked it out of the park in the design of this. It was a beautiful API, very well considered, compared to GameSpy, I mean. It was a very cohesive, and we looked at it and thought, from an engineering point of view, we wouldn't really change anything here. This is a really nice API. And we thought, gee, people, you know, they've got this on Xbox, they're going to need something on PlayStation. So we thought: let's make something that's exactly the same.
 
 **Dylan:** Yeah, right. I remember this...
 
-**Sean:**  function for function, like API call for API call, we copied it, just with a different naming standard. But if there was a function that did something that had a certain signature, like you pass a certain set of parameters in on Xbox and get a certain kind of result, then we had the same thing, which made it possible to build your multiplayer for Xbox and all of your screens and all of your UI, and then just swap Demonware in on Playstation. That was MatchmakingPlus, that's what we called that.
+**Sean:**  function for function, like API call for API call, we copied it, just with a different naming standard. But if there was a function that did something that had a certain signature, like you pass a certain set of parameters in on Xbox and get a certain kind of result, then we had the same thing, which made it possible to build your multiplayer for Xbox and all of your screens and all of your UI, and then just swap Demonware in on Playstation. That was *Matchmaking+*, that's what we called that.
 
 **Dylan:** How ... how...
 
-**Sean:** That was MatchmakingPlus. That was around that era.
+**Sean:** That was Matchmaking+. That was around that era.
 
 **Dylan:** Hold on. How long did that take to get to? We were in 2004, so that means we probably announced that coming up to GDC 2005.
 
@@ -327,15 +300,15 @@ This episode was originally inspired by Mitch Lasky and Blake Robbins' GameCraft
 
 **Sean:** For me, the memories that flood back, is sitting in our apartment in Santa Monica, which we'd rented adjacent to Activision, which kind of dates it as well, because it took longer than three months because it must have been to 2005 if I'm sitting in an apartment in Santa Monica trying to code this thing. Because, we were writing the server in C++, which was a mistake.
 
-**Dylan:** When you think back to that, to MatchmakingPlus, to that lobby service, what was the hardest bit to build? It was doing matchmaking, it was doing leaderboards. It was essentially like, like, proto-community stuff. Do you remember what was surprising? I mean, other than database. What was surprising at the start?
+**Dylan:** When you think back to that, to Matchmaking+, to that lobby service, what was the hardest bit to build? It was doing matchmaking, it was doing leaderboards. It was essentially like, like, proto-community stuff. Do you remember what was surprising? I mean, other than database. What was surprising at the start?
 
 **Sean:** The hard thing was that we made... I made... poor technical decisions. We tried to implement the server in C++, all of it, all of the business logic in C++. It's not something you should do. We did that because we thought it would be nice to just have one language that we're working on in the company. That was fragile, it crashed a lot. Starship troopers launched on this thing, and if more than 89 players connected, the servers went down.
 
 **Dylan:** Was it 89? it was something that was predictable!
 
-**Sean:** Because they launched on the C++ version. Yeah, apart from just that flakiness because we shouldn't have been writing our business logic in C++, individually... it was stuff like matchmaking means you have a function say that says create a session,  one of the PlayStations calls "create session", it puts a row in the database saying there's a new session and it at this IP address and here's the name of it or whatever. And then other players would say "find sessions", and have parameters like "have less than certain number of players" or "close to me geographically" or "in my country" or whatever. Like these things aren't hard in and of themselves. These days they'd just be web services.
+**Sean:** Because they launched on the C++ version. Yeah, apart from just that flakiness because we shouldn't have been writing our business logic in C++, individually... it was stuff like matchmaking means you have a function say that says create a session,  one of the PlayStations calls "create session", it puts a row in the database saying there's a new session and it's at this IP address and here's the name of it or whatever. And then other players would say "find sessions", and have parameters like "have less than certain number of players" or "close to me geographically" or "in my country" or whatever. Like these things aren't hard in and of themselves. These days they'd just be web services.
 
-**Dylan:** And these were all Matchmaking services for players on the same platform. Was there any cross-platform back there?
+**Dylan:** And these were all Matchmaking services for players on the same platform. Was there any cross-platform back then?
 
 **Sean:** We really wanted to do it. I mean, later on, we were completely capable of doing cross-platform.
 
@@ -355,9 +328,9 @@ This episode was originally inspired by Mitch Lasky and Blake Robbins' GameCraft
 
 **Dylan:** Wow, yeah.
 
-**Sean:** And it was a desktop client packed full of social features, where you have friends, buddy lists, you see who's online, who wasn't online, see what games you had installed, games they had installed, and matchmaking with them. So basically the whole set of social... basically steam, right? with digital distribution at its core. In terms of our sense of place in history, I've got a credit to you with having the right instincts!
+**Sean:** And it was a desktop client packed full of social features, where you have friends, buddy lists, you see who's online, who wasn't online, see what games you had installed, games they had installed, and matchmaking with them. So basically the whole set of social... basically *Steam*, right? with digital distribution at its core. In terms of our sense of place in history, I've got a credit to you with having the right instincts!
 
-**Dylan:** I mean, ironically, GameStop bought our second company, Jolt. Yeah, right.
+**Dylan:** I mean, ironically, GameStop bought our second company, *Jolt*. Yeah, right.
 
 **Sean:** Yeah. Well, your second company.
 
@@ -365,7 +338,7 @@ This episode was originally inspired by Mitch Lasky and Blake Robbins' GameCraft
 
 **Sean:** So we knew multiplayer was going to be, we had these instincts, we'd seen it, we'd seen it in the college labs, we saw people basically addicted to the screen shooting each other in Quake, and Soldier of Fortune, in LAN games, we'd seen it first-hand. Microsoft was putting billions into making it mainstream, we were there, and... so I'm pretty sure we knew we were in an interesting space. We also had competition emerging, you know, so it wasn't just us with this conviction.
 
-**Dylan:** Yeah. Well, I mean, Gamespy were there, and that company Quazal in Montreal. 
+**Dylan:** Yeah. Well, I mean, GameSpy were there, and that company Quazal in Montreal. 
 
 **Sean:** Yeah.
 
@@ -387,9 +360,9 @@ This episode was originally inspired by Mitch Lasky and Blake Robbins' GameCraft
 
 **Dylan:** Yeah, which was an interesting point actually, 20 years ago. Rewind to the n-game thing and things that... that kind of emerged and never were, do you remember some of the other offshoots that we saw or things that were growing related to that multiplayer ecosystem at the same time? I mean, do you remember the whole in-game advertising wave?
 
-**Sean:** Oh, well, yeah. Geez, we were trying to do that too. And what we called DNA, we should come back to. So there was a company called Massive, back then.
+**Sean:** Oh, well, yeah. Geez, we were trying to do that too. And what we called DNA, we should come back to. So there was a company called *Massive*, back then.
 
-**Dylan:** Mitch Davis
+**Dylan:** Mitch Davis.
 
 **Sean:** there's been a few companies called Massive, but this one was in-game advertising way back, so yeah, selling virtual billboard space, basically billboards in the games, dynamically to advertisers. And I think we were looking at a some joint venture with them or something, because obviously we were connected into the games already and they were live through us.
 
@@ -427,7 +400,7 @@ This episode was originally inspired by Mitch Lasky and Blake Robbins' GameCraft
 
 **Dylan:** I think it was more 2006.
 
-**Sean:** Yeah, well, 2005, we launched MatchmakingPlus.
+**Sean:** Yeah, well, 2005, we launched Matchmaking+.
 
 **Dylan:** Yeah.
 
@@ -458,7 +431,7 @@ Sean ... founder sales....
 
 **Sean:** So.. that was a new phase of my life, because I basically became his sidekick for two years. I mean, among my other jobs. But if he needed me, I was on a plane, turned up next day. He does the pitch, now "I'm going to wheel out my geek", I open my mouth for five minutes, I close it. And then... They basically sign up with us.
 
-**Dylan:** Yeah. The Art and Sean show was very effective.
+**Dylan:** Yeah. The *Art and Sean Show* was very effective.
 
 **Sean:** Yeah. And I learned a lot about sales from him, from that process. I also learned that as an engineer you can be a salesperson, good salesperson. Really, it just is the job of adequately explaining what you do and having something that's worth having in the first place. So, we started signing up customer, customer, customer. It was just a very straightforward thing: "You need to do multiplayer", "you need to build on Xbox Live anyway", "you need Xbox Live for PlayStation", "where do we sign?" Actually, do you want to talk about the pricing?
 
