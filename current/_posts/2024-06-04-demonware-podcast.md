@@ -56,7 +56,7 @@ This episode was originally inspired by Mitch Lasky and Blake Robbins' [GameCraf
 
 **Dylan:** Oh, you remember the date. Wow. 
 
-**Sean:** So prior to that, I was a PhD student and a part time CTO in Phorest. 
+**Sean:** So prior to that, I was a PhD student and a part-time CTO in Phorest. 
 
 **Dylan:** Oh, Phorest. That's Phorest with a &quot;ph&quot;. 
 
@@ -72,7 +72,7 @@ This episode was originally inspired by Mitch Lasky and Blake Robbins' [GameCraf
 
 **Dylan:** I can't remember exactly how we got onto this visual metaphor breakthrough, but essentially we were postulating that, &quot;Hey, gaming at the time was all client-server, surely it would make sense to have some sort of peer-to-peer distributed model&quot;, do you remember that?
 
-**Sean:** Yeah, I do. I think I remember the conversation. Because you and I and Ronan were running Phorest. I think you guys were full time. I was part time. We did our management meetings on a Saturday in Ronan's apartment, Wintergarden, which was our official headquarters because he had the poshest sounding address. I think you had done your undergrad dissertation on the games industry. And you had looked a lot at *Havok*, which was a Trinity College spin out at the time. And Steve was one of my former lecturers and their staff were people correcting my lab assignments as an undergrad.
+**Sean:** Yeah, I do. I think I remember the conversation. Because you and I and Ronan were running Phorest. I think you guys were full time. I was part-time. We did our management meetings on a Saturday in Ronan's apartment, Wintergarden, which was our official headquarters because he had the poshest sounding address. I think you had done your undergrad dissertation on the games industry. And you had looked a lot at *Havok*, which was a Trinity College spin out at the time. And Steve was one of my former lecturers and their staff were people correcting my lab assignments as an undergrad.
 
 **Sean:** At the end of one of those sessions, you asked a question: &quot;Sean, the kind of stuff you're doing in your PhD. Is there anything kind of networky that we could do something kind of like Havok with?&quot;
 
