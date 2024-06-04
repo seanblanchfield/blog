@@ -499,6 +499,8 @@ Sean ... founder sales....
 
 **Sean:** But yeah, Ubisoft, all those games, and suddenly, like, 2006, 2007, we were working a lot of projects. We got to talk about Call of Duty though.
 
+---
+
 **Sean:** We've got to talk about Call of Duty though, right? 
 
 **Dylan:** Let's go. 
@@ -507,19 +509,19 @@ Sean ... founder sales....
 
 **Dylan:** You know, I have an emotional memory of this but not the actual detail. What was, what was, remind me. 
 
-**Sean:** They called us up and Xbox 360 and Playstation 3 were gonna come out soon and Activision had bought Infinity Ward. And they were going to do Call of Duty 2 and it was shipping as a launch title. It was a big deal. They were fine though. They had that sorted infinity award. It was amazing studio. Activision was also going to launch Call of Duty 2 : Big Red One for the original Xbox and PlayStation two.
+**Sean:** They called us up and Xbox 360 and Playstation 3 were gonna come out soon and Activision had bought Infinity Ward. And they were going to do Call of Duty 2 and it was shipping as a launch title. It was a big deal. They were fine though. They had that sorted infinity award. It was amazing studio. Activision was also going to launch *Call of Duty 2: Big Red One* for the original Xbox and PlayStation 2.
 
-**Sean:** So basically a totally different title done, created by Treyarch, but under the same brand with similar gameplay but for the older consoles and what they didn't have was a networking team. So you got a call saying, &quot;Hey, you Irish guys, we hear you got a networking team. We just need you all to come over here to Santa Monica for two years&quot;.
+So basically a totally different title done, created by Treyarch, but under the same brand with similar gameplay but for the older consoles and what they didn't have was a networking team. So you got a call saying, &quot;Hey, you Irish guys, we hear you got a networking team. We just need you all to come over here to Santa Monica for two years&quot;. Something like that. 
 
-**Sean:** Something like that. But basically they were just like, yeah, we just want to hire a team. And our, the nature of our conversation was you were saying we need to do this or we're going to die. We need, revenue. We need it to happen. This is what they need. Um, I was holding onto the, product company.
+But basically they were just like, yeah, we just want to hire a team. And our, the nature of our conversation was you were saying we need to do this or we're going to die. We need, revenue. We need it to happen. This is what they need. Um, I was holding onto the "product company". We do this, we're not going back. Like we're just a services company. 
 
-**Sean:** We do this, we're not going back. Like we're just a services company. Somehow we ended up in some big shouting match where we dug in and our respective positions. Well, obviously the answer was in between, but, startups are interesting endeavors where like things like that happen and you can get into emotional situations because you both care so much.
+Somehow we ended up in some big shouting match where we dug in and our respective positions. Well, obviously the answer was in between, but, startups are interesting endeavors where like things like that happen and you can get into emotional situations because you both care so much.
 
 **Dylan:** For sure. And I think it's constantly short term versus long term or versions of that model. It's interesting that essentially our product and business model evolved after that, where we ended up actually having onsite stuff and onsite support. 
 
 **Sean:** Yeah. There's no getting away from it. It was a highly technical product that involved a very consultative sale and a post sale process where you integrated it. But anyway, we had our little shouting match. And then we decided to go back and see if we could pitch them that we would give them intense support. But we would be selling them a product in inverted commas, licensing our core software. And they would use it in the game, but we would have at least one person, maybe two, or a team on site with them in Santa Monica throughout the entire process. 
 
-**Dylan:** I think by the way, that the reason for my, agitation was not just needing to do it from a revenue point of view, but I, think it was at the time, 'cos Art had joined by that stage, didn't he?
+**Dylan:** I think by the way, that the reason for my, agitation was not just needing to do it from a revenue point of view, but I, think it was at the time, 'cause Art had joined by that stage, didn't he?
 
 **Sean:** I can't remember. 
 
@@ -527,55 +529,55 @@ Sean ... founder sales....
 
 **Sean:** And it was. 
 
-**Dylan:** And it was, yeah. So I think, that was probably a factor there too. And I think, , it's always, so difficult to really understand , what customer politics you're playing into with those things. It's like, well everyone's gonna say it's a test. But , to what degree is that actually true? Yeah. . Or what are the real parameters for this? Because to your point, I mean, it's easy to say this is a hindsight, like it's not about shipping an entire team out to your office, right? You know, you customer don't care about that. You care about getting the thing done. Yeah. . This isn't a compromise point. Tell us all the things you need to accomplish and then we'll figure out how to configure it for that. Right. 
+**Dylan:** And it was, yeah. So I think, that was probably a factor there too. And I think it's always so difficult to really understand what customer politics you're playing into with those things. It's like, well everyone's gonna say it's a test. But to what degree is that actually true? Or what are the real parameters for this? Because to your point, I mean, it's easy to say this is a hindsight, like it's not about shipping an entire team out to your office, right? You know, you (customer) don't care about that. You care about getting the thing done. This isn't a compromise point. Tell us all the things you need to accomplish and then we'll figure out how to configure it for that. Right? 
 
-**Sean:** That's what it should be. Although in Activision's case, they probably also cared about, Getting people in under their particular roof so that they could bully them more directly. Yeah, very aggressive culture as has been revealed in multiple events since then, I suppose. Anyway, we, we pitched them, you're going to get onsite support. We're going to sell you your product because that's what we need as a product company is you to be on our platform teams and two time zones working 24 seven with daily handoffs between the teams onsite is going to work with your team. They're going to hand it back to Dublin. Dublin's going to work through your night, hand it back to. The team on site, whoever you were on the phone to in the sales process, you pitched that version. They said, well, we need to do due diligence on you and David Vonderhaar is going to be arriving on Tuesday. 
+**Sean:** That's what it should be. Although in Activision's case, they probably also cared about getting people in under their particular roof so that they could bully them more directly. Yeah, a very aggressive culture, as has been revealed in multiple events since then, I suppose. Anyway, we, we pitched them, "you're going to get onsite support". We're going to sell you your product because that's what we need as a product company is you to be on our platform. Teams in two time zones working 24/7 with daily handoffs between the teams. On-site is going to work with your team. They're going to hand it back to Dublin. Dublin's going to work through your night, hand it back to the team on site. Whoever you were on the phone to in the sales process, you pitched that version. They said, well, we need to do due diligence on you and David Vonderhaar is going to be arriving on Tuesday. 
 
-**Dylan:** Remember, Vonderhaar wrote Activision's online strategy document? Which essentially concluded with just buy Demonware. 'cause he, 'cause he'd gone, he'd gone from games by into Activision. So I think that was all roughly parallel. 
+**Dylan:** Remember, Vonderhaar wrote Activision's online strategy document? Which essentially concluded with "just-buy-Demonware". 'cause he, 'cause he'd gone, he'd gone from GameSpy into Activision. So I think that was all roughly parallel. 
 
-**Sean:** Our office was a bit of a scruffy place and I turned up the morning of his visit, I opened up the shutters. And they're in front of the shutters where some adult underwear with a large turd. So my morning started with cleaning human feces out of our doorway before our fancy client from Activision turned up to do due diligence on us. 
+**Sean:** Our office was a bit of a scruffy place and I turned up the morning of his visit, I opened up the shutters. And there in front of the shutters were some adult underwear with a large turd. So my morning started with cleaning human feces out of our doorway before our fancy client from Activision turned up to do due diligence on us. 
 
 **Dylan:** And I remember he was so difficult as well. I remember him being incredibly difficult. 
 
-**Sean:** Yeah, he's prickly and he had things like he wanted to see our data center.
+**Sean:** Yeah, he's prickly and he had things, like he wanted to see our data center.
 
-**Sean:** We were in Hosting365, which is an Irish, at the time a big for Ireland data center. And he he wants to see our data center. We'd never seen our data center. You went out there, didn't you? Yeah. We got in the taxi and we were driving out.
+**Sean:** We were in *Hosting365*, which is an Irish &mdash; at the time &mdash; a big-for-Ireland data center. And he he wants to see our data center. *We'd* never seen our data center. 
 
-**Sean:** We saw the NOC, the network operation center, which they did have. And I have to say, I haven't seen it before, but I was impressed. I was actually speaking with Philip Reynolds, who was working there at the time. And he was describing it recently to me from their point of view that Hosting365 was thrilled they were getting this visit and there's this big shot from Activision who was sitting there, looking at their NOC that they had put so much effort in the building.
+**Dylan:** You went out there, didn't you? 
 
-**Sean:** He came away impressed and they came away delighted that they actually got a site visit. Yeah. He endorsed us. And , we got on with Call of Duty.
+**Sean:** Yeah. We got in the taxi and we were driving out.We saw the NOC, the network operation center, which they *did* have. And I have to say, I hadn't seen it before, but *I* was impressed. I was actually speaking with Philip Reynolds, who was working there at the time. And he was describing it recently to me from their point of view, that Hosting365 was thrilled they were getting this visit and there's this big shot from Activision who was sitting there, looking at their NOC that they had put so much effort in the building. He came away impressed and they came away delighted that they actually got a site visit. Yeah. He endorsed us. And we got on with Call of Duty.
 
 **Dylan:** That must have been very stressful for you. 
 
-**Sean:** It was just incredibly busy, but you know, that kind of busyness where it's hard, but you're in flow, getting on with what's in front of you and don't have time for reflecting on the improbability of the situation you find yourself in, get on and do it. That started Call of Duty: Big Red One. 
+**Sean:** It was just incredibly busy, but you know, that kind of busyness where it's hard, but you're in flow, getting on with what's in front of you and don't have time for reflecting on the improbability of the situation you find yourself in. Get on and do it. That started Call of Duty: Big Red One. 
 
 **Dylan:** How long was a year? I think that was a year. 
 
-**Sean:** That was a year. Even tighter. It was really tight. , they were against the clock. It was 
+**Sean:** That was a year. Even tighter. It was really tight. , they were against the clock. It was...
 
-**Dylan:** real death march stuff. 
+**Dylan:** ... real death march stuff. 
 
 **Sean:** The launch date of the consoles wasn't going to change. And this title was going to be tied to launch in concert with the next gen consoles.
 
-**Sean:** It was, it was tough there in Activision. Like John Kirk, I think, Eoin, spent a lot of time out there rotating in and out. I was out there a good bit. We had an apartment set up next to Activision, and Craig was out there for a while. We just rotating through there month on month off or something, and then doing these daily sync calls. I remember one with I think John Kirk was out there And, we're on our conference call line again before video calls. And he was just saying, there's some scuffle outside. He says, what's happening? It's like, there's a, people are like, there's a fist fight 
+**Sean:** It was, it was tough there in Activision. Like John Kirk, I think Eoin, spent a lot of time out there rotating in and out. I was out there a good bit. We had an apartment set up next to Activision, and Craig was out there for a while. We were just rotating through there month-on / month-off or something, and then doing these daily sync calls. I remember one with... I think John Kirk was out there and, we're on our conference call line (again, before video calls). And he was just saying, there's some scuffle outside. He says, what's happening? It's like, there's a, people are like, *there's a fist fight*. 
 
-**Dylan:** in the studio, in the 
+**Dylan:** in the studio, in the? 
 
-**Sean:** studio. Yeah. And people were just, people were sleeping under their desks, all of this, stereotypical games industry stuff, total death march, crunch all the way through people, like not having left the building in seven days, you know, not showering, eating shit, sleeping under the desks, super stressed, out fistfights breaking out in the office, and we could hear it on the phone, but, uh, the game launched and I remember, uh, to average reviews, except for one thing. I remember reading in the reviews, &quot;lag free multiplayer&quot;. So the multiplayer was good. 
+**Sean:** studio. Yeah. And people were just... people were sleeping under their desks, all of this stereotypical games industry stuff, total death march, crunch all the way through. People, like, not having left the building in seven days, you know, not showering, eating shit, sleeping under the desks, super stressed out, fistfights breaking out in the office, and we could hear it on the phone. But, the game launched and I remember, to average reviews, except for one thing. I remember reading in the reviews, &quot;lag free multiplayer&quot;. So the multiplayer was good. 
 
 **Dylan:** Well, funny. I remember that quite differently. I don't remember that review. I do remember the game launched and there being all sorts of problems. I have very distinct memory of sending a report to Vonderhaar cause people weren't able to connect, explaining some weird outage in the US on one ISP, which was why we thought, it must be this weird thing. This is a weird coincidence. And then about a week later, we found out that something hadn't been configured properly on a server. So people were only connecting to, I can't remember technically what this was, but only had one chance in two of being able to connect anyway. 
 
-**Sean:** I don't remember that. This was pre cloud, but it was also the servers were servers we had either bought and transported to data centers or, the data centers had bought for us and installed and we were directly managing, and directly configuring, logging into the servers, setting up the configuration files on each of them. 
+**Sean:** I don't remember that. This *was* pre-cloud, but it was also the servers were servers we had either bought and transported to data centers or, the data centers had bought for us and installed and we were directly managing, and directly configuring, logging into the servers, setting up the configuration files on each of them. 
 
 **Dylan:** But, right, but even the challenge of someone on the East Coast, or West Coast, trying to play and, you know, connect to an East Coast.
 
 **Sean:** Yeah, yeah, we were thinking about that kind of stuff. 
 
-**Dylan:** Yeah, yeah, yeah, you actually have to think about it. It worked enough.
+**Dylan:** Yeah, yeah, yeah, you actually have to think about it. It worked *enough*.
 
-**Sean:** Once we had Activision as a customer and we were Big Red One, sales accelerated even more. We're clearly a safe company to work with for everyone. The only people we didn't work with were EA.
+**Sean:** Once we had Activision as a customer and we were in *Big Red One*, sales accelerated even more. We were clearly a safe company to work with for everyone. The only people we didn't work with were EA.
 
-**Dylan:** Gamespy had a long term deal there 
+**Dylan:** Gamespy had a long-term deal there 
 
 **Sean:** Can we say that we were scared shitless of playstation network? 
 
@@ -583,10 +585,9 @@ Sean ... founder sales....
 
 **Sean:** We were making our money by selling Xbox Live on Playstation, basically and Playstation was ...
 
-**Dylan:** weird that sony didn't try and buy us 
+**Dylan:** weird that Sony didn't try and buy us. 
 
-
-**Dylan:** I mean it was interesting, GameSpy ended up being sort of the last standing. Ironically of the middleware plays in the multiplayer space. I mean, and then you had things that sort of X-Fire that emerged, which wasn't, which wasn't in the lobby space, but was quite adjacent to all that 
+I mean it was interesting, GameSpy ended up being sort of the last standing, ironically of the middleware plays in the multiplayer space. I mean, and then you had things like sort of X-Fire that emerged, which wasn't, which wasn't in the lobby space, but was quite adjacent to all that.
 
 **Sean:** it's kind of like Discord these days. 
 
@@ -596,97 +597,100 @@ Sean ... founder sales....
 
 **Dylan:** They did. Yes. I mean, almost started killing it the same day they bought it. 
 
-**Sean:** Activision has realized a huge amount of value out of Demonware. In fact, I'd say, transformed the company, allowed Activision to become an internet company. We did not capture that value at all. And the other offers we got weren't great. Incidentally, our investors didn't have a clue, right? I don't think, um I think Our best advisors were probably Steve and Hugh from Havok.
+**Sean:** Activision has realized a huge amount of value out of Demonware. In fact, I'd say, transformed the company, allowed Activision to become an internet company. We did not capture that value at all. And the other offers we got weren't great. Incidentally, our investors didn't have a clue, right? I don't think, um... I think our best advisors were probably Steve and Hugh from Havok.
 
 **Dylan:** Who'd raised actual investment. 
 
-**Sean:** But really they were on the same journey as us at around the same time. So there was a limit to how much they could teach us. We didn't have anyone advising us who, was 20 years older and had been through a few things.
+**Sean:** But really they were on the same journey as us at around the same time. So there was a limit to how much they could teach us. We didn't have anyone advising us who was 20 years older and had been through a few things.
 
-**Dylan:** I think that's totally true. In retrospect, I think a few things. One, we were never thinking, or certainly I was never thinking long term enough about the company. There was the utter impatience of youth. Right. Definitely. Definitely a factor. 
+**Dylan:** I think that's totally true. In retrospect, I think a few things. One, we were never thinking, or certainly *I* was never thinking long term enough about the company. There was the utter impatience of youth. Right. Definitely. Definitely a factor. 
 
 **Sean:** Got this, built this, bank it, move on, build next thing. 
 
-**Dylan:** Do the next thing. Yeah. It's like, how big can this thing possibly be? Right. And I think once we started to get into the reality of the addressable market, it was like, well, how big, how big can you really build this thing? Like Havok had built out like a much more professional sales team.
-
-**Dylan:** And, if you think about the middleware hierarchy, even though networking was this great revenue enabler, it wouldn't be for many years to come, right? Whereas visually, physics is so ...
+**Dylan:** Do the next thing. Yeah. It's like, how big can this thing possibly be? Right. And I think once we started to get into the reality of the addressable market, it was like, well, how big, how big can you really build this thing? Like Havok had built out like a much more professional sales team. And, if you think about the middleware hierarchy, even though networking was this great revenue enabler, it wouldn't be for many years to come, right? Whereas visually, physics is so ...
 
 **Sean:** more tangible. 
 
-**Dylan:** Well, it literally sold games, right? I mean, it became a selling feature. It was a need to have a networking was still a nice to have. And I think those were definitely challenges. Would moving to the US, specifically the West Coast, probably specifically San Francisco, have opened up things? I think I would echo your point, I don't know if it would have necessarily changed the outcome, but I think it would have changed opportunities that emerged around all of that. I think that's probably for sure. 
+**Dylan:** Well, it literally sold games, right? I mean, it became a selling feature. It was a need-to-have and networking was still a *nice*-to-have. And I think those were definitely challenges. Would moving to the US, specifically the West Coast, probably specifically San Francisco, have opened up things? I think I would echo your point, I don't know if it would have necessarily changed the outcome, but I think it would have changed opportunities that emerged around all of that. I think that's probably for sure. 
 
-**Sean:** Here's my story about an alternate universe that involves time machines, me or you today has a time machine, and we go back and visit ourselves and coach ourselves on ways of thinking about a business model. In my alternate universe, I go back and I grab us by the shoulders and I shake us and I say, here's two things to consider:
+**Sean:** Here's my story about an alternate universe that involves time machines: me or you today has a time machine, and we go back and visit ourselves and coach ourselves on ways of thinking about our business model. In my alternate universe, I go back and I grab us by the shoulders and I shake us and I say, here's two things to consider:
 
-**Sean:** you've already tried to build Steam, a little bit too early, right? But this is already in your heads. And right now you have a database with hundreds of millions of gamer accounts in it across all platforms. No one else has all of this account information. No one else has all this data about what gamers are playing, what their scores are, who they're buddies with in these games, who they chat with. We had that database, we had an entire game social network. We just didn't have a user interface for it or anywhere where those gamers could go and log in or link their accounts. We looked down on web stuff as kids toys. We're doing real hard C++ stuff over here in the corner... I wish I could slap myself in the face! If we could go back and reposition and say, put a damn user interface on it. Yeah, give it to the gamers. You already have all their data. Let them have their data and use it and link up with these people. I think we might've been Steam, right? Or we would've been something close. Our valuation wouldn't have been, &quot;uh, what's the cost of replacing the C++ library if we have to do it ourselves?&quot; It would've been, what's the multiple of 300 million gamer accounts? I can't believe we didn't see it, especially when we'd already thought of it because we were trying to do this Steam n-game style thing in 2003.
+You've already tried to build Steam, a little bit too early, right? But this is already in your heads. And right now you have a database with hundreds of millions of gamer accounts in it across all platforms. No one else has all of this account information. No one else has all this data about what gamers are playing, what their scores are, who they're buddies with in these games, who they chat with. We had that database, we had an entire game social network. 
+
+We just didn't have a user interface for it or anywhere where those gamers could go and log in or link their accounts. We looked down on web stuff as kids' toys. We're doing real hard C++ stuff over here in the corner... I wish I could slap myself in the face! If we could go back and reposition and say, "put a damn user interface on it". Yeah, give it to the gamers. 
+
+You already have all their data. Let them have their data and use it and link up with these people. I think we might've been Steam, right? Or we would've been something close. Our valuation wouldn't have been, &quot;uh, what's the cost of replacing this C++ library if we have to do it ourselves?&quot; It would've been, what's the multiple of 300 million gamer accounts? I can't believe we didn't see it, especially when we'd already thought of it because we were trying to do this Steam "n-game" style thing in 2003.
 
 **Dylan:** But but you have to bear in mind as well, like capital was a factor to do that.
 
 **Sean:** And there was nowhere to get capital where we were. 
 
-**Dylan:** No. And we didn't know how to pitch what it was. And I absolutely agree. And I think like you could have spun up almost any consumer surface, at that point with exactly , the access that you described and I think that there were interesting things to happen. When Joel got acquired by GameStop, at that point you were involved, right? We were starting to think a bit more like that when we were going into their point of sale systems and looking at like, yeah you know, I think I think there were definitely some learnings from it, but there have been efforts that sort of like gamer clubs and gamer loyalty platforms and things like that and even though the big things that emerged were essentially like communications platforms like in X-Fire, discord, Steam ...steam was successful; Steam took a long time to be successful and probably, the Valve folks would say really only as a function of the amount of money they were able to throw at it too, which came off the back of Counter Strike and everything else. Right. I think there is, you know...
+**Dylan:** No. And we didn't know how to pitch what it was. And I absolutely agree. And I think like you could have spun up almost any consumer surface, at that point with exactly the access that you described and I think that there were interesting things to happen. When Jolt got acquired by GameStop, at that point you were involved, right? We were starting to think a bit more like that when we were going into their point of sale systems and looking at like, yeah you know... I think, I think there were definitely some learnings from it, but there have been efforts, sort of like gamer clubs and gamer loyalty platforms and things like that and even though the big things that emerged were essentially like communications platforms like in X-Fire, Discord, Steam... Steam was successful; Steam took a long time to be successful and probably the Valve folks would say really only as a function of the amount of money they were able to throw at it too, which came off the back of Counter Strike and everything else. Right. I think there is, you know...
 
-**Sean:** It might've been a longer journey. It might've had also had an early exit, but maybe based on a different formula, valuation formula, um, we would've needed more capital because we were out, right. And our business model. With our shitty pricing we weren't able to scale. We weren't able to grow. We weren't able to continue. Um, we were scared of PlayStation Network , unnecessarily in retrospect, because, there's a lot of value still to create on Xbox and on PlayStation, going further, like using Demonware instead of PlayStation Network , doing custom services and a lot of stuff that kept Demonware busy for years after that, uh, despite PlayStation Network and Xbox being given away for free. But, We would have needed another round. Yeah, for sure. We did do a second. Did we got a top up? Didn't we got 500k seed round? Seed round in 2003 money, I suppose in Ireland. Um, we got another quarter of a million or something. Did we get a top up from the same investors? 
+**Sean:** It might've been a longer journey. It might've had also had an early exit, but maybe based on a different formula, valuation formula. We would've needed more capital because we were out, right? And our business model, with our shitty pricing we weren't able to scale. We weren't able to grow. We weren't able to continue. We were scared of PlayStation Network, unnecessarily in retrospect, because there was a lot of value still to create on Xbox and on PlayStation, going further, like using Demonware instead of PlayStation Network, doing custom services and a lot of stuff that kept Demonware busy for years after that, despite PlayStation Network and Xbox being given away for free. But, we would have needed another round. 
 
-**Dylan:** Something like that. Yeah. It was small. It was small, 
+**Dylan:** Yeah, for sure. 
+
+**Sean:** We did do a second. Did we got a top up? We got 500k seed round? Seed round in 2003 money, I suppose in Ireland. We got another quarter of a million or something. Did we get a top up from the same investors? 
+
+**Dylan:** Something like that. Yeah. It was small. It was small. 
 
 **Sean:** but there wasn't another one after that, right? 
 
-**Dylan:** Look, hindsight is, is all the things, but it was certainly a different environment, but that's why it's always interesting to have these sorts of chats, right?
+**Dylan:** Look, hindsight is, is all the things. But it was certainly a different environment, but that's why it's always interesting to have these sorts of chats, right?
 
-**Dylan:** Cause you can sort of look back and think about it and, where you see opportunities today to apply this kind of thinking, you can. Um, because there were like, there were lots and lots and lots of companies that tried to get into the game space in terms of middleware. And we haven't talked about the many failed companies we saw along the way, that had absolutely no outcome whatsoever. 
+'Cause you can sort of look back and think about it and, where you see opportunities today to apply this kind of thinking, you can. Because there were like, there were lots and lots and lots of companies that tried to get into the game space in terms of middleware. And we haven't talked about the many failed companies we saw along the way, that had absolutely no outcome whatsoever. 
 
 **Sean:** We were 26 and 27, and sold it, and we were kind of set up.
 
-**Sean:** It's gratifying that Call of Duty is there and DemonWare still runs it. And that the genesis going back to 2002 was Counter Strike was great fun and we were playing it in the lab and Quake and particularly Counter Strike. And then Call of Duty is Counter Strike
+It's gratifying that Call of Duty is there and DemonWare still runs it. And that the genesis going back to 2002 was Counter Strike was great fun and we were playing it in the lab and Quake and particularly Counter Strike. And Call of Duty is Counter Strike.
 
-**Sean:** Ironically, I actually really liked the single player missions. 
+Ironically, I actually really liked the single player missions. 
 
-**Dylan:** Demonware last year, celebrated its 20 year anniversary. As an acquisition, you can't put a look at that and go, that was an incredible success. And I still meet people ex-Activision people who have been gone there five, 10 years, and they're like, holy shit, that was the best deal we ever did.
+**Dylan:** Demonware last year, celebrated its 20 year anniversary. As an acquisition, you can't but look at that and go: that was an incredible success. And I still meet people ex-Activision people who have been gone 5, 10 years, and they're like, holy shit, that was the best deal we ever did.
 
 **Sean:** Yeah. 
 
-**Dylan:** But my question is not going where I think you think I'm going. My question is , why do you think it has been so successful? Was that the DNA, the roots? 
+**Dylan:** But my question is not going where I think you think I'm going. My question is, why do you think it has been so successful? Was it the DNA, the roots? 
 
-**Sean:** Activision was selling boxes in shops . That's what games companies did. Really zooming back out, the Demonware acquisition converted Activision into an online services company and Demonware became the backbone of that transition.
+**Sean:** Activision was selling boxes in shops. That's what games companies did. Really zooming back out, the Demonware acquisition converted Activision into an online services company and Demonware became the backbone of that transition.
 
-**Sean:** The culture of the company was slowly but surely transformed into, an online digital, games publisher. And yeah, Demonware basically was the backbone of that. The culture clash burned me out and caused me to quit, but they got there in the end. And right now, inside of Activision Central technology the platform is Demonware.
+The culture of the company was slowly but surely transformed into an online digital games publisher. And yeah, Demonware basically was the backbone of that. The culture clash burned me out and caused me to quit, but they got there in the end. And right now, inside of Activision central technology the platform is Demonware.
 
-**Sean:** The message right through Activision, as I hear it, among the studios, do what you like but don't fuck with Demonware. , . Right, right, right, right. Activision makes like so much money from call of Duty in particular and Warcraft and other stuff. And like it's all kind of centralized into, I think it's all centralized through.
+The message right through Activision, as I hear it, among the studios, do what you like but don't fuck with Demonware. Activision makes like so much money from Call of Duty in particular, and Warcraft and other stuff. And like it's all kind of centralized into .... um, maybe not Warcraft, I'm not sure. Obviously, all of Call of Duty is. 
 
-**Sean:** Um, maybe not Warcraft, I'm not sure. Obviously, all of Call of Duty is. I think they moved a bunch of Battle. net across to it, I believe. And I think King is doing its own thing. So why is it valuable to Activision? They turned from a company that sold DVDs into a company that delivers product digitally and was excellent at it.
+**Dylan:** I think they moved a bunch of Battle.net across to it, I believe. 
 
-**Dylan:** Which was a remarkable transition for a 
+**Sean:** And I think King is doing its own thing. So why is it valuable to Activision? They turned from a company that sold DVDs into a company that delivers product digitally and was excellent at it.
 
-**Sean:** company to do. it's not quite the Demonware we sold them. We were 25 people when they acquired and, it's more than 10 times that now. But that's the next part of my answer. The people. Don't know how you feel, I mean this with great respect to everyone I've worked with since.
+**Dylan:** Which was a remarkable transition for a... 
 
-**Sean:** But it's the best team I've ever been on. Hmm. I think that was a question of timing. That team was assembled in 2002, 2003, you know, I looked around my research lab. Who wants to be in the games industry and got the first group, and then John Kirk over from Havok. 
+**Sean:** ... company to do. It's not quite the Demonware we sold them. We were 25 people when they acquired and, it's more than 10 times that now. But that's the next part of my answer. *The people*. Don't know how you feel, I mean this with great respect to everyone I've worked with since. But it's the best team I've ever been on. I think that was a question of timing. That team was assembled in 2002, 2003. You know, I looked around my research lab, "Who wants to be in the games industry?" and got the first group, and then John Kirk over from Havok. 
 
-**Sean:** So that was, John, Tilman, Eoin, Dave and myself, that was the initial dev team. Uh, then when we started to hire, we basically went back to college and we started getting people at Netsoc like Michael Collins and Steffen. Um, and then we started expanding saying who else is in an internet society that people, good people knew each other, you know, uh, Vlad, Rob Synnott, Emmanuel, um, Morgan Brickley, Morgan Brickley, like DC Redbrick or UL Skynet.
+So that was John, Tilman, Eoin, Dave and myself, that was the initial dev team. Then when we started to hire, we basically went back to college and we started getting people at Netsoc like Michael Collins and Steffen. And then we started expanding saying who else is in an internet society that ... people, good people knew each other, you know ... uh, Vlad, Rob Synnott, Emmanuel, Morgan Brickley, like DCU Redbrick or UL Skynet (Craig came from there). You know, everyone knows each other. Eh, "we need another great person. Who do we know?" Someone would say like, Rob is graduating this year - we need to hire him. Okay. Where is he? And he's in, right? And we just got the best in the country, the smartest graduates. And we had the pick of Ireland, Irish universities. If we needed another smart programmer, we got the smartest one that was graduating that year. So the raw talent in the room was phenomenal. Even if you didn't have a lot of experience, people learned at a thousand miles an hour. That was the same year that Google moved to Ireland, 
 
-**Sean:** Craig came from there, you know, everyone knows each other. Uh, we need another great person. Who do we know? Well, and someone would say like, Rob is graduating this year. We need to hire him. Okay. Where is he? And he's in, right? And we just got the best in the country, the smartest graduates. And we had the pick of Ireland, Irish universities, ?
+**Dylan:** Right. Well, this was my question for you. Why did they join? How much of it was, "Oh, cool. It's video games" versus how much of it was, "Oh, this is difficult" versus how much of it was preexisting team? 
 
-**Sean:** If we needed another smart programmer, we got the smartest one that was graduating that year. So the raw talent in the room was phenomenal. Even if you didn't have a lot of experience, people learned, a thousand miles an hour. That was the same year that Google moved to Ireland, 
+**Sean:** Well, those are the three things. I don't know what the ratio is. 
 
-**Dylan:** right?
+Video games is cool.
 
-**Dylan:** Well, this was my question for you. Why did they join? How much of it was, Oh, cool. It's video games versus how much of it was, Oh, this is difficult. Versus how much of it was preexisting team? 
+People wanted to solve hard problems. Everything was hard back then, scaling up systems, online, we were basically inventing this stuff half the time. It certainly attracted a certain kind of person. 
 
-**Sean:** Well, those are the three things. I don't know what the ratio is. Video games is cool.
+But also the fact that it's very powerful when you're asked to join a company by someone you already know and respect and want to work with and you've worked with in college and here's a chance to work with them professionally and get paid.
 
-**Sean:** People wanted to solve hard problems. Everything was hard back then, scaling up systems, online, we were basically inventing this stuff half the time. It certainly attracted a certain kind of person, but also the fact that, it's very powerful when you're asked to join a company by someone you already know and respect and want to work with and you've worked with in college and here's a chance to work with them professionally and get paid.
+And what it wasn't was the money. Sure. Yeah. While we were paying ourselves like €30,000. That was a big salary for us, at the time and that's what the developers are getting paid maybe after a few years ramping up to 40, so inflation and everything but you know it's different days these days.
 
-**Sean:** And what it wasn't was the money. Sure. Yeah. While we were paying ourselves like €30,000. That was a big salary for us, at the time and that's what the developers are getting paid maybe after a few years ramping up to 40, so inflation and everything but you know It's different days these days.
+**Dylan:** Back then in early mid 2000s you had less startups, certainly in ireland, but even generally. When you look at the many startups that you look at today, I think they have a much tougher time recruiting that density of talent because people are more inclined to think about their own startups as a viable path, a viable alternative.
 
-**Dylan:** Back then in early mid 2000s you had less startups certainly in ireland, but even generally when you look at the many startups that you look at today I think I had a much tougher time recruiting that density of talent because People are more inclined to think about their own startups as a viable path, a viable alternative.
+**Sean:** Yeah, every time there's a crash, you get a good lot of good people like the 2007/2008 financial crash, you know, great news for startups. It frees up talent to get into small companies and other people start companies. You know, there were a few years there where there was like a thousand startups in Dublin.
 
-**Sean:** Yeah, every time there's a crash, you get a good lot of good people like the 2007, 2008 financial crash, you know, great news for startups. Sure. Right, it frees up talent to get into small companies and other people start companies. You know, there were a few years there where there was like a thousand startups in Dublin.
+Now, these days... This is Dublin where it's got a lot of international tech here for a relatively small population. But the people who I would have hoped would have started their companies and been the next crop of extremely talented engineers, the top of their class in the universities (and I've worked with some of them),
+they're all working in Meta, HubSpot, Intercom, getting paid, 200, 300, maybe €400,000 like total compensation. Basically it makes zero financial sense to consider doing a startup relative to that. They'll become rich just sitting where they are. There's people I thought were the next to you and me, but they're there now. And they have been for the last seven or eight years. And good for them, I suppose, but not great for the economy. 
 
-**Sean:** Now, these days, This is Dublin where it's got a lot of international tech here for a relatively small population. But the people who I would have hoped would have started their companies and been the next crop of extremely talented engineers, the top of their class in the universities and I've worked with some of them.
+**Dylan:** That's a wrap. This was amazing. This was a lot of stuff. 
 
-**Sean:** They're all working in Meta, HubSpot, Intercom, getting paid, 200, 300, maybe €400,000 like total compensation, basically it makes zero financial sense to consider doing a startup relative to that. They'll become rich just sitting where they are.
-
-**Sean:** There's people I thought were the next to you and me, but they're there now. And they have been for the last seven or eight years. And good for them, I suppose, but not great for the economy. 
-
-**Dylan:** That's a wrap. This was amazing. this was a lot of stuff. Okay, let's click save. Yeah. Okay, thanks for listening.
+**Sean:** Okay, let's click save. Thanks for listening.
 
 
 ![Dylan Collins and Sean Blanchfield in Demonware HQ, 69 Middle Abbey Street, Dublin (circa 2004) ](/images/2024/06/demonware_photoshoot.jpeg){: .captioned }
