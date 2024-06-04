@@ -1,7 +1,12 @@
-# # https://github.com/envygeeks/jekyll-docker/blob/master/README.md#image-types
-# FROM jekyll/jekyll:3.8
-# FROM jekyll/minimal:3.8
-FROM jekyll/builder:3.8
+FROM ruby:3.2.2
+
+# Install Bundler
+RUN gem install bundler  -v 2.0.2
+
+# Install Jekyll and dependencies
+RUN gem install jekyll
+
+WORKDIR /srv/jekyll
 
 COPY Gemfile /srv/jekyll/
-RUN bundle update
+RUN bundle install
