@@ -246,7 +246,7 @@ We were at that level where we're writing in C code, performant server networkin
 
 **Dylan:** I think Stacked was the first customer. I think Starship Troopers was the first one that shipped.
 
-![Early press](/images/2024/06/sunday_business_post1.jpg){: .captioned }
+![Early press in Sunday Business Post, 2004](/images/2024/06/sunday_business_post1.jpg){: .captioned }
 
 **Sean:** Yeah, I think we sold the client-server stuff to the English company that was making Starship Troopers for PC.
 
@@ -289,7 +289,7 @@ We were at that level where we're writing in C code, performant server networkin
 
 **Dylan:** Hold on. How long did that take to get to? We were in 2004, so that means we probably announced that coming up to GDC 2005.
 
-![Demonware team with first customer, 5000ft, at GDC 2005](/images/2024/06/gdc_2005_first_customer.jpg){: .captioned }
+![Demonware team with early customer, 5000Ft, at GDC 2005](/images/2024/06/gdc_2005_first_customer.jpg){: .captioned }
 
 **Sean:** Yeah, you said how long would it take? I said, "that's just a bit of database programming - three months." Yeah, but... It was a long journey, and we were developing this PlayStation version of Xbox Live. At the same time, we had the poker game going, and we were building a custom service to manage Texas Hold'em Tournament, as a kind of plug-in for our own framework.
 
