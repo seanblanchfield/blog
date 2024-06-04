@@ -1,5 +1,5 @@
 ---
-author: Sean Blanchfield
+author: Sean Blanchfield &amp; Dylan Collins
 date: 2024-06-04 12:00:00
 layout: post
 link: https://seanblanchfield.com/demonware-podcast
@@ -8,15 +8,18 @@ title: The Demonware podcast
 image: /images/2024/06/demonware_sean_and_dylan.jpg
 ---
 
-[Dylan Collins](https://dylancollins.com/) and I recorded a podcast on the early days of [Demonware](https://www.demonware.net/), a video games middleware company we co-founded in 2003. Demonware developed multiplayer technology for video games studios on Xbox and Playstation, just as online gaming was going mainstream. Demonware's splashscreen will be familiar to many gamers from the countless titles that have incorporated its technology, including major online franchises like Call of Duty and Guitar Hero. Demonware was acquired by Activision Blizzard in 2007, where it continues to operate as the central online technology platform for Activision games.
-
-Here's some links where you can get the podcast, plus a full transcript.
+[Dylan Collins](https://dylancollins.com/) and I recorded a podcast on the early days of [Demonware](https://www.demonware.net/), a video games middleware company we co-founded in 2003. Demonware developed multiplayer technology for video games studios on Xbox and Playstation, just as online gaming was going mainstream. Demonware's splashscreen will be familiar to many gamers from the countless titles that have incorporated its technology, including major online franchises like Call of Duty and Guitar Hero. 
 
 <!-- more -->
 
+Demonware was acquired by Activision Blizzard in 2007, where it continues to operate as the central online technology platform for Activision games.
+
+Here's some links where you can get the podcast, plus a full transcript.
+
+
 # Podcast
 
-Get it on [Spotify](https://podcasters.spotify.com/pod/show/middleware-files/episodes/Demonware-and-multiplayer-gaming-e2kfrbh),  [Apple](https://podcasts.apple.com/us/podcast/the-middleware-files/id1750258813) or [Google](https://studio.youtube.com/playlist/PL6V7H7cEJ65xRmQUJWMif9zO3chvXz4yd/videos).
+Get it on [Spotify](https://podcasters.spotify.com/pod/show/middleware-files/episodes/Demonware-and-multiplayer-gaming-e2kfrbh),  [Apple](https://podcasts.apple.com/us/podcast/the-middleware-files/id1750258813) or [Google](https://youtu.be/fGuKQIXGaIU).
 
 <div class="audio-container">
     <iframe src="https://podcasters.spotify.com/pod/show/middleware-files/embed" frameborder="0" scrolling="no" ></iframe>
