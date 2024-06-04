@@ -76,7 +76,7 @@ This episode was originally inspired by Mitch Lasky and Blake Robbins' [GameCraf
 
 **Dylan:** So with that extremely technical question, a middleware company was born. 
 
-**Sean:** I remember a question like that and a long pregnant pause and I was like. &quot;There might be something there&quot;. I was thinking about peer-to-peer file sharing networks like Kazaa at the time, which were federated peer-to-peer. Instead of everyone connected to everyone trying to share their Metallica songs or MP3s or whatever, there were super nodes and it was more scalable. We played Quake a lot and Soldier of Fortune and stuff like that back then in the computer labs, LAN games is what existed then, and they were client-server architecture. We also knew, I think of EverQuest. So massively multiplayer games existed back then as well. Just one or two. EverQuest was the big one at the time. That's where we started thinking maybe we could take this file sharing style technology and get rid of these servers. 
+**Sean:** I remember a question like that and a long pregnant pause and I was like. &quot;There might be something there&quot;. I was thinking about peer-to-peer file sharing networks like Kazaa at the time, which were federated peer-to-peer. Instead of everyone connected to everyone trying to share their Metallica songs or MP3s or whatever, there were super nodes and it was more scalable. We played Quake a lot and Soldier of Fortune and stuff like that back then in the computer labs, LAN games is what existed then, and they were client-server architecture. We also knew, I think, of EverQuest. So massively multiplayer games existed back then as well. Just one or two. EverQuest was the big one at the time. That's where we started thinking maybe we could take this file sharing style technology and get rid of these servers. 
 
 **Dylan:** Probably worth stating that at the time, our plan was to build what we ended up calling a network state propagation engine. That's what we thought we were going to build. A distributed network engine that would allow for multiplayer games to not require a dedicated client-server set up. So in theory, 
 
@@ -116,7 +116,7 @@ This episode was originally inspired by Mitch Lasky and Blake Robbins' [GameCraf
 
 **Dylan:** Yeah, it was a time, it was a tough time, wasn't it? That was, it was post-, post- kind of 2001 
 
-**Sean:** Post-bubble. Post-crash. And that was summer of 2003. I was there in my PhD saying, &quot;gee, I didn't think we were gonna succeed at that, but now what do I do?&quot; I, went to my supervisor, and said &quot;we've raised money, we're going, bye&quot; . They all said, &quot;yeah, we're sure you'll come back someday&quot;. That didn't happen. We got an office in middle Abbey street, which was the former worker's party headquarters. As Ian Kehoe described it, &quot;a shabby place&quot;. That summer we moved in and we rewired it ourselves, no, sorry, I should edit that out, we definitely didn't rewire that building ourselves. 
+**Sean:** Post-bubble. Post-crash. And that was summer of 2003. I was there in my PhD saying, &quot;gee, I didn't think we were gonna succeed at that, but now what do I do?&quot; I, went to my supervisor, and said &quot;we've raised money, we're going, bye&quot; . They all said, &quot;yeah, we're sure you'll come back someday&quot;. That didn't happen. We got an office in Middle Abbey Street, which was the former worker's party headquarters. As Ian Kehoe described it, &quot;a shabby place&quot;. That summer we moved in and we rewired it ourselves, no, sorry, I should edit that out, we *definitely* didn't rewire that building ourselves. 
 
 **Dylan:** No, enough time has passed. 20 years. I mean, we absolutely rewired that building. I mean, *you* rewired that building. 
 
@@ -128,12 +128,12 @@ This episode was originally inspired by Mitch Lasky and Blake Robbins' [GameCraf
 
 **Dylan:** You know the big problem, we actually, when you say we installed it up and down, we made the mistake of installing it up rather than installing it down, instead of using gravity to our advantage.
 
-**Sean:** Yeah, yeah, that does sound like us. Yeah, so, first couple of weeks was everyone pitching in, refurbishing the building and wiring it up. Laying carpets, building computers. So actually our workstations are built from scratch because we were frugal and we bought components and we assembled them in the meeting room. Everyone's workstation was a tower PC we built ourselves with a decent graphics card. Initial team, we didn't talk about initial team, but it was a whip around my research lab, plus John Kirk, who'd recently been in a round of layoffs from Havok and Steve Collins tapped us on the shoulder 
+**Sean:** Yeah, yeah, that does sound like us. Yeah, so, first couple of weeks was everyone pitching in, refurbishing the building and wiring it up. Laying carpets, building computers. So actually our workstations were built from scratch because we were frugal and we bought components and we assembled them in the meeting room. Everyone's workstation was a tower PC we built ourselves with a decent graphics card. Initial team, we didn't talk about initial team, but it was a whip around my research lab, plus John Kirk, who'd recently been in a round of layoffs from Havok and Steve Collins tapped us on the shoulder 
 
 **Dylan:** and said ... 
 
 **Sean:** ... if you need anyone, get this guy, he's the best.
-He was in the last and first out layoffs from Havok due to their post dotcom bubble woes. He was the only experienced engineer on the team. And still probably the best programmer I've ever worked with. He professionalized a lot of us and we started building.
+He was in the last-in/first-out layoffs from Havok due to their post-dotcom bubble woes. He was the only experienced engineer on the team. And still probably the best programmer I've ever worked with. He professionalized a lot of us and we started building.
 
 **Dylan:** Mmm. 
 
