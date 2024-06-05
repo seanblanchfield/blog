@@ -43,7 +43,7 @@ A big shoutout to lots of people we mentioned during our chat, many of whom Demo
 - [Paul Hayes](https://x.com/paulhayesman), who introduced us to "guerrilla marketing" and knew to find a driver for a London doubledecker bus in L.A.
 - [Vonderhaar](https://x.com/DavidVonderhaar) for telling Activision to acquire us.
 - [Mitch Lasky](https://x.com/mitchlasky), [Blake Robbins](https://x.com/blakeir) and the [Gamecraft pod](https://gamecraftpod.com/), for inspiring us to record this.
-- [Mitch Davis](https://www.linkedin.com/in/mitchell-davis-7a8247/) ( Massive Inc)
+- [Mitch Davis](https://www.linkedin.com/in/mitchell-davis-7a8247/) (Massive Inc)
 - [Philip Reynolds](https://x.com/philreynolds) and [Stephen McCarron](https://www.linkedin.com/in/stephenmccarron/) for building a great NOC at Hosting365
 - [Ian Kehoe](https://x.com/ipkehoe) for writing about us
 - Everyone who gave money to two tenacious 23-year-olds who thought they should invent new hard networking technology for an industry they had no prior experience in, in 2003 in Ireland, after the dotcom bubble. [Enterprise Ireland](https://www.enterprise-ireland.com/), DBIC's Dublin Seed Capital Fund and private investors like [Kevin Neary](https://x.com/TheKevinNeary).
