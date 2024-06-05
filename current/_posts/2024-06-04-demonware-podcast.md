@@ -41,6 +41,8 @@ This episode was originally inspired by Mitch Lasky and Blake Robbins' [GameCraf
 ---
 **Dylan:** I gotta get like a pic of this just to kick things off. There's some history being made right here.
 
+![Dylan's pic of Sean as the podcast recording begins](/images/2024/06/podcast_photo.jpeg){: .right-half .captioned }
+
 **Dylan:** Let's see if we can assemble the oral history of Demonware, or Demonware up until the Activision acquisition. The bits of the early bits of Demonware we remember. 
 
 **Sean:** And then opinions. 
