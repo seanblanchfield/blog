@@ -32,6 +32,22 @@ Get it on [Spotify](https://podcasters.spotify.com/pod/show/middleware-files/epi
 }
 </style>
 
+# People mentioned
+
+A big shoutout to lots of people we mentioned during our chat, many of whom Demonware wouldn't have happened without.
+
+- The OG demons, for showing us what great looks like: Eoin O'Fearghail, Dave Corcoran, Tilman Schaeffer, John Kirk, Craig McInnes, Rob Synnott, Vlad Titov, Michael Collins, Steffen Higel, Morgan Brickley
+- Art Santos for betting on us
+- Everyone who stayed and joined post-acquisition, and built the company into what it is today.
+-  [Steven Collins](https://www.linkedin.com/in/stevec64/) and [Hugh Reynolds](https://www.linkedin.com/in/hughreynolds/), co-founders of [Havok](https://www.havok.com/) and our early mentors
+- [Paul Hayes](https://x.com/paulhayesman), who introduced us to "guerrilla marketing" and knew to find a driver for a London doubledecker bus in L.A.
+- [Vonderhaar](https://x.com/DavidVonderhaar) for telling Activision to acquire us.
+- [Mitch Lasky](https://x.com/mitchlasky), [Blake Robbins](https://x.com/blakeir) and the [Gamecraft pod](https://gamecraftpod.com/), for inspiring us.
+- [Mitch Davis](https://www.linkedin.com/in/mitchell-davis-7a8247/) ( Massive Inc)
+- [Philip Reynolds](https://x.com/philreynolds) and [Stephen McCarron](https://www.linkedin.com/in/stephenmccarron/) for building a great NOC at Hosting365
+- [Ian Kehoe](https://x.com/ipkehoe) for writing about us
+- Everyone who gave money to two tenacious 23-year-olds who thought they should invent new hard networking technology for an industry they had no prior experience in, in 2003 in Ireland, after the dotcom bubble. [Enterprise Ireland](https://www.enterprise-ireland.com/), DBIC's Dublin Seed Capital Fund and private investors like [Kevin Neary](https://x.com/TheKevinNeary).
+
 # Transcript
 
 **Dylan:**   Hi, I'm Dylan Collins, and you're about to hear a conversation with Sean Blanchfield about the history of Demonware, one of the original video game middleware pioneers that he and I founded in the early 2000s.
@@ -587,11 +603,11 @@ Somehow we ended up in some big shouting match where we dug in and our respectiv
 
 **Dylan:** weird that Sony didn't try and buy us. 
 
-I mean it was interesting, GameSpy ended up being sort of the last standing, ironically of the middleware plays in the multiplayer space. I mean, and then you had things like sort of X-Fire that emerged, which wasn't, which wasn't in the lobby space, but was quite adjacent to all that.
+I mean it was interesting, GameSpy ended up being sort of the last standing, ironically of the middleware plays in the multiplayer space. I mean, and then you had things like sort of Xfire that emerged, which wasn't, which wasn't in the lobby space, but was quite adjacent to all that.
 
 **Sean:** it's kind of like Discord these days. 
 
-**Dylan:** X-Fire was absolutely the precursor to Discord, no doubt. And in fact, at one point we'd had conversations with X-Fire to merge, which would have been extremely interesting. But then two weeks later, X-Fire got acquired by Viacom. 
+**Dylan:** Xfire was absolutely the precursor to Discord, no doubt. And in fact, at one point we'd had conversations with Xfire to merge, which would have been extremely interesting. But then two weeks later, Xfire got acquired by Viacom. 
 
 **Sean:** Who probably killed it. 
 
@@ -625,7 +641,7 @@ You already have all their data. Let them have their data and use it and link up
 
 **Sean:** And there was nowhere to get capital where we were. 
 
-**Dylan:** No. And we didn't know how to pitch what it was. And I absolutely agree. And I think like you could have spun up almost any consumer surface, at that point with exactly the access that you described and I think that there were interesting things to happen. When Jolt got acquired by GameStop, at that point you were involved, right? We were starting to think a bit more like that when we were going into their point of sale systems and looking at like, yeah you know... I think, I think there were definitely some learnings from it, but there have been efforts, sort of like gamer clubs and gamer loyalty platforms and things like that and even though the big things that emerged were essentially like communications platforms like in X-Fire, Discord, Steam... Steam was successful; Steam took a long time to be successful and probably the Valve folks would say really only as a function of the amount of money they were able to throw at it too, which came off the back of Counter Strike and everything else. Right. I think there is, you know...
+**Dylan:** No. And we didn't know how to pitch what it was. And I absolutely agree. And I think like you could have spun up almost any consumer surface, at that point with exactly the access that you described and I think that there were interesting things to happen. When Jolt got acquired by GameStop, at that point you were involved, right? We were starting to think a bit more like that when we were going into their point of sale systems and looking at like, yeah you know... I think, I think there were definitely some learnings from it, but there have been efforts, sort of like gamer clubs and gamer loyalty platforms and things like that and even though the big things that emerged were essentially like communications platforms like in Xfire, Discord, Steam... Steam was successful; Steam took a long time to be successful and probably the Valve folks would say really only as a function of the amount of money they were able to throw at it too, which came off the back of Counter Strike and everything else. Right. I think there is, you know...
 
 **Sean:** It might've been a longer journey. It might've had also had an early exit, but maybe based on a different formula, valuation formula. We would've needed more capital because we were out, right? And our business model, with our shitty pricing we weren't able to scale. We weren't able to grow. We weren't able to continue. We were scared of PlayStation Network, unnecessarily in retrospect, because there was a lot of value still to create on Xbox and on PlayStation, going further, like using Demonware instead of PlayStation Network, doing custom services and a lot of stuff that kept Demonware busy for years after that, despite PlayStation Network and Xbox being given away for free. But, we would have needed another round. 
 
