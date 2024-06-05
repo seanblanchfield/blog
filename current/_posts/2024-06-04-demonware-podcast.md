@@ -42,7 +42,7 @@ A big shoutout to lots of people we mentioned during our chat, many of whom Demo
 -  [Steven Collins](https://www.linkedin.com/in/stevec64/) and [Hugh Reynolds](https://www.linkedin.com/in/hughreynolds/), co-founders of [Havok](https://www.havok.com/) and our early mentors
 - [Paul Hayes](https://x.com/paulhayesman), who introduced us to "guerrilla marketing" and knew to find a driver for a London doubledecker bus in L.A.
 - [Vonderhaar](https://x.com/DavidVonderhaar) for telling Activision to acquire us.
-- [Mitch Lasky](https://x.com/mitchlasky), [Blake Robbins](https://x.com/blakeir) and the [Gamecraft pod](https://gamecraftpod.com/), for inspiring us.
+- [Mitch Lasky](https://x.com/mitchlasky), [Blake Robbins](https://x.com/blakeir) and the [Gamecraft pod](https://gamecraftpod.com/), for inspiring us to record this.
 - [Mitch Davis](https://www.linkedin.com/in/mitchell-davis-7a8247/) ( Massive Inc)
 - [Philip Reynolds](https://x.com/philreynolds) and [Stephen McCarron](https://www.linkedin.com/in/stephenmccarron/) for building a great NOC at Hosting365
 - [Ian Kehoe](https://x.com/ipkehoe) for writing about us
