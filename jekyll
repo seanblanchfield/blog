@@ -68,7 +68,7 @@ elif [[ "$1" == "serve" ]]; then
     docker run --rm -it \
         $VOLUME_MOUNTS \
         $ENV_VARS \
-        --publish [::1]:4000:4000 \
+        --publish 4000:4000 \
         $DOCKER_IMAGE:latest \
         jekyll \
         serve \
