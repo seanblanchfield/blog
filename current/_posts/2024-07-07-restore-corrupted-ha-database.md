@@ -9,7 +9,7 @@ image: /images/2024/07/bad_db.jpeg
 ---
 
 An ungraceful restart of my Home Assistant host left me with a corrupted sqlite3 database. 
-This is the database where Home Assistant core stores the history of all entity state. I could have deleted the old database and started over, but a better solution is to fix it. Here's how I fixed it by SSHing into Home Assistant.
+This is the database where Home Assistant core stores the history of all entity state and long-term statistics, like energy and power readings. I could have deleted the old database and started over, but a better solution is to fix it. Here's how I fixed it by SSHing into Home Assistant.
 
 <!-- more -->
 
@@ -17,7 +17,7 @@ Prerequisites:
 - You are able to SSH into Home Assistant, e.g., using the [SSH &amp; Web Terminal](https://github.com/hassio-addons/addon-ssh) Addon.
 - You have enough free space on your Home Assistant box to temporarily hold the repaired copy of the database. 
 
-## Steps
+## Run the SQLite3 "recover" command on your Home Assistant database
 
 Log into the Home Assistant host via SSH, and change to the `/config` directory.
 
@@ -61,7 +61,8 @@ ha core start
 
 Log into Home Assistant and check everything is okay, e.g., by looking at the system logs and checking that the history of some entities is intact. 
 
-If everything is looking good, you can delete the old corrupted database:
-```bash
-rm home-assistant_v2.db.*.corrupted
-```
+# Still having problems?
+
+If there's still database errors in the logs, you might need to take a more radical approach. I needed to start over with a fresh database, so I wrote a script to import the long term statistics from a backup database that I had.
+
+You can get a copy of the script [over here on Github](https://github.com/seanblanchfield/ha-stats-import).
