@@ -18,11 +18,18 @@ Here's my list of the different things people might actually mean when they say 
 1. **Automation**: Any hardcoded script or automation of the usual variety (e.g. on Zapier, Workato, or other iPaaS or automation platform) that uses an LLM in one of the automation steps to summarise, categorise or extract data. A great step forward for automation, but one small step for AI.
 1. **Agency**: An process that performs generative logic. At each step, the next step to be taken is decided by AI in the moment, and is not hardcoded into a prior script/automation. For example, the agent might prompt its LLM with a tree-of-thought prompt to form a plan of action to resolve a request, and then walk the tree performing associated tool calls until it succeeds. Perhaps this is how Apple Intelligence and Google Astra are coded.
 1. **Async**: A long-lived process that runs in the background doing its own thing (e.g., reacting to external events or waking up on a timer), not just replying to human requests like a chatbot. From another perspective, a long-lived process has memory, while a chatbot doesn't exist when you aren't talking to it. 
+1. **Chatbot**: A chat interface on top of a document store, using something like RAG and vector DBs to answer queries. These are read-only systems, so let's keep on calling them "chatbots", not "agents". 
 1. **Multi-"agent"**: one part of a multi-agent system, which (if considered individually) might be just a chatbot or vector DB that wouldn't be called an "agent" outside of a multi-agent system.
 1. **Anthropomorphic**: anything cute that encourages you to think of it as an assistant, docile colleague or helper. Siri, cortana etc. goes back to Clippy, and prody parrot if you go back that far.
-1. **Self-driving**: A UI Large Action Model that uses a OS or application UIs, replacing human workers on a like-for-like basis. This is cool, but think it will be most useful for legacy applications, and will be a natural extension of RPA
+1. **Self-driving**: A UI Large Action Model that uses a OS or application UIs, replacing human workers on a like-for-like basis. This is cool, but think it will be most useful for legacy applications, and will be a natural extension of RPA.
 
 # Chatbots vs Actbots
 
-To me, the most useful definition is based around tool use and asynchronous long-lived processes that have state. The most simple of these barely deserves new jargon - until recently we called them "scripts". But perhaps the new applications unlocked by generative AI demands a new name. An "agent" is like a chatbot that can do things - most likely by calling an API as well as an LLM, and probably hang around doing useful work even when not chatting to a human.  If the word "agent" seems to be getting your AI conversation in a tangle, I'll suggest you call them "actbots" instead.
+The most simple of these definitions &mdash; automations &mdash; barely deserves new jargon, and I still think of them as automations or scripts.
+
+The most useful definition of "agent" is based on agency and asynchronous long-lived processes that have state. These don't need humans to provide them with hardcoded logic in advance; they figure it out on the fly, constrained only by the tools and the job description they are given. This is transformative. In a personal context it is a useful assistant that lives on your device, but in a business context it means generative business logic. This definitely demands a new name.
+
+An "agent" is like a chatbot that can do things. If the word "agent" seems to be getting your AI conversation in a tangle, I'll suggest you call them "actbots" instead.
+
+These actbot agents - the type that have agency and don't need hardcoded logic - are the ones to watch. This is how human labour will be replaced by AI. Organisations will still have people at desks, but they will also have actbots hanging out on servers, doing work, talking among themselves and interrogating their chatbot cousins, and communicating with humans over email, slack or even voice. If we could start graphing the ratio of human labour to actbot labour over time, from now on it will go up and to the right.
 
