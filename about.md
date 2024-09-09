@@ -5,9 +5,11 @@ title: About Me
 image: /images/2018/12/Sean_square.jpg
 ---
 
-I am a technologist and entrepreneur from Dublin, Ireland.  My most recent company was *PageFair*, where I was CEO and co-founder, helping web publishers stop revenue loss due to adblocking. *PageFair* was acquired by *Blockthrough* in late 2018. Prior to *PageFair*, I was best known as as the technical cofounder of *Demonware*, which pioneered online technology for the world's leading video games, including *Call of Duty* and *Guitar Hero*, and which was acquired by the largest video games company in the world in 2007. I also founded and co-organize *Techpreneurs*, an invite-only monthly meetup for Irish technology founders. 
+I am a technologist and entrepreneur from Dublin, Ireland. I am currently building a new AI agent communications middleware startup called *Jentic*. 
 
-I've been an EIR at the National Digital Research Centre (NDRC) at *Dogpatch Labs* in Ireland since 2023, ran one accelerator cohort there in 2024, and am currently leading AI there. Through my company [Nuium](https://nuium.com) I take on consulting projects here and there, develop some open source and voluntary projects, and spend quite a bit of time on IoT and AI. I have a plan to launch an IoT accelerator and lab, with a focus on B2B climate-tech and agri-tech.
+My most recent company was *PageFair*, where I was CEO and co-founder, helping web publishers stop revenue loss due to adblocking. *PageFair* was acquired by *Blockthrough* in late 2018. Prior to *PageFair*, I was best known as as the technical cofounder of *Demonware*, which pioneered online technology for the world's leading video games, including *Call of Duty* and *Guitar Hero*, and which was acquired by the largest video games company in the world in 2007. I also founded and co-organize *Techpreneurs*, an invite-only monthly meetup for Irish technology founders. 
+
+I was an EIR at the National Digital Research Centre (NDRC) at *Dogpatch Labs* in Ireland from 2023 - 2024, and ran an accelerator cohort there in 2024.
 
 ![](/images/logo_roll.png)
 
