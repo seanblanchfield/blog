@@ -1,10 +1,17 @@
 ---
 layout: default
 ---
-<article class="h-entry"  itemscope itemtype="http://schema.org/BlogPosting">
+<article class="h-entry {% if page.draft %}draft-post{% endif %}" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header  {% if page.image %}style="--featured-image: url('{{ page.image }}');"{% endif %}>
-    <h1 class="p-name"  itemprop="name headline">{{ page.title | escape }}</h1>
+  {% if page.draft %}
+  <div class="draft-watermark">DRAFT</div>
+  {% endif %}
+
+  <header {% if page.image %}style="--featured-image: url('{{ page.image }}');"{% endif %}>
+    <h1 class="p-name" itemprop="name headline">
+      {{ page.title | escape }}
+      {% if page.draft %}<span class="draft-badge">Draft</span>{% endif %}
+    </h1>
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: site.minima.date_format }}

@@ -6,6 +6,69 @@
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
 
+// Draft post styles
+.draft-post {
+  border-top: 4px solid #ffd970;
+  position: relative;
+  background-color: rgba(255, 243, 205, 0.05);
+  
+  &::before {
+    content: "Draft";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.25rem 0.5rem;
+    background: #ffd970;
+    color: #856404;
+    font-size: 0.8rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+}
+
+.draft-badge {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+  background-color: #17a2b8;
+  color: white;
+  margin-left: 0.5rem;
+}
+
+.draft-watermark {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-size: 8rem;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 1;
+  color: #856404;
+}
+
+// Dark theme adjustments
+.dark {
+  .draft-post {
+    background-color: rgba(44, 42, 37, 0.3);
+    border-top-color: #665c33;
+    
+    &::before {
+      background-color: #665c33;
+      color: #ffd970;
+    }
+  }
+  
+  .draft-watermark {
+    color: #665c33;
+  }
+}
+
 // body {
 //     background-color: blue;
 // }
