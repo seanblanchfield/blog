@@ -1,6 +1,6 @@
 ---
 author: Sean Blanchfield
-date: 2025-02-02 12:00:00
+date: 2025-03-01 12:00:00
 layout: post
 link: https://seanblanchfield.com/eu-webpage-act
 slug: eu-webpage-act
@@ -10,7 +10,7 @@ image: /images/2025/02/eu_ai_banner.webp
 
 We are at the dawn of the generative AI revolution - the most significant technological innovation since the World Wide Web, and possibly the most significant ever. AI might be our last innovation, because all future innovations will be invented by AI. 
 
-As I write this, the first provisions of the new EU AI Act have come into force. I welcome the intentions of the EU AI Act, but it creates wide-ranging compliance hurdles for EU businesses at a vital time when we need to embrace the future, or opt out of it. 
+The first provisions of the new EU AI Act recently came into force. I welcome the intentions of the EU AI Act, but it creates wide-ranging compliance hurdles for EU businesses at a vital time when we need to embrace the future, or opt out of it. 
 
 <!-- more -->
 
