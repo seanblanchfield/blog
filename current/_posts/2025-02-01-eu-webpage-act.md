@@ -1,5 +1,4 @@
 ---
-draft: true
 author: Sean Blanchfield
 date: 2025-02-02 12:00:00
 layout: post
