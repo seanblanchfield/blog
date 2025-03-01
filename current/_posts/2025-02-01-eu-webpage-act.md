@@ -2,8 +2,8 @@
 author: Sean Blanchfield
 date: 2025-03-01 12:00:00
 layout: post
-link: https://seanblanchfield.com/eu-webpage-act
-slug: eu-webpage-act
+link: https://seanblanchfield.com/eu-web-act
+slug: eu-web-act
 title: The EU Web Act - an alternative timeline
 image: /images/2025/02/eu_ai_banner.webp
 ---
