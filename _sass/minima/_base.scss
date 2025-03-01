@@ -172,12 +172,14 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $brand-color;
-  border-left: 4px solid $border-color-01;
+  color: #fffec4;
+  background-color: rgba(255, 254, 196, 0.1);
+  border-left: 4px solid #fffec4;
+  padding: 1em;
   padding-left: calc($spacing-unit / 2);
   @include relative-font-size(1.125);
   font-style: italic;
-  font-size: $base-font-size * 0.8;
+  font-size: $base-font-size * 0.95;
 
   > :last-child {
     margin-bottom: 0;
