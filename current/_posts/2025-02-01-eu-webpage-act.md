@@ -12,6 +12,8 @@ We are at the dawn of the generative AI revolution - the most significant techno
 
 As I write this, the first provisions of the new EU AI Act have come into force. I welcome the intentions of the EU AI Act, but it creates wide-ranging compliance hurdles for EU businesses at a vital time when we need to embrace the future, or opt out of it. 
 
+<!-- more -->
+
 Every business that uses AI in the EU will be affected. Any business that uses AI is an "AI deployer", and at a minimum inherits a burden of proof to demonstrate that it is using AI in "low-risk" ways, should have a "voluntary code of conduct" for AI, and have trained its staff in how to use AI in a way that complies with the new regulations. The definition of "low-risk" AI is ambigous, and I understand that a proper legal analysis will likely cost more than €200k in Ireland right now. Although the average business probably won't be in the crosshairs of regulatory enforcement any time soon, it will be exposed to civil litation, and its suppliers will demand indemnity against the catastrophic level of enforcement that the AI Act threatens. Many businesses will avoid using AI as a result.
 
 I've tried to understand the EU AI Act during the last 2 months, and I am very concerned. To illustrate this, I've imagined an alternate history in which the EU greeted the dawn of the web with a 1995 Web Act, transposed from the EU AI Act.  I wrote this post to explore that thought experiment.
