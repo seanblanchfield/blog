@@ -85,7 +85,7 @@ The uncomfortable truth is your product wasn't designed for an AI-intermediated 
 
 - *Does AI really need your API?* Even if your naked APIs add some value, you need to ask whether it's enough. In many cases, AI can just solve a problem internally, whether by generating some once-off code, or thinking through the logic of a problem, or doing an end-run around you and going direct to your source data (e.g,. using a agent to monitor multiple markets for price changes).
 
-- *Where is your moat?* Competitive barriers or moats used to be so easy to understand: technical complexity, network effects, data. What's left? Technical complexity is gone. Network effects will likely be dismantled by user-side agents that can be in multiple marketplaces or social networks simultaneously. Data is good if its really proprietary and valuable and non-synthesizable, and monetizing it doesn't involve giving it away (but how often is that the case?).  What's left is the leaky moats of regulatry barriers and maybe brand loyalty. But in nearly every case, that expensively-build competitive moat is about to be easily crossed by AI native competitors.
+- *Where is your moat?* Competitive barriers or moats used to be so easy to understand: technical complexity, network effects, data. What's left? Technical complexity is gone. Network effects will likely be dismantled by user-side agents that can be in multiple marketplaces or social networks simultaneously. Data is good if it's truly proprietary and valuable and non-synthesizable, and monetizing it doesn't involve giving it away... but how often is that the case?  What's left is the leaky moats of regulatory barriers and maybe brand loyalty. But in nearly every case, that expensively-built competitive moat is about to be easily crossed by AI native competitors.
 
 If you're sweating, that simply means you understand what's at stake.
 
@@ -95,7 +95,7 @@ If you're sweating, that simply means you understand what's at stake.
 
 ### Market Disruption Analysis
 
-Some markets will explode with AI as a catalyst. Others will simply implode. Which category do your customers fall into?  I'm thinking of a certain SaaS conference in which hundreds of VC-backed SaaS company meet to sell SaaS software to other SaaS companies, keeping the same VC dollars flowing in an infinite circle of apparently increasing revenue. Sounds like something that could unwind kind of quickly.
+Some markets will explode with AI as a catalyst. Others will simply implode. Which category do your customers fall into?  I'm thinking of a certain SaaS conference in which hundreds of VC-backed SaaS companies meet to sell SaaS software to other SaaS companies, keeping the same VC dollars flowing along a Möbius strip of apparently increasing enterprise value. Sounds like something that could unwind kind of quickly.
 
 Vulnerable customers might be those whose:
 - Primary value proposition is providing or assisting human labor that can be automated
