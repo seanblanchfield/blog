@@ -51,7 +51,7 @@ What does an AI-native organization look like? It's one where:
 
 ### Automation
 
-**Software Development**: Your developers should be directing AI, not writing code. All software should be AI-generated with human oversight tapering as the tools get better. The productivity gap between AI-augmented developers and traditional coders isn't 2x or 3x—it's orders of magnitude.
+**Software Development**: Your developers should be directing AI, not writing code. All software should be AI-generated with human oversight tapering as the tools get better. The productivity gap between AI-augmented developers and traditional coders incremental - it's probably orders of magnitude.
 
 **Customer Support**: Intercom reports their AI agent Fin achieves a [52% resolution rate](https://community.intercom.com/fin-ai-agent-59/what-is-your-fin-success-rate-8841#:~:text=According%20to%20Intercom%2C%20Fin's%20average%20resolution%20rate%20is%2052%25.)—and that's just the beginning. L1 and L2 support tiers should be entirely AI-driven, with humans handling only the most complex edge cases (and even then, only handling them once).
 
@@ -61,11 +61,11 @@ What does an AI-native organization look like? It's one where:
 
 ### Life after SaaS
 
-The multi-vendor SaaS stack will be a relic. Most SaaS is a UIs to help people do CRUD on DBs (create-read-update-delete on databases) The cloud era and the corresponding SaaS boom has given us thousands of SaaS data silos tailored to the particular needs of different workers in different industries.  What happens when the human isn't doing that workflow any more?  AI doesn't need help using a database.
+The multi-vendor SaaS stack will be a relic. Most SaaS is a UI to help people do CRUD on DBs (create-read-update-delete on databases) The cloud era and the corresponding SaaS boom has given us thousands of SaaS data silos tailored to the particular needs of different workers in different industries.  What happens when the human isn't doing that workflow any more?  AI doesn't need help using a database.
 
 AI-native companies are building bespoke AI-generated super apps that can handle everything from CRM to project management to analytics in one self-hosted postgres database. They'll never need data lakes, because they are staring with data monoliths. Having all the data in one well-structured place, combined with AI coders ready to analyse and build, will unlock unexpected new capabilities for them.
 
-In a way, generative AI's coding ability means that every small company can have it's own customised, free ERP system that adapts to their requirements instantly as they group. 
+In a way, generative AI's coding ability means that every small company can have it's own customised, free ERP system that adapts to their requirements instantly as they grow. 
 
 ---
 
