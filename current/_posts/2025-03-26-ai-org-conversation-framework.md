@@ -131,7 +131,7 @@ Set up peer groups interested in AI to compare notes, join meetups, discords and
 
 The AI and agentic field is still early, and strewn with obstacles to enterprise adoption. Here are some of the key challenges you'll need to navigate. Go through the list and rank them for your organisation. Then you'll have a list that you can monitor progress on, and gauge when the time is right to pull the trigger on full-scale adoption.
 
-- **Reliability and consistency**: AI systems still produce inconsistent outputs and occasional hallucinations. Implementing robust evaluation frameworks and quality assurance processes is essential.
+- **Reliability and consistency**: AI systems still produce inconsistent outputs and occasional hallucinations. The new paradigm replaces rigorous design with empirical evaluation.
 
 - **Authentication, permissions, and data governance**: This is what we're solving at [Jentic](https://jentic.com): ensuring AI systems access only the data they should, with appropriate permissions and auditability.
 
@@ -145,9 +145,9 @@ The AI and agentic field is still early, and strewn with obstacles to enterprise
 
 - **Data privacy concerns**: AI systems can inadvertently memorize and regurgitate sensitive information hidden in their latent space.
 
-- **Fairness and bias**: Without careful design, AI systems perpetuate and amplify existing biases, including over-representing and under-representing certain groups or events. 
+- **Fairness and bias**: Without careful design, AI systems perpetuate and amplify existing biases, including over-representing and under-representing certain groups,  events and stereotypes. 
 
-- **Explainability**: Black-box decision-making creates liability and erodes trust. Agentic approaches that provide reasoning and action traces offer a partial solution.
+- **Explainability**: Black-box decision-making creates liability and erodes trust. Agentic approaches that provide reasoning and action traces should offer a solution.
 
 Addressing these challenges isn't just about risk mitigation—it's about creating sustainable competitive advantage through responsible AI adoption.
 
@@ -163,7 +163,7 @@ Start these conversations now:
 - Which parts of our value chain are most vulnerable to AI disruption?
 - How can we turn AI from a threat into our greatest competitive advantage?
 
-The answers won't be comfortable, but comfort is a luxury none of us can afford in this new world where software is approximately free and change happens at machine speed.
+The answers won't be comfortable, but comfort is in short supply these days.
 
 The future belongs to those who adapt fastest. Will that be you?
 
