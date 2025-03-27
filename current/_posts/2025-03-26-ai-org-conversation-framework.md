@@ -51,7 +51,7 @@ What does an AI-native organization look like? It's one where:
 
 ### Automation
 
-**Software Development**: Your developers should be directing AI, not writing code. All software should be AI-generated with human oversight tapering as the tools get better. The productivity gap between AI-augmented developers and traditional coders incremental - it's probably orders of magnitude.
+**Software Development**: Your developers should be directing AI, not writing code. All software should be AI-generated with human oversight tapering as the tools get better. The productivity gap between AI-augmented developers and traditional coders isn't incremental - it's probably orders of magnitude.
 
 **Customer Support**: Intercom reports their AI agent Fin achieves a [52% resolution rate](https://community.intercom.com/fin-ai-agent-59/what-is-your-fin-success-rate-8841#:~:text=According%20to%20Intercom%2C%20Fin's%20average%20resolution%20rate%20is%2052%25.)—and that's just the beginning. L1 and L2 support tiers should be entirely AI-driven, with humans handling only the most complex edge cases (and even then, only handling them once).
 
@@ -105,7 +105,7 @@ The opportunity lies not just in riding these waves but in identifying the secon
 
 ### The Changing Buyer
 
-What if your buyer's job is automated out of existence? Worse, what if your product plus AI means that you're the one doing it?
+What if your buyer's job is automated out of existence? Worse, what if your new AI product means that you're the one doing it?
 
 Many products are sold to roles that AI will eliminate first: analysts, administrative assistants, junior developers, content creators, customer support managers. When your buyer persona vanishes, who makes the purchasing decisions?
 
@@ -124,7 +124,7 @@ The answer is usually "someone higher up the chain". Executives who care less ab
 
 Current AI capabilities are both more and less impressive than the hype suggests. Get as many people in the organisation (including the C-suite) using it on a day-to-day basis so they understand the strengths and limitations, and so you can have a real conversation about the meaning of the month-over-month advancements that are unlocking new applications. 
 
-Set up peer groups interested in AI to compare notes, join meetups, discords and slacks, and identify mailing lists that help you keep track (I like [this smol one](https://buttondown.com/ainews)). Most importantly, constantly ask yourself "Should I still do this task this way, or should I AI it?".
+Set up peer groups interested in AI to compare notes, join meetups, discords and slacks, and identify mailing lists that help you keep track (I like [this smol one](https://buttondown.com/ainews)). Most importantly, constantly ask yourself "*Should I still do this task this way, or should I AI it?*".
 
 
 ### Track your adoption blockers
