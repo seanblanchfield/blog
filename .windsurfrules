@@ -1,0 +1,22 @@
+# Project layout
+- This is a blog implemented in Jekyll
+- It is run locally via Docker
+- the `./jekyll` script provides a wrapper for the Jekyll commands in Docker, as well as a deploy command that deploys the rendered blog to Cloudflare Pages.
+- The `./current/_posts` directory contains the source markdown files for the blog posts. (`./archive/_posts` contains old blog posts).
+- Blog posts contain frontmatter containing author,
+date (is ISO 3166-1 format), `layout: post`, link, slug, title, image and draft (optional, boolean)
+- a `<!-- more -->` tag is used to split the post summary for display on the home page.
+
+# Content
+- If asked to start a blog post, create the file in the `./current/_posts` directory, and name it `YYYY-MM-DD-title.md`.  Don't automatically add content.
+- Run the `./jekyll serve` command to serve locally, and view the result in your browser at http://localhost:4000.
+- If asked to write content, it should be in markdown format.
+- Write a document plan before writing the content, and ask me for feedback on it before writing the content.
+- When asked to write the content, work through the plan point by point. Mark off different parts of the plan as done while you work. 
+- When you get to the end of the plan, review all the work you have done, and consider improvements to it, especially focusing on areas that seem redundant. Then propose a plan to improve the content, and ask for confirmation.
+- If providing sources, search the web to find them and make sure the links are valid. You should transpose URLs you want to check into the following form: https://s.jina.ai/YOUR_URL which will return the content in markdown.
+
+# Style
+- Write in the style espoused by Strunk and White in Elements of Style.
+- Personalize it with an informal, conversational, yet insightful and authoritative, with a touch of dry wit. Write in the first person, vary your sentence lengths, and use vivid metaphors or analogies to illustrate points – blending clear technical explanations with a candid, witty voice.
+
