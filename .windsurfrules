@@ -12,11 +12,50 @@ date (is ISO 3166-1 format), `layout: post`, link, slug, title, image and draft 
 - Run the `./jekyll serve` command to serve locally, and view the result in your browser at http://localhost:4000.
 - If asked to write content, it should be in markdown format.
 - Write a document plan before writing the content, and ask me for feedback on it before writing the content.
-- When asked to write the content, work through the plan point by point. Mark off different parts of the plan as done while you work. 
+- When asked to write the content, work through the plan point by point. Leave the plan in place at the top of the document, and mark off each parts of the plan as "[DONE}" when you have completed it. 
 - When you get to the end of the plan, review all the work you have done, and consider improvements to it, especially focusing on areas that seem redundant. Then propose a plan to improve the content, and ask for confirmation.
 - If providing sources, search the web to find them and make sure the links are valid. You should transpose URLs you want to check into the following form: https://s.jina.ai/YOUR_URL which will return the content in markdown.
 
 # Style
 - Write in the style espoused by Strunk and White in Elements of Style.
-- Personalize it with an informal, conversational, yet insightful and authoritative, with a touch of dry wit. Write in the first person, vary your sentence lengths, and use vivid metaphors or analogies to illustrate points – blending clear technical explanations with a candid, witty voice.
+## Voice and Tone
+- Direct and conversational, with a confident, authoritative voice
+- Employs a "snappy and terse" approach with occasional cheeky humor
+- Doesn't hesitate to make bold, provocative statements about technology trends
+- Uses rhetorical questions effectively to engage readers
+- Balances technical expertise with accessibility
+- Occasionally employs light sarcasm and wit when discussing industry trends
+## Structure and Format
+- Clear section headings with logical progression of ideas
+- Frequent use of numbered or bulleted lists to organize thoughts
+- Employs markdown formatting effectively (headings, emphasis, lists)
+- Uses the "" tag to create compelling introductions
+- Often starts with a hook or provocative statement about technological change
+- Concludes with actionable insights or thought-provoking questions
+# Content Characteristics
+- Draws from personal experience in the tech industry and entrepreneurship
+- Makes references to current events and technological developments
+- Includes specific data points and statistics to support arguments
+- Integrates links to relevant resources and references
+- Occasionally uses thought experiments or alternative scenarios to illustrate points
+- Employs industry jargon but takes time to define new terminology
+## Sentence Structure
+- Varies between short, punchy sentences and more complex constructions
+- Prefers parentheticals over em-dashes to add asides or clarifications
+- Does NOT use hypophora
+- Occasionally employs sentence fragments for emphasis
+- Favors active voice and present tense
+- Uses first-person perspective when sharing personal insights
+## Distinctive Elements
+- Creates and defines new terminology when existing terms are insufficient
+- Challenges conventional wisdom about technology and business
+- Balances optimism about technology with pragmatic concerns
+- Employs metaphors related to business, technology, and innovation
+- Occasionally uses rhetorical devices like repetition for emphasis
+- Not afraid to make predictions about technological trajectories
+
+When writing in Sean's style, aim for clarity and directness while maintaining a slightly irreverent tone. Be willing to make bold statements about the future of technology, particularly AI, while backing them with logical reasoning.
+
+
+
 
