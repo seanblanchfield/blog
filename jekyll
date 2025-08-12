@@ -30,7 +30,7 @@ fi
 if [[ "$1" == "docker_build" ]]; then
     docker build . -t $DOCKER_IMAGE --no-cache
 elif [[ "$1" == "shell" ]]; then
-    docker run --rm  -it \
+    docker run --rm  -i \
         $VOLUME_MOUNTS  \
         $ENV_VARS \
         --entrypoint="bash" \
@@ -38,11 +38,11 @@ elif [[ "$1" == "shell" ]]; then
 
 elif [[ "$1" == "deploy" ]]; then
     echo_green "Rebuilding site..."
-    docker run --rm  -it \
+    docker run --rm \
         $VOLUME_MOUNTS  \
         $ENV_VARS \
         $DOCKER_IMAGE:latest \
-        jekyll build
+        bash -c "bundle install && bundle exec jekyll build"
 
     if [[ -n "$(git status --porcelain )" ]]; then
         echo_green "Committing and pushing changes"
@@ -65,15 +65,12 @@ elif [[ "$1" == "deploy" ]]; then
 
 elif [[ "$1" == "serve" ]]; then
     echo_green "Serving locally..."
-    docker run --rm -it \
+    docker run --rm \
         $VOLUME_MOUNTS \
         $ENV_VARS \
         --publish 4000:4000 \
         $DOCKER_IMAGE:latest \
-        jekyll \
-        serve \
-        --host \
-        0.0.0.0
+        bash -c "bundle install && bundle exec jekyll serve --host 0.0.0.0"
 
 else
     docker run --rm -it \
