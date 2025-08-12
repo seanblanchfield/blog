@@ -4,7 +4,7 @@ date: 2025-08-12 10:00:00
 layout: post
 link: https://seanblanchfield.com/techireland-national-ai-challenge-2025-keynote
 slug: techireland-national-ai-challenge-2025-keynote
-title: TechIreland National AI Cahllenge 2025
+title: TechIreland National AI Challenge 2025
 image: /images/2025/08/techireland-national-ai-challenge-2025-keynote.jpg
 ---
 
