@@ -2,20 +2,20 @@
 author: Sean Blanchfield
 date: 2025-08-12 10:00:00
 layout: post
-link: https://seanblanchfield.com/irish-national-ai-championship-2025-keynote
-slug: irish-national-ai-championship-2025-keynote
-title: Irish National AI Championship 2025
-image: /images/2025/08/irish-national-ai-championship-2025-keynote.jpg
+link: https://seanblanchfield.com/techireland-national-ai-challenge-2025-keynote
+slug: techireland-national-ai-challenge-2025-keynote
+title: TechIreland National AI Cahllenge 2025
+image: /images/2025/08/techireland-national-ai-challenge-2025-keynote.jpg
 ---
 
-I was invited to kick off the Irish national AI championship 2025, supported by Google and OpenAI, with 500 contestants from around Ireland on an intensive 2-week sprint to build innovative AI applications. In this keynote I focus on reflections from our journey so far in [Jentic](https://jentic.com), trying to build the AI-native way, and thoughts on what to build in a world where SaaS is dead, the app layer gets steamrolled, yet a world of opportunities exist.
+I was invited to kick off the *TechIreland National AI Challenge 2025*, supported by Google and OpenAI, with 500 contestants from around Ireland on an intensive 2-week sprint to build innovative AI applications. In this keynote I focus on reflections from our journey so far in [Jentic](https://jentic.com), trying to build the AI-native way, and thoughts on what to build in a world where SaaS is dead, the app layer gets steamrolled, yet a world of opportunities exist.
 
 
 <!-- more -->
 
 More about [Jentic](https://jentic.com).
 
-More about the [Irish National AI Challenge](https://techireland.org/).
+More about the [TechIreland National AI Challenge](https://www.eventbrite.ie/e/national-ai-challenge-2025-tickets-1444112622729?aff=oddtdtcreator).
 
 Here's a video of the keynote, or feel free to scroll downfor a transcript.
 
