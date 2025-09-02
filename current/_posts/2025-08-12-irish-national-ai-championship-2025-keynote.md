@@ -5,7 +5,8 @@ layout: post
 link: https://seanblanchfield.com/techireland-national-ai-challenge-2025-keynote
 slug: techireland-national-ai-challenge-2025-keynote
 title: TechIreland National AI Challenge 2025
-image: /images/2025/08/techireland-national-ai-challenge-2025-keynote.jpg
+image: /images/2025/09/shipitcon-2025-keynote.jpeg
+
 ---
 
 I was invited to kick off the *[TechIreland](https://techireland.org/) National AI Challenge 2025*, supported by Google and OpenAI, with 500 contestants from around Ireland on an intensive 2-week sprint to build innovative AI applications. In this keynote I focus on reflections from our journey so far in [Jentic](https://jentic.com), trying to build the AI-native way, and thoughts on what to build in a world where SaaS is dead, the app layer gets steamrolled, yet a world of opportunities exist.
