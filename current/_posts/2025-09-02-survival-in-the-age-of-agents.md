@@ -5,7 +5,7 @@ layout: post
 link: https://seanblanchfield.com/survival-in-the-age-of-agents-keynote
 slug: survival-in-the-age-of-agents-keynote
 title: ShipItCon 2025 Keynote -Survival in the Age of Agents
-image: https://github.com/seanblanchfield/blog/blob/main/images/2025/09/shipitcon/full/shipitcon-59.jpg?raw=true
+image: /images/2025/09/shipitcon/thumbnails/ShipitCon-59.jpg
 ---
 
 I kicked off [ShipItCon 2025](https://shipitcon.com/) with a keynote on titled *Survival in the Age* of Agents. Boy, did I try to pack a lot in - lessons we've learned in Jentic from the middle of the AI agents frontier over the last year, what an AI native company is, what it means for the future of employment and economies, what small countries can do, and what Europe needs to do to try to get in the room where it happens.
