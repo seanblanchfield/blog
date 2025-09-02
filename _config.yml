@@ -51,6 +51,5 @@ exclude:
   - Dockerfile
   - jekyll
   - nginx
-  - 'images/2025/09/shipitcon/*.jpg'
 
 
