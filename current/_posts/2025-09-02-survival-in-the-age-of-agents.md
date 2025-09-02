@@ -5,10 +5,10 @@ layout: post
 link: https://seanblanchfield.com/survival-in-the-age-of-agents-keynote
 slug: survival-in-the-age-of-agents-keynote
 title: ShipItCon 2025 Keynote -Survival in the Age of Agents
-image: /images/2025/09/shipitcon-2025-keynote.jpeg
+image: /images/2025/09/shipitcon/shipitcon-59.jpg
 ---
 
-I kicked off ShipItCon 2025 with a keynote on titled *Survival in the Age* of Agents. Boy, did I try to pack a lot in - lessons we've learned in Jentic from the middle of the AI agents frontier over the last year, what an AI native company is, what it means for the future of employment and economies, what small countries can do, and what Europe needs to do to try to get in the room where it happens.
+I kicked off [ShipItCon 2025](https://shipitcon.com/) with a keynote on titled *Survival in the Age* of Agents. Boy, did I try to pack a lot in - lessons we've learned in Jentic from the middle of the AI agents frontier over the last year, what an AI native company is, what it means for the future of employment and economies, what small countries can do, and what Europe needs to do to try to get in the room where it happens.
 
 <!-- more -->
 
@@ -37,6 +37,57 @@ Video here, and transcript below.
 
 <div class="video-container">
     <iframe class="video" src="https://www.youtube-nocookie.com/embed/mvEbXaT6My8?si=Awv_aZVps-jltqYu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<style>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+.gallery a {
+  display: block;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+</style>
+
+### Gallery
+
+<div class="gallery">
+  <a href="/images/2025/09/shipitcon/ShipitCon-50.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-50.jpg" alt="ShipitCon-50"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-51.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-51.jpg" alt="ShipitCon-51"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-55.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-55.jpg" alt="ShipitCon-55"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-58.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-58.jpg" alt="ShipitCon-58"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-59.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-59.jpg" alt="ShipitCon-59"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-60.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-60.jpg" alt="ShipitCon-60"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-62.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-62.jpg" alt="ShipitCon-62"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-65.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-65.jpg" alt="ShipitCon-65"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-67.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-67.jpg" alt="ShipitCon-67"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-69.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-69.jpg" alt="ShipitCon-69"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-74.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-74.jpg" alt="ShipitCon-74"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-75.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-75.jpg" alt="ShipitCon-75"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-76.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-76.jpg" alt="ShipitCon-76"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-77.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-77.jpg" alt="ShipitCon-77"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-78.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-78.jpg" alt="ShipitCon-78"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-79.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-79.jpg" alt="ShipitCon-79"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-190.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-190.jpg" alt="ShipitCon-190"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-192.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-192.jpg" alt="ShipitCon-192"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-255.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-255.jpg" alt="ShipitCon-255"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-256.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-256.jpg" alt="ShipitCon-256"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-265.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-265.jpg" alt="ShipitCon-265"></a>
+  <a href="/images/2025/09/shipitcon/ShipitCon-266.jpg"><img src="/images/2025/09/shipitcon/thumbnails/ShipitCon-266.jpg" alt="ShipitCon-266"></a>
 </div>
 
 ## **Introduction and Background**
