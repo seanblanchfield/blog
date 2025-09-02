@@ -177,9 +177,9 @@ Machines may eventually catch up to us as they get trained better for robotics, 
 
 ## **System 3 Thinking: The Human Advantage**
 
-Another thing that AI doesn't have is flashes of insight or eureka moments. My friend, the entrepreneur and thinker Mark Cummins, has proposed that we might call this System 3 thinking.
+Another thing that AI doesn't have is flashes of insight or eureka moments. My friend, the entrepreneur and thinker Mark Cummins, has [proposed that we might call this System 3 thinking](https://www.educatingsilicon.com/2025/04/23/system-3-thinking/).
 
-For those who missed the famous book "*Thinking, Fast and Slow”*, by Kahneman & Tversky, System 1 thinking is about the reflexive and instant response  \- I say “cloud” you say “rain”. And System 2 thinking is the deliberate and explicit step-by-step logical thought that we can do \- what’s 87 multiplied by 3? LLMs are like pure System 1\. You ask them a question, they give you an immediate hot take. And thinking models, which use chain of thought reasoning, are an analogue for System 2\.
+For those who missed the famous book "*[Thinking, Fast and Slow”](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)*, by Kahneman & Tversky, System 1 thinking is about the reflexive and instant response  \- I say “cloud” you say “rain”. And System 2 thinking is the deliberate and explicit step-by-step logical thought that we can do \- what’s 87 multiplied by 3? LLMs are like pure System 1\. You ask them a question, they give you an immediate hot take. And thinking models, which use chain of thought reasoning, are an analogue for System 2\.
 
 But System 3 is where you can make this non-linear jump, sometimes after incubating a problem in your head for a very long time. Perhaps we are somehow fine-tuning our own neural nets over a month of pondering and sleeping on it. But whatever it is, I think we can all agree that if LLMs existed 110 years ago when Einstein was devising his theories, they would never have come up with the idea that what we perceive as gravity is really just shortest-path motion in a space-time field warped by mass. Only Einstein could look at it that way. LLMs would never have got there.
 
