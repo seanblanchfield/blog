@@ -53,7 +53,7 @@ elif [[ "$1" == "deploy" ]]; then
     fi
 
     echo_green "Deploying site..."
-    docker run --rm \
+    echo docker run --rm \
         -v $COMMON_SCRIPT_DIR/public:/public \
         --env-file=.env \
         jez500/wrangler:latest \
