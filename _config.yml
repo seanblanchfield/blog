@@ -51,6 +51,6 @@ exclude:
   - Dockerfile
   - jekyll
   - nginx
-  - '**/shipitcon/*.jpg'
+  - 'images/2025/09/shipitcon/*.jpg'
 
 
