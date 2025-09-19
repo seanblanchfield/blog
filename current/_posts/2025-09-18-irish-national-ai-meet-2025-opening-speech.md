@@ -8,7 +8,7 @@ title: Irish National AI Meet 2025 opening speech
 image: /images/2025/09/national_ai_meet/cover.jpg
 ---
 
-Opening speech for the Irish National AI Meet 2025, given on 18th September 2025 in the Galmont Hotel in Galway. I offered my viewpoint on how AI is reshaping work, business, society — and why Ireland must quickly choose between merely consuming of foreign technologies, or vigorously participating in the future economy and pragmatically leading Europe’s AI future.
+Opening speech for the Irish National AI Meet 2025, given on 18th September 2025 in the Galmont Hotel in Galway. I offered my viewpoint on how AI is reshaping work, business, society — and why Ireland must quickly choose between merely consuming foreign technologies, or vigorously participating in the future economy and pragmatically leading Europe’s AI future.
 
 
 <!-- more -->
@@ -50,7 +50,7 @@ Many would say that we've left the information age and entered the generative ag
 
 ![](/images/2025/09/national_ai_meet/slide-03.jpg)
 
-And it’s moving faster than anything we’ve ever seen. ChatGPT launched in November 2022\. Now, not quite three years later, some AI models are touching genius level on the mensa IQ test. They are already outperforming PhDs in some specialist fields. At this pace, AIs might well surpass all PhDs before anyone starting a doctorate today can do their viva.
+And it’s moving faster than anything we’ve ever seen. ChatGPT launched in November 2022\. Now, not quite three years later, some AI models are touching genius level on the Mensa IQ test. They are already outperforming PhDs in some specialist fields. At this pace, AIs might well surpass all PhDs before anyone starting a doctorate today can do their viva.
 
 That should make every policymaker, every business leader, and frankly every citizen sit up straight.
 
@@ -126,7 +126,7 @@ AI craves clean, cheap, renewable energy. We have it, but we need to deliver it.
 
 We can fix this. We need to accelerate wind, overhaul planning, add storage, build interconnectors. We need to cut across departments and make this happen. And we need as a society to be able to talk about nuclear and evaluate modular nuclear reactors.
 
-The fundamental input into AI is energy. We can be a leader by hosting AI infrastructure on clean Irish energy. AI creates a strong economic alignment to build this infrastructure for the first time . We just need to facilitate it instead of blocking it.  
+The fundamental input into AI is energy. We can be a leader by hosting AI infrastructure on clean Irish energy. AI creates a strong economic alignment to build this infrastructure for the first time. We just need to facilitate it instead of blocking it.  
  
 
 But infrastructure isn’t only about steel and copper. It’s also about rules. Ireland has a chance to stand out by creating a regulatory environment that is clear, pragmatic, and supportive. I doubt this will be solely solved by any “sandbox” that is operated by a regulatory body. Let’s let the regulators focus on policing compliance, and provide separate and abundant support to our own companies and to others that want to grow in Ireland.  Let’s recognise that the EU’s instinct to “lead by regulation,” tends to inadvertently shackle our own innovators while doing little to restrain global giants. Ireland can show a better path: regulatory clarity coupled with proactive support.
@@ -161,16 +161,16 @@ So what do we do? Three things.
 
 ![](/images/2025/09/national_ai_meet/slide-16.jpg)
 
-1. **1. Establish an permanent body responsible for driving AI.** An AI strategic agency, or even a Department of AI. Not an advisory group of volunteers like the one I sit on, and not a regulator. A resourced body designed to help coordinate a whole-of-government plan to drive responsible but rapid AI adoption throughout the economy and society, ranging from energy to education to enterprise.
+1. **Establish a permanent body responsible for driving AI.** An AI strategic agency, or even a Department of AI. Not an advisory group of volunteers like the one I sit on, and not a regulator. A resourced body designed to help coordinate a whole-of-government plan to drive responsible but rapid AI adoption throughout the economy and society, ranging from energy to education to enterprise.
 
-2. **2. Create an AI Observatory.** Real-time leading indicators, not trailing data delivered years too late. Track how AI is impacting jobs, capital flows, education, security in the sectors that are affected first — and give policymakers the facts as they happen.
+2. **Create an AI Observatory.** Real-time leading indicators, not trailing data delivered years too late. Track how AI is impacting jobs, capital flows, education, security in the sectors that are affected first — and give policymakers the facts as they happen.
 
-3. **3. Lead by Convening.** In July 2026, we will assume the EU Presidency. That’s our moment to host an international AI summit here in Ireland — bringing together the leader of the global tech firms who call Ireland a second home, and the political leadership of Europe. We can set the agenda for how Europe responds to AI — on energy, security, education, and democracy.
+3. **Lead by Convening.** In July 2026, we will assume the EU Presidency. That’s our moment to host an international AI summit here in Ireland — bringing together the leader of the global tech firms who call Ireland a second home, and the political leadership of Europe. We can set the agenda for how Europe responds to AI — on energy, security, education, and democracy.
 
 
 ---
 
-Ireland knows how to reinvented itself. From a poor, protectionist backwater to a global tech hub — we know how to create opportunity for ourselves.
+Ireland knows how to reinvent itself. From a poor, protectionist backwater to a global tech hub — we know how to create opportunity for ourselves.
 
 Now we face a new existential challenge \- both as a small nation, and as a global voice in the EU.
 
