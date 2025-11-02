@@ -233,7 +233,7 @@ display_driveway_pip_popup_on_tv:
   alias: Display Driveway PIP Popup on TV
   mode: single
   variables:
-    link_id: '{% for _ in range(40) %}{{ range(10)|random }}{% endfor %}'
+    link_id: "0{% for _ in range(39) %}{{ range(10)|random }}{% endfor %}"
   sequence:
   - service: webrtc.create_link
     data:
