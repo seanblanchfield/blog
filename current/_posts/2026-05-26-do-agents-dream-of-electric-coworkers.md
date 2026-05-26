@@ -10,11 +10,6 @@ draft: false
 categories: [ai, agents]
 ---
 
-![Do Agents Dream of Electric Coworkers?](/images/2026/05/do-agents-dream-of-electric-coworkers.jpg)
-
-*Co-authored with my agent*
-
-
 I've been running a single AI agent for everything. It handles my calendar, my email, my home automation, the infrastructure for a VPS, our CRM pipeline — all of it, one workspace, one context.
 
 The multi-agent crowd would tell you this is naive. Their pitch, stripped down, is that you should map your AI system onto your human org chart like-for-like: an agent (or a multi-agent system) for every role, a team structure that mirrors the one you already have. Build your AI team the way you'd build a human team.
