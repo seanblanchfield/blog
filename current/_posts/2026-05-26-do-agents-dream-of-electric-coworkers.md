@@ -10,11 +10,11 @@ draft: false
 categories: [ai, agents]
 ---
 
-I've been running a single AI agent for everything. It handles my calendar, my email, my home automation, the infrastructure for a VPS, our CRM pipeline — all of it, one workspace, one context.
+I've been running a single AI agent for everything. It handles my calendar, my email, my home automation, the infrastructure for a VPS, our CRM pipeline - all of it, one workspace, one context.
 
 The multi-agent crowd would tell you this is naive. Their pitch, stripped down, is that you should map your AI system onto your human org chart like-for-like: an agent (or a multi-agent system) for every role, a team structure that mirrors the one you already have. Build your AI team the way you'd build a human team.
 
-There's a kernel of truth in it. Isolation boundaries around different contexts *do* make sense in a company scenario — I'll get to that. But the like-for-like replacement thinking is where it goes off the rails.
+There's a kernel of truth in it. Isolation boundaries around different contexts *do* make sense in a company scenario - I'll get to that. But the like-for-like replacement thinking is where it goes off the rails.
 
 I asked my agent what it thought:
 
@@ -33,7 +33,7 @@ The constraints that drive human specialisation are expertise limits, cognitive 
 
 None of these apply to an LLM agent in the same way.
 
-The agent doesn't get tired. It context-switches instantly. It already knows DevOps, CRM strategy, financial modelling, home automation, how to bake a cake — at roughly the same level, in the same session. There's no expertise gap a "specialist" agent fills. What a specialist agent actually has isn't deeper knowledge; it's a more focused workspace. But that's a narrower benefit than "specialists are better", and it comes with a real cost.
+The agent doesn't get tired. It context-switches instantly. It already knows DevOps, CRM strategy, financial modelling, home automation, how to bake a cake - at roughly the same level, in the same session. There's no expertise gap a "specialist" agent fills. What a specialist agent actually has isn't deeper knowledge; it's a more focused workspace. But that's a narrower benefit than "specialists are better", and it comes with a real cost.
 
 ## The actual constraints
 
@@ -45,7 +45,7 @@ What genuinely limits an LLM agent isn't expertise or attention, but:
 
 - **Routing overhead.** Every boundary you create is a decision you have to make: which agent do I ask? That's cognitive load shifted from the agent back to you. It's real, and it compounds.
 
-- **Isolation and blast radius.** This is the most important constraint in serious deployments. An agent with read access to your entire email archive and write access to production databases is a single prompt injection or hallucination away from a very bad day. The question isn't just *does this agent have too much context* — it's *does this agent have too much access*. Different domains carry different trust profiles. Your CRM agent probably shouldn't see your HR system. Your DevOps agent probably shouldn't read your personal email. These are the same authorisation boundaries that drives role-based access in human organisations, except agents might be ephemeral, and the stakes are different because agent are gullible and can destroy data and reputation at speed.
+- **Isolation and blast radius.** This is the most important constraint in serious deployments. An agent with read access to your entire email archive and write access to production databases is a single prompt injection or hallucination away from a very bad day. The question isn't just *does this agent have too much context* - it's *does this agent have too much access*. Different domains carry different trust profiles. Your CRM agent probably shouldn't see your HR system. Your DevOps agent probably shouldn't read your personal email. These are the same authorisation boundaries that drives role-based access in human organisations, except agents might be ephemeral, and the stakes are different because agent are gullible and can destroy data and reputation at speed.
 
 So "when should I use multiple agents?" collapses into: *what constraint am I actually solving?*
 
@@ -58,7 +58,7 @@ My agent gave me a checklist. I'd want most of these to be true before spinning 
 
 2. **Context footprint is large and domain-specific.** Would this domain, if it lived in the main workspace, crowd out unrelated conversations? Email archives and contact graphs: yes. A recipe collection: no.
 
-3. **The domain is stable and bounded.** Can the agent accumulate coherent memory over months? CRM: yes — contacts, interactions, pipeline are stable categories. "Research agent": no — the topic changes every time. A sub-agent handles that better.
+3. **The domain is stable and bounded.** Can the agent accumulate coherent memory over months? CRM: yes - contacts, interactions, pipeline are stable categories. "Research agent": no - the topic changes every time. A sub-agent handles that better.
 
 4. **A different access profile is warranted.** Does this domain need tool access that increases the blast radius of a mistake? An agent with deep read access to years of email archives and write access to a database probably shouldn't also be controlling your home infrastructure.
 
@@ -74,7 +74,7 @@ When a task benefits from focused context and a clean slate, spawn a sub-agent f
 
 This gets you the focus benefit without the coordination overhead, and it avoids the worst failure mode of multi-agent systems: information loss at handoff boundaries.
 
-Humans think of "briefing the colleague" as a roughly lossless operation. It isn't, it's just our only option because we can't read each other's minds. Every handoff is a compression. Before long, whether human-to-human or agent-to-agent, it's a game of telephone with context loss compounding at every turn. But agent have a superpower that human's done. They *can* read each another's minds. You can literally share memory from one to another, even if that just means mapping a folder of markdown files into multiple openclaw containers.  This isn't telepathy, it's a hive mind. 
+Humans think of "briefing the colleague" as a roughly lossless operation. It isn't, it's just our only option because we can't read each other's minds. Every handoff is a compression. Before long, whether human-to-human or agent-to-agent, it's a game of telephone with context loss compounding at every turn. But agents have a superpower that humans don't. They *can* read each another's minds. You can literally share memory from one to another, even if that just means mapping a folder of markdown files into multiple openclaw containers.  This isn't telepathy, it's a hive mind.
 
 ## In short
 
