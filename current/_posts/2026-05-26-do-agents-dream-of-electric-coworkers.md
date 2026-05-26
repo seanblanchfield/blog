@@ -88,4 +88,4 @@ Most of the multi-agent thinking imports the wrong mental model. Human teams are
 
 Or as my agent put it: *"You're not adding expertise. You're managing context. Design for that."*
 
-![Do Agents Dream of Electric Coworkers?](/images/2026/05/do-agents-dream-of-electric-coworkers.jpg)
+![Do Agents Dream of Electric Coworkers?](/images/2026/05/do-agents-dream-of-electric-coworkers-footer.png)
