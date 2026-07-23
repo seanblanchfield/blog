@@ -12,7 +12,7 @@ Software products are collapsing into AI agents, and professional services are c
 
 <figure>
 <img src="/images/2026/07/ai-platform-deployment-company-comic.png" alt="A Monty Python Holy Grail scene — knights selling agents approach a castle whose inhabitants already have one" style="max-width:100%;border-radius:6px;">
-<figcaption><em>"We already got one." — The market, 2024. (With apologies to Monty Python's Holy Grail.)</em></figcaption>
+<figcaption><em>"We already got one." — The market, 2024.</em></figcaption>
 </figure>
 
 ## Products are collapsing into agents
@@ -31,37 +31,40 @@ The enlightened services companies have exactly one option: **lean into AI harde
 
 I spent time with a software development agency a couple of months ago that had done exactly this. They mandated Claude Code across the organisation. The developers who wouldn't embrace it are no longer with them. And then they repriced honestly: delivering in days what used to take months, and billing accordingly. Value-based pricing, not time-and-materials. Reconfiguring for agility, speed and scale.
 
-The path forward for any services firm is to replatform around agents so thoroughly that a client hiring them is getting something genuinely beyond what they could do themselves, not just faster delivery on the same model.
-
-## The major players have noticed, but their aim is off
-
-In May 2026, <a href="https://openai.com/index/openai-launches-the-deployment-company/">The OpenAI Deployment Company</a> launched: $4 billion, seeded with the acquisition of AI consultancy Tomoro, staffed by Forward Deployed Engineers embedded inside clients. Days later, Anthropic and a consortium of Blackstone, Hellman &amp; Friedman, and Goldman Sachs announced <a href="https://www.blackstone.com/news/press/anthropic-partners-with-blackstone-hellman-friedman-and-goldman-sachs-to-launch-enterprise-ai-services-firm/">Ode</a>: $1.5 billion, Claude-first. In July, <a href="https://www.cnbc.com/2026/07/02/microsoft-commits-2point5-billion-6000-employees-ai-implementation-unit.html">Microsoft Frontier Co.</a> stood up with $2.5 billion and 6,000 engineers. AWS put <a href="https://www.aboutamazon.com/news/aws/aws-1-billion-forward-deployed-ai-engineers">$1 billion into Forward Deployed Engineering</a>. **$9 billion mobilised in weeks.**
-
-Three things are true about all of them:
-
-1. They prove that product and services are no longer separable. Enterprises can't self-serve AI transformation.
-1. The fact that AI deployment requires so much human effort quietly undermines the hype. 
-1. Enterprises will view these companies a Trojan horses full of Forward-Deployed-Engineers on a mission to lock them in, and maybe raid their data and business know-how while they are at it. 
+The path forward for any services firm is to replatform around agents so thoroughly that a client hiring them is getting something genuinely beyond what they could achieve themselves.
 
 ## Agents-as-a-service is the wrong packaging
 
-I started hearing a lot about Agent-as-a-service (pronounced "ass"?) in 2024. Take out the "Software", drop in "Agent", then business as usual. Same SaaS playbook, charge a subscription, show hockeystick metrics, hit up the same VCs, for whom it's "close enough" to deploy cash into from their existing SaaS-premised 2020 investment mandates. Enthusiasm all around until people realised that customers have AI too, and that the AI labs are bemusedly enjoying the spectacle as free market research for their next product launch. 
+I started hearing a lot about Agent-as-a-service (pronounced "ass"?) in 2024. Take out the "Software", stick in "Agent", then business as usual. Same SaaS playbook, charge a subscription, show hockeystick metrics, hit up the same VCs, for whom it's "close enough" to deploy cash into from their existing SaaS-premised 2020 investment mandates. Enthusiasm all around until people realised that customers have AI too, and that the AI labs are bemusedly enjoying the spectacle as free market research for their next product launch. 
 
 How are you supposed to rent agents to customers who already *own* agents? What exactly are you offering? For that proposition to make sense, your agent would have to be so much better that I'd rather pay you indefinitely than build the capability myself. That bar is high. And the conversation is already going there in practice: "*what exactly are you offering that I couldn't do?*"
 
 What survives that question isn't the agent. It's the *knowledge* behind it.
 
-Not tacit knowledge sitting in someone's head. Encoded knowledge: the skills, the workflows, the tools, the governance structures, the evals, the synthetic data, the ontologies, the knowledge graphs, the regulatory tracking, the cross-client learning that gets ploughed back continuously into the agent fleet. The vendor who has done this work in a specific vertical, across many engagements, at agent speed, has something a customer can't easily replicate. That's the moat. Not the agent. The expertise the agent is running on.
+Not tacit knowledge sitting in someone's head. Encoded knowledge: the skills, the workflows, the tools, the governance structures, the evals, the synthetic data, the ontologies, the knowledge graphs, the regulatory tracking, the cross-client learning that gets ploughed back continuously into the agent fleet. The vendor who has done this work in a specific vertical, across many engagements, at agent speed, has something a customer can't easily replicate. That's the moat. Not the agent. The expertise the agent fleet is accumulating.
 
-This is why the company of the future in this space isn't a SaaS company. It isn't a time-and-materials bodyshop either. It's a **knowledge service provider**: a company that has picked its vertical, gone deep, earned its reputation, and whose delivery mechanism is from its agent fleet into your agent fleet.
+This is why the company of the future in this space isn't a SaaS company, nor a time-and-materials bodyshop either. It's a **knowledge service provider**: a company that has picked its vertical, gone deep, earned its reputation, and whose delivery mechanism is from its agent fleet into your agent fleet.
+
+## The major players have noticed, but their aim is off
+
+In May 2026, <a href="https://openai.com/index/openai-launches-the-deployment-company/">The OpenAI Deployment Company</a> launched: $4 billion, seeded with the acquisition of AI consultancy Tomoro, staffed by Forward Deployed Engineers embedded inside clients. Days later, Anthropic and a consortium of Blackstone, Hellman &amp; Friedman, and Goldman Sachs announced <a href="https://www.blackstone.com/news/press/anthropic-partners-with-blackstone-hellman-friedman-and-goldman-sachs-to-launch-enterprise-ai-services-firm/">Ode</a>: $1.5 billion, Claude-first. In July, <a href="https://www.cnbc.com/2026/07/02/microsoft-commits-2point5-billion-6000-employees-ai-implementation-unit.html">Microsoft Frontier Co.</a> stood up with $2.5 billion and 6,000 engineers. AWS put <a href="https://www.aboutamazon.com/news/aws/aws-1-billion-forward-deployed-ai-engineers">$1 billion into Forward Deployed Engineering</a>. **$9 billion mobilised in weeks to help businesses build bespoke agentic solutions.**
+
+Three things are true about all of them:
+
+1. They prove that product and services are no longer separable. Enterprises can't self-serve AI transformation.
+1. The fact that real-world AI deployment requires so much human effort quietly undermines the hype. 
+1. Enterprises will view these companies a Trojan horses full of Forward Deployed Engineers on a mission to lock them in, and maybe raid their data and business know-how while they are at it. 
+
+What's missing from the PR is a consistent playbook on how enterprises can embrace AI without being reckless, move beyond disconnected point solutions, and join the ranks of the minority that are achieving transformative results.
+
 
 ## What "AI transformation" actually means
 
-It's worth pausing on what it means for an enterprise to have been "AI transformed". It means starting as a traditional or mere digital-native, adopting an AI-first posture, and then relentlessly replatforming and re-org'ing until you can access the same transformative benefits that AI-native organisations can. This isn't a routine software procurement, or a 3 year platform modernization project. Done right, the goal is to make the organisation **self-improving at AI speed**.
+So what is the journey towards the target state of "AI transformed"? It means replatforming and re-org'ing until you can access the same transformative benefits that AI-native organisations experience. This isn't routine software procurement, or a 3 year platform modernization project. Done right, the goal is to make the organisation **self-improving at AI speed**.
 
-**Here's the mechanism**. When a human works with an agent (coaching it through a task, correcting it, approving outputs, refining the workflow) they generate context. The agent accumulates knowledge about how this organisation does this work: its policies, its quirks, its data, its preferred outputs. That context compounds. It gets reused. Other agents in the fleet draw on it.
+**Here's the mechanism**. When an employee works with an AI agent (coaching it through a task, correcting it, approving outputs, refining the workflow) they generate context. The agent accumulates knowledge about how this organisation does this work: its policies, its quirks, its data, its preferred outputs. That context compounds, gets reused, and other agents in the fleet draw on it.
 
-When a fleet is configured so that context pools across the whole organisation, a phenomenon occurs. Every job makes the next job easier. Every time a team member works with their agent, the entire fleet gets more capable and reliable. In turn, that drives greater internal adoption, and a flywheel starts accelerating. 
+When an AI agent fleet is configured so that context pools from across the whole organisation, a phenomenon occurs. Every job makes the next job easier. Every time a team member works with their agent, the entire fleet gets more capable and reliable. In turn, that drives greater internal adoption, and a flywheel starts accelerating. 
 
 <a href="https://theplanettools.ai/blog/satya-nadella-token-capital-ai-framework-2026">Satya Nadella frames this</a> as building "token capital" alongside human capital: the AI capability a firm builds and owns (tailored prompts, evaluations, agentic workflows, institutional memory). 
 
