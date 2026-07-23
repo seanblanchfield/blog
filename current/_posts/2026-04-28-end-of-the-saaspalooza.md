@@ -61,13 +61,15 @@ But then the second thing happened.
 
 In late 2022, just as the ZIRP era ended, generative AI arrived. The timing was coincidental but the effect was compounding: the financial conditions that had sustained the SaaSpalooza collapsed at the same moment as a new technology emerged that would undermine its entire premise. Generative AI turned out to be an existential threat to SaaS in its own right, for four distinct reasons.
 
-### 1. Any good idea can now be cheaply copied
+### 1. Software IP has effectively disappeared
 
-The core value proposition of a SaaS product is: we have done a difficult thing, and rather than you doing it yourself, you can pay us a monthly fee to use ours. The moat is the difficulty. The years of engineering, the integrations, the reliability, the refinement. You pay because building it yourself is harder than renting it.
+Building a successful SaaS product was never just about writing the code. The hard part was everything else: figuring out that there was a market, finding the right pricing, educating customers who didn't know they had the problem you were solving, iterating through the failures until the thing actually worked as a business. That process takes years and costs founders and early teams enormously in time, money and stress.
 
-AI coding agents have largely collapsed that moat. A reasonably technical person with access to Claude Code or Cursor can now build a working version of many SaaS products in days — not to sell to others, just to do the specific thing they need, configured exactly how they want it, with no per-seat fees. The "build vs buy" calculus has shifted dramatically.
+The reward for all that was supposed to be a defensible product. By the time you had product-market fit, you had a working system, accumulated knowledge, and a head start that competitors would struggle to close.
 
-Worse, it's not just that a competitor can copy you cheaply. Your own customer can copy you if they like. The lock-in that once came from the sheer difficulty of rebuilding is gone. Any working business model you have figured out — after all the blood, sweat and tears of discovery — is now a template that someone else can replicate in a weekend.
+AI coding agents have largely eliminated that head start. A reasonably technical person with access to Claude Code or Cursor can now build a working version of most SaaS products in days. They don't need to go through your years of discovery — they can observe what you built, what works, what customers pay for, and replicate the implementation cheaply. The blood, sweat and tears of finding a working model are yours. The benefit of having found it is now everyone's.
+
+Worse, it is not just competitors you need to worry about. Your own customers can copy you if they like. A business that pays you $500 a month for a workflow tool and has a technical employee with a coding agent can now ask themselves whether they want to keep paying, or spend a week building their own version, configured exactly how they want it. Many will keep paying — switching costs and inertia are real. But the calculus has shifted, and the trend is not in your favour.
 
 ### 2. Agents don't need a UI to use a database
 
