@@ -14,15 +14,21 @@ The story being told in most tech circles is that AI is killing SaaS. That's tru
 
 To understand why, you have to go back to where SaaS began.
 
-## The golden age that almost wasn't
+## Three forces converge
 
-Three moments made the SaaS era possible. I was there for all three, which is part of why I feel qualified to call time on them.
+Three moments made the SaaS era possible.
 
-**1999:** Salesforce launched the first major Software as a Service product. The insight was simple but radical: software didn't have to be something you bought on a disc and installed. You could rent it over the internet, pay monthly, and someone else would handle the infrastructure. Capital expenditure became operating expenditure. Finance departments were delighted. I was just starting out in business around this time, and co-founded [Phorest](https://www.phorest.com) in 2001 — one of the early vertical SaaS companies, and still going strong today.
+**1999:** Salesforce launched the first major Software as a Service product. The insight was simple but radical: software didn't have to be something you bought on a disc and installed. You could rent it over the internet, pay monthly, and someone else would handle the infrastructure. Capital expenditure became operating expenditure. Finance departments were delighted.
 
-**2006:** Amazon launched AWS. Suddenly the infrastructure itself followed the same model. You didn't need a server room or a data centre contract. You span up a virtual machine, paid by the hour, and span it down when you were done. Cloud computing turned infrastructure capex into opex too. Small teams could now build scalable software products without the upfront capital costs that had previously been a moat for large incumbents. I was living the pre-cloud version of this at the time, scaling [Demonware](https://en.wikipedia.org/wiki/Demonware) to run the online infrastructure for Call of Duty across five data centres around the world — building our own cloud before the word existed. AWS would have changed everything for us.
+> **Where was Sean?** Just starting out in business. I co-founded [Phorest](https://www.phorest.com) in 2001 — one of the early vertical SaaS companies, and still going strong today.
 
-**2008:** The financial crisis hit, interest rates crashed to zero, and stayed there for fourteen years. This is the bit people forget. I was back in SaaS by then, and by 2011 was running a SaaS venture studio and seriously considering a move into VC — the money was flowing and the model felt unstoppable.
+**2006:** Amazon launched AWS. Suddenly the infrastructure itself followed the same model. You didn't need a server room or a data centre contract. You span up a virtual machine, paid by the hour, and span it down when you were done. Cloud computing turned infrastructure capex into opex too. Small teams could now build scalable software products without the upfront capital costs that had previously been a moat for large incumbents.
+
+> **Where was Sean?** Living the pre-cloud version of this, scaling [Demonware](https://en.wikipedia.org/wiki/Demonware) to run the online infrastructure for Call of Duty across five data centres around the world — building our own cloud before the word existed. AWS would have changed everything for us.
+
+**2008:** The financial crisis hit, interest rates crashed to zero, and stayed there for fourteen years. This is the bit people forget.
+
+> **Where was Sean?** Back in SaaS, and by 2011 running a SaaS venture studio, seriously considering a move into VC. The money was flowing and the model felt unstoppable.
 
 <figure>
 <img src="/images/2026/07/saaspocalypse/slide-03.png" alt="Chart showing global VC funding, SaaS growth and cloud growth from 2005 to 2025, with ZIRP era highlighted" style="max-width:100%;border-radius:6px;">
