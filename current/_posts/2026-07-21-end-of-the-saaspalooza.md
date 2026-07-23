@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "End of the SaaSpalooza"
-date: 2026-07-22 00:00:00 +0100
+date: 2026-07-21 00:00:00 +0100
 categories: [ai, saas, strategy]
 image: /images/2026/07/saaspocalypse/hero.png
 ---
@@ -55,6 +55,8 @@ But then the second thing happened.
 
 In late 2022, just as the ZIRP era ended, generative AI arrived. And it turned out to be an existential threat to SaaS for reasons that go deeper than most people have processed.
 
+Here is the short version: AI doesn't need help using a database. Most humans do. Most SaaS is just a database wrapper.
+
 The core value proposition of a SaaS product is: we have done a difficult thing (built software that does X), and rather than you doing that difficult thing yourself, you can pay us a monthly fee to use ours. The moat is the difficulty. The cost of the UI, the engineering, the integrations, the reliability. You pay because building it yourself is harder than renting it.
 
 AI coding agents have largely collapsed that moat. A reasonably technical person with access to Claude Code or Cursor can now build a working version of many SaaS products in days. Not a competitor product to sell to others; just a version that does the specific thing they need it to do, configured exactly the way they want, with no per-seat licensing fees. The "build vs buy" calculus has shifted dramatically.
@@ -65,6 +67,8 @@ But the deeper issue is the UI itself.
 <img src="/images/2026/07/saaspocalypse/slide-06.png" alt="Diagram showing a SaaS UI stripped back to reveal REST APIs, which are themselves just database CRUD operations" style="max-width:100%;border-radius:6px;">
 <figcaption><em>Rip off the UI, expose the API, and underneath almost every SaaS product is a database with Create, Read, Update, Delete operations. The UI exists to make that legible to a human. Agents don't need it.</em></figcaption>
 </figure>
+
+A useful litmus test: how vulnerable is any given SaaS product to this disruption? Imagine ripping off the user interface and exposing the naked API underneath. Does the product make sense as a pure API, consumed by agents rather than humans? If yes, it is at serious risk. If the answer is "not really, the value is in the network, the data, or the integrations" then there may be more runway. Most products, if you're honest, pass the first test.
 
 The user interface of a SaaS product exists for one reason: to make the underlying data and logic legible to a human. Strip it away and almost every SaaS product is a database with an API on top. Create, Read, Update, Delete. The beautiful UI, the polished UX, the carefully designed workflows — all of it is a translation layer between a human brain and a database.
 
@@ -86,17 +90,19 @@ Even if you accept the UI argument, you might think SaaS companies have other de
 
 What's left? Brand, distribution, and regulatory compliance. These are real. But they are the advantages of incumbency, not of innovation. And critically, they are advantages that startups by definition do not have — which means the SaaS model as a vehicle for startup investment has lost much of its rationale.
 
-## The third death: the exit market closed
+## The third death: a self-fulfilling prophecy
 
 There is a more prosaic reason the SaaSpalooza is over, and it is the one that most directly affects founders and investors right now.
 
-The exit market has closed.
+VCs think on a ten-year horizon. And on a ten-year horizon, most of them no longer see SaaS. If you believe that workflows currently performed by humans are going to be automated by agents — and the evidence is mounting that they will be — then the applications humans use to perform those workflows will disappear with them. The first to go is anything that involves moving information between email, Slack, spreadsheets and SaaS apps. That is the majority of office software. Low-hanging fruit for AI.
 
-SaaS as an asset class worked because there was a functioning exit pipeline: build a product, grow ARR, achieve a sale or IPO at a healthy multiple, return capital to investors. The whole system depended on exits at the end. The multiples compressed when rates rose. The IPO window largely closed. Strategic acquirers got cautious. The pipeline clogged.
+Once you accept that logic, you stop funding SaaS. And here is where it becomes self-fulfilling: a significant portion of SaaS companies' customers are other SaaS companies. They sell to each other. HR software, payroll, project management, CRM, finance tools — the customer base is disproportionately the tech industry itself. When investment dries up across the sector simultaneously, the cascade is faster than in industries with more diverse demand.
+
+The exit market has closed as a result. SaaS as an asset class worked because there was a functioning exit pipeline: build a product, grow ARR, achieve a sale or IPO at a healthy multiple, return capital to investors. The multiples compressed when rates rose. The IPO window largely closed. Strategic acquirers got cautious. The pipeline clogged.
 
 Without exits, venture capital cannot return money to its LPs. Without returns, LPs stop committing to new funds. Without new funds, VCs stop deploying. Without deployment, founders don't get funded. The machine runs in reverse.
 
-This is not just a cyclical correction. The underlying conditions that made SaaS an exceptional vehicle for venture returns — free capital, expanding multiples, a functioning exit market, users who had no alternative to human-facing software — have structurally changed. They are not coming back in the same form.
+This is not just a cyclical correction. The underlying conditions that made SaaS an exceptional vehicle for venture returns have structurally changed. They are not coming back in the same form.
 
 ## What comes next
 
