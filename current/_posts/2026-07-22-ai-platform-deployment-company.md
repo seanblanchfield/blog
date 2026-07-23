@@ -8,6 +8,8 @@ image: /images/2026/07/ai-platform-deployment-company-hero.png
 
 Software products are collapsing into AI agents, and professional services are collapsing into AI agents too. A lot of people have noticed one of these disruptions, but few have figured out what the combined effect is, or what kind of company will survive it. It's a new kind of company, and it's all that's going to be left after AI disruption has ripped through our industry.
 
+<!-- more -->
+
 <figure>
 <img src="/images/2026/07/ai-platform-deployment-company-comic.png" alt="A Monty Python Holy Grail scene — knights selling agents approach a castle whose inhabitants already have one" style="max-width:100%;border-radius:6px;">
 <figcaption><em>"We already got one." — The market, 2024.</em></figcaption>
