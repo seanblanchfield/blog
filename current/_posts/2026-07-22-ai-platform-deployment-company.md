@@ -12,7 +12,7 @@ Software products are collapsing into AI agents, and professional services are c
 
 <figure>
 <img src="/images/2026/07/ai-platform-deployment-company-comic.png" alt="A Monty Python Holy Grail scene — knights selling agents approach a castle whose inhabitants already have one" style="max-width:100%;border-radius:6px;">
-<figcaption><em>"We already got one." — The market, 2024.</em></figcaption>
+<figcaption><em>"We already got one." — The market, 2024. (with apologies to Monty Python's Holy Grail)</em></figcaption>
 </figure>
 
 ## Products are collapsing into agents
@@ -21,7 +21,7 @@ This isn't just about the cambrian explosion of software that's happening right 
 
 The person who used to buy your software product has an AI assistant now (or soon will). They don't need to go looking for products anymore. When they have a job to be done, they describe it to their agent, and it gets done. Maybe entirely in LLM context. Maybe it builds a repeatable skill. Maybe it converts the skill to Python or Rust to make it run faster, cheaper and better. Maybe it formalizes it into a workflow so it can be more easily inspected and verified. The user doesn't need to care which: they just wanted the outcome, and they got it without ever leaving the chat.
 
-This is deeper than the SaaSpocalypse (I've [enumerated the reasons](/2026/04/end-of-the-saaspalooza) for that separately). The demand side for software purchasing is changing. You are now competing against your former customer's new ability to get the job done adequately without needing to think about buying software. Most tech vendors are still processing the ramifications of the first-order disruption of how AI coding agents are accelerating their product development. What's beginning to terrify is the second-order disruption that when customers have agents too, they no longer need vended software.
+This is deeper than the SaaSpocalypse (I've [enumerated the reasons](/2026/04/end-of-the-saaspalooza) for that separately). The demand side for software purchasing is changing. You are now competing against your former customer's new ability to get the job done adequately without needing to think about buying software. Most tech vendors are still processing the ramifications of the first-order disruption of how AI coding agents are commoditizing product development. What's should be more terrifying to them is the second-order disruption that when customers have agents too, they no longer need vended software.
 
 ## Services are collapsing into agents
 
@@ -41,7 +41,7 @@ How are you supposed to rent agents to customers who already *own* agents? What 
 
 What survives that question isn't the agent. It's the *knowledge* behind it.
 
-Not tacit knowledge sitting in someone's head. Encoded knowledge: the skills, the workflows, the tools, the governance structures, the evals, the synthetic data, the ontologies, the knowledge graphs, the regulatory tracking, the cross-client learning that gets ploughed back continuously into the agent fleet. The vendor who has done this work in a specific vertical, across many engagements, at agent speed, has something a customer can't easily replicate. That's the moat. Not the agent. The expertise the agent fleet is accumulating.
+Not tacit knowledge sitting in someone's head. Encoded knowledge: the skills, the workflows, the tools, the governance structures, the evals, the synthetic data, the ontologies, the knowledge graphs, the regulatory tracking, the cross-client learning that gets ploughed back continuously into the agent fleet. The vendor who has done this work in a specific vertical, across many engagements, at agent speed, has something a customer can't easily replicate. The product isn't the agent, it's the context the agent accumulates.
 
 This is why the company of the future in this space isn't a SaaS company, nor a time-and-materials bodyshop either. It's a **knowledge service provider**: a company that has picked its vertical, gone deep, earned its reputation, and whose delivery mechanism is from its agent fleet into your agent fleet.
 
@@ -55,12 +55,12 @@ Three things are true about all of them:
 1. The fact that real-world AI deployment requires so much human effort quietly undermines the hype. 
 1. Enterprises will view these companies a Trojan horses full of Forward Deployed Engineers on a mission to lock them in, and maybe raid their data and business know-how while they are at it. 
 
-What's missing from the PR is a vision of how enterprises can embrace AI without being reckless, move beyond disconnected point solutions, and join the ranks of the minority that are achieving transformative results.
+What's missing from the PR is a vision of how enterprises can embrace AI without being reckless, move beyond disconnected point solutions, and join the ranks of the minority that are achieving truly transformative results.
 
 
 ## What "AI transformation" actually means
 
-So what is the journey towards the target state of "AI transformed"? It means replatforming and re-org'ing until you can access the same transformative benefits that AI-native organisations experience. This isn't routine software procurement, or a 3 year platform modernization project. Done right, the goal is to make the organisation **self-improving at AI speed**.
+So what is the journey towards the target state of "AI transformed"? It means replatforming and re-org'ing until you can access the same transformative benefits that AI-native (post-2022) organisations experience. This isn't routine software procurement, or a 3 year platform modernization project. Done right, the goal is to reconfigure the organisation for **self-improvement at AI speed**.
 
 **Here's the mechanism**. When an employee works with an AI agent (coaching it through a task, correcting it, approving outputs, refining the workflow) they generate context. The agent accumulates knowledge about how this organisation does this work: its policies, its quirks, its data, its preferred outputs. That context compounds, gets reused, and other agents in the fleet draw on it.
 
@@ -113,7 +113,7 @@ Isn't it curious that Peter Thiel named his company after that? I suspect the ir
 > "I am paying for tokens that create no value. These people are stealing the weights and alpha of my business."
 
 <a href="https://cybersecurity.vision/who-owns-what-your-company-knows/">Satya Nadella has called this the reverse information paradox</a>: you pay for intelligence twice. Once with money, and again with the proprietary knowledge you must reveal to make it useful. Every correction, every workflow trace, every eval: distilled institutional know-how leaking almost imperceptibly into someone else's model. As Chamath Palihapitiya observed on the All In podcast, <a href="https://www.youtube.com/watch?v=wgdxSCsmS-Q&t=1890s">this is the cloud model itself under pressure</a>:
-> "*The industry spent all these years convincing everyone to flip to the cloud, and this idea of shared infrastructure may not be the best idea in a world of artificial intelligence.*"
+> "*The industry spent all these years convincing everyone to flip to the cloud, and this idea of shared infrastructure may not be the best idea in a world of [artificial] intelligence.*"
 
 If your AI vendor is also selling intelligence to your competitors (and they all are) your interests are not fully aligned. You might be expensively funding your own commoditization. What every company needs is an AI-native transformation partner who is not primarily in the business of selling tokens or cloud.
 
@@ -129,16 +129,14 @@ If your AI vendor is also selling intelligence to your competitors (and they all
 
 That combination doesn't currently exist as a single company. <a href="https://time.com/7007040/mistral-ai-ceo-arthur-mensch-interview/">Mistral</a> and Germany's <a href="https://presenc.ai/research/european-open-source-llm-landscape-2026">Aleph Alpha</a> have built credible sovereign model infrastructure, but they aren't deployment companies. The traditional integrators are still doing RPA. The boutique integrators have sovereignty ambitions but don't have the platform. The new AI deployment companies have scale but not sovereignty. Nobody has put all together yet.
 
-> **Remind me why this isn't just consulting?**
+> **Why AI-native matters**
 >
-> Yes, it's like consulting in the important ways: You go to a specialist because they've seen your problem before, across many clients and many variations. They've earned pattern recognition you can't buy off the shelf.
+> The AI-native deployment company has three new characteristics you won't find in a pre-AI company: 
+> 1. *Machine Speed:* a deployment company running on its own agent fleet can iterate and improve continuously, not quarterly. 
+> 1. *Scaling:* its value generation isn't limited by the number of people it can hire,  train and retain. 
+> 1. *Longevity:* it has zero turnover of intellectual capital.
 >
-> But the delivery is different in three important ways that change the equation:
-> 1. *Speed:* a deployment company running on its own agent fleet can iterate and improve continuously, not quarterly. 
-> 1. *Scale:* it isn't limited by the number of people it can hire and train (the delivery capability lives in the system). 
-> 1. *Longevity:* when a key person leaves, the institutional knowledge doesn't walk out with them.
->
-> That combination (specialist depth, continuous improvement, encoded and scalable) is genuinely new. It competes with Accenture the way Accenture competed with the typing pool.
+> This competes with Accenture the way Accenture competed with the typing pool.
 
 ## What we're building
 
