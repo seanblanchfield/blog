@@ -50,21 +50,21 @@ The playbook was refined to a celebrated science: acquire users at any cost (bec
 
 By 2022 the party was at fever pitch, and central banks started raising interest rates to fight inflation. The music was rudely stopped, and tech valuations crashed. 
 
-It was a double whammy for VCs. First, they massive holes were blown through their portfolios as previous investments in unicorns and decacorns were sharply written down. Then, nursing that wound they began to find they couldn't raise their next funds, as capital flowed back to bonds. 
+It was a double whammy for VCs. First, they massive holes were blown through their portfolios as previous investments in unicorns and decacorns were sharply written down. Then, nursing that wound, they found they couldn't raise their next funds, as capital flowed back to bonds. 
 
-But then the second thing happened.
+But then...
 
 ## The second death: AI kills SaaS
 
-In late 2022, just after tech crashed, generative AI arrived. The timing was coincidental but brutal: the financial conditions that had sustained the SaaSpalooza collapsed at the same moment as a new technology emerged that would undermine its entire premise. Generative AI turned out to be an existential threat to SaaS in its own right, for four distinct reasons.
+In late 2022, just after tech crashed, generative AI arrived. The timing was coincidental but brutal: the financial conditions that had sustained the SaaSpalooza collapsed at the same moment as a new technology emerged that would undermine its entire premise. Generative AI turned out to be an existential threat to SaaS in its own right, for the following four reasons.
 
 ### 1. Software IP has effectively disappeared
 
-Building a successful SaaS product was never about the code. The hard part was everything else: figuring out that there was a market, finding the right pricing, educating customers who didn't know they had the problem you were solving, iterating through the failures until the thing actually worked as a business. The search for a repeatable business model cost serious time, stress and money. The reward for all that was supposed to be a defensible product. By the time you had product-market fit, you had a working system, accumulated knowledge, and a head start that competitors would struggle to close.
+Building a successful SaaS product was never about the code. The hard part was everything else: figuring out that there was a market, finding the right pricing, educating customers who didn't know they had the problem you were solving, iterating through the failures until the thing actually worked as a business. The search for a repeatable business model cost serious time, stress and money. The reward for all that was supposed to be a head start that competitors would struggle to close.
 
-AI coding agents have basically eliminated that head start. The first mover spills blood, sweat and tears on finding a working business model. Once publicly demonstarted, AI can build a faithful copy in a day or two (sometimes an hour or two). 
+AI coding agents have basically eliminated that head start advantage. The first mover spills blood, sweat and tears on finding a working business model. Once publicly demonstarted, AI can build a faithful copy in a day or two (sometimes an hour or two). 
 
-Worse, it is not just commoditization you need to worry about. Your own customers have AI too! A business that pays you $500 a month for a subscription just needs to find a spare day rolling their own version, this time tailored precisely to them.
+Worse, it is not just commoditization you need to worry about. Your own customers have AI too! A business that pays you $500 a month for a subscription just needs to spend a day rolling their own version, this time tailored precisely to them. 
 
 ### 2. Agents don't need a UI to use a database
 
@@ -81,20 +81,20 @@ Most people can't write SQL, and need a good UI instead. But AI speaks SQL fluen
 
 ### 3. The moats are gone
 
-**The technology moat** was always somewhat illusory (good engineers could always rebuild most products) but it was real enough when building took years and cost millions. AI coding agents have collapsed the time and cost to near zero.
+**The technology moat** was always a bit mushy (good engineers could always rebuild most products) but it was real enough when building took years and cost millions. AI coding agents have collapsed the time and cost to near zero.
 
-**Network effects and marketplaces** were a stronger moat. But AI agents can unbundle this. A personal agent can hang out in all the social networks and funnel aggregating interesting messages back to you directly. Suddenly, you don't need to go to LinkedIn any more, and you don't need to be on the same platform as your friends. And when you go shopping, your agent can tirelessly scour Amazon, Ali, Temu, Shein, Shoppify, classified, and everywhere else... and merchants can choose to sell wherever they like knowing that their customers will find them there.
+**Network effects and marketplaces** were a stronger moat. But AI agents can unbundle this. A personal agent can hang out in all the social networks and funnel interesting messages back to you directly. Suddenly, you don't need to go to LinkedIn any more, and you don't need to be on the same platform as your friends. And when you go shopping, your agent can tirelessly scour Amazon, AliExpress, Temu, Shein, Shopify, classified, and everywhere else... and merchants can choose to sell wherever they like knowing that their customers will find them there.
 This one is slower-moving, but the direction is clear.
 
-**Data moats** are great if you got one, but real ones are hard to find. In practice, most data is not truly proprietary and comparable data can be found from other sources. Given just a small sample, more can be synthesized. And even when you have truly proprietary data, it's a challenge to monetize it while simultaneously keeping it secret. Even LLM training data is now routinely extracted through distillation attacks. So "build a data moat" is a not a plan, but if you've truly got one, cherish it.
+**Data moats** are great if you got one, but good ones are hard to find. In practice, most data is not truly special, and comparable data can be found from other sources. Given just a small sample, more can be synthesized. And even when you have truly proprietary data, it's a challenge to monetize it while simultaneously keeping it secret. Even LLM training data is now routinely extracted through distillation attacks. So "build a data moat" is a not a plan, but if you've somehow got one, cherish it.
 
-What's left? Brand, distribution, and regulatory capture. These are real. But they are the advantages for the incumbents, not the disruptors, and by are advantages that startups by definition do not have.
+What's left? Brand, distribution, and regulatory capture. These are real. But they are the advantages for the incumbents, not the disruptors, and are advantages that startups by definition do not have.
 
 ### 4. A self-fulfilling prophecy
 
-VCs think on a ten-year horizon. And on a ten-year horizon, most of them no longer see SaaS in that future. So they have stopped funding SaaS, and arguably have rotated away from software in general. So even if SaaS isn't dead yet, the funding is.
+VCs think on a ten-year horizon, and most of them no longer see SaaS in that future. So they have stopped funding SaaS, and arguably have rotated away from software in general. So even if SaaS isn't dead yet, the funding is.
 
-And this might be leading to a kind of colony collapse. A lot of SaaS customers are other SaaS companies. VCs love their SaaS companies to sell to each other, keeping the capital circulating, creating $10 of revenue for every $1 of capital. When SaaS companies pull back on spending, the cascade is faster than in industries with more diverse demand.
+And this might be leading to a kind of colony collapse. SaaS companies are each other's best customers. VCs love them to sell to each other, to keep the capital circulating, creating $10 of revenue for every $1 of capital. When SaaS companies cut spending, the collapse might take everyone by surprise.
 
 SaaS solutions can still be successfully built, probably in hyper-vertical domains where the founder has deep domain expertise and an existing network. But those businesses are unlikely to fit the venture capital funding path, or to grow like the unicorns of the 2010s. They will be bootstrapped, might make the founders rich, but be small by the standards of the last decade. 
 
@@ -106,6 +106,6 @@ SaaS solutions can still be successfully built, probably in hyper-vertical domai
 </figure>
 
 
-The SaaSpalooza lasted from 2008 to 2022 for fourteen years. That's a long enough time that lots of people have only known that bull market during their careers, and can't figure out what the hell is happening right now. During that period, a huge system of playbooks, startup culture, metrics, state supports and interventions and lore was established about how to build a technology business. 
+The SaaSpalooza lasted from 2008 to 2022 for fourteen years. That's a long enough time that lots of people have only known that bull market during their careers, and can't figure out what the hell is happening right now. During that period, a huge system of playbooks, startup culture, founder lore, metrics, state supports and interventions was established about how to build a technology business. 
 
-Those playbooks now need to be thrown out (or at least reassessed). That made sense during SaaSpalooza doesn't make sense now the music has stopped, investors need profit, and AI is turning all conventional wisdom upside down. It's time to write some new playbooks!
+Those playbooks now need to be thrown out the window. What made sense during SaaSpalooza won't work now that gravity has been turned back on, investors expect profit, and AI is turning all conventional wisdom upside down. It's time to write some new playbooks!
