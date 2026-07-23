@@ -59,7 +59,7 @@ But then the second thing happened.
 
 ## The second death: AI kills SaaS
 
-In late 2022, just as the ZIRP era ended, generative AI arrived. The two events are not unrelated — the same macroeconomic shock that ended cheap money also accelerated investment into AI as the next big thing. But generative AI turned out to be an existential threat to SaaS in its own right, for four distinct reasons.
+In late 2022, just as the ZIRP era ended, generative AI arrived. The timing was coincidental but the effect was compounding: the financial conditions that had sustained the SaaSpalooza collapsed at the same moment as a new technology emerged that would undermine its entire premise. Generative AI turned out to be an existential threat to SaaS in its own right, for four distinct reasons.
 
 ### 1. Any good idea can now be cheaply copied
 
