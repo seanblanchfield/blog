@@ -51,46 +51,48 @@ This alone would have been a significant correction. A reckoning for overvalued 
 
 But then the second thing happened.
 
-## The second death: agents don't need UIs
+## The second death: why AI kills SaaS
 
-In late 2022, just as the ZIRP era ended, generative AI arrived. And it turned out to be an existential threat to SaaS for reasons that go deeper than most people have processed.
+In late 2022, just as the ZIRP era ended, generative AI arrived. The two events are not unrelated — the same macroeconomic shock that ended cheap money also accelerated investment into AI as the next big thing. But generative AI turned out to be an existential threat to SaaS in its own right, for four distinct reasons.
+
+## 1. Any good idea can now be cheaply copied
+
+The core value proposition of a SaaS product is: we have done a difficult thing, and rather than you doing it yourself, you can pay us a monthly fee to use ours. The moat is the difficulty. The years of engineering, the integrations, the reliability, the refinement. You pay because building it yourself is harder than renting it.
+
+AI coding agents have largely collapsed that moat. A reasonably technical person with access to Claude Code or Cursor can now build a working version of many SaaS products in days — not to sell to others, just to do the specific thing they need, configured exactly how they want it, with no per-seat fees. The "build vs buy" calculus has shifted dramatically.
+
+Worse, it's not just that a competitor can copy you cheaply. Your own customer can copy you if they like. The lock-in that once came from the sheer difficulty of rebuilding is gone. Any working business model you have figured out — after all the blood, sweat and tears of discovery — is now a template that someone else can replicate in a weekend.
+
+## 2. Agents don't need a UI to use a database
 
 Here is the short version: AI doesn't need help using a database. Most humans do. Most SaaS is just a database wrapper.
 
-The core value proposition of a SaaS product is: we have done a difficult thing (built software that does X), and rather than you doing that difficult thing yourself, you can pay us a monthly fee to use ours. The moat is the difficulty. The cost of the UI, the engineering, the integrations, the reliability. You pay because building it yourself is harder than renting it.
-
-AI coding agents have largely collapsed that moat. A reasonably technical person with access to Claude Code or Cursor can now build a working version of many SaaS products in days. Not a competitor product to sell to others; just a version that does the specific thing they need it to do, configured exactly the way they want, with no per-seat licensing fees. The "build vs buy" calculus has shifted dramatically.
-
-But the deeper issue is the UI itself.
+The user interface of a SaaS product exists for one reason: to make the underlying data and logic legible to a human. Strip it away and almost every SaaS product is a database with an API on top. Create, Read, Update, Delete. The beautiful UI, the polished UX, the carefully designed workflows — all of it is a translation layer between a human brain and a database.
 
 <figure>
 <img src="/images/2026/07/saaspocalypse/slide-06.png" alt="Diagram showing a SaaS UI stripped back to reveal REST APIs, which are themselves just database CRUD operations" style="max-width:100%;border-radius:6px;">
 <figcaption><em>Rip off the UI, expose the API, and underneath almost every SaaS product is a database with Create, Read, Update, Delete operations. The UI exists to make that legible to a human. Agents don't need it.</em></figcaption>
 </figure>
 
-A useful litmus test: how vulnerable is any given SaaS product to this disruption? Imagine ripping off the user interface and exposing the naked API underneath. Does the product make sense as a pure API, consumed by agents rather than humans? If yes, it is at serious risk. If the answer is "not really, the value is in the network, the data, or the integrations" then there may be more runway. Most products, if you're honest, pass the first test.
-
-The user interface of a SaaS product exists for one reason: to make the underlying data and logic legible to a human. Strip it away and almost every SaaS product is a database with an API on top. Create, Read, Update, Delete. The beautiful UI, the polished UX, the carefully designed workflows — all of it is a translation layer between a human brain and a database.
-
-AI agents don't need that translation layer.
-
-When you have an agent working on your behalf, it doesn't open a browser, navigate to your CRM, click through a contact record and fill in a form. It calls the API directly. It reads and writes data in machine-readable formats. It doesn't care about your onboarding flow. It doesn't need a dashboard. Per-seat pricing becomes absurd when the "seat" is occupied by a software process that never sleeps, never needs training, and can operate dozens of instances simultaneously.
+AI agents don't need that translation layer. When you have an agent working on your behalf, it doesn't open a browser, navigate to your CRM, click through a contact record and fill in a form. It calls the API directly. It doesn't care about your onboarding flow. It doesn't need a dashboard. Per-seat pricing becomes absurd when the "seat" is occupied by a software process that never sleeps, never needs training, and can operate dozens of instances simultaneously.
 
 This is why the shift to outcome-based pricing is not just a trend: it is an inevitability. The per-seat SaaS model assumed a human on every seat. That assumption is no longer safe.
 
-## The moats are draining
+> **The litmus test.** How vulnerable is any given SaaS product to this? Imagine ripping off the user interface and exposing the naked API underneath. Does the product make sense as a pure API, consumed by agents rather than humans? If yes, it is at serious risk. If the value is genuinely in the network, the data, or something only a human can navigate — there may be more runway. Most products, if you're honest, pass the first test.
+
+## 3. The moats are gone
 
 Even if you accept the UI argument, you might think SaaS companies have other defences. They do, but they are weaker than they look.
 
-**The technology moat** was always somewhat illusory — good engineers could always rebuild most products — but it was real enough when building took years and cost millions. AI coding agents have collapsed the time and cost dramatically. The defensibility that came from engineering complexity is substantially diminished.
+**The technology moat** was always somewhat illusory — good engineers could always rebuild most products — but it was real enough when building took years and cost millions. AI coding agents have collapsed the time and cost dramatically.
 
-**Network effects and marketplaces** were a stronger moat. If all your suppliers are on Platform X and all your customers expect to find you there, leaving Platform X is genuinely painful regardless of what any agent can do. But AI agents are starting to unbundle these too. An agent that can negotiate directly, match buyer to seller, and execute transactions doesn't need a marketplace platform as an intermediary in the same way a human does. This one is slower-moving, but the direction is clear.
+**Network effects and marketplaces** were a stronger moat. If all your suppliers are on Platform X, leaving is genuinely painful. But AI agents are starting to unbundle these too. An agent that can negotiate directly, match buyer to seller, and execute transactions doesn't need a marketplace platform as an intermediary in the same way a human does. This one is slower-moving, but the direction is clear.
 
-**Data moats** are the most frequently cited defence. Surely the accumulated data from thousands of customers makes incumbents impossible to displace? In practice, proprietary data moats are rarer and shallower than claimed. Most SaaS companies are sitting on usage data and operational data that is valuable but not irreplaceable. The companies with genuinely deep, proprietary, hard-to-replicate data are the exceptions, not the rule.
+**Data moats** are the most frequently cited defence. Surely the accumulated data from thousands of customers makes incumbents impossible to displace? In practice, proprietary data moats are rarer and shallower than claimed. Most SaaS companies are sitting on usage data that is valuable but not irreplaceable. The companies with genuinely deep, hard-to-replicate data are the exceptions.
 
-What's left? Brand, distribution, and regulatory compliance. These are real. But they are the advantages of incumbency, not of innovation. And critically, they are advantages that startups by definition do not have — which means the SaaS model as a vehicle for startup investment has lost much of its rationale.
+What's left? Brand, distribution, and regulatory compliance. These are real. But they are the advantages of incumbency, not of innovation — and they are advantages that startups by definition do not have.
 
-## The third death: a self-fulfilling prophecy
+## 4. A self-fulfilling prophecy
 
 There is a more prosaic reason the SaaSpalooza is over, and it is the one that most directly affects founders and investors right now.
 
@@ -103,6 +105,8 @@ The exit market has closed as a result. SaaS as an asset class worked because th
 Without exits, venture capital cannot return money to its LPs. Without returns, LPs stop committing to new funds. Without new funds, VCs stop deploying. Without deployment, founders don't get funded. The machine runs in reverse.
 
 This is not just a cyclical correction. The underlying conditions that made SaaS an exceptional vehicle for venture returns have structurally changed. They are not coming back in the same form.
+
+SaaS solutions can still be successfully built — probably in hyper-vertical domains where the founder has deep domain expertise and an existing network. But those businesses are unlikely to attract VC backing or grow like the unicorns of the 2010s. They will be bootstrapped, profitable, and small by the standards of the last decade. That is not nothing. But it is not the SaaSpalooza.
 
 ## What comes next
 
