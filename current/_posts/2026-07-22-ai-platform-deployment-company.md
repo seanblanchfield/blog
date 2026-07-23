@@ -145,4 +145,4 @@ Over the last four months we have personally witnessed what happens when employe
 
 At Jentic, we've been building toward this since 2025: agents, then an internal fleet, now the multiplayer context layer that puts compounding intelligence in the hands of every employee. We're now partnering with specialist service providers and integrators to deliver this at enterprise scale, and identifying open-core technology partners to build the sovereign agent OS this market needs.
 
-If you're thinking about this as a potential client, partner, or someone who wants to back this bet, [I want to talk](mailto:sean@jentic.com).
+If you're thinking about this as a potential client, partner, or someone who wants to back this bet, drop me an email (sean at jentic dot com).
