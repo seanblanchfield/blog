@@ -57,11 +57,11 @@ This alone would have been a significant correction. A reckoning for overvalued 
 
 But then the second thing happened.
 
-## The second death: why AI kills SaaS
+## The second death: AI kills SaaS
 
 In late 2022, just as the ZIRP era ended, generative AI arrived. The two events are not unrelated — the same macroeconomic shock that ended cheap money also accelerated investment into AI as the next big thing. But generative AI turned out to be an existential threat to SaaS in its own right, for four distinct reasons.
 
-## 1. Any good idea can now be cheaply copied
+### 1. Any good idea can now be cheaply copied
 
 The core value proposition of a SaaS product is: we have done a difficult thing, and rather than you doing it yourself, you can pay us a monthly fee to use ours. The moat is the difficulty. The years of engineering, the integrations, the reliability, the refinement. You pay because building it yourself is harder than renting it.
 
@@ -69,7 +69,7 @@ AI coding agents have largely collapsed that moat. A reasonably technical person
 
 Worse, it's not just that a competitor can copy you cheaply. Your own customer can copy you if they like. The lock-in that once came from the sheer difficulty of rebuilding is gone. Any working business model you have figured out — after all the blood, sweat and tears of discovery — is now a template that someone else can replicate in a weekend.
 
-## 2. Agents don't need a UI to use a database
+### 2. Agents don't need a UI to use a database
 
 Here is the short version: AI doesn't need help using a database. Most humans do. Most SaaS is just a database wrapper.
 
@@ -86,7 +86,7 @@ This is why the shift to outcome-based pricing is not just a trend: it is an ine
 
 > **The litmus test.** How vulnerable is any given SaaS product to this? Imagine ripping off the user interface and exposing the naked API underneath. Does the product make sense as a pure API, consumed by agents rather than humans? If yes, it is at serious risk. If the value is genuinely in the network, the data, or something only a human can navigate — there may be more runway. Most products, if you're honest, pass the first test.
 
-## 3. The moats are gone
+### 3. The moats are gone
 
 Even if you accept the UI argument, you might think SaaS companies have other defences. They do, but they are weaker than they look.
 
@@ -98,7 +98,7 @@ Even if you accept the UI argument, you might think SaaS companies have other de
 
 What's left? Brand, distribution, and regulatory compliance. These are real. But they are the advantages of incumbency, not of innovation — and they are advantages that startups by definition do not have.
 
-## 4. A self-fulfilling prophecy
+### 4. A self-fulfilling prophecy
 
 There is a more prosaic reason the SaaSpalooza is over, and it is the one that most directly affects founders and investors right now.
 
