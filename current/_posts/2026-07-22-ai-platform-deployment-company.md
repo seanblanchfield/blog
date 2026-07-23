@@ -55,7 +55,7 @@ Three things are true about all of them:
 1. The fact that real-world AI deployment requires so much human effort quietly undermines the hype. 
 1. Enterprises will view these companies a Trojan horses full of Forward Deployed Engineers on a mission to lock them in, and maybe raid their data and business know-how while they are at it. 
 
-What's missing from the PR is a consistent playbook on how enterprises can embrace AI without being reckless, move beyond disconnected point solutions, and join the ranks of the minority that are achieving transformative results.
+What's missing from the PR is a vision of how enterprises can embrace AI without being reckless, move beyond disconnected point solutions, and join the ranks of the minority that are achieving transformative results.
 
 
 ## What "AI transformation" actually means
@@ -77,18 +77,18 @@ This compounding context layer is the litmus test. It's what distinguishes a gen
 
 ## This ain't systems integration
 
-The PR for the four new AI deployment companies sounds similar to regular systems integrators like Accenture and Capgemini: capable people embedded in your operations (but now with AI augmenting them). Human effort applied to an AI implementation. Perhaps they promise access to deeper expertise, but that's potentially at the cost of lock-in or misaligned incentives (a pressing need to sell tokens and find novel training data).  Gartner gave a blunt <a href="https://www.cio.com/article/4167981/anthropics-financial-agents-expose-forward-deployed-engineers-as-new-ai-limiting-factor.html">warning of "FDE-washing"</a>: traditional billable-hour consulting rebranded as advanced engineering. They projected that by 2028, up to 70% of enterprises may abandon vendor-led FDE engagements due to runaway costs and inability to evolve the systems independently.
+The four new AI deployment companies don't seem too different to regular systems integrators like Accenture and Capgemini: capable people embedded in your operations (but now with AI augmenting them). Human effort applied to an AI implementation. Perhaps they offer access to deeper expertise, but that's potentially at the cost of lock-in or misaligned incentives (their pressing need to sell tokens and find novel training data).  Gartner gave a blunt <a href="https://www.cio.com/article/4167981/anthropics-financial-agents-expose-forward-deployed-engineers-as-new-ai-limiting-factor.html">warning of "FDE-washing"</a>: traditional billable-hour consulting rebranded as advanced engineering. They projected that by 2028, up to 70% of enterprises may abandon vendor-led FDE engagements due to runaway costs and inability to evolve the systems independently.
 
-I think the winners in this category will not look like the systems integrators and big consultancies of the last few decades. The winners will be exemplars of the kind of AI-native company that they promise to transform their clients into. **The question any enterprise should ask their AI consultancy is: "*Tell me about your agent fleet*".** They should answer excitedly about the career-defining impact of working within a "context flywheel". Anything less, and they may not be the company to guide you on this journey.
+I think the winners in this category will not look like the systems integrators and big consultancies of the last few decades. The winners will be exemplars of the kind of AI-native company that they promise to transform their clients into. **The question any enterprise should ask their AI consultancy is: "*Tell me about your agent fleet*".** They should answer excitedly about the career-defining impact of working within a "context flywheel", and be excited to build you one of your own. Anything less, and they may not be the company to guide you on this journey.
 
 Like the dev agency I spoke to that went all-in on AI, the winning deployment company will be focused on efficiency and growth, than on billing bodies by the hour. They will be confident about the future, because they are living in it and know its going to be as big for their clients as it is for them. Their pricing will be value-based, not time-based, and they will expect to earn your renewal to maintain your AI agent fleet year after year.
 
 
 > **What does the AI economy supply chain look like?**
 >
-> 1. The deployment company builds the platform and starts the flywheel. 
+> 1. The deployment company builds and maintains your internal platform, and kickstarts the flywheel. 
 >
-> 1. Above it sit knowledge service providers: specialist firms gone deep in a vertical, pooling what they learn from every engagement and re-delivering that expertise continuously into their clients' agent fleets. Not renting agents, but delivering continuously compounded knowledge. Think of it like a great paid newsletter like Stratechery or The Exponential View: an expert going very deep on a specific beat, synthesising intelligence from across a wide network, re-delivering it scalably to subscribers. But the delivery mechanism here is agent-to-agent, not email.
+> 1. Above it are your knowledge service providers: specialist firms gone deep in a vertical, pooling what they learn from every engagement and re-delivering that expertise continuously into their clients' agent fleets. Not renting agents, but delivering continuously compounded knowledge. Think of it like a great paid newsletter like Stratechery or The Exponential View: an expert going very deep on a specific beat, synthesising intelligence from across a wide network, re-delivering it scalably to subscribers. But the delivery mechanism here is agent-to-agent, not email.
 >
 > 1. At the top is the enterprise's own context. The starting point is delivered by the knowledge service providers, and then internally refined with the company's own culture, adaptations, strategic instincts, institutional memory. That layer belongs to no one else. That is what AI sovereignty, properly understood, actually means.
 
@@ -98,23 +98,23 @@ Like the dev agency I spoke to that went all-in on AI, the winning deployment co
 </figure>
 
 
-## The sovereignty question
+## When you gaze into an LLM, the LLM gazes back at you
 
-The 4 big AI deployment companies exist to deploy the services of OpenAI, Anthropic, Microsoft and Amazon. Every one of them has a material interest in getting you operationally locked in, with your data and workflows on their platforms. They happen to be all US-headquartered, and operating within a US policy framework. Several have an explicit incentive to learn from your usage to train their own models or inform their own product expansion strategy.
+The 4 new AI deployment companies exist to deploy the services of OpenAI, Anthropic, Microsoft and Amazon. Every one of them has a material interest in getting you operationally locked in, with your data and workflows on their platforms. They happen to be all US-headquartered, and operating within a US policy framework. Several have an explicit incentive to learn from your usage to train their own models or inform their own product expansion strategy.
 
-Think about what it means to be fully deployed with all your intelligence and agents outsourced. As a clever VC friend put it:
+As a clever VC friend once memorably commented:
+> "a company is just a bunch of workflows and a bank account"
 
-> a company is just a bunch of workflows and a balance sheet. 
+If you hand over all your workflows, you might quickly discover that all you've been transformed into is an AI reseller.
 
-If you hand your workflows to your AI vendor, you're not just sharing your tooling, but the operational DNA of your company. <a href="https://247wallst.com/investing/2026/07/01/palantir-ceo-alex-karp-enterprises-are-livid-over-ai-models-that-steal-their-business-value/">Palantir's CEO Alex Karp put it bluntly</a>: enterprises are "livid" over paying for tokens that simultaneously "steal the alpha" of their business.
+In Tolkien's *Lord of the Rings*, the *palantír* were powerful and irresistible seeing-stones. But they were a two-way street: when you looked into one you would find Sauron looking back. Every prompt you send to a hosted AI model is a kind of palantír moment: you're not the only one doing the seeing.
 
-If that vendor is also selling intelligence to your competitors (and they all are) your interests are not fully aligned. You might be expensively funding your own commoditization.
+Isn't it curious that Peter Thiel named his company after that? I suspect the irony doesn't escape <a href="https://247wallst.com/investing/2026/07/01/palantir-ceo-alex-karp-enterprises-are-livid-over-ai-models-that-steal-their-business-value/">Palantir's CEO Alex Karp</a>, who bluntly declared that US enterprise CEOs are "livid" at the major AI labs and are saying:
+> "I am paying for tokens that create no value. These people are stealing the weights and alpha of my business."
 
 <a href="https://cybersecurity.vision/who-owns-what-your-company-knows/">Satya Nadella has called this the reverse information paradox</a>: you pay for intelligence twice. Once with money, and again with the proprietary knowledge you must reveal to make it useful. Every correction, every workflow trace, every eval: distilled institutional know-how leaking almost imperceptibly into someone else's model. As Chamath Palihapitiya observed on the All In podcast, <a href="https://www.youtube.com/watch?v=wgdxSCsmS-Q&t=1890s">this is the cloud model itself under pressure</a>: "*The industry spent all these years convincing everyone to flip to the cloud, and this idea of shared infrastructure may not be the best idea in a world of artificial intelligence.*"
 
-For many, the 4 new deployment companies are not a real option. They need an AI-native transformation partner who is not primarily in the business of selling tokens or cloud.
-
-That is the gap.
+If your AI vendor is also selling intelligence to your competitors (and they all are) your interests are not fully aligned. You might be expensively funding your own commoditization. What every company needs is an AI-native transformation partner who is not primarily in the business of selling tokens or cloud.
 
 ## Enter the sovereign AI deployment company
 
@@ -142,6 +142,6 @@ That combination doesn't currently exist as a single company. <a href="https://t
 ## What we're building
 
 At Jentic, we started by building AI-powered integration and agent governance layers. Since Summer 2025 we added agents, and then moved through OpenClaw, Hermes and Pi. We're now running an internal agent fleet, and we're productizing the "multiplayer context layer" that puts it in the hands of every employee. 
-During the last four months we have personally witnessed the phenomenon that happens when your employees alongside agents in the context layer. That context layer is compounds, and you begin to trust your agents to handle work that previously would have taken weeks or months or just not have been done at all. We see the same pattern in other advanced companies that are winning with AI: a consolidated AI enablement platform, where investment in focused, which yields compounding returns every day.
+During the last four months we personally witnessed what happens when your employees work alongside agents in the context layer. That context layer is compounds, and you begin to trust your agents to handle work that previously would have taken weeks or months or just not have been done at all. We see the same pattern in other advanced companies that are winning with AI: a consolidated AI enablement platform, where investment in focused, which yields compounding returns every day.
 
 We are partnering with the specialist service providers and integrators who can deliver this system at scale into the enterprises that need it, and are identifying open-core technology partners to collaborate on building the best-in-class enterprise-scale sovereign agent operating system.  If you are thinking about this (as a potential client, a potential partner, or someone who wants to back this bet) I want to talk.
