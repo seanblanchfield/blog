@@ -141,7 +141,8 @@ That combination doesn't currently exist as a single company. <a href="https://t
 
 ## What we're building
 
-At Jentic, we started by building AI-powered integration and agent governance layers. Since Summer 2025 we added agents, and then moved through OpenClaw, Hermes and Pi. We're now running an internal agent fleet, and we're productizing the "multiplayer context layer" that puts it in the hands of every employee. 
-During the last four months we personally witnessed what happens when your employees work alongside agents in the context layer. That context layer is compounds, and you begin to trust your agents to handle work that previously would have taken weeks or months or just not have been done at all. We see the same pattern in other advanced companies that are winning with AI: a consolidated AI enablement platform, where investment in focused, which yields compounding returns every day.
+Over the last four months we have personally witnessed what happens when employees work alongside agents in a compounding context layer. Trust builds. Work that would have taken weeks happens in hours. The flywheel spins. We see the same pattern in every company that's genuinely winning with AI.
 
-We are partnering with the specialist service providers and integrators who can deliver this system at scale into the enterprises that need it, and are identifying open-core technology partners to collaborate on building the best-in-class enterprise-scale sovereign agent operating system.  If you are thinking about this (as a potential client, a potential partner, or someone who wants to back this bet) I want to talk.
+At Jentic, we've been building toward this since 2025: agents, then an internal fleet, now the multiplayer context layer that puts compounding intelligence in the hands of every employee. We're now partnering with specialist service providers and integrators to deliver this at enterprise scale, and identifying open-core technology partners to build the sovereign agent OS this market needs.
+
+If you're thinking about this as a potential client, partner, or someone who wants to back this bet, [I want to talk](mailto:sean@jentic.com).
