@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "End of the SaaSpalooza"
-date: 2026-07-21 00:00:00 +0100
+date: 2026-04-28 00:00:00 +0100
 categories: [ai, saas, strategy]
 image: /images/2026/07/saaspocalypse/hero.png
 ---
