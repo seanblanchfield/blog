@@ -22,7 +22,7 @@ Three moments made the SaaS era possible. I was there for all three, which is pa
 
 **2006:** Amazon launched AWS. Suddenly the infrastructure itself followed the same model. You didn't need a server room or a data centre contract. You span up a virtual machine, paid by the hour, and span it down when you were done. Cloud computing turned infrastructure capex into opex too. Small teams could now build scalable software products without the upfront capital costs that had previously been a moat for large incumbents. I was living the pre-cloud version of this at the time, scaling [Demonware](https://en.wikipedia.org/wiki/Demonware) to run the online infrastructure for Call of Duty across five data centres around the world — building our own cloud before the word existed. AWS would have changed everything for us.
 
-**2009:** The financial crisis hit, interest rates crashed to zero, and stayed there for fourteen years. This is the bit people forget. I was back in SaaS by then, and by 2011 was running a SaaS venture studio and seriously considering a move into VC — the money was flowing and the model felt unstoppable.
+**2008:** The financial crisis hit, interest rates crashed to zero, and stayed there for fourteen years. This is the bit people forget. I was back in SaaS by then, and by 2011 was running a SaaS venture studio and seriously considering a move into VC — the money was flowing and the model felt unstoppable.
 
 <figure>
 <img src="/images/2026/07/saaspocalypse/slide-03.png" alt="Chart showing global VC funding, SaaS growth and cloud growth from 2005 to 2025, with ZIRP era highlighted" style="max-width:100%;border-radius:6px;">
@@ -31,7 +31,7 @@ Three moments made the SaaS era possible. I was there for all three, which is pa
 
 ## ZIRP: the fuel nobody talks about
 
-Zero Interest Rate Policy (ZIRP) meant that money was effectively free. Institutional investors who had previously been content with bonds and safe havens found themselves chasing yield anywhere they could find it. That money flowed into venture capital. The VC industry roughly tripled in size between 2009 and 2021.
+Zero Interest Rate Policy (ZIRP) meant that money was effectively free. Institutional investors who had previously been content with bonds and safe havens found themselves chasing yield anywhere they could find it. That money flowed into venture capital. The VC industry roughly tripled in size between 2008 and 2021.
 
 And what was venture capital deploying all that free money into? Mainly SaaS. Because SaaS had something that investors in a low-yield world found irresistible: predictable, recurring revenue. Monthly subscriptions. Annual contracts. Churn rates you could model. Lifetime value you could calculate. Net Revenue Retention you could tout. The entire vocabulary of SaaS metrics was purpose-built to make these businesses legible to a financial system awash in cheap capital looking for somewhere to go.
 
@@ -115,7 +115,7 @@ None of this means software is dead, or that building products is dead, or that 
 
 The companies that will thrive are the ones that have genuinely useful knowledge or capability that an agent can leverage, not the ones that built a moat out of UI complexity and switching costs. The business model of the next decade is not "rent my software to your employees." It is "deliver outcomes into your agent fleet."
 
-The SaaSpalooza lasted from 2009 to 2022 — fourteen years. It was a remarkable run, funded by historically anomalous conditions. It produced real value, real products, and real companies. It also produced a lot of overvalued businesses optimised for metrics rather than economics, and a venture ecosystem that confused "this grows well in a zero-interest-rate environment" with "this is a good business."
+The SaaSpalooza lasted from 2008 to 2022 — fourteen years. It was a remarkable run, funded by historically anomalous conditions. It produced real value, real products, and real companies. It also produced a lot of overvalued businesses optimised for metrics rather than economics, and a venture ecosystem that confused "this grows well in a zero-interest-rate environment" with "this is a good business."
 
 Both died in 2022: the financial conditions that sustained it, and the user paradigm it was built on. The timing was not a coincidence. The same technological shift that gave us generative AI also gave us the inflation that ended ZIRP. The world changed at both ends simultaneously.
 
