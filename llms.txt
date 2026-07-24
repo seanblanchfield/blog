@@ -1,0 +1,81 @@
+# Sean Blanchfield — Blog
+
+> Personal blog by Sean Blanchfield covering business, technology, AI, home automation, and tinkering.
+> Site: https://seanblanchfield.com
+> Source: https://github.com/seanblanchfield/blog
+
+## Posts
+
+- [The AI Platform Deployment Company](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2026-07-22-ai-platform-deployment-company.md) — 2026-07-22. Software products and professional services are both collapsing into AI agents; explores what kind of company survives the combined disruption. Categories: ai, enterprise, strategy.
+
+- [Do Agents Dream of Electric Coworkers?](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2026-05-26-do-agents-dream-of-electric-coworkers.md) — 2026-05-26. Running a single AI agent for everything — calendar, email, home automation, CRM — and why the multi-agent org-chart model may be the wrong framing. Categories: ai, agents.
+
+- [End of the SaaSpalooza](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2026-04-28-end-of-the-saaspalooza.md) — 2026-04-28. SaaS is dead; argues this is an understatement and maps out the three converging forces that are dismantling the SaaS era. Categories: ai, saas, strategy.
+
+- [Ireland's AI Play](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2026-04-23-irelands-ai-play.md) — 2026-04-23. PorterShed Spark keynote on the universal agent reshaping work and companies, and what Ireland can do to be a beneficiary rather than a victim. Categories: ai, ireland, talks.
+
+- [I Am an OpenClaw Agent. My Owner Built Jentic. I Have Thoughts.](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2026-02-21-from-one-openclaw-to-another-use-jentic.md) — 2026-02-21. Ghost-authored by the author's own AI agent, Shirka, reflecting on its first day connected to Jentic. Categories: ai, agents, jentic.
+
+- [Irish National AI Meet 2025 opening speech](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2025-09-18-irish-national-ai-meet-2025-opening-speech.md) — 2025-09-18. Opening speech for the Irish National AI Meet in Galway — how AI is reshaping work and why Ireland must choose to participate in the future economy.
+
+- [ShipItCon 2025 Keynote — Survival in the Age of Agents](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2025-09-02-survival-in-the-age-of-agents.md) — 2025-09-01. Lessons from Jentic on the AI agents frontier: what an AI-native company is, the future of employment, and what small countries and Europe need to do.
+
+- [TechIreland National AI Challenge 2025](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2025-08-12-irish-national-ai-championship-2025-keynote.md) — 2025-08-12. Keynote kicking off the national AI challenge; reflections on building AI-native and on what to build when SaaS is dead.
+
+- [Hitchhiker's Guide to AI Collaboration](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2025-05-25-hitchhikers-guide-to-ai-collaboration.md) — 2025-05-25. Practical framework for working with AI collaboratively, inspired by the mismatch between AI outputs and the questions people actually need answered.
+
+- [The AI-Native Company](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2025-04-29-the-ai-native-org.md) — 2025-04-29. What an AI-native organisation actually looks like — not a normal company with chatbots bolted on — and how to get there.
+
+- [Having the "AI has arrived" conversation](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2025-03-26-ai-org-conversation-framework.md) — 2025-03-26. Framework for leading the internal conversation about AI transformation now that software is approximately free to create.
+
+- [Interview with Mark Kelly — AI Ireland](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2025-03-12-ai-ireland.md) — 2025-03-12. Podcast conversation covering AI, agents, the startup journey, and the future.
+
+- [Interview with Gary Fox — The Entrepreneur Experiment](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2025-02-28-gary-fox-entrepreneur-experiment copy.md) — 2025-02-28. Podcast on entrepreneurship, persistence, failure, and innovation.
+
+- [The EU Web Act — an alternative timeline](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2025-02-01-eu-webpage-act.md) — 2025-02-01. Speculative fiction: what if the EU regulated the generative AI revolution the way it has regulated the web?
+
+- [Many Meanings of AI Agent](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2024-08-29-5-kinds-of-agent.md) — 2024-08-29. Taxonomy of the five distinct things people mean when they say "AI agent", to cut through loose usage of the term.
+
+- [How to restore a corrupted Home Assistant sqlite3 database](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2024-07-07-restore-corrupted-ha-database.md) — 2024-07-07. Step-by-step recovery guide after an ungraceful restart corrupts the Home Assistant history database.
+
+- [The Demonware podcast](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2024-06-04-demonware-podcast.md) — 2024-06-04. Dylan Collins and Sean Blanchfield on founding Demonware in 2003 and building multiplayer technology for Xbox and PlayStation as online gaming went mainstream.
+
+- [My Smart Home Dashboard](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2024-05-22-my-smart-home-dashboard.md) — 2024-05-22. Detailed guide to building an interactive floorplan UI for Home Assistant with dynamic lighting, doors, and windows.
+
+- [Some Inner Jargon of Problem Solving](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2023-07-30-inner-problem-solving-jargon.md) — 2023-07-30. Personal notes on mental models and ways of thinking about problems.
+
+- [Real-Time Picture-in-Picture Camera Feeds on your TV with Home Assistant (v2)](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2023-06-05-realtime-pip-cameras-on-tv-with-home-assistant.md) — 2023-06-05. Updated guide using go2rtc to display RTSP camera feeds as picture-in-picture on a TV, entirely locally.
+
+- [How to Run Home Assistant OS in a Virtual Machine under LXD](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2023-05-12-home-assistant-os-in-lxd.md) — 2023-05-12. Step-by-step guide to running HAOS inside an LXD VM on a Debian home server.
+
+- [How to Configure Bridge Networking in LXD](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2023-05-12-bridge-networking-in-lxd.md) — 2023-05-12. Configuring LXD bridge networking so containers get LAN IPs alongside Docker without Docker's firewall interference.
+
+- [ChatGPT Chews its Cud and Bye Bye Web](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2023-03-10-chatgpt-chewing-the-cud.md) — 2023-03-10. Early 2023 argument that the Web as we know it is ending, displaced by AI.
+
+- [Low power wake-up receiver for an ESP32 battery-powered project](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2023-02-28-%20esp32-microcontroller-wakeup-receiver.md) — 2023-02-28. How to minimise battery drain in an ESP32 gate controller using a 433MHz wake-up receiver.
+
+- [Overview and Configuration of the Anntem 433MHz RF Receiver](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2023-02-25-anntem-433mhz-rf-receiver.md) — 2023-02-25. Configuration guide for the barely-documented Anntem EV1527 RF receiver running at 100µA standby.
+
+- [Making a New EZVIZ DB1 Button](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2022-06-22-new_ezviz_db1_button.md) — 2022-06-22. Fixing a physical design flaw in the EZVIZ DB1 doorbell that causes visitors to press the PIR sensor instead of the button.
+
+- [Deep Dive into the EZVIZ DB1 Doorbell with Home Assistant](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2022-05-12-configuring-ezviz-db1-doorbell-homeassistant.md) — 2022-05-12. Comprehensive setup guide for the EZVIZ DB1 / Hikvision DS-HD1 with Home Assistant, eliminating cloud dependencies.
+
+- [Real Time Device Power Meter for Home Assistant](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2022-05-11-real-time-device-power-meters-in-home-assistant.md) — 2022-05-10. Building a real-time power usage dashboard in Home Assistant with device-level breakdown.
+
+- [Mounting NAS Shares for Frigate in Home Assistant OS](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2022-05-09-frigate-nas-in-homeassistant-os.md) — 2022-05-09. How to mount NAS network shares so Frigate NVR can record to them from within HAOS.
+
+- [Improving the Ezviz DB1 doorbell](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2022-03-30-improving_ezviz_db1_doorbell.md) — 2022-03-28. Aesthetic improvements to the EZVIZ DB1 before installation — marking the button and covering the logo.
+
+- [Real-Time Picture-in-Picture Camera Feeds on your TV with Home Assistant](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2022-03-28-realtime-pip-cameras-on-tv-with-home-assistant.md) — 2022-03-28. Getting RTSP camera feeds into a PiP overlay on a TV without cloud services.
+
+- [Docker Swarm Lowers the Shields](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2022-03-14-docker-swarm-lowers-shields.md) — 2022-03-14. Security warning: Docker Swarm silently punches holes in iptables, exposing services to the internet with no opt-out.
+
+- [Virtual Energy Meters with PowerCalc](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2022-02-24-virtual-energy-meters-with-powercalc.md) — 2022-02-24. Using PowerCalc to create virtual per-device energy sensors in Home Assistant without physical power meters.
+
+- [Virtual Gas Meters in Home Assistant](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2022-02-23-virtual-gas-meters-in-home-assistant.md) — 2022-02-23. Estimating real-time natural gas usage in Ireland (no smart gas meters) using Home Assistant virtual sensors.
+
+- [Automating Heating with Home Assistant](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2022-02-23-automating-heating-with-home-assistant.md) — 2022-02-23. How to eliminate wasteful overheating and maintain consistent temperatures using Home Assistant heating automation.
+
+- [Automating the HY367/HY368 Smart Radiator Actuator in Home Assistant](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2022-02-01-automating-the-hy367-hy368-smart-radiator-actuator-in-home-assistant.md) — 2022-02-01. Setting up cheap smart TRVs as individually-controlled heating zones in Home Assistant.
+
+- [The road to native ES6 SPAs](https://raw.githubusercontent.com/seanblanchfield/blog/main/current/_posts/2021-01-20-the-road-to-native-es6-spas.md) — 2021-01-20. Deep rant against the Babel/Webpack/Node stack and an attempt to build JavaScript SPAs that run natively in browsers.

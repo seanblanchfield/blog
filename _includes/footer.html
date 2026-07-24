@@ -1,23 +1,20 @@
 <footer class="site-footer">
   <div class="wrapper">
 
-    <div class="footer-columns">
-      <div>
-        <p class="feed-subscribe">
-          <a href="{{ 'feed.xml' | relative_url }}">
-            <svg class="svg-icon orange">
-              <use xlink:href="{{ 'assets/icons.svg#rss' | relative_url }}"></use>
-            </svg><span>Subscribe</span>
-          </a>
-        </p>
+    <div class="footer-centre">
+      <div class="social-links">
+        {% include social.html %}
       </div>
-      <div>
-        <p>{{ site.description | escape }}</p>
+      <p class="feed-subscribe">
+        <a href="{{ 'feed.xml' | relative_url }}">
+          <svg class="svg-icon orange">
+            <use xlink:href="{{ 'assets/icons.svg#rss' | relative_url }}"></use>
+          </svg><span>Subscribe</span>
+        </a>
+      </p>
+      <div class="llms-link">
+        [<a href="/llms.txt" title="Index of this site's content in plain text/markdown format, suitable for AI language models and agents">LLMs.txt</a>]
       </div>
-    </div>
-
-    <div class="social-links">
-      {% include social.html %}
     </div>
   </div>
 
