@@ -1,5 +1,30 @@
 <script>
-    
+  (function() {
+    var btn = document.getElementById('theme-toggle');
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      var dark = document.getElementById('hljs-dark-theme');
+      var light = document.getElementById('hljs-light-theme');
+      if (dark) dark.disabled = (theme === 'light');
+      if (light) light.disabled = (theme === 'dark');
+    }
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var current = document.documentElement.getAttribute('data-theme');
+        applyTheme(current === 'dark' ? 'light' : 'dark');
+      });
+    }
+    // Sync with system preference changes when no explicit choice is stored
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+      if (!localStorage.getItem('theme')) {
+        applyTheme(e.matches ? 'dark' : 'light');
+      }
+    });
+  })();
+</script>
+<script>
+
     //   Convert images marked for captioning into captioned figures.
     document.querySelectorAll("img.captioned").forEach(function(imgNode) {
         let classes = imgNode.classList.toString();
