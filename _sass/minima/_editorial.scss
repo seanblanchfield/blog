@@ -233,7 +233,13 @@ $rule:           rgba(0,0,0,0.1);
   }
 
   @media screen and (min-width: 1000px) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
+
+    .post-grid__item { grid-column: span 2; } // 3 per row
+
+    // 2nd row: items 4 & 5 each span 3 cols → 2 per row
+    .post-grid__item:nth-child(4),
+    .post-grid__item:nth-child(5) { grid-column: span 3; }
   }
 
   &__item {
