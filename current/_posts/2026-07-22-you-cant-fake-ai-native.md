@@ -81,6 +81,8 @@ This compounding context layer is the litmus test. It's what distinguishes a gen
 
 ## This ain't systems integration
 
+> "The next $1T company will be a software company masquerading as a services firm." - [Sequoia, March 2026](https://sequoiacap.com/article/services-the-new-software/)
+
 The four new AI deployment companies don't seem too different to regular systems integrators like Accenture and Capgemini: capable people embedded in your operations (but now with AI augmenting them). Human effort applied to an AI implementation. Perhaps they offer access to deeper expertise, but that's potentially at the cost of lock-in or misaligned incentives (their pressing need to sell tokens and find novel training data).  Gartner gave a blunt <a href="https://www.cio.com/article/4167981/anthropics-financial-agents-expose-forward-deployed-engineers-as-new-ai-limiting-factor.html">warning of "FDE-washing"</a>: traditional billable-hour consulting rebranded as advanced engineering. They projected that by 2028, up to 70% of enterprises may abandon vendor-led FDE engagements due to runaway costs and inability to evolve the systems independently.
 
 I think the winners in this category will not look like the systems integrators and big consultancies of the last few decades. The winners will be exemplars of the kind of AI-native company that they promise to transform their clients into. **The question any enterprise should ask their AI consultancy is: "*Tell me about your agent fleet*".** They should answer excitedly about the career-defining impact of working within a "context flywheel", and be excited to build you one of your own. Anything less, and they may not be the company to guide you on this journey.
@@ -141,6 +143,14 @@ That combination doesn't currently exist as a single company. <a href="https://t
 > 1. *Longevity:* it has zero turnover of intellectual capital.
 >
 > This competes with Accenture the way Accenture competed with the typing pool.
+
+## What this is worth
+
+The most visible data point on what the market pays for compounding intelligence infrastructure is Palantir, currently trading at around 60x revenue. Palantir is a legitimate outlier — defence contracts, a decade of patient capital, and a devoted retail investor following all inflate that number in ways that don't generalise. So discount it aggressively. Apply an 80% haircut to strip out those circumstances entirely. You're still at 12x revenue.
+
+That residual isn't an accident. It reflects what investors pay for a business where the core delivery infrastructure gets better with every engagement — where accumulated context compounds into a moat that a new entrant can't buy or replicate. PwC's deals practice described it plainly in 2025: the companies commanding premium exits are those "building data moats that compound over time," specifically those generating "proprietary context that makes AI better over time in ways competitors can't easily replicate."
+
+An AI-native deployment company whose agent fleet is the delivery layer — and whose agents accumulate client context, workflow knowledge, and domain expertise with every engagement — is not priced as a services business. It is priced as infrastructure. The 12x floor, even after every Palantir-specific discount has been applied, is the market telling you something about what that distinction is worth.
 
 ## What we're building
 
