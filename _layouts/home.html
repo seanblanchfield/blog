@@ -7,13 +7,12 @@ layout: default
   {% if paginator.posts.size > 0 %}
 
     {% if paginator.page == 1 %}
-      {% assign lead = nil %}
-      {% for post in paginator.posts %}
-        {% unless post.draft %}
-          {% if lead == nil %}{% assign lead = post %}{% endif %}
-        {% endunless %}
-      {% endfor %}
 
+      {% comment %} Collect non-draft posts {% endcomment %}
+      {% assign all_posts = paginator.posts | where_exp: "p", "p.draft != true" %}
+
+      {% comment %} Featured lead — post 1 {% endcomment %}
+      {% assign lead = all_posts[0] %}
       <div class="feature-lead">
         <a class="feature-lead__image-link" href="{{ lead.url | relative_url }}">
           <div class="feature-lead__image" {% if lead.image %}style="background-image: url('{{ lead.image }}');"{% endif %}></div>
@@ -30,33 +29,78 @@ layout: default
 
       <div class="secondary-divider"><span>More writing</span></div>
 
+      {% comment %} Large cards — posts 2–9 {% endcomment %}
       <ul class="post-grid">
-        {% assign shown_lead = false %}
-        {% for post in paginator.posts %}
-          {% unless post.draft %}
-            {% if shown_lead == false %}
-              {% assign shown_lead = true %}
-            {% else %}
-              <li class="post-grid__item">
-                <a class="post-grid__image-link" href="{{ post.url | relative_url }}">
-                  <div class="post-grid__image" {% if post.image %}style="background-image: url('{{ post.image }}');"{% endif %}></div>
-                </a>
-                <div class="post-grid__body">
-                  <p class="post-grid__meta">{{ post.date | date: site.minima.date_format }}</p>
-                  <h3 class="post-grid__title">
-                    <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                  </h3>
-                  <p class="post-grid__summary">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
-                  <a class="post-grid__cta" href="{{ post.url | relative_url }}">Read &rarr;</a>
-                </div>
-              </li>
-            {% endif %}
-          {% endunless %}
+        {% for post in all_posts limit: 8 offset: 1 %}
+        <li class="post-grid__item">
+          <a class="post-grid__image-link" href="{{ post.url | relative_url }}">
+            <div class="post-grid__image" {% if post.image %}style="background-image: url('{{ post.image }}');"{% endif %}></div>
+          </a>
+          <div class="post-grid__body">
+            <p class="post-grid__meta">{{ post.date | date: site.minima.date_format }}</p>
+            <h3 class="post-grid__title">
+              <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h3>
+            <p class="post-grid__summary">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
+            <a class="post-grid__cta" href="{{ post.url | relative_url }}">Read &rarr;</a>
+          </div>
+        </li>
         {% endfor %}
       </ul>
 
+      {% comment %} Mini cards — posts 10–30 {% endcomment %}
+      {% assign mini_count = 0 %}
+      {% assign overflow_count = 0 %}
+      {% for post in all_posts %}
+        {% if forloop.index >= 10 and forloop.index <= 30 %}
+          {% assign mini_count = mini_count | plus: 1 %}
+        {% endif %}
+        {% if forloop.index > 30 %}
+          {% assign overflow_count = overflow_count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+
+      {% if mini_count > 0 %}
+      <ul class="post-mini-grid">
+        {% for post in all_posts %}{% if forloop.index >= 10 and forloop.index <= 30 %}
+        <li class="post-mini-grid__item">
+          <a class="post-mini-grid__link" href="{{ post.url | relative_url }}">
+            <div class="post-mini-grid__image" {% if post.image %}style="background-image: url('{{ post.image }}');"{% endif %}></div>
+            <div class="post-mini-grid__body">
+              <p class="post-mini-grid__meta">{{ post.date | date: site.minima.date_format }}</p>
+              <h4 class="post-mini-grid__title">{{ post.title | escape }}</h4>
+            </div>
+          </a>
+        </li>
+        {% endif %}{% endfor %}
+      </ul>
+      {% endif %}
+
+      {% comment %} Overflow — posts 31+ hidden behind toggle {% endcomment %}
+      {% if overflow_count > 0 %}
+      <div class="post-overflow">
+        <button class="post-overflow__toggle" id="show-all-toggle" aria-expanded="false">
+          Show all {{ all_posts.size }} posts ↓
+        </button>
+        <ul class="post-mini-grid post-overflow__list" id="overflow-posts" hidden>
+          {% for post in all_posts %}{% if forloop.index > 30 %}
+          <li class="post-mini-grid__item">
+            <a class="post-mini-grid__link" href="{{ post.url | relative_url }}">
+              <div class="post-mini-grid__image" {% if post.image %}style="background-image: url('{{ post.image }}');"{% endif %}></div>
+              <div class="post-mini-grid__body">
+                <p class="post-mini-grid__meta">{{ post.date | date: site.minima.date_format }}</p>
+                <h4 class="post-mini-grid__title">{{ post.title | escape }}</h4>
+              </div>
+            </a>
+          </li>
+          {% endif %}{% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
     {% else %}
 
+      {% comment %} Page 2+: all as large cards {% endcomment %}
       <ul class="post-grid post-grid--full">
         {% for post in paginator.posts %}
           {% unless post.draft %}
@@ -77,23 +121,37 @@ layout: default
         {% endfor %}
       </ul>
 
-    {% endif %}
+      {% if paginator.total_pages > 1 %}
+      <ul class="pager">
+        {% if paginator.previous_page %}
+          <li class="previous">
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer</a>
+          </li>
+        {% endif %}
+        {% if paginator.next_page %}
+          <li class="next">
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &rarr;</a>
+          </li>
+        {% endif %}
+      </ul>
+      {% endif %}
 
-    {% if paginator.total_pages > 1 %}
-    <ul class="pager">
-      {% if paginator.previous_page %}
-        <li class="previous">
-          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer</a>
-        </li>
-      {% endif %}
-      {% if paginator.next_page %}
-        <li class="next">
-          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &rarr;</a>
-        </li>
-      {% endif %}
-    </ul>
     {% endif %}
 
   {% endif %}
 
 </div>
+
+<script>
+  (function() {
+    var btn = document.getElementById('show-all-toggle');
+    var list = document.getElementById('overflow-posts');
+    if (!btn || !list) return;
+    btn.addEventListener('click', function() {
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      list.hidden = expanded;
+      btn.setAttribute('aria-expanded', String(!expanded));
+      btn.textContent = expanded ? btn.textContent.replace('↑', '↓') : btn.textContent.replace('↓', '↑');
+    });
+  })();
+</script>
