@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The AI Platform Deployment Company"
+title: "The Company of Tomorrow (You Can't Fake AI-Native)"
 date: 2026-07-22 00:00:00 +0100
 categories: [ai, enterprise, strategy]
 image: /images/2026/07/ai-platform-deployment-company-hero.png
