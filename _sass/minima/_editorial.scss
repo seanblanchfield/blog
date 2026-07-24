@@ -29,6 +29,20 @@ $rule:           rgba(0,0,0,0.1);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   border-bottom: none;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/images/header.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.55;
+    pointer-events: none;
+  }
 
   .site-title {
     font-family: $serif-display;
