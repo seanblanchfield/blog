@@ -25,6 +25,7 @@ pagination:
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 
 minima:
   date_format: "%-d %b %Y"

@@ -2,7 +2,11 @@
 layout: post
 title: "The Company of Tomorrow (You Can't Fake AI-Native)"
 date: 2026-07-22 00:00:00 +0100
-categories: [ai, enterprise, strategy]
+slug: you-cant-fake-ai-native
+link: /you-cant-fake-ai-native
+redirect_from:
+  - /ai-platform-deployment-company
+  - /2026/07/ai-platform-deployment-company
 image: /images/2026/07/ai-platform-deployment-company-hero.png
 ---
 
