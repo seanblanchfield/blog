@@ -6,8 +6,8 @@ gems:
   - jekyll-paginate-v2
 
 title: Sean Blanchfield
-description: >- 
-  Business, technology and tinkering.
+description: >-
+  Notes on technology, companies and how things work.
 url: "https://seanblanchfield.com"
 
 permalink: /:year/:month/:title
