@@ -21,7 +21,7 @@ This isn't just about the cambrian explosion of software that's happening right 
 
 The person who used to buy your software product has an AI assistant now (or soon will). They don't need to go looking for products anymore. When they have a job to be done, they describe it to their agent, and it gets done. Maybe entirely in LLM context. Maybe it builds a repeatable skill. Maybe it converts the skill to Python or Rust to make it run faster, cheaper and better. Maybe it formalizes it into a workflow so it can be more easily inspected and verified. The user doesn't need to care which: they just wanted the outcome, and they got it without ever leaving the chat.
 
-This is deeper than the SaaSpocalypse (I've [enumerated the reasons](/2026/04/end-of-the-saaspalooza) for that separately). The demand side for software purchasing is changing. You are now competing against your former customer's new ability to get the job done adequately without needing to think about buying software. Most tech vendors are still processing the ramifications of the first-order disruption of how AI coding agents are commoditizing product development. What's should be more terrifying to them is the second-order disruption that when customers have agents too, they no longer need vended software.
+This is deeper than the SaaSpocalypse (I've [enumerated the reasons](/2026/04/end-of-the-saaspalooza) for that separately). The demand side for software purchasing is changing. You are now competing against your former customer's new ability to get the job done adequately without needing to think about buying software. Most tech vendors are still processing the ramifications of the first-order disruption of how AI coding agents are commoditizing product development. What's should be more terrifying to them is the second-order disruption that when customers have agents too, they are no longer in market for vended software.
 
 ## Services are collapsing into agents
 
@@ -51,8 +51,8 @@ In May 2026, <a href="https://openai.com/index/openai-launches-the-deployment-co
 
 Three things are true about all of them:
 
-1. They prove that product and services are no longer separable. Enterprises can't self-serve AI transformation.
-1. The fact that real-world AI deployment requires so much human effort quietly undermines the hype. 
+1. They prove that platform and services are no longer separable. Enterprises can't self-serve AI transformation.
+1. The fact that real-world AI deployment requires so much human effort undermines the excess hype. 
 1. Enterprises will view these companies a Trojan horses full of Forward Deployed Engineers on a mission to lock them in, and maybe raid their data and business know-how while they are at it. 
 
 What's missing from the PR is a vision of how enterprises can embrace AI without being reckless, move beyond disconnected point solutions, and join the ranks of the minority that are achieving truly transformative results.
@@ -60,9 +60,9 @@ What's missing from the PR is a vision of how enterprises can embrace AI without
 
 ## What "AI transformation" actually means
 
-So what is the journey towards the target state of "AI transformed"? It means replatforming and re-org'ing until you can access the same transformative benefits that AI-native (post-2022) organisations experience. This isn't routine software procurement, or a 3 year platform modernization project. Done right, the goal is to reconfigure the organisation for **self-improvement at AI speed**.
+What does it mean to be "AI transformed"? It's about replatforming and re-org'ing until you can access the same transformative benefits that AI-native (post-2022) organisations experience. This isn't routine software procurement, or a 3 year platform modernization project. The goal is to reconfigure the organisation for **self-improvement at AI speed**.
 
-**Here's the mechanism**. When an employee works with an AI agent (coaching it through a task, correcting it, approving outputs, refining the workflow) they generate context. The agent accumulates knowledge about how this organisation does this work: its policies, its quirks, its data, its preferred outputs. That context compounds, gets reused, and other agents in the fleet draw on it.
+**Here's how**. When an employee works with an AI agent (coaching it through a task, correcting it, approving outputs, refining the workflow) they generate context. The agent accumulates knowledge about how this organisation does this work: its policies, its quirks, its data, its preferred outputs. That context compounds, gets reused, and other agents in the fleet draw on it.
 
 When an AI agent fleet is configured so that context pools from across the whole organisation, a phenomenon occurs. Every job makes the next job easier. Every time a team member works with their agent, the entire fleet gets more capable and reliable. In turn, that drives greater internal adoption, and a flywheel starts accelerating. 
 
@@ -72,7 +72,7 @@ When an AI agent fleet is configured so that context pools from across the whole
 
 This compounding context layer is the litmus test. It's what distinguishes a genuinely AI-native company from one that has put a ChatGPT wrapper on its helpdesk. If business context is accumulating and compounding across your agent fleet, you're in takeoff mode. If it isn't, you're aspirationally AI-first at best.
 
-"AI transformation" is as much organisation transformation as tech transformation. The litmus test is whether you've got that context flywheel spinning. The actual job of the deployment companies should be to install that flywheel. 
+"AI transformation" is as much organisation transformation as tech transformation. You'll feel the acceleration as soon as that context flywheel starts spinning. The actual job of the deployment companies should be to install that flywheel. 
 
 
 ## This ain't systems integration
