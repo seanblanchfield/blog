@@ -154,8 +154,8 @@
 
 // Body-level light overrides (outside the [data-theme] block for correct descendant specificity)
 [data-theme="light"] body {
-  background-color: #fdfdfd;
-  color: #111111;
+  background-color: #f7f4ef;
+  color: #1a1a1a;
 }
 
 // ─── Theme toggle button ───────────────────────────────────────────────────────
@@ -305,21 +305,8 @@ a.markdown-link {
 
 // ─── Typography improvements ──────────────────────────────────────────────────
 
-// Cap post body line length for comfortable reading
-.post-content {
-  p, li, blockquote, dd, h1, h2, h3, h4, h5, h6 {
-    max-width: 72ch;
-  }
-}
-
 // Bold headings for clear hierarchy
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-}
-// But keep the site title light — it's a logotype
-.site-header .site-title { font-weight: 300; }
-// And article hero h1 stays as-is (it's overlaid on an image)
-article header h1 { font-weight: 700; }
+h1, h2, h3, h4, h5, h6 { font-weight: 700; }
 
 // Link underlines in body copy
 .post-content a,
@@ -328,13 +315,14 @@ article header h1 { font-weight: 700; }
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
 }
-// But not image links, nav, social, or post excerpt links on the home page
+// But not image links, nav, social, or post excerpt/home links
 .post-content a:has(img),
 .site-nav a,
 .social-media-list a,
 .post-link,
 .page-link,
-.post-list a { text-decoration: none; }
+.post-grid a,
+.feature-lead a { text-decoration: none; }
 
 // ─── Footer cleanup ───────────────────────────────────────────────────────────
 
@@ -355,13 +343,13 @@ article header h1 { font-weight: 700; }
   padding: calc(#{$spacing-unit} / 5);
 }
 
-// Article header always has a dark gradient — force light text regardless of theme
-article header .post-meta,
-article header .post-meta time,
-article header a.markdown-link {
-  color: rgba(255, 255, 255, 0.85) !important;
+// Article hero always has dark gradient — force light text regardless of theme
+.article-hero__meta,
+.article-hero__meta time,
+.article-hero__meta a.markdown-link {
+  color: rgba(255, 255, 255, 0.7) !important;
 }
-article header a.markdown-link:hover {
-  color: white !important;
+.article-hero__meta a.markdown-link:hover {
+  color: rgba(255,255,255,0.95) !important;
   opacity: 1;
 }

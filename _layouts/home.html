@@ -3,51 +3,101 @@ layout: default
 ---
 
 <div class="home">
-  {% if page.title and page.dir != "/" %}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {% endif %}
 
-  {{ content }}
-
+  <div class="editorial-intro">
+    <p class="editorial-intro__headline"><strong>Essays &amp; field notes</strong></p>
+    <p class="editorial-intro__desc">Writing on AI, technology and building companies—and occasionally, the machinery underneath.</p>
+  </div>
 
   {% if paginator.posts.size > 0 %}
-    <ul class="post-list">
+
+    {% if paginator.page == 1 %}
+      {% assign lead = nil %}
       {% for post in paginator.posts %}
         {% unless post.draft %}
-        <li>
-          <header {% if post.image %}style="--featured-image: url('{{ post.image }}');"{% endif %}>
-            <span class="post-meta">{{ post.date | date: site.minima.date_format }}</span>
-            <h2>
-              <a class="post-link" href="{{ post.url | relative_url }}">
-                {{ post.title | escape }}
-              </a>
-            </h2>
-          </header>
-          <div class="excerpt">
-            {{ post.excerpt }}
-            <div class="read-more">
-              <a href="{{ post.url | relative_url }}">Read more</a>
-            </div>
-          </div>
-        </li>
+          {% if lead == nil %}{% assign lead = post %}{% endif %}
         {% endunless %}
       {% endfor %}
-    </ul>
+
+      <div class="feature-lead">
+        <a class="feature-lead__image-link" href="{{ lead.url | relative_url }}">
+          <div class="feature-lead__image" {% if lead.image %}style="background-image: url('{{ lead.image }}');"{% endif %}></div>
+        </a>
+        <div class="feature-lead__body">
+          <p class="feature-lead__meta">{{ lead.date | date: site.minima.date_format }}</p>
+          <h2 class="feature-lead__title">
+            <a href="{{ lead.url | relative_url }}">{{ lead.title | escape }}</a>
+          </h2>
+          <p class="feature-lead__summary">{{ lead.excerpt | strip_html | truncatewords: 45 }}</p>
+          <a class="feature-lead__cta" href="{{ lead.url | relative_url }}">Read the essay &rarr;</a>
+        </div>
+      </div>
+
+      <div class="secondary-divider"><span>More writing</span></div>
+
+      <ul class="post-grid">
+        {% assign shown_lead = false %}
+        {% for post in paginator.posts %}
+          {% unless post.draft %}
+            {% if shown_lead == false %}
+              {% assign shown_lead = true %}
+            {% else %}
+              <li class="post-grid__item">
+                <a class="post-grid__image-link" href="{{ post.url | relative_url }}">
+                  <div class="post-grid__image" {% if post.image %}style="background-image: url('{{ post.image }}');"{% endif %}></div>
+                </a>
+                <div class="post-grid__body">
+                  <p class="post-grid__meta">{{ post.date | date: site.minima.date_format }}</p>
+                  <h3 class="post-grid__title">
+                    <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                  </h3>
+                  <p class="post-grid__summary">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
+                  <a class="post-grid__cta" href="{{ post.url | relative_url }}">Read &rarr;</a>
+                </div>
+              </li>
+            {% endif %}
+          {% endunless %}
+        {% endfor %}
+      </ul>
+
+    {% else %}
+
+      <ul class="post-grid post-grid--full">
+        {% for post in paginator.posts %}
+          {% unless post.draft %}
+          <li class="post-grid__item">
+            <a class="post-grid__image-link" href="{{ post.url | relative_url }}">
+              <div class="post-grid__image" {% if post.image %}style="background-image: url('{{ post.image }}');"{% endif %}></div>
+            </a>
+            <div class="post-grid__body">
+              <p class="post-grid__meta">{{ post.date | date: site.minima.date_format }}</p>
+              <h3 class="post-grid__title">
+                <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              </h3>
+              <p class="post-grid__summary">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
+              <a class="post-grid__cta" href="{{ post.url | relative_url }}">Read &rarr;</a>
+            </div>
+          </li>
+          {% endunless %}
+        {% endfor %}
+      </ul>
+
+    {% endif %}
 
     {% if paginator.total_pages > 1 %}
-  <ul class="pager">
+    <ul class="pager">
       {% if paginator.previous_page %}
         <li class="previous">
-          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts </a>
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer</a>
         </li>
       {% endif %}
       {% if paginator.next_page %}
-      <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> Older Posts &rarr;</a>
-    </li>
+        <li class="next">
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &rarr;</a>
+        </li>
       {% endif %}
-  </ul>
-  {% endif %}
+    </ul>
+    {% endif %}
 
   {% endif %}
 

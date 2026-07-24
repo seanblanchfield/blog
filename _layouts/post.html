@@ -7,35 +7,38 @@ layout: default
   <div class="draft-watermark">DRAFT</div>
   {% endif %}
 
-  <header {% if page.image %}style="--featured-image: url('{{ page.image }}');"{% endif %}>
-    <h1 class="p-name" itemprop="name headline">
-      {{ page.title | escape }}
-      {% if page.draft %}<span class="draft-badge">Draft</span>{% endif %}
-    </h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: site.minima.date_format }}
-      </time>
-      {% if page.modified_date %}
-        ~ 
-        {% assign mdate = page.modified_date | date_to_xmlschema %}
-        <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
-          {{ mdate | date: site.minima.date_format }}
+  <div class="article-hero" {% if page.image %}style="--featured-image: url('{{ page.image }}');"{% endif %}>
+    <div class="article-hero__text">
+      <h1 class="p-name article-hero__title" itemprop="name headline">
+        {{ page.title | escape }}
+        {% if page.draft %}<span class="draft-badge">Draft</span>{% endif %}
+      </h1>
+      <p class="post-meta article-hero__meta">
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {{ page.date | date: site.minima.date_format }}
         </time>
-      {% endif %}
-      {% if page.author %}
-        • {% for author in page.author %}
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-            {% if forloop.last == false %}, {% endif %}
-        {% endfor %}
-      {% endif %}
-      {% assign md_path = page.path | remove_first: "current/" %}
-      <a class="markdown-link" href="https://raw.githubusercontent.com/seanblanchfield/blog/main/current/{{ page.path | remove_first: 'current/' }}" title="View source markdown">[markdown]</a></p>
-  </header>
+        {% if page.modified_date %}
+          &ndash;
+          {% assign mdate = page.modified_date | date_to_xmlschema %}
+          <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+            {{ mdate | date: site.minima.date_format }}
+          </time>
+        {% endif %}
+        {% if page.author %}
+          &middot; {% for author in page.author %}
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">{{ author }}</span></span>{% if forloop.last == false %}, {% endif %}
+          {% endfor %}
+        {% endif %}
+        <a class="markdown-link" href="https://raw.githubusercontent.com/seanblanchfield/blog/main/current/{{ page.path | remove_first: 'current/' }}" title="View source markdown">[markdown]</a>
+      </p>
+    </div>
+  </div>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
+  <div class="article-body">
+    <div class="post-content e-content" itemprop="articleBody">
+      {{ content }}
+    </div>
   </div>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

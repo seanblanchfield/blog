@@ -46,5 +46,6 @@ $header_color: #08141b;
 // Import pre-styling-overrides hook and style-partials.
 @import
   "minima/base",             // Defines element resets.
-  "minima/layout"           // Defines structure and style based on CSS selectors.
+  "minima/layout",          // Defines structure and style based on CSS selectors.
+  "minima/editorial"        // Editorial redesign overrides.
 ;
