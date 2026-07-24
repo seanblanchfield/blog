@@ -50,7 +50,7 @@ The playbook was refined to a celebrated science: acquire users at any cost (bec
 
 By 2022 the party was at fever pitch, and central banks started raising interest rates to fight inflation. The music was rudely stopped, and tech valuations crashed. 
 
-It was a double whammy for VCs. First, they massive holes were blown through their portfolios as previous investments in unicorns and decacorns were sharply written down. Then, nursing that wound, they found they couldn't raise their next funds, as capital flowed back to bonds. 
+It was a double whammy for VCs. First, they massive holes were blown through their portfolios as previous investments in unicorns and decacorns were sharply written down. Then, nursing that hangover, they found they couldn't raise their next funds, as capital flowed back to bonds. 
 
 But then...
 
@@ -58,13 +58,17 @@ But then...
 
 In late 2022, just after tech crashed, generative AI arrived. The timing was coincidental but brutal: the financial conditions that had sustained the SaaSpalooza collapsed at the same moment as a new technology emerged that would undermine its entire premise. Generative AI turned out to be an existential threat to SaaS in its own right, for the following four reasons.
 
-### 1. Software IP has effectively disappeared
+### 1. Software IP is defunct
 
 Building a successful SaaS product was never about the code. The hard part was everything else: figuring out that there was a market, finding the right pricing, educating customers who didn't know they had the problem you were solving, iterating through the failures until the thing actually worked as a business. The search for a repeatable business model cost serious time, stress and money. The reward for all that was supposed to be a head start that competitors would struggle to close.
 
 AI coding agents have basically eliminated that head start advantage. The first mover spills blood, sweat and tears on finding a working business model. Once publicly demonstarted, AI can build a faithful copy in a day or two (sometimes an hour or two). 
 
 Worse, it is not just commoditization you need to worry about. Your own customers have AI too! A business that pays you $500 a month for a subscription just needs to spend a day rolling their own version, this time tailored precisely to them. 
+
+Even a patent portfolio won't save you here. A company that builds an internal replica of your product, and never resells it, is essentially unreachable. You'd have no way to know it happened, no way to prove it, and in the US and EU you have no damages to claim even if you could. The patent was always a weapon against competitors who wanted to sell something competing with yours. It was never a defense against your own customers rolling their own. 
+
+
 
 ### 2. Agents don't need a UI to use a database
 
@@ -88,24 +92,24 @@ This one is slower-moving, but the direction is clear.
 
 **Data moats** are great if you got one, but good ones are hard to find. In practice, most data is not truly special, and comparable data can be found from other sources. Given just a small sample, more can be synthesized. And even when you have truly proprietary data, it's a challenge to monetize it while simultaneously keeping it secret. Even LLM training data is now routinely extracted through distillation attacks. So "build a data moat" is a not a plan, but if you've somehow got one, cherish it.
 
-What's left? Brand, distribution, and regulatory capture. These are real. But they are the advantages for the incumbents, not the disruptors, and are advantages that startups by definition do not have.
+What's left? Brand, distribution, and regulatory capture. These are real. But they are the advantages for the incumbents, not the disruptors.
 
 ### 4. A self-fulfilling prophecy
 
 VCs think on a ten-year horizon, and most of them no longer see SaaS in that future. So they have stopped funding SaaS, and arguably have rotated away from software in general. So even if SaaS isn't dead yet, the funding is.
 
-And this might be leading to a kind of colony collapse. SaaS companies are each other's best customers. VCs love them to sell to each other, to keep the capital circulating, creating $10 of revenue for every $1 of capital. When SaaS companies cut spending, the collapse might take everyone by surprise.
+And this might be leading to a kind of colony collapse. SaaS companies are each other's best customers. VCs love them to sell to each other, to keep the capital circulating, creating $10 of revenue for every $1 of capital. When SaaS companies cut spending, the rate of collapse might take everyone by surprise.
 
 SaaS solutions can still be successfully built, probably in hyper-vertical domains where the founder has deep domain expertise and an existing network. But those businesses are unlikely to fit the venture capital funding path, or to grow like the unicorns of the 2010s. They will be bootstrapped, might make the founders rich, but be small by the standards of the last decade. 
 
 ## What comes next
 
-<figure>
-<img src="/images/2026/07/saaspocalypse/slide-09.png" alt="Graveyard illustration with headstones for SaaS, MRR, CAC, LTV, MAU/DAU, Churn and GTM motion" style="max-width:100%;border-radius:6px;">
-<figcaption><em>"Dear SaaS, it's not you, it's us. – The Agents."</em></figcaption>
-</figure>
-
 
 The SaaSpalooza lasted from 2008 to 2022 for fourteen years. That's a long enough time that lots of people have only known that bull market during their careers, and can't figure out what the hell is happening right now. During that period, a huge system of playbooks, startup culture, founder lore, metrics, state supports and interventions was established about how to build a technology business. 
 
 Those playbooks now need to be thrown out the window. What made sense during SaaSpalooza won't work now that gravity has been turned back on, investors expect profit, and AI is turning all conventional wisdom upside down. It's time to write some new playbooks!
+
+
+<figure>
+<img src="/images/2026/07/saaspocalypse/slide-09.png" alt="Graveyard illustration with headstones for SaaS, MRR, CAC, LTV, MAU/DAU, Churn and GTM motion" style="max-width:100%;border-radius:6px;">
+</figure>
