@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 140" width="1000" height="140" role="img" aria-label="">
+  <rect width="1000" height="140" fill="#08141b"/>
+
+  <g fill="none" stroke="#79a6ba" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Quiet title field -->
+    <path d="M0 94H78C98 94 102 79 125 79s29 15 51 15h46"/>
+    <path d="M22 52h115c11 0 14 7 25 7h72"/>
+    <path d="M49 111h32m9 0h22"/>
+    <circle cx="22" cy="52" r="3.5"/>
+    <circle cx="137" cy="52" r="3.5"/>
+
+    <!-- Transition -->
+    <path d="M212 94h47l21-21h48V46h31"/>
+    <path d="M234 59h55l17-17h35"/>
+    <path d="M257 112h38l18-16 21 16 18-22"/>
+    <circle cx="212" cy="94" r="3.5"/>
+    <circle cx="280" cy="73" r="3.5"/>
+    <circle cx="328" cy="46" r="3.5"/>
+    <circle cx="313" cy="96" r="3.5"/>
+    <circle cx="334" cy="112" r="3.5"/>
+
+    <!-- Centre -->
+    <path d="M359 59h52c12 0 14-18 27-18s15 18 28 18h35"/>
+    <path d="M372 92h48c11 0 14-18 26-18s15 18 27 18 15-18 27-18 15 18 27 18h26"/>
+    <path d="M411 118h61l22-21h66"/>
+    <path d="M501 59V33h76l20 20h56"/>
+    <circle cx="411" cy="59" r="3.5"/>
+    <circle cx="501" cy="59" r="3.5"/>
+    <circle cx="553" cy="92" r="3.5"/>
+    <circle cx="472" cy="118" r="3.5"/>
+
+    <!-- Right-side accumulation -->
+    <path d="M577 92h41c14 0 18 18 36 18h48"/>
+    <path d="M624 33h41l15 14 19-18 20 18h38"/>
+    <path d="M653 70c23-27 47-36 73-27 19 7 29 28 47 31 20 3 31-14 52-14 24 0 29 22 49 22h43"/>
+    <path d="M697 110c20 0 25-17 43-17h57l18-16h48"/>
+    <path d="M755 46h49v24h55"/>
+    <path d="M824 34h48l18 18h79"/>
+    <path d="M846 108h57l18-17h79"/>
+    <circle cx="624" cy="33" r="3.5"/>
+    <circle cx="699" cy="29" r="3.5"/>
+    <circle cx="757" cy="46" r="3.5"/>
+    <circle cx="804" cy="70" r="3.5"/>
+    <circle cx="863" cy="70" r="3.5"/>
+    <circle cx="903" cy="108" r="3.5"/>
+
+    <!-- Restrained notation -->
+    <path d="M187 38v12m-6-6h12M361 30v13m-6-6h12M535 42v14m-7-7h14M607 115v13m-6-6h12M730 18v15m-7-8h14M942 61v14m-7-7h14"/>
+    <path d="M151 111h5m8 0h5m8 0h5M383 22h5m8 0h5m8 0h5M562 29h5m8 0h5m8 0h5M716 123h5m8 0h5m8 0h5M927 30h5m8 0h5m8 0h5"/>
+    <path stroke-dasharray="7 8" d="M350 126h48M593 21c21-13 43-13 65 0M771 120h54M874 125h64"/>
+  </g>
+
+  <g fill="#d97932">
+    <circle cx="234" cy="59" r="4"/>
+    <circle cx="577" cy="92" r="4"/>
+    <circle cx="824" cy="34" r="4"/>
+  </g>
+</svg>
