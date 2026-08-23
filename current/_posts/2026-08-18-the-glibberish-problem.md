@@ -23,7 +23,7 @@ There's a big change happening in our inboxes and channels. Suddenly, everything
   Em dash as wildcard punctuation, allowing an impressionistic approach to sentence construction.
 - **The Metaphor Mixologist**
   *"We are scaling across parallel tracks over growing foundations."*
-  Reaches for several incongruous metaphors all at once. You go along a track, not *across* it; tracks don't normally have foundations; foundations don't grow. Incongrous in the physical world, but perhaps not in LLM latent space.
+  Reaches for several incongruous metaphors all at once. You go along a track, not *across* it; tracks don't normally have foundations; foundations don't grow. Incongruous in the physical world, but perhaps not in LLM latent space.
 - **The Extinction Escalator**
   *"This is not merely a nuisance for one country. It could be a disaster for all humanity."*
   Drags every consequence to the edge of a civilisational cliff.

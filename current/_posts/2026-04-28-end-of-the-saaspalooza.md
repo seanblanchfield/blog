@@ -50,7 +50,7 @@ The playbook was refined to a celebrated science: acquire users at any cost (bec
 
 By 2022 the party was at fever pitch, and central banks started raising interest rates to fight inflation. The music was rudely stopped, and tech valuations crashed. 
 
-It was a double whammy for VCs. First, they massive holes were blown through their portfolios as previous investments in unicorns and decacorns were sharply written down. Then, nursing that hangover, they found they couldn't raise their next funds, as capital flowed back to bonds. 
+It was a double whammy for VCs. First, massive holes were blown through their portfolios as previous investments in unicorns and decacorns were sharply written down. Then, nursing that hangover, they found they couldn't raise their next funds, as capital flowed back to bonds. 
 
 But then...
 
