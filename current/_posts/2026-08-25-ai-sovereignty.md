@@ -4,7 +4,7 @@ title: "Five Shades of AI Sovereignty"
 date: 2026-08-25
 categories: [current, ai, strategy, policy]
 excerpt: "AI sovereignty is being used to mean six different things simultaneously. But strip them back and they all reduce to the same question: what do you get to own?"
-image: /images/2026/07/ai-sovereignty.png
+image: /images/2026/07/ai-sovereignty.jpg
 ---
 
 The phrase "AI sovereignty" is everywhere right now. To a CISO it means means one thing. To a graphic designer in Galway asking whether her livelihood is safe it means something different again. To a government minister in Paris, watching Washington pull the plug on a frontier model overnight, it means something much bigger. But they are all asking the same basic question: *what part of this future do we get to own?*
