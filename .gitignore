@@ -1,5 +1,7 @@
 public
 .env
+.DS_Store
+*.bak
 .sass-cache
 .jekyll-metadata
 .jekyll-cache
