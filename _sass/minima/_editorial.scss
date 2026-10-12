@@ -532,6 +532,162 @@ $rule:           rgba(0,0,0,0.1);
   }
 }
 
+// ─── AI workload routing matrix ────────────────────────────────────────────────
+// Mobile-first: route copy plus two scored metrics. Colour reinforces the tier
+// label but never carries meaning on its own.
+.ai-routing-matrix {
+  margin: 1.1rem 0 1.5rem;
+  font-family: $sans-ui;
+}
+
+.ai-routing-matrix__rule {
+  margin-bottom: 0.55rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid rgba(255,255,255,0.14);
+  border-left: 0.35rem solid $accent;
+  border-radius: 0.4rem;
+  background: rgba(255,255,255,0.05);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.ai-route-card {
+  --route-color: #718096;
+  --route-tint: rgba(113,128,150,0.10);
+  margin: 0 0 0.45rem;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-left: 0.45rem solid var(--route-color);
+  border-radius: 0.45rem;
+  background: var(--route-tint);
+
+  &--prohibited { --route-color: #dc4c4c; --route-tint: rgba(220,76,76,0.12); }
+  &--tier-4     { --route-color: #e47b39; --route-tint: rgba(228,123,57,0.11); }
+  &--tier-3     { --route-color: #d2a62a; --route-tint: rgba(210,166,42,0.10); }
+  &--tier-2     { --route-color: #2f9f78; --route-tint: rgba(47,159,120,0.10); }
+  &--tier-1     { --route-color: #3182bd; --route-tint: rgba(49,130,189,0.11); }
+}
+
+.ai-route-card__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.12rem;
+  padding: 0.5rem 0.65rem 0.25rem;
+
+  // The base theme styles every article <header> as a 300px featured-image
+  // panel. These are deliberately divs, not headers, and reset defensively.
+  height: auto;
+  min-height: 0;
+  margin: 0;
+  background: none;
+  color: inherit;
+
+  // .post-content prefix outranks the theme's `article .post-content h3`
+  // rule, which otherwise forces a 45px margin-top onto the title.
+  .post-content & {
+    h3 {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+  }
+}
+
+.ai-route-card__tier {
+  flex: 0 0 auto;
+  display: inline-block;
+  padding: 0.12rem 0.4rem;
+  border-radius: 999px;
+  background: var(--route-color);
+  color: #fff;
+  font-size: 0.56rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.ai-route-card__body {
+  padding: 0.3rem 0.65rem 0.55rem;
+}
+
+.ai-route-card__route {
+  p {
+    margin: 0;
+    font-family: $serif-reading;
+    font-size: 0.84rem;
+    line-height: 1.35;
+  }
+
+  .ai-route-card__note {
+    margin-top: 0.15rem;
+    color: rgba(255,255,255,0.58);
+    font-size: 0.68rem;
+    line-height: 1.35;
+  }
+}
+
+.ai-route-card__metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.3rem;
+  margin-top: 0.4rem;
+}
+
+.ai-route-metric {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem;
+  padding: 0.32rem 0.45rem;
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 0.35rem;
+  background: rgba(0,0,0,0.10);
+
+  span {
+    color: rgba(255,255,255,0.55);
+    font-size: 0.56rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  strong {
+    color: var(--route-color);
+    font-size: 0.72rem;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: $on-laptop) {
+  .ai-route-card {
+    // Roughly 25 / 50 / 25: narrow tier column, wide route copy, narrow
+    // metrics column.
+    display: grid;
+    grid-template-columns: minmax(9.5rem, 0.55fr) minmax(0, 2fr) minmax(8rem, 0.6fr);
+    align-items: center;
+  }
+
+  .ai-route-card__header {
+    padding: 0.5rem 0.65rem;
+  }
+
+  .ai-route-card__body {
+    padding: 0.45rem 0.65rem;
+    border-left: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .ai-route-card__metrics {
+    align-self: center;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.3rem;
+    margin: 0;
+    padding: 0.45rem 0.65rem;
+  }
+}
+
 // ─── Light mode overrides for editorial elements ──────────────────────────────
 [data-theme="light"] {
   .post-mini-grid {

@@ -84,6 +84,40 @@
     background-color: #efefef;
   }
 
+  .ai-routing-matrix__rule {
+    border-color: rgba(0,0,0,0.14);
+    background: rgba(0,0,0,0.035);
+    color: #222;
+  }
+
+  .ai-route-card {
+    border-color: rgba(0,0,0,0.14);
+    background: var(--route-tint);
+
+    &--prohibited { --route-color: #b83232; --route-tint: rgba(184,50,50,0.08); }
+    &--tier-4     { --route-color: #b75b1e; --route-tint: rgba(183,91,30,0.08); }
+    &--tier-3     { --route-color: #8a6b00; --route-tint: rgba(138,107,0,0.08); }
+    &--tier-2     { --route-color: #217456; --route-tint: rgba(33,116,86,0.08); }
+    &--tier-1     { --route-color: #246b9e; --route-tint: rgba(36,107,158,0.08); }
+  }
+
+  .ai-route-card__header,
+  .ai-route-card__body {
+    border-color: rgba(0,0,0,0.10);
+  }
+
+  .ai-route-card__route {
+    p { color: #222; }
+    .ai-route-card__note { color: rgba(0,0,0,0.60); }
+  }
+
+  .ai-route-metric {
+    border-color: rgba(0,0,0,0.10);
+    background: rgba(255,255,255,0.45);
+
+    span { color: rgba(0,0,0,0.56); }
+  }
+
   .site-nav {
     input:checked ~ .trigger {
       background-color: #fdfdfd;
