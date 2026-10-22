@@ -1,0 +1,240 @@
+/* Generated from Pygments 2.19.2 HtmlFormatter(style='default'/'github-dark').
+   Only token rules are kept; the site's own CSS controls code block surfaces. */
+:root{--code-ink:#24313c}
+@media(prefers-color-scheme:dark){:root:not([data-theme]){--code-ink:#e6edf3}}
+:root[data-theme="dark"]{--code-ink:#e6edf3}
+.article-body .codehilite pre,.static-page .codehilite pre{color:var(--code-ink)}
+.article-body .codehilite pre code,.static-page .codehilite pre code{white-space:pre}
+
+/* default token colors. */
+:root .codehilite .c { color: #3D7B7B; font-style: italic }
+:root .codehilite .err { border: 1px solid #F00 }
+:root .codehilite .k { color: #008000; font-weight: bold }
+:root .codehilite .o { color: #666 }
+:root .codehilite .ch { color: #3D7B7B; font-style: italic }
+:root .codehilite .cm { color: #3D7B7B; font-style: italic }
+:root .codehilite .cp { color: #9C6500 }
+:root .codehilite .cpf { color: #3D7B7B; font-style: italic }
+:root .codehilite .c1 { color: #3D7B7B; font-style: italic }
+:root .codehilite .cs { color: #3D7B7B; font-style: italic }
+:root .codehilite .gd { color: #A00000 }
+:root .codehilite .ge { font-style: italic }
+:root .codehilite .ges { font-weight: bold; font-style: italic }
+:root .codehilite .gr { color: #E40000 }
+:root .codehilite .gh { color: #000080; font-weight: bold }
+:root .codehilite .gi { color: #008400 }
+:root .codehilite .go { color: #717171 }
+:root .codehilite .gp { color: #000080; font-weight: bold }
+:root .codehilite .gs { font-weight: bold }
+:root .codehilite .gu { color: #800080; font-weight: bold }
+:root .codehilite .gt { color: #04D }
+:root .codehilite .kc { color: #008000; font-weight: bold }
+:root .codehilite .kd { color: #008000; font-weight: bold }
+:root .codehilite .kn { color: #008000; font-weight: bold }
+:root .codehilite .kp { color: #008000 }
+:root .codehilite .kr { color: #008000; font-weight: bold }
+:root .codehilite .kt { color: #B00040 }
+:root .codehilite .m { color: #666 }
+:root .codehilite .s { color: #BA2121 }
+:root .codehilite .na { color: #687822 }
+:root .codehilite .nb { color: #008000 }
+:root .codehilite .nc { color: #00F; font-weight: bold }
+:root .codehilite .no { color: #800 }
+:root .codehilite .nd { color: #A2F }
+:root .codehilite .ni { color: #717171; font-weight: bold }
+:root .codehilite .ne { color: #CB3F38; font-weight: bold }
+:root .codehilite .nf { color: #00F }
+:root .codehilite .nl { color: #767600 }
+:root .codehilite .nn { color: #00F; font-weight: bold }
+:root .codehilite .nt { color: #008000; font-weight: bold }
+:root .codehilite .nv { color: #19177C }
+:root .codehilite .ow { color: #A2F; font-weight: bold }
+:root .codehilite .w { color: #BBB }
+:root .codehilite .mb { color: #666 }
+:root .codehilite .mf { color: #666 }
+:root .codehilite .mh { color: #666 }
+:root .codehilite .mi { color: #666 }
+:root .codehilite .mo { color: #666 }
+:root .codehilite .sa { color: #BA2121 }
+:root .codehilite .sb { color: #BA2121 }
+:root .codehilite .sc { color: #BA2121 }
+:root .codehilite .dl { color: #BA2121 }
+:root .codehilite .sd { color: #BA2121; font-style: italic }
+:root .codehilite .s2 { color: #BA2121 }
+:root .codehilite .se { color: #AA5D1F; font-weight: bold }
+:root .codehilite .sh { color: #BA2121 }
+:root .codehilite .si { color: #A45A77; font-weight: bold }
+:root .codehilite .sx { color: #008000 }
+:root .codehilite .sr { color: #A45A77 }
+:root .codehilite .s1 { color: #BA2121 }
+:root .codehilite .ss { color: #19177C }
+:root .codehilite .bp { color: #008000 }
+:root .codehilite .fm { color: #00F }
+:root .codehilite .vc { color: #19177C }
+:root .codehilite .vg { color: #19177C }
+:root .codehilite .vi { color: #19177C }
+:root .codehilite .vm { color: #19177C }
+:root .codehilite .il { color: #666 }
+
+/* github-dark token colors. */
+:root[data-theme="dark"] .codehilite .c { color: #8B949E; font-style: italic }
+:root[data-theme="dark"] .codehilite .err { color: #F85149 }
+:root[data-theme="dark"] .codehilite .esc { color: #E6EDF3 }
+:root[data-theme="dark"] .codehilite .g { color: #E6EDF3 }
+:root[data-theme="dark"] .codehilite .k { color: #FF7B72 }
+:root[data-theme="dark"] .codehilite .l { color: #A5D6FF }
+:root[data-theme="dark"] .codehilite .n { color: #E6EDF3 }
+:root[data-theme="dark"] .codehilite .o { color: #FF7B72; font-weight: bold }
+:root[data-theme="dark"] .codehilite .x { color: #E6EDF3 }
+:root[data-theme="dark"] .codehilite .p { color: #E6EDF3 }
+:root[data-theme="dark"] .codehilite .ch { color: #8B949E; font-style: italic }
+:root[data-theme="dark"] .codehilite .cm { color: #8B949E; font-style: italic }
+:root[data-theme="dark"] .codehilite .cp { color: #8B949E; font-weight: bold; font-style: italic }
+:root[data-theme="dark"] .codehilite .cpf { color: #8B949E; font-style: italic }
+:root[data-theme="dark"] .codehilite .c1 { color: #8B949E; font-style: italic }
+:root[data-theme="dark"] .codehilite .cs { color: #8B949E; font-weight: bold; font-style: italic }
+:root[data-theme="dark"] .codehilite .gd { color: #FFA198; background-color: #490202 }
+:root[data-theme="dark"] .codehilite .ge { color: #E6EDF3; font-style: italic }
+:root[data-theme="dark"] .codehilite .ges { color: #E6EDF3; font-weight: bold; font-style: italic }
+:root[data-theme="dark"] .codehilite .gr { color: #FFA198 }
+:root[data-theme="dark"] .codehilite .gh { color: #79C0FF; font-weight: bold }
+:root[data-theme="dark"] .codehilite .gi { color: #56D364; background-color: #0F5323 }
+:root[data-theme="dark"] .codehilite .go { color: #8B949E }
+:root[data-theme="dark"] .codehilite .gp { color: #8B949E }
+:root[data-theme="dark"] .codehilite .gs { color: #E6EDF3; font-weight: bold }
+:root[data-theme="dark"] .codehilite .gu { color: #79C0FF }
+:root[data-theme="dark"] .codehilite .gt { color: #FF7B72 }
+:root[data-theme="dark"] .codehilite .g-Underline { color: #E6EDF3; text-decoration: underline }
+:root[data-theme="dark"] .codehilite .kc { color: #79C0FF }
+:root[data-theme="dark"] .codehilite .kd { color: #FF7B72 }
+:root[data-theme="dark"] .codehilite .kn { color: #FF7B72 }
+:root[data-theme="dark"] .codehilite .kp { color: #79C0FF }
+:root[data-theme="dark"] .codehilite .kr { color: #FF7B72 }
+:root[data-theme="dark"] .codehilite .kt { color: #FF7B72 }
+:root[data-theme="dark"] .codehilite .ld { color: #79C0FF }
+:root[data-theme="dark"] .codehilite .m { color: #A5D6FF }
+:root[data-theme="dark"] .codehilite .s { color: #A5D6FF }
+:root[data-theme="dark"] .codehilite .na { color: #E6EDF3 }
+:root[data-theme="dark"] .codehilite .nb { color: #E6EDF3 }
+:root[data-theme="dark"] .codehilite .nc { color: #F0883E; font-weight: bold }
+:root[data-theme="dark"] .codehilite .no { color: #79C0FF; font-weight: bold }
+:root[data-theme="dark"] .codehilite .nd { color: #D2A8FF; font-weight: bold }
+:root[data-theme="dark"] .codehilite .ni { color: #FFA657 }
+:root[data-theme="dark"] .codehilite .ne { color: #F0883E; font-weight: bold }
+:root[data-theme="dark"] .codehilite .nf { color: #D2A8FF; font-weight: bold }
+:root[data-theme="dark"] .codehilite .nl { color: #79C0FF; font-weight: bold }
+:root[data-theme="dark"] .codehilite .nn { color: #FF7B72 }
+:root[data-theme="dark"] .codehilite .nx { color: #E6EDF3 }
+:root[data-theme="dark"] .codehilite .py { color: #79C0FF }
+:root[data-theme="dark"] .codehilite .nt { color: #7EE787 }
+:root[data-theme="dark"] .codehilite .nv { color: #79C0FF }
+:root[data-theme="dark"] .codehilite .ow { color: #FF7B72; font-weight: bold }
+:root[data-theme="dark"] .codehilite .pm { color: #E6EDF3 }
+:root[data-theme="dark"] .codehilite .w { color: #6E7681 }
+:root[data-theme="dark"] .codehilite .mb { color: #A5D6FF }
+:root[data-theme="dark"] .codehilite .mf { color: #A5D6FF }
+:root[data-theme="dark"] .codehilite .mh { color: #A5D6FF }
+:root[data-theme="dark"] .codehilite .mi { color: #A5D6FF }
+:root[data-theme="dark"] .codehilite .mo { color: #A5D6FF }
+:root[data-theme="dark"] .codehilite .sa { color: #79C0FF }
+:root[data-theme="dark"] .codehilite .sb { color: #A5D6FF }
+:root[data-theme="dark"] .codehilite .sc { color: #A5D6FF }
+:root[data-theme="dark"] .codehilite .dl { color: #79C0FF }
+:root[data-theme="dark"] .codehilite .sd { color: #A5D6FF }
+:root[data-theme="dark"] .codehilite .s2 { color: #A5D6FF }
+:root[data-theme="dark"] .codehilite .se { color: #79C0FF }
+:root[data-theme="dark"] .codehilite .sh { color: #79C0FF }
+:root[data-theme="dark"] .codehilite .si { color: #A5D6FF }
+:root[data-theme="dark"] .codehilite .sx { color: #A5D6FF }
+:root[data-theme="dark"] .codehilite .sr { color: #79C0FF }
+:root[data-theme="dark"] .codehilite .s1 { color: #A5D6FF }
+:root[data-theme="dark"] .codehilite .ss { color: #A5D6FF }
+:root[data-theme="dark"] .codehilite .bp { color: #E6EDF3 }
+:root[data-theme="dark"] .codehilite .fm { color: #D2A8FF; font-weight: bold }
+:root[data-theme="dark"] .codehilite .vc { color: #79C0FF }
+:root[data-theme="dark"] .codehilite .vg { color: #79C0FF }
+:root[data-theme="dark"] .codehilite .vi { color: #79C0FF }
+:root[data-theme="dark"] .codehilite .vm { color: #79C0FF }
+:root[data-theme="dark"] .codehilite .il { color: #A5D6FF }
+
+@media(prefers-color-scheme:dark){
+:root:not([data-theme]) .codehilite .c { color: #8B949E; font-style: italic }
+:root:not([data-theme]) .codehilite .err { color: #F85149 }
+:root:not([data-theme]) .codehilite .esc { color: #E6EDF3 }
+:root:not([data-theme]) .codehilite .g { color: #E6EDF3 }
+:root:not([data-theme]) .codehilite .k { color: #FF7B72 }
+:root:not([data-theme]) .codehilite .l { color: #A5D6FF }
+:root:not([data-theme]) .codehilite .n { color: #E6EDF3 }
+:root:not([data-theme]) .codehilite .o { color: #FF7B72; font-weight: bold }
+:root:not([data-theme]) .codehilite .x { color: #E6EDF3 }
+:root:not([data-theme]) .codehilite .p { color: #E6EDF3 }
+:root:not([data-theme]) .codehilite .ch { color: #8B949E; font-style: italic }
+:root:not([data-theme]) .codehilite .cm { color: #8B949E; font-style: italic }
+:root:not([data-theme]) .codehilite .cp { color: #8B949E; font-weight: bold; font-style: italic }
+:root:not([data-theme]) .codehilite .cpf { color: #8B949E; font-style: italic }
+:root:not([data-theme]) .codehilite .c1 { color: #8B949E; font-style: italic }
+:root:not([data-theme]) .codehilite .cs { color: #8B949E; font-weight: bold; font-style: italic }
+:root:not([data-theme]) .codehilite .gd { color: #FFA198; background-color: #490202 }
+:root:not([data-theme]) .codehilite .ge { color: #E6EDF3; font-style: italic }
+:root:not([data-theme]) .codehilite .ges { color: #E6EDF3; font-weight: bold; font-style: italic }
+:root:not([data-theme]) .codehilite .gr { color: #FFA198 }
+:root:not([data-theme]) .codehilite .gh { color: #79C0FF; font-weight: bold }
+:root:not([data-theme]) .codehilite .gi { color: #56D364; background-color: #0F5323 }
+:root:not([data-theme]) .codehilite .go { color: #8B949E }
+:root:not([data-theme]) .codehilite .gp { color: #8B949E }
+:root:not([data-theme]) .codehilite .gs { color: #E6EDF3; font-weight: bold }
+:root:not([data-theme]) .codehilite .gu { color: #79C0FF }
+:root:not([data-theme]) .codehilite .gt { color: #FF7B72 }
+:root:not([data-theme]) .codehilite .g-Underline { color: #E6EDF3; text-decoration: underline }
+:root:not([data-theme]) .codehilite .kc { color: #79C0FF }
+:root:not([data-theme]) .codehilite .kd { color: #FF7B72 }
+:root:not([data-theme]) .codehilite .kn { color: #FF7B72 }
+:root:not([data-theme]) .codehilite .kp { color: #79C0FF }
+:root:not([data-theme]) .codehilite .kr { color: #FF7B72 }
+:root:not([data-theme]) .codehilite .kt { color: #FF7B72 }
+:root:not([data-theme]) .codehilite .ld { color: #79C0FF }
+:root:not([data-theme]) .codehilite .m { color: #A5D6FF }
+:root:not([data-theme]) .codehilite .s { color: #A5D6FF }
+:root:not([data-theme]) .codehilite .na { color: #E6EDF3 }
+:root:not([data-theme]) .codehilite .nb { color: #E6EDF3 }
+:root:not([data-theme]) .codehilite .nc { color: #F0883E; font-weight: bold }
+:root:not([data-theme]) .codehilite .no { color: #79C0FF; font-weight: bold }
+:root:not([data-theme]) .codehilite .nd { color: #D2A8FF; font-weight: bold }
+:root:not([data-theme]) .codehilite .ni { color: #FFA657 }
+:root:not([data-theme]) .codehilite .ne { color: #F0883E; font-weight: bold }
+:root:not([data-theme]) .codehilite .nf { color: #D2A8FF; font-weight: bold }
+:root:not([data-theme]) .codehilite .nl { color: #79C0FF; font-weight: bold }
+:root:not([data-theme]) .codehilite .nn { color: #FF7B72 }
+:root:not([data-theme]) .codehilite .nx { color: #E6EDF3 }
+:root:not([data-theme]) .codehilite .py { color: #79C0FF }
+:root:not([data-theme]) .codehilite .nt { color: #7EE787 }
+:root:not([data-theme]) .codehilite .nv { color: #79C0FF }
+:root:not([data-theme]) .codehilite .ow { color: #FF7B72; font-weight: bold }
+:root:not([data-theme]) .codehilite .pm { color: #E6EDF3 }
+:root:not([data-theme]) .codehilite .w { color: #6E7681 }
+:root:not([data-theme]) .codehilite .mb { color: #A5D6FF }
+:root:not([data-theme]) .codehilite .mf { color: #A5D6FF }
+:root:not([data-theme]) .codehilite .mh { color: #A5D6FF }
+:root:not([data-theme]) .codehilite .mi { color: #A5D6FF }
+:root:not([data-theme]) .codehilite .mo { color: #A5D6FF }
+:root:not([data-theme]) .codehilite .sa { color: #79C0FF }
+:root:not([data-theme]) .codehilite .sb { color: #A5D6FF }
+:root:not([data-theme]) .codehilite .sc { color: #A5D6FF }
+:root:not([data-theme]) .codehilite .dl { color: #79C0FF }
+:root:not([data-theme]) .codehilite .sd { color: #A5D6FF }
+:root:not([data-theme]) .codehilite .s2 { color: #A5D6FF }
+:root:not([data-theme]) .codehilite .se { color: #79C0FF }
+:root:not([data-theme]) .codehilite .sh { color: #79C0FF }
+:root:not([data-theme]) .codehilite .si { color: #A5D6FF }
+:root:not([data-theme]) .codehilite .sx { color: #A5D6FF }
+:root:not([data-theme]) .codehilite .sr { color: #79C0FF }
+:root:not([data-theme]) .codehilite .s1 { color: #A5D6FF }
+:root:not([data-theme]) .codehilite .ss { color: #A5D6FF }
+:root:not([data-theme]) .codehilite .bp { color: #E6EDF3 }
+:root:not([data-theme]) .codehilite .fm { color: #D2A8FF; font-weight: bold }
+:root:not([data-theme]) .codehilite .vc { color: #79C0FF }
+:root:not([data-theme]) .codehilite .vg { color: #79C0FF }
+:root:not([data-theme]) .codehilite .vi { color: #79C0FF }
+:root:not([data-theme]) .codehilite .vm { color: #79C0FF }
+:root:not([data-theme]) .codehilite .il { color: #A5D6FF }
+}

@@ -1,7 +1,10 @@
-public
-.env
+site/
+.build-cache/
+.venv/
+code/node_modules/
+code/__pycache__/
+code/.pytest_cache/
+code/.browsers/
+code/__pycache__/
+screenshots/
 .DS_Store
-*.bak
-.sass-cache
-.jekyll-metadata
-.jekyll-cache

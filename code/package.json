@@ -1,0 +1,11 @@
+{
+  "name": "blog-local-preview",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "check:visual": "node visual-check.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.58.2"
+  }
+}
