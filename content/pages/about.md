@@ -32,7 +32,9 @@ I was an EIR at the National Digital Research Centre (NDRC) at *Dogpatch Labs* i
 
 I also had the honour of being a member of the Irish government's AI Advisory Council, taking a particular interest in the question of AI sovereignty in all its definitions, from cultural to economic. 
 
-![](/images/logo_roll.png)
+<div class="company-logos">
+  <img src="/images/logo_roll.png" alt="Logos of companies I have built and worked with">
+</div>
 
 I've been starting companies since I was 19. I started by selling websites door-to-door in 1997 in a business park in south west dublin. As an undergrad I co-founded [Phorest](http://phorest.com) (initially specializing in early mobile messaging in 2000), given later gave birth to [DemonWare](http://www.demonware.net), which I co-founded with [Dylan Collins](http://dylancollins.com) in 2003.  
 
