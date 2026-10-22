@@ -2,6 +2,7 @@
 """Local blog preview with extensionless HTML pages; opt in to container-facing bind."""
 import argparse
 from functools import partial
+from urllib.parse import unquote, urlsplit
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
@@ -10,6 +11,25 @@ HERE = Path(__file__).resolve().parent.parent
 
 class PreviewHandler(SimpleHTTPRequestHandler):
     extensions_map = {**SimpleHTTPRequestHandler.extensions_map, '.md': 'text/markdown; charset=utf-8'}
+
+    def do_GET(self):
+        path = unquote(urlsplit(self.path).path)
+        root = Path(self.directory).resolve()
+        target = (root / path.lstrip('/')).resolve()
+        if not target.is_relative_to(root):
+            self.send_error(404)
+            return
+        if not target.is_file():
+            html_target = target.with_name(target.name + '.html') if target.name else target
+            if html_target.is_file():
+                original = self.path
+                query = ('?' + urlsplit(original).query) if urlsplit(original).query else ''
+                self.path = path + '.html' + query
+                try:
+                    return super().do_GET()
+                finally:
+                    self.path = original
+        return super().do_GET()
 
     def guess_type(self, path):
         if not Path(path).suffix:
