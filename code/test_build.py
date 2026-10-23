@@ -66,8 +66,13 @@ class BlogTests(unittest.TestCase):
         site = PROJECT / 'site'
         cache = PROJECT / '.build-cache-test'
         try:
+            # A no-images test must not clean the shared preview output: doing so removes every
+            # image from site/ and leaves the running preview full of broken image links.
+            preserved_image = site / 'images/default_featured_image.jpg'
+            self.assertTrue(preserved_image.is_file(), 'run a full build before the test suite')
             build(CONTENT, site, copy_images=False, fail_on_drafts=True,
-                  incremental=False, cache_dir=cache)
+                  incremental=True, cache_dir=cache)
+            self.assertTrue(preserved_image.is_file())
             baseline = hashlib.sha256((site / 'about/index.html').read_bytes()).hexdigest()
             stale = site / 'obsolete-generated-file.html'
             stale.write_text('old')
