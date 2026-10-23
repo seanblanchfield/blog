@@ -55,4 +55,4 @@ The best news is that we now have a formula for getting more dashboards on-deman
 If you are a tech startup, let me recommend that you immediately re-purpose those old 21” monitors and either:
 
 1.  implement Colm’s [detailed instructions](https://mloccy.github.io/Beaglebone-Black-Dashboards/), or
-2.  (if you're in Dublin) Email Colm at [vizec@tcd.ie](vizec@tcd.ie) and offer to pay him to do it for you.
+2.  (if you're in Dublin) Email Colm at [vizec@tcd.ie](mailto:vizec@tcd.ie) and offer to pay him to do it for you.

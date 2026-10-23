@@ -99,7 +99,8 @@ def validate(source, site, require_cname=False, forbid_drafts=False, expected_do
         index = site / 'llms.txt'
         if index.is_file():
             for raw in re.findall(r'\]\((https?://[^)]+)\)', index.read_text(encoding='utf-8')):
-                if urlsplit(raw).hostname != expected_domain:
+                parsed = urlsplit(raw)
+                if parsed.hostname != expected_domain and parsed.hostname != 'www.linkedin.com':
                     issues.append(f'llms.txt URL domain mismatch: {raw}')
     if (site / 'feed.xml').is_file():
         try:
@@ -126,8 +127,16 @@ def validate(source, site, require_cname=False, forbid_drafts=False, expected_do
             issues.append(f'Invalid sitemap: {error}')
     if (site / 'robots.txt').is_file() and 'Sitemap: https://' not in (site / 'robots.txt').read_text():
         issues.append('robots.txt does not advertise an HTTPS sitemap')
+    cta_path = source / 'pages/llm-cta.md'
+    cta = cta_path.read_text(encoding='utf-8').strip() if cta_path.is_file() else ''
+    if not cta:
+        issues.append('Missing or empty source llm-cta.md')
     if (site / 'llms.txt').is_file():
         text = (site / 'llms.txt').read_text(encoding='utf-8')
+        expected_cta = cta.replace('https://seanblanchfield.com/feed.xml',
+                                   f'https://{expected_domain}/feed.xml') if expected_domain else cta
+        if expected_cta and not text.startswith(expected_cta + '\n\n---\n'):
+            issues.append('llms.txt does not begin with llm-cta.md')
         in_delisted = False
         for line in text.splitlines():
             if line.startswith('## '):

@@ -81,28 +81,15 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--site', type=Path, default=Path(__file__).resolve().parent.parent / 'site')
     parser.add_argument('--allow-known-source-errors', action='store_true',
-                        help='Report but tolerate the four malformed links inherited from source Markdown')
+                        help=argparse.SUPPRESS)
     args = parser.parse_args()
     broken, counts = scan(args.site)
     for source, kind, url, target in broken:
         print(f'{source}: {kind} {url!r} -> missing /{target}')
     print(f'Checked {counts["local"]} resolving local, {counts["external"]} external, '
           f'{counts["fragment"]} fragment/empty refs; {len(broken)} broken local refs.')
-    known = {
-        ('2012/11/sunday-independent-18-november-2012', 'www.independent.ie'),
-        ('2014/07/easy-startup-dashboards', 'vizec@tcd.ie'),
-        ('2014/09/reforming-rd-tax-credits',
-         'startupireland.ie/wp-content/uploads/2014/09/StartupIreland-Pre-Budget-Submission-2014-Google-Docs.pdf'),
-        ('2024/05/my-smart-home-dashboard', '(https://www.twilightrender.com/)'),
-    }
-    actual = {(source[:-5] if source.endswith('.html') else source, url)
-              for source, _, url, _ in broken}
-    if broken and not (args.allow_known_source_errors and
-                       actual == known and
-                       all(kind == 'a:href' for _, kind, _, _ in broken) and len(broken) == 4):
-        parser.exit(1, 'Unexpected broken local references.\n')
     if broken:
-        print('Only the four known malformed source Markdown links remain.')
+        parser.exit(1, 'Broken local references found.\n')
 
 
 if __name__ == '__main__':

@@ -110,10 +110,10 @@ Run these after building:
 .venv/bin/python -m unittest discover -s code -p 'test_*.py' -q
 .venv/bin/python code/check_artifact.py --forbid-drafts --require-cname \
   --expected-domain "$(cat content/pages/CNAME)" --allow-config-url-mismatch
-.venv/bin/python code/check_links.py --allow-known-source-errors
+.venv/bin/python code/check_links.py
 ```
 
-The link checker accepts exactly four inherited malformed links. Do not add exceptions silently.
+The link checker requires all local references to resolve.
 
 For the browser suite:
 

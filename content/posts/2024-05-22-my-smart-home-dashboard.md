@@ -61,7 +61,7 @@ When I open up the Home Assistant app, the main screen is a dashboard containing
 Here are the tools I used for this project:
 
 - *SketchUp Make 2017*. This is the last free desktop version of SketchUp. It is no longer officially offered, but you can find [downloads online](https://www.reddit.com/r/Sketchup/comments/10f2jy4/where_can_i_download_sketchup_make_2017/). Alternatively, you can pay for Sketchup Pro.
-- [*Twilight Render*]((https://www.twilightrender.com/)) for rendering realistic ray-traced images of sketchup 3D models.
+- [*Twilight Render*](https://www.twilightrender.com/) for rendering realistic ray-traced images of sketchup 3D models.
 - *GIMP* or *Photoshop* for compositing and editing rendered images. I use GIMP below.
 - *Home Assistant* for building the interactive dashboard (using the [Picture Elements card](https://www.home-assistant.io/dashboards/picture-elements/)).
 

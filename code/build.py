@@ -606,6 +606,13 @@ def build(source=CONTENT, out=PROJECT / 'site', copy_images=True, fail_on_drafts
         raise ValueError('Refusing to overwrite a protected output directory')
     config = yaml.safe_load((source / 'pages/_config.yml').read_text())
     base = str(site_url or config.get('url') or '').rstrip('/')
+    cta_path = source / 'pages/llm-cta.md'
+    if not cta_path.is_file():
+        raise ValueError('Missing content/pages/llm-cta.md')
+    llm_cta = cta_path.read_text(encoding='utf-8').strip()
+    if not llm_cta:
+        raise ValueError('content/pages/llm-cta.md must not be empty')
+    llm_cta = llm_cta.replace('https://seanblanchfield.com/feed.xml', base + '/feed.xml')
     parsed_base = urlsplit(base)
     if (parsed_base.scheme != 'https' or not parsed_base.hostname or parsed_base.path or
             parsed_base.query or parsed_base.fragment or parsed_base.username or parsed_base.password):
@@ -656,7 +663,7 @@ def build(source=CONTENT, out=PROJECT / 'site', copy_images=True, fail_on_drafts
     link_pages.sort(key=lambda e: e.date.replace(tzinfo=None), reverse=True)
     pages = []
     for path in sorted((source / 'pages').iterdir()):
-        if path.name == 'AGENTS.md' or path.suffix not in ('.md', '.html'):
+        if path.name in {'AGENTS.md', 'llm-cta.md'} or path.suffix not in ('.md', '.html'):
             continue
         parsed = load_frontmatter(path)
         if not parsed:
@@ -712,7 +719,7 @@ def build(source=CONTENT, out=PROJECT / 'site', copy_images=True, fail_on_drafts
                          f'<link rel="canonical" href="{html.escape(base + target, quote=True)}"></head>'
                          f'<body><p>This item has moved to <a href="{html.escape(target, quote=True)}">{html.escape(target, quote=True)}</a>.</p></body></html>\n')
             save(out, post.url, redir_src, written)
-            save(out, post.url.rstrip('/') + '.md', f'# {post.title}\n\nMoved to: {base}{target}\n', written)
+            save(out, post.url.rstrip('/') + '.md', f'{llm_cta}\n\n---\n\n# {post.title}\n\nMoved to: {base}{target}\n', written)
             llms_redirects.append((post, target))
             continue
         summary = post._description
@@ -721,7 +728,7 @@ def build(source=CONTENT, out=PROJECT / 'site', copy_images=True, fail_on_drafts
                                  author=post.data.get('author'),
                                  modified_date=post.data.get('modified_date'),
                                  base=base, site_description=description), written)
-        md = (f'# {post.title}\n\nPublished: {post.date.date().isoformat()}\n'
+        md = (f'{llm_cta}\n\n---\n\n# {post.title}\n\nPublished: {post.date.date().isoformat()}\n'
               f'Canonical: {base}{post.url}\n\n{portable_markdown(post.body)}')
         save(out, post.url + '.md', md, written)
     for document in pages:
@@ -730,7 +737,7 @@ def build(source=CONTENT, out=PROJECT / 'site', copy_images=True, fail_on_drafts
             target = str(redirect_target)
             if not target.startswith('/') or target == document.url:
                 raise ValueError(f'Invalid redirect_to in {document.source.name}: {redirect_target}')
-            md_stub = (f'# How I work\n\nMoved to: {base}{target}\n')
+            md_stub = (f'{llm_cta}\n\n---\n\n# How I work\n\nMoved to: {base}{target}\n')
             save(out, document.url, page(document.title, document._body_html, title, document.url,
                                          base=base, site_description=description, redirect_to=target), written)
             save(out, document.url.rstrip('/') + '.md', md_stub, written)
@@ -758,7 +765,7 @@ def build(source=CONTENT, out=PROJECT / 'site', copy_images=True, fail_on_drafts
         sitemap_entries.append(('/clippings/', max(p.date for p in link_pages)))
     save(out, '/sitemap.xml', sitemap_xml(sitemap_entries, base), written)
     save(out, '/robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {base}/sitemap.xml\n', written)
-    llms = f'# {title}\n\n{description}\n\n## Posts\n\n' + ''.join(
+    llms = f'{llm_cta}\n\n---\n\n# {title}\n\n{description}\n\n## Posts\n\n' + ''.join(
         f'- [{p.title}]({base}{p.url}.md)\n' for p in listed)
     llms += '\n## Pages\n\n' + ''.join(f'- [{p.title}]({base}{p.url})\n' for p in pages if p.url != '/404.html' and not p.data.get('hidden'))
     hidden_posts = [p for p in posts if p.hidden]

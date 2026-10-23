@@ -42,7 +42,9 @@ jobs:
         run: python code/build.py --fail-on-drafts --site-url "https://${SITE_DOMAIN}" --expected-domain "${SITE_DOMAIN}"
 
       - name: Validate artifact
-        run: python code/check_artifact.py --forbid-drafts --require-cname --expected-domain "${SITE_DOMAIN}" --allow-config-url-mismatch
+        run: |
+          python code/check_artifact.py --forbid-drafts --require-cname --expected-domain "${SITE_DOMAIN}" --allow-config-url-mismatch
+          python code/check_links.py --site site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

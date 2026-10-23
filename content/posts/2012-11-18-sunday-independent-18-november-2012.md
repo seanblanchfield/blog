@@ -20,7 +20,7 @@ Although both our economy and our people are depressed, there was a ray of light
 <!-- more -->
 
 {: .callout }
-> The following article was published in the [Sunday Independent](www.independent.ie) today, 18th November 2012.
+> The following article was published in the [Sunday Independent](https://www.independent.ie/) today, 18th November 2012.
 
 Internet access of this scale, affordability and ease has been an Irish dream for over ten years, but for all our talk of our “digital economy”, it is one we have yet to realise. In Ireland, over 70% of us settle for broadband connections slower than 10Mbps. Although we encourage all our businesses to go online, it takes weeks to get one of these connections installed.
 
