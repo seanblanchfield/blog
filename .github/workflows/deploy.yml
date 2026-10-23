@@ -39,7 +39,7 @@ jobs:
         run: echo "SITE_DOMAIN=$(tr -d '\r\n' < content/pages/CNAME)" >> "$GITHUB_ENV"
 
       - name: Build static site
-        run: python code/build.py --fail-on-drafts --site-url "https://${SITE_DOMAIN}" --expected-domain "${SITE_DOMAIN}"
+        run: python code/build.py --exclude-drafts --site-url "https://${SITE_DOMAIN}" --expected-domain "${SITE_DOMAIN}"
 
       - name: Validate artifact
         run: |

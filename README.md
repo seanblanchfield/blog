@@ -62,10 +62,10 @@ Clippings live in `content/clippings/`. Each needs `link`, `image`, `date`, `sou
 
 ## Build and preview
 
-Run a clean build before release:
+Run a clean public build before release. Drafts remain in source but are omitted completely:
 
 ```sh
-.venv/bin/python code/build.py --fail-on-drafts
+.venv/bin/python code/build.py --exclude-drafts
 ```
 
 Use the incremental build while editing:
@@ -82,7 +82,7 @@ Start the local preview only if port 8765 is not already in use:
 .venv/bin/python code/preview.py --bind 0.0.0.0 --port 8765
 ```
 
-The preview server has no authentication. Do not put sensitive drafts in a served build. Building with `--fail-on-drafts` refuses any `draft: true` content.
+The preview server has no authentication. `--fail-on-drafts` refuses any `draft: true` content. `--exclude-drafts` is the public deployment mode: it keeps drafts in source but generates no HTML, Markdown, listing, feed, sitemap or `llms.txt` entry for them.
 
 ## Generated site
 

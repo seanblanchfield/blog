@@ -2,6 +2,7 @@
 layout: post
 title: "The Dublin AI Declaration moves Europe from rules to capability"
 date: 2026-10-24 08:30:00 +0100
+draft: true
 categories: [current, ai, policy, europe, ireland]
 excerpt: "The Dublin AI Declaration gives Europe a practical agenda built around safety, applied capability, sovereignty and shared infrastructure. It could also become part of something bigger."
 ---

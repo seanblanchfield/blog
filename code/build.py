@@ -592,7 +592,7 @@ def sitemap_xml(entries, base):
 
 
 def build(source=CONTENT, out=PROJECT / 'site', copy_images=True, fail_on_drafts=False,
-          site_url=None, incremental=False, cache_dir=CACHE_DIR):  # noqa: C901
+          site_url=None, incremental=False, cache_dir=CACHE_DIR, exclude_drafts=False):  # noqa: C901
     if out.is_symlink():
         raise ValueError('Refusing to overwrite a symlinked output directory')
     source, out = source.resolve(), out.resolve()
@@ -621,7 +621,8 @@ def build(source=CONTENT, out=PROJECT / 'site', copy_images=True, fail_on_drafts
     description = str(config.get('description') or '')
     generator_files = [Path(__file__), HERE / 'site.css', HERE / 'pygments.css', HERE / 'theme.js']
     fingerprint = digest_bytes(b''.join(path.read_bytes() for path in generator_files) +
-                               json.dumps({'base': base, 'copy_images': copy_images}, sort_keys=True).encode())
+                               json.dumps({'base': base, 'copy_images': copy_images,
+                                           'exclude_drafts': exclude_drafts}, sort_keys=True).encode())
     render_fingerprint = digest_bytes(Path(__file__).read_bytes() +
                                       f'{markdown.__version__}|{yaml.__version__}'.encode())
     cache_dir = Path(cache_dir).resolve()
@@ -644,6 +645,8 @@ def build(source=CONTENT, out=PROJECT / 'site', copy_images=True, fail_on_drafts
     if fail_on_drafts and drafts:
         raise ValueError('Refusing public build with draft: true posts: ' +
                          ', '.join(str(post.source.relative_to(source)) for post in drafts))
+    if exclude_drafts:
+        posts = [post for post in posts if not post.draft]
     LINKS.clear()
     LINKS.update({f'{section}/_posts/{post.source.name}': post.url for post in posts
                   for section in ('current', 'archive')})
@@ -673,6 +676,8 @@ def build(source=CONTENT, out=PROJECT / 'site', copy_images=True, fail_on_drafts
             continue
         if data.get('draft') is True and fail_on_drafts:
             raise ValueError(f'Refusing public build with draft: true page: {path.relative_to(source)}')
+        if data.get('draft') is True and exclude_drafts:
+            continue
         url = str(data.get('permalink') or ('/404.html' if path.name == '404.html' else f'/{path.stem}/'))
         if url == '/clippings/':
             continue  # Clippings page is generated from content/clippings/, not content/pages/.
@@ -817,6 +822,13 @@ def build(source=CONTENT, out=PROJECT / 'site', copy_images=True, fail_on_drafts
     atomic_write(script, (HERE / 'theme.js').read_text(encoding='utf-8'))
     asset_outputs.add('assets/js/theme.js')
     desired_outputs = {path.relative_to(out).as_posix() for path in written} | asset_outputs
+    if exclude_drafts:
+        draft_outputs = []
+        for draft in drafts:
+            draft_outputs.extend((output_path(out, draft.url), output_path(out, draft.url + '.md')))
+        for target in draft_outputs:
+            if target.is_file() and not target.is_symlink():
+                target.unlink()
     if incremental:
         remove_stale_outputs(out, cache.get('outputs', []), desired_outputs)
     live_sources = {document.source.relative_to(source).as_posix() for document in posts + pages + link_pages}
@@ -836,8 +848,11 @@ def main():
     parser.add_argument('--incremental', action='store_true',
                         help='Reuse cached rendering and update site/ in place for fast local previews')
     parser.add_argument('--no-images', action='store_true', help='Skip copying large image directory for quick checks')
-    parser.add_argument('--fail-on-drafts', action='store_true',
-                        help='Refuse to build if any draft: true posts would be publicly accessible')
+    draft_mode = parser.add_mutually_exclusive_group()
+    draft_mode.add_argument('--fail-on-drafts', action='store_true',
+                            help='Refuse to build if any draft: true content exists')
+    draft_mode.add_argument('--exclude-drafts', action='store_true',
+                            help='Omit draft: true content and all of its outputs')
     parser.add_argument('--site-url', help='Explicit canonical https://domain for all generated HTML, Markdown, feed and llms.txt')
     parser.add_argument('--expected-domain',
                         help='Require content/pages/CNAME to contain this deployment domain')
@@ -848,7 +863,7 @@ def main():
             parser.error(f'content/pages/CNAME must contain {args.expected_domain!r}')
     try:
         build(args.source, args.output, not args.no_images, args.fail_on_drafts, args.site_url,
-              incremental=args.incremental)
+              incremental=args.incremental, exclude_drafts=args.exclude_drafts)
     except (OSError, ValueError, yaml.YAMLError) as exc:
         parser.exit(1, f'Build failed: {exc}\n')
 

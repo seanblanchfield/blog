@@ -39,6 +39,11 @@ def validate(source, site, require_cname=False, forbid_drafts=False, expected_do
             issues.append(f'Unexpected source post filename: {path.relative_to(source)}')
             continue
         url = post_url(meta, parse_date(meta.get('date'), path.name), path.name)
+        if meta.get('draft') is True:
+            for candidate in (output_path(site, unquote(url)), output_path(site, unquote(url + '.md'))):
+                if candidate.exists():
+                    issues.append(f'Draft output present in public artifact: {candidate.relative_to(site)}')
+            continue
         if meta.get('redirect_to'):
             html_output = output_path(site, unquote(url))
             for candidate in (html_output, output_path(site, unquote(url.rstrip('/') + '.md'))):
@@ -46,8 +51,6 @@ def validate(source, site, require_cname=False, forbid_drafts=False, expected_do
                     issues.append(f'Missing redirect stub output: {candidate.relative_to(site)}')
             continue
         output = output_path(site, unquote(url))
-        if forbid_drafts and meta.get('draft') is True:
-            issues.append(f'Draft source post not allowed in public artifact: {path.relative_to(source)}')
         for candidate in (output, output_path(site, unquote(url + '.md'))):
             if not candidate.is_file():
                 issues.append(f'Missing post output: {candidate.relative_to(site)}')

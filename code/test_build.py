@@ -61,6 +61,21 @@ class BlogTests(unittest.TestCase):
                     opened = None
             self.assertIsNone(opened, f'{source} has an unclosed fence')
 
+    def test_public_build_excludes_drafts_completely(self):
+        site = PROJECT / 'site'
+        cache = PROJECT / '.build-cache-test-drafts'
+        try:
+            build(CONTENT, site, copy_images=False, exclude_drafts=True,
+                  incremental=True, cache_dir=cache)
+            slug = '2026/10/dublin-declaration-ai'
+            self.assertFalse((site / f'{slug}.html').exists())
+            self.assertFalse((site / f'{slug}.md').exists())
+            for path in ('index.html', 'feed.xml', 'sitemap.xml', 'llms.txt'):
+                self.assertNotIn('dublin-declaration-ai', (site / path).read_text())
+        finally:
+            import shutil
+            shutil.rmtree(cache, ignore_errors=True)
+
     def test_incremental_build_reuses_cache_and_removes_owned_stale_output(self):
         import hashlib
         site = PROJECT / 'site'
@@ -70,7 +85,7 @@ class BlogTests(unittest.TestCase):
             # image from site/ and leaves the running preview full of broken image links.
             preserved_image = site / 'images/default_featured_image.jpg'
             self.assertTrue(preserved_image.is_file(), 'run a full build before the test suite')
-            build(CONTENT, site, copy_images=False, fail_on_drafts=True,
+            build(CONTENT, site, copy_images=False, exclude_drafts=True,
                   incremental=True, cache_dir=cache)
             self.assertTrue(preserved_image.is_file())
             baseline = hashlib.sha256((site / 'about/index.html').read_bytes()).hexdigest()
@@ -80,7 +95,7 @@ class BlogTests(unittest.TestCase):
             manifest = json.loads((cache / 'manifest.json').read_text())
             manifest['outputs'].append('obsolete-generated-file.html')
             (cache / 'manifest.json').write_text(json.dumps(manifest))
-            build(CONTENT, site, copy_images=False, fail_on_drafts=True,
+            build(CONTENT, site, copy_images=False, exclude_drafts=True,
                   incremental=True, cache_dir=cache)
             self.assertEqual(hashlib.sha256((site / 'about/index.html').read_bytes()).hexdigest(), baseline)
             self.assertFalse(stale.exists())
