@@ -42,11 +42,9 @@ I had spent 2.5 years doing a PhD in distributed systems in Trinity College Dubl
 
 *DemonWare* was acquired by [Activision Blizzard](http://www.activision.com) in 2007, and I remained on for 2 years as a VP of Demonware as it became the core online technology platform of Activision. In time, Demonware grew to hundreds of talented staff in Dublin, Vancouver, Montreal and Shanghai, and operating the most successful video game franchise of all time, [Call of Duty](http://www.callofduty.com/). This is a wonderful culmination of our original vision: we started with a conviction that multiplayer games we loved like [Counter Strike](http://blog.counter-strike.net/) were going to go mainstream. This was borne out in *Counter Strike*'s spiritual descendant, *Call of Duty*, which not only runs on top of *DemonWare*, but is a multiplayer game first and a single player game second.
 
-After *DemonWare* I found myself 
-
 ![The Demonware team celebrating on a red double-decker bus at E3 in Los Angeles](/images/about/demonware-e3-red-doubledecker-bus.jpg){: .captioned }
 
-in the *Zynga* era of web-based social gaming, a continuation of the multiplayer arc, distilled down and gone mainstream. With [Brian McDonnell](https://twitter.com/mcdonnellb) I re-engineered and ran [Utopia](http://utopia-game.com), a massively multiplayer team-based web strategy game. I believe it to be oldest running game of its kind, with an extremely dedicated base of users, many of whom have been playing since the game's launch in the late 1990s. *Utopia* was acquired by [MUGA Gaming](http://www.mugagamingllc.com/) in 2017.
+After *DemonWare* I found myself in the *Zynga* era of web-based social gaming, a continuation of the multiplayer arc, distilled down and gone mainstream. With [Brian McDonnell](https://twitter.com/mcdonnellb) I re-engineered and ran [Utopia](http://utopia-game.com), a massively multiplayer team-based web strategy game. I believe it to be oldest running game of its kind, with an extremely dedicated base of users, many of whom have been playing since the game's launch in the late 1990s. *Utopia* was acquired by [MUGA Gaming](http://www.mugagamingllc.com/) in 2017.
 
 I was consulting CTO in *Jolt Online* in 2010, after its acquisition by *GameStop*, and I rapidly built a dev team, helped launch a few new social games, and built an interesting gamified internal sales campaign platform that was used by about 30 thousand staff. 
 
