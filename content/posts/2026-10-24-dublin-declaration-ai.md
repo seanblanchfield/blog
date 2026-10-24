@@ -3,7 +3,7 @@ layout: post
 title: "The Dublin AI Declaration moves Europe from rules to capability"
 date: 2026-10-24 08:30:00 +0100
 categories: [current, ai, policy, europe, ireland]
-image: /images/2026/10/dublin-ai-declaration.jpg
+image: /images/2026/10/demis-hassabis-dublin-ai-summit.jpg
 excerpt: "The Dublin AI Declaration gives Europe a practical agenda built around safety, applied capability, sovereignty and shared infrastructure. It could also become part of something bigger."
 ---
 
@@ -30,6 +30,8 @@ It commits to creating the technical capacity to test advanced AI, detect incide
 The remaining commitments make this a broader programme. AI infrastructure must be sustainable. Public procurement should create demand for trustworthy and interoperable European technology. International cooperation should turn shared principles into practical technologies that benefit not just Europeans, but everyone.
 
 I believe the Dublin Declaration is formed around a practical vision for creating a counterbalance to the AI arms race by focusing investment on technologies that make AI safe and sovereign, not dangerous and extractive.
+
+![Dorothy Creaven (Jentic COO and co-founder) in discussion with Eoin Hinchy (CEO, Tines), Guillaume Princen (Anthropic) and Donal O’Shea (Diciphex) at the International AI Summit in Dublin, 14 October 2026.](/images/2026/10/dorothy-creaven-dublin-ai-summit.jpg){: .captioned }
 
 ## Seeds of wider alignment
 
