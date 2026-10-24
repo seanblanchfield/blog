@@ -64,16 +64,19 @@ class BlogTests(unittest.TestCase):
     def test_public_build_excludes_drafts_completely(self):
         site = PROJECT / 'site'
         cache = PROJECT / '.build-cache-test-drafts'
+        draft = CONTENT / 'posts/2099-12-31-test-public-build-draft.md'
         try:
+            draft.write_text('---\ntitle: Test public build draft\ndate: 2099-12-31\ndraft: true\n---\n\nPrivate.\n')
             build(CONTENT, site, copy_images=False, exclude_drafts=True,
                   incremental=True, cache_dir=cache)
-            slug = '2026/10/dublin-declaration-ai'
+            slug = '2099/12/test-public-build-draft'
             self.assertFalse((site / f'{slug}.html').exists())
             self.assertFalse((site / f'{slug}.md').exists())
             for path in ('index.html', 'feed.xml', 'sitemap.xml', 'llms.txt'):
-                self.assertNotIn('dublin-declaration-ai', (site / path).read_text())
+                self.assertNotIn('test-public-build-draft', (site / path).read_text())
         finally:
             import shutil
+            draft.unlink(missing_ok=True)
             shutil.rmtree(cache, ignore_errors=True)
 
     def test_incremental_build_reuses_cache_and_removes_owned_stale_output(self):
